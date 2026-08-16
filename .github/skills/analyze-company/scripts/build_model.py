@@ -474,7 +474,8 @@ def build(cfg):
     rd["A14"].font = FONT_BOLD
     rev_start = cfg.get("reverse_dcf", {}).get("rev_start", 6)
     rev_end = cfg.get("reverse_dcf", {}).get("rev_end", 14)
-    for j, rev in enumerate(range(rev_start, rev_end + 1)):
+    rev_step = cfg.get("reverse_dcf", {}).get("rev_step", 1)
+    for j, rev in enumerate(range(rev_start, rev_end + 1, rev_step)):
         c = rd[f"{get_column_letter(2 + j)}14"]
         c.value = rev
         c.font = FONT_BOLD

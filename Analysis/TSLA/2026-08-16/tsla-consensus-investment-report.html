@@ -1,0 +1,1616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TSLA — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">
+          Synthesized Consensus · Five-Lens Deliberative Debate
+        </div>
+        <h1>Tesla, Inc. — Consensus Investment Report</h1>
+        <div class="sub">
+          A structured debate between five independent investment frameworks —
+          Damodaran fundamental valuation, Munger multidisciplinary quality,
+          Buffett owner-earnings value, Druckenmiller macro/opportunity, and
+          Soros reflexivity — reconciled into a single synthesized analysis and
+          recommendation.
+        </div>
+        <div class="meta-row">
+          <span class="chip">NASDAQ: TSLA</span>
+          <span class="chip">Report date: August 16, 2026</span>
+          <span class="chip">Reference price: $342.27 (8/14/26 close)</span>
+          <span class="rating-badge"><span class="dot"></span> D — AVOID</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <!-- ============ 1. EXECUTIVE SUMMARY ============ -->
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">
+          Tesla is an extraordinary franchise — the strongest EV brand, the
+          leading US energy-storage business, and the purest physical-AI data
+          position in the large-cap universe. But at <b>$342.27</b> the market
+          is paying ~$1.35 trillion for a cash engine that currently generates
+          approximately <b>zero economic earnings per share</b> (stock-based
+          compensation ≈ 100% of net income, 1.4% operating margin, negative
+          free cash flow). All five independent frameworks landed at a base
+          intrinsic value of roughly <b>$40–55</b> per share and a unanimous
+          <b>D — Avoid</b>: the price embeds the Extreme Bull case while holding
+          the Bear case's variance.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">$40–55</div>
+            <div class="note">
+              Central ~$50 — intersection of Damodaran's verified $40.27 and
+              Munger's $55–70
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$88</div>
+            <div class="note">
+              0.10×20 + 0.20×30 + 0.35×50 + 0.25×130 + 0.10×300; still ~4× below
+              the price
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$20 – $310</div>
+            <div class="note">
+              Bear ~$20–30; bull ~$120–140; extreme tail ~$300–310
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Expected upside</div>
+            <div class="value">≈ −74%</div>
+            <div class="note">
+              5-yr annualized ≈ −24%; every IV lens — even the extreme bull —
+              sits below the price
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value" style="font-size: 22px">No entry ≥ ~$280</div>
+            <div class="note">
+              Traders act only on dislocation ($200–280) or a confirmed earnings
+              inflection; value investors stage in $40–140
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 22px">Incremental ROIC</div>
+            <div class="note">
+              ~5–7% today vs ~11% WACC — must inflect via software/fleet margins
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. THE FIVE POSITIONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">02</span>The Five Positions at the Table
+        </h2>
+        <p class="lead">
+          Each participant analyzed Tesla independently. Their positions were
+          then cross-examined.
+        </p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--red)">D — Avoid</span
+                ><span class="small">at $342.27</span>
+              </div>
+              <p>
+                Explicit-reinvestment FCFF DCF (verified workbook, ALL_MATCH):
+                base <b>$40.27</b>, probability-weighted <b>$66.93</b>. Even his
+                most generous Extreme Bull scenario ($231.71) is below the
+                price. Reverse DCF: $342 requires ~60%+ revenue growth for a
+                decade or ~60% terminal margins. "The optionality is more than
+                fully paid for — avoid, do not short."
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $40.27</span>
+                <span class="tag amber">Weighted $66.93</span>
+                <span class="tag">Buy zone $40–55</span>
+                <span class="tag">Conviction &lt;$40</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--red)">D — Avoid</span
+                ><span class="small">at $342.27</span>
+              </div>
+              <p>
+                Conservative DCF (13% discount, 2% terminal growth): bear
+                <b>$18–22</b>, base <b>$55–70</b>, bull <b>$150–180</b>, extreme
+                <b>$350–450</b>. TTM stock-based compensation (~$3.8B) ≈ TTM net
+                income — "on an economic-compensation basis Tesla generates
+                approximately zero earnings for shareholders right now."
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $55–70</span>
+                <span class="tag amber">Moat: Moderate</span>
+                <span class="tag">Spec. entry $150–200</span>
+                <span class="tag">Genuine $100–120</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--red)">D — Avoid</span
+                ><span class="small">at ~$342</span>
+              </div>
+              <p>
+                Normalized owner-earnings DCF: bear <b>~$35</b>, base
+                <b>~$70</b>, bull <b>~$140</b>, probability-weighted ~$74 — even
+                his bull sits ~60% below the price. Owner earnings are negative
+                once SBC and the &gt;$25B capex program are counted. "A
+                moderate-moat at a euphoric price, not a wide-moat at a fair
+                price."
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $70*</span>
+                <span class="tag amber">Weighted ~$74</span>
+                <span class="tag">Entry $100–140</span>
+                <span class="tag">Conviction &lt;$70</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro + Liquidity + Opportunity Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--red)">D+ — Wait/Avoid</span
+                ><span class="small">at $342.27</span>
+              </div>
+              <p>
+                "There is no Druckenmiller-quality opportunity here today."
+                Opportunity Score <b>65/150</b>; 12-mo expected return −1% to
+                +4%, asymmetry ~1:1. Macro is a headwind (10Y ~4.69%, real
+                yields 2.36%, hawkish Fed) on a ~190x forward multiple with
+                deteriorating earnings. Dislocation buy zone <b>$200–255</b>.
+              </p>
+              <div class="tags">
+                <span class="tag amber">12-mo: −1% to +4%</span>
+                <span class="tag amber">Score 65/150</span>
+                <span class="tag">Dislocation $200–255</span>
+                <span class="tag">Asymmetry ~1:1</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity Analysis Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Speculative / Wait</span
+                ><span class="small">at $342.27</span>
+              </div>
+              <p>
+                A two-sided reflexive disequilibrium: positive loop (price →
+                capital → physical-AI milestones → narrative) and negative loop
+                (margins/FCF → de-rating) are balanced — 12–18-mo expected value
+                ≈ +2.5%, asymmetry ~1.2:1, score 57/100. "The clean asymmetry
+                was at $297–310; at $342 it is largely harvested." Scale-in
+                <b>$250–280</b>, no short.
+              </p>
+              <div class="tags">
+                <span class="tag amber">12–18-mo: +2.5%</span>
+                <span class="tag amber">Reflexivity: Strong</span>
+                <span class="tag">Scale-in $250–280</span>
+                <span class="tag">No chase &gt;$380–400</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. THE DEBATE ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">03</span>The Debate: Agreement, Contention,
+          Resolution
+        </h2>
+        <p class="lead">
+          Round 1: opening statements. Round 2: uncontested common ground. Round
+          3: six disputed points, cross-examined to resolution. Round 4: final
+          concessions.
+        </p>
+
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Reference price and capital structure.</b> $342.27 (Aug 14,
+              2026 close), ~$1.35T market cap, ~3.95B shares — all five used
+              identical numbers.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Current economics are thin and deteriorating.</b> Q2'26
+              operating margin 1.4%, Q2 FCF −$1.1B, auto GM ex-credits 16.3% and
+              falling, consensus FY26 FCF −$11B. The investment phase is
+              intentionally destroying near-term profit.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>SBC ≈ net income, and the CEO award is a structural drag.</b>
+              TTM SBC (~$3.8B) ≈ TTM net income; the 2025 CEO Performance Award
+              is up to 423.7M shares with up to $105–120B of contingent SBC.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >The balance sheet is a fortress — the company is not at risk;
+                the valuation is.</b
+              >
+              Net cash ~$27–34B, Altman Z 15.16, interest coverage ~13×.
+              Solvency risk: none. Valuation/multiple risk: extreme.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Earnings quality is poor.</b> Reported profit is flattered by a
+              ~$1B pre-tax SpaceX mark-to-market gain; non-GAAP EPS ex-SpaceX ≈
+              $0.11. GAAP EPS is not owner earnings.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>ROIC (~5–7%) is below the cost of capital (~11–14%).</b> Growth
+              currently destroys per-share value — the single valuation-critical
+              economic relationship.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The valuation is a bet on physical-AI optionality.</b>
+              Druckenmiller: "~85% of the market cap is narrative"; Soros: "100%
+              of the price is a bet on an unproven Physical-AI future."
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>No margin of safety at $342.</b> Price exceeds the bull-case IV
+              of three lenses (Buffett $140, Munger $150–180, Damodaran extreme
+              $231.71 — all below $342).
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The right tail is real but not likely.</b> FSD 1.48M subs
+              (+56%), 55% attach, &gt;380k unsupervised robotaxi miles with zero
+              incidents, record energy — genuine progress, priced as
+              near-certain timing.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Expected return at $342 is negative or roughly flat.</b>
+              Buffett deeply negative; Munger ~+1%/yr; Damodaran −80.4% upside;
+              Druckenmiller −1% to +4%; Soros ≈ +2.5%. None compensates for the
+              risk.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Do not short — unanimously.</b> Fat right tail, crowd-believed
+              narrative, low short interest (1.73%), and shorts on Tesla have a
+              brutal history.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Rating family: D — do not initiate at $342.</b> D (Buffett), D
+              (Munger), D (Damodaran), D+ (Druckenmiller), C (Soros — a trading
+              grade whose own discipline maps to D at this price). The
+              investable verdict is unanimous.
+            </div>
+          </div>
+        </div>
+
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Is $342.27 a stable anchor or a live range?</b> The IV lenses
+              treat it as a price to compare against intrinsic value; the
+              trading lenses treat it as a mid-point of a ±10% range. Soros
+              concedes "the clean asymmetry was at $297–310."
+              <b>Resolved:</b> adopt $342.27 as the fixed reference; the D
+              verdict is robust across the entire $297–499 band.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Where does base value sit? $40.27 vs $55–70 vs $70.</b>
+              Damodaran's verified $40.27 (strictest), Munger's $55–70
+              (conservative 13%/2%), Buffett's $70 (embeds partial AI success).
+              Buffett concedes $70 is the "reward for demonstration," not
+              today's value. <b>Resolved:</b> base ≈ $40–55, central ~$50.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>How much credit for the right tail?</b> Damodaran bull $89.73 /
+              extreme $231.71; Buffett bull ~$140; Munger bull $150–180 /
+              extreme $350–450. Munger concedes his extreme is "the reward for
+              demonstration." <b>Resolved:</b> bull ~$120–140, extreme
+              ~$300–310, combined ~35% — real, but justifies watching, not
+              paying.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>What price compensates for uncertainty (buy zones)?</b> The
+              widest divergence: Damodaran $40–55 vs Buffett $100–140 vs Munger
+              $150–200 vs Druckenmiller $200–255 vs Soros $250–280. The trading
+              lenses concede they price dislocations, not intrinsic value.
+              <b>Resolved:</b> no lens initiates above ~$280; a dispute about
+              horizon and temperament, not direction.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Management: 7/10 operator, 3/10 steward.</b> Munger concedes
+              the CEO award's structural market-cap alignment; Buffett holds on
+              the related-party $4B to xAI/SpaceX and the $1B SpaceX mark
+              flattering profit. Damodaran's test: "has compensation ever been
+              earned as per-share value for outsiders?" <b>Resolved:</b> 5/10 —
+              extraordinary operator, extreme key-man risk, value-dilutive
+              incentives.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Negative expected value: short vs wait?</b> All five see
+              negative/flat expected return; Damodaran challenges the traders
+              "why not short?" — they answer narrative strength, low short
+              interest, and brutal short history. <b>Resolved:</b> negative
+              expected value is sufficient to avoid and to refuse a short, not
+              to short and not to ignore the story. The posture is unanimous:
+              <b>wait</b>.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 4. CONSENSUS VALUATION ============ -->
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">
+          Reconciled scenario matrix. Damodaran's column is the verified
+          <code>TSLA_Damodaran_Financial_Model.xlsx</code> output (ALL_MATCH).
+          Druckenmiller and Soros columns are 12–18-month price expectations,
+          not intrinsic values, and are excluded from the weighted-IV formula.
+        </p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th class="right">Prob</th>
+                <th class="right">Damodaran*</th>
+                <th class="right">Munger</th>
+                <th class="right">Buffett</th>
+                <th class="right">Druck.†</th>
+                <th class="right">Soros†</th>
+                <th class="right">Consensus IV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Severe bear</td>
+                <td class="right">10%</td>
+                <td class="right">$20.29</td>
+                <td class="right">$18–22</td>
+                <td class="right">—</td>
+                <td class="right">$170</td>
+                <td class="right">$170</td>
+                <td class="right"><b>~$20</b></td>
+              </tr>
+              <tr>
+                <td>Bear</td>
+                <td class="right">20%</td>
+                <td class="right">$26.03</td>
+                <td class="right">$18–22</td>
+                <td class="right">~$35</td>
+                <td class="right">$245</td>
+                <td class="right">$250</td>
+                <td class="right"><b>~$30</b></td>
+              </tr>
+              <tr class="hl">
+                <td>Base</td>
+                <td class="right">35%</td>
+                <td class="right">$40.27</td>
+                <td class="right">$55–70</td>
+                <td class="right">($70)‡</td>
+                <td class="right">$360</td>
+                <td class="right">$375</td>
+                <td class="right"><b>~$50</b></td>
+              </tr>
+              <tr>
+                <td>Bull</td>
+                <td class="right">25%</td>
+                <td class="right">$89.73</td>
+                <td class="right">$150–180</td>
+                <td class="right">~$140</td>
+                <td class="right">$480</td>
+                <td class="right">$450</td>
+                <td class="right"><b>~$130</b></td>
+              </tr>
+              <tr>
+                <td>Extreme bull</td>
+                <td class="right">10%</td>
+                <td class="right">$231.71</td>
+                <td class="right">$350–450</td>
+                <td class="right">—</td>
+                <td class="right">$600</td>
+                <td class="right">$600</td>
+                <td class="right"><b>~$300</b></td>
+              </tr>
+              <tr>
+                <td><b>Probability-weighted</b></td>
+                <td class="right"><b>100%</b></td>
+                <td class="right"><b>$66.93</b></td>
+                <td class="right">—</td>
+                <td class="right">~$74</td>
+                <td class="right">≈$335–350</td>
+                <td class="right">≈$350</td>
+                <td class="right"><b>~$88</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">
+          * Damodaran = verified workbook (base WACC 11.0%, terminal g 3.0%). †
+          12–18-month <b>price expectations</b>, not intrinsic values; not
+          pooled into the weighted-IV formula. ‡ Buffett's $70 reclassified as
+          <b>partial-AI-success value</b> (top of the base band), not the value
+          of the current business.
+        </p>
+
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 6px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">$20</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 10px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">$30</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 17px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">$50</div>
+            <div class="prob">35%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 43px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">$130</div>
+            <div class="prob">25%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 100px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">$300</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Intrinsic value per share</span
+          ><span>~$310</span>
+        </div>
+
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>
+            EV = 0.10×$20 + 0.20×$30 + 0.35×$50 + 0.25×$130 + 0.10×$300 ≈
+            $88/share
+          </h3>
+          <p class="big">
+            At $342.27 that is roughly <b>−74% expected upside</b> and
+            <b>≈ −24% 5-year annualized</b> —
+            <b
+              >deeply negative and insufficient compensation for the risk, no
+              matter which profile is most pessimistic</b
+            >. The reverse-DCF check (uncontested) shows the $342 price requires
+            ~60%+ revenue growth for a decade (→ $7–8 trillion, larger than the
+            global auto industry) or ~60% terminal EBIT margins, at a low
+            discount rate:
+            <b
+              >the market is pricing the "Amazing Abundance" tail as the base
+              case — not assuming an impossible business, but assuming a
+              near-certainly successful one.</b
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 5. PRICE LADDER ============ -->
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">
+          The composite plan across all five frameworks. Do not initiate at
+          $342.27; no lens starts a new position above ~$280.
+        </p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">≥ $400</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              >Reduce / avoid — chasing the consensus PT with no fresh cash-flow
+              data</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$300–400</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 92%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              >Avoid — do not initiate (current $342.27 sits here)</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$280–300</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 82%"></div>
+            </div>
+            <span class="action"
+              >Wait — no entry; just above Soros's scale-in</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$250–280</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 72%"></div>
+            </div>
+            <span class="action" style="color: #7a5a08"
+              >Trader's first scale-in — Soros (asymmetry toward ~2:1);
+              speculators only</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$200–255</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: #7a5a08"
+              >Trader dislocation zone — Druckenmiller (start ~$245, accumulate
+              ~$210–225)</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$140–200</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 48%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Speculative starter — Munger's speculative entry $150–200</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$100–140</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 36%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >First genuine value interest — Buffett interested; Munger
+              $100–120</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$70–100</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 24%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Accumulate (attractive) — Buffett "more interested"</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$40–70</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 14%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              ><b>High-conviction accumulation</b> — Damodaran $40–55; Buffett
+              conviction &lt;$70</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $40</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 8%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31; font-weight: 800"
+              >Conviction / exceptional risk-reward — Damodaran &lt;$40</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 6. PROS & CONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">06</span>Pros &amp; Cons — At $342.27
+        </h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>
+                A genuinely exceptional franchise — strongest EV brand, real
+                manufacturing scale, leading US energy-storage business
+              </li>
+              <li>
+                Real, accelerating physical-AI evidence — FSD 1.48M subs (+56%),
+                55% NA attach, &gt;380k unsupervised robotaxi miles with zero
+                incidents, Cybercab production, Optimus lines, record energy
+              </li>
+              <li>
+                Fortress balance sheet — ~$27–34B net cash, low leverage, Altman
+                Z 15.16; the company has no credit risk
+              </li>
+              <li>
+                Fat right tail — consensus bull ~$130 and extreme bull ~$300+ if
+                robotaxi/FSD/Optimus monetize; a single unit-economics
+                disclosure can re-rate the stock violently
+              </li>
+              <li>
+                No solvency or fraud flags — the risks are valuation, timing and
+                dilution, not the balance sheet
+              </li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>
+                No margin of safety — price exceeds even the bull-case IV of
+                three lenses and ~5× Damodaran's weighted value
+              </li>
+              <li>
+                Thin-to-negative current economics — SBC ≈ 100% of net income,
+                1.4% operating margin, negative Q2 FCF, consensus FY26 FCF −$11B
+              </li>
+              <li>
+                ROIC (~5–7%) &lt; WACC (~11–14%) — growth currently destroys
+                per-share value; the thesis is a bet on ROIC inflecting
+              </li>
+              <li>
+                Relentless dilution — 423.7M-share CEO award, SBC ~$3.8B/yr,
+                +5.3% shares in H1'26
+              </li>
+              <li>
+                Earnings quality — profit flattered by a ~$1B SpaceX mark and
+                interest income; non-GAAP EPS ex-SpaceX ≈ $0.11
+              </li>
+              <li>
+                Macro headwind on an extreme multiple — 10Y ~4.69%, real yields
+                2.36%, hawkish Fed; the most expensive large-cap is the most
+                rate-sensitive
+              </li>
+              <li>
+                Key-person and governance risk — Musk's split attention, $4B to
+                related parties, control entrenchment toward 25–29% voting
+              </li>
+              <li>
+                Competitive/regulatory risk — BYD's cost advantage, Waymo's
+                robotaxi lead, removed EV credits, NHTSA FSD probe, a live
+                Robotaxi safety-incident tail (−40–55%)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. TRIGGERS ============ -->
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade D → C/B when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                Incremental ROIC on the capital machine rises above ~11% WACC
+                for a sustained period
+              </li>
+              <li>
+                Auto GM ex-credits stabilizes ≥ ~18% for two quarters AND FCF
+                turns sustainably positive
+              </li>
+              <li>
+                Robotaxi unit economics disclosed and compelling (revenue/mile,
+                utilization)
+              </li>
+              <li>
+                Per-share economics hold — dilution ≤ revenue growth; SBC falls
+                well below net income; owner earnings positive
+              </li>
+              <li>
+                Operating margin inflects ≥4% for two quarters with FCF positive
+              </li>
+              <li>10Y rolls below ~4.4% with a Fed easing path</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08"
+              >Downgrade D → E / raise bear weight if:</b
+            >
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                ROIC stays below the cost of capital on a growing capital base —
+                growth-without-returns
+              </li>
+              <li>
+                Auto GM &lt;15% ex-credits for two quarters with FCF deeply
+                negative
+              </li>
+              <li>
+                A Robotaxi safety incident → regulatory clampdown (−40–55%, no
+                earnings floor)
+              </li>
+              <li>SBC/dilution accelerates (CEO-award tranches vesting)</li>
+              <li>
+                10Y &gt; 5.25% with margins &lt;2% and a widening FCF deficit
+              </li>
+              <li>
+                Key-person / governance event (Musk distraction or control
+                entrenchment)
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Incremental ROIC</b></td>
+                <td>The ultimate test — value creation vs destruction</td>
+                <td class="right">&gt; ~11% WACC</td>
+              </tr>
+              <tr>
+                <td><b>FCF per share (SBC/dilution-adjusted)</b></td>
+                <td>Owner economics after the capital machine</td>
+                <td class="right">Turns sustainably positive</td>
+              </tr>
+              <tr>
+                <td><b>Auto gross margin (ex-credits)</b></td>
+                <td>The cash engine's health</td>
+                <td class="right">≥ ~18% for 2 quarters</td>
+              </tr>
+              <tr>
+                <td><b>Robotaxi unit economics</b></td>
+                <td>The missing proof that re-rates the tail</td>
+                <td class="right">Disclosed &amp; compelling</td>
+              </tr>
+              <tr>
+                <td><b>Diluted share-count growth</b></td>
+                <td>Per-share economics vs headline</td>
+                <td class="right">≤ revenue growth</td>
+              </tr>
+              <tr>
+                <td><b>SBC vs net income</b></td>
+                <td>Real earnings power</td>
+                <td class="right">SBC &lt;&lt; net income</td>
+              </tr>
+              <tr>
+                <td><b>10Y yield / real rates</b></td>
+                <td>Discount-rate pressure on an extreme multiple</td>
+                <td class="right">&lt; ~4.4%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 8. FIVE CONCLUSIONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">08</span>The Five Consensus Conclusions
+        </h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Business.</b> Tesla is a mature, capital-intensive auto
+              company with genuinely valuable (but unproven) high-growth options
+              in energy, FSD, robotaxi and robotics. The auto base (69% of
+              revenue) is in a price war at 1–4% margins; at the current price,
+              ~85–100% of the valuation is optionality.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Economics.</b> The sole determinant of long-term per-share
+              value is incremental ROIC on the enormous reinvestment — whether
+              the ~$13B/yr capex machine earns more than the ~11% cost of
+              capital. Today ROIC is ~5–7% (value-destroying growth); the bull
+              case rests on software/fleet margins lifting ROIC to ~15%+.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Market's Expectations.</b> At $342, the market is assuming
+              near-certain success of the "Amazing Abundance" outcome — ~60%+
+              sustained revenue growth (→ $7–8 trillion) or ~60% terminal EBIT
+              margins — while the cash engine deteriorates underneath. Those
+              assumptions sit far outside the $30–70 range every reasonable DCF
+              produces.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Valuation.</b> Base intrinsic value ~$40–55 (central ~$50);
+              probability-weighted ~$85–90 (formula ≈ $88); bear ~$20–30; bull
+              ~$120–140 with an extreme tail ~$300–310. Confidence: Low/Medium.
+              Every IV lens — and even the extreme-bull case — sits far below
+              the price.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Investment Decision.</b> D — Avoid at $342.27; do not
+              initiate above ~$280. Traders act only on dislocation ($200–280)
+              or a confirmed earnings inflection; value investors stage in
+              $100–140 → $70–100 → $40–70, with conviction below $40.
+              <b>No short — unanimously.</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 9. FINAL JUDGMENT ============ -->
+      <section>
+        <h2 class="sec"><span class="num">09</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>
+            At a price of <b>$342.27</b>, the market is effectively assuming
+            that Tesla will become a
+            <b
+              >$7–8 trillion-revenue, ~60%-margin autonomous-mobility + energy +
+              robotics platform</b
+            >
+            — essentially a new utility of transportation — with near-certainty,
+            while paying for it against a cash engine that is currently
+            generating approximately zero economic earnings per share. Five
+            independent frameworks — owner-earnings value, multidisciplinary
+            quality, fundamental DCF, macro/opportunity, and reflexivity — all
+            land at an intrinsic value far below the price and a rating of
+            <b>D: Avoid</b>. We agree the franchise is extraordinary and the
+            physical-AI evidence is real and accelerating; we agree the balance
+            sheet is a fortress; we agree the ROIC-versus-cost-of-capital
+            relationship is the crux; we agree the right tail is fat but its
+            timing is priced as near-certain; and we agree — unanimously — that
+            this is a <b>wait</b>, not a buy and not a short. Therefore, at
+            today's price we would wait: traders act only on dislocation below
+            ~$280 or a confirmed earnings inflection, value investors stage in
+            between $40 and $140, and let demonstrated returns on capital, cash
+            flow, and disclosed robotaxi economics — not headlines — decide
+            whether Tesla becomes a wonderful compounder or merely a wonderful
+            story at an unwonderful price.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes five analyses
+          — <code>damodaran-analysis.md</code>, <code>munger-analysis.md</code>,
+          <code>buffet-analysis.md</code>,
+          <code>druckenmiller-analysis.md</code>, and
+          <code>soros-analysis.md</code> (dated August 16, 2026) — which
+          themselves reference Tesla SEC filings (FY2025 10-K; Q1/Q2 2026 10-Qs;
+          Q2 2026 8-K and shareholder letter; 2025 proxy/DEF 14A), Damodaran's
+          NYU datasets, StockAnalysis/BLS/FOMC/CNBC market data, and the
+          verified <code>TSLA_Damodaran_Financial_Model.xlsx</code> (scenario
+          IVs $20.29 / $26.03 / $40.27 / $89.73 / $231.71; probability-weighted
+          $66.93; <code>verify_model.py</code> printed ALL_MATCH). This document
+          is an educational synthesis of estimates about estimates — it is
+          <b>not investment advice</b>, and no valuation herein should be
+          treated as a price prediction or a recommendation to trade. Tesla's
+          outcome distribution is unusually wide; treat every number on this
+          page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
