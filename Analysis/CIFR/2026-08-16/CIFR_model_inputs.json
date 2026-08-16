@@ -1,0 +1,89 @@
+{
+  "company": "Cipher Digital Inc.",
+  "ticker": "CIFR",
+  "date": "2026-08-16",
+  "inputs": {
+    "price": 17.86,
+    "shares_mm": 415.0,
+    "cash_mm": 3600.0,
+    "debt_mm": 5547.0,
+    "revenue_run_rate_mm": 1400.0,
+    "growth_y1": 0.2,
+    "growth_decay": 0.03,
+    "margin_y1": 0.36,
+    "margin_terminal": 0.48,
+    "tax_rate": 0.21,
+    "wacc": 0.1,
+    "terminal_growth": 0.025,
+    "roic_terminal": 0.17,
+    "roic_initial": 0.24,
+    "margin_ramp": 0.015,
+    "min_growth": 0.05,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.1,
+      "growth_adj": -0.18,
+      "margin_adj": -0.15,
+      "wacc_adj": 0.03,
+      "tg_adj": -0.01,
+      "roic_adj": -0.06,
+      "description": "A major HPC lease fails/defaults or construction fails; equity near book value"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "growth_adj": -0.1,
+      "margin_adj": -0.08,
+      "wacc_adj": 0.015,
+      "tg_adj": -0.005,
+      "roic_adj": -0.04,
+      "description": "Only 2 of 3 leases deliver; weaker margins; little pipeline; WACC up"
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Three leases ramp to ~$793M NOI; partial pipeline leased; normalized returns"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "growth_adj": 0.08,
+      "margin_adj": 0.04,
+      "wacc_adj": -0.005,
+      "tg_adj": 0.0025,
+      "roic_adj": 0.03,
+      "description": "Strong pipeline monetization; rents improve; WACC down"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.1,
+      "growth_adj": 0.16,
+      "margin_adj": 0.07,
+      "wacc_adj": -0.01,
+      "tg_adj": 0.005,
+      "roic_adj": 0.05,
+      "description": "Full ~5 GW portfolio leased to investment-grade hyperscalers at scale"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 6,
+    "rev_end": 14,
+    "margin_start": 0.2,
+    "margin_end": 0.5,
+    "margin_step": 0.05
+  },
+  "sensitivity": {
+    "g_values": [0.02, 0.025, 0.03, 0.035],
+    "wacc_values": [0.085, 0.095, 0.105, 0.115, 0.125],
+    "rev_values": [6, 8, 10, 12, 14],
+    "margin_values": [0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
+  }
+}

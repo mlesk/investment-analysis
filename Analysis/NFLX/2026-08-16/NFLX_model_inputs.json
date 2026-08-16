@@ -1,0 +1,89 @@
+{
+  "company": "Netflix",
+  "ticker": "NFLX",
+  "date": "2026-08-16",
+  "inputs": {
+    "price": 78.16,
+    "shares_mm": 4164.0,
+    "cash_mm": 9128.0,
+    "debt_mm": 16639.0,
+    "revenue_run_rate_mm": 48371.0,
+    "growth_y1": 0.10,
+    "growth_decay": 0.0075,
+    "margin_y1": 0.315,
+    "margin_terminal": 0.365,
+    "tax_rate": 0.16,
+    "wacc": 0.09,
+    "terminal_growth": 0.03,
+    "roic_terminal": 0.20,
+    "roic_initial": 0.35,
+    "margin_ramp": 0.005,
+    "min_growth": 0.03,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.10,
+      "growth_adj": -0.10,
+      "margin_adj": -0.05,
+      "wacc_adj": 0.012,
+      "tg_adj": -0.005,
+      "roic_adj": -0.03,
+      "description": "Streaming economics re-intensify; ads disappoint; growth stalls to pricing-only"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.20,
+      "growth_adj": -0.03,
+      "margin_adj": -0.015,
+      "wacc_adj": 0.006,
+      "tg_adj": 0.0,
+      "roic_adj": -0.03,
+      "description": "UCAN flattens, margin expansion stalls, ads below plan"
+    },
+    {
+      "name": "Base",
+      "probability": 0.40,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Guided execution: margins to ~36.5%, ads to ~$8-10B, 9% WACC"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.20,
+      "growth_adj": 0.03,
+      "margin_adj": 0.03,
+      "wacc_adj": -0.006,
+      "tg_adj": 0.0,
+      "roic_adj": 0.02,
+      "description": "Ads scale to ~$15B by 2035; live/games extend engagement; re-rating to 8.4% WACC"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.10,
+      "growth_adj": 0.045,
+      "margin_adj": 0.045,
+      "wacc_adj": -0.012,
+      "tg_adj": 0.004,
+      "roic_adj": 0.03,
+      "description": "Netflix becomes the global entertainment + advertising utility"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 44,
+    "rev_end": 54,
+    "margin_start": 0.30,
+    "margin_end": 0.44,
+    "margin_step": 0.02
+  },
+  "sensitivity": {
+    "g_values": [0.02, 0.025, 0.03, 0.035, 0.04],
+    "wacc_values": [0.08, 0.085, 0.09, 0.095, 0.10],
+    "rev_values": [44, 47, 50, 53, 56, 59, 62],
+    "margin_values": [0.30, 0.32, 0.34, 0.36, 0.38, 0.40, 0.42]
+  }
+}

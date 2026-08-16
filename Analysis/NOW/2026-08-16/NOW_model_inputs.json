@@ -1,0 +1,89 @@
+{
+  "company": "ServiceNow",
+  "ticker": "NOW",
+  "date": "2026-08-16",
+  "inputs": {
+    "price": 124.0,
+    "shares_mm": 1034.0,
+    "cash_mm": 6707.0,
+    "debt_mm": 8453.0,
+    "revenue_run_rate_mm": 14700.0,
+    "growth_y1": 0.19,
+    "growth_decay": 0.016,
+    "margin_y1": 0.24,
+    "margin_terminal": 0.32,
+    "tax_rate": 0.21,
+    "wacc": 0.09,
+    "terminal_growth": 0.03,
+    "roic_terminal": 0.25,
+    "roic_initial": 0.35,
+    "margin_ramp": 0.009,
+    "min_growth": 0.045,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.10,
+      "growth_adj": -0.08,
+      "margin_adj": -0.05,
+      "wacc_adj": 0.015,
+      "tg_adj": -0.005,
+      "roic_adj": -0.05,
+      "description": "AI agents commoditize SaaS; growth stalls to ~11%, margins compress, WACC 10.5%"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.20,
+      "growth_adj": -0.04,
+      "margin_adj": -0.03,
+      "wacc_adj": 0.007,
+      "tg_adj": -0.002,
+      "roic_adj": -0.03,
+      "description": "Growth decelerates faster; SBC/dilution persist; SaaSocalypse partially materializes"
+    },
+    {
+      "name": "Base",
+      "probability": 0.35,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Guided execution: subscription +20% decaying to high-single-digits; margins to ~30-32%; 9% WACC"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "growth_adj": 0.03,
+      "margin_adj": 0.03,
+      "wacc_adj": -0.006,
+      "tg_adj": 0.0,
+      "roic_adj": 0.04,
+      "description": "AI ACV scales beyond $1B; enterprise AI spend accelerates; margins toward 35%; WACC 8.4%"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.10,
+      "growth_adj": 0.06,
+      "margin_adj": 0.06,
+      "wacc_adj": -0.012,
+      "tg_adj": 0.0,
+      "roic_adj": 0.07,
+      "description": "ServiceNow becomes the enterprise AI control tower; durable ~25% growth, 37%+ margins, WACC 7.8%"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 13,
+    "rev_end": 17,
+    "margin_start": 0.15,
+    "margin_end": 0.4,
+    "margin_step": 0.05
+  },
+  "sensitivity": {
+    "g_values": [0.02, 0.025, 0.03, 0.035, 0.04],
+    "wacc_values": [0.08, 0.085, 0.09, 0.095, 0.1],
+    "rev_values": [13, 14, 15, 16, 17, 18, 19],
+    "margin_values": [0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45]
+  }
+}

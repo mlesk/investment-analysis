@@ -1,0 +1,1519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFLX — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">CONSENSUS INVESTMENT REPORT</div>
+        <h1>Netflix — Consensus Investment Report</h1>
+        <div class="sub">
+          Netflix has already won the global streaming competition and can now
+          convert an enormous, engaged subscriber base into compounding free
+          cash flow through pricing power, margin expansion, and a new
+          advertising business — with minimal incremental capital. The only open
+          question is whether ~30%+ operating margins prove durable as growth
+          decelerates — and whether $78.16 is the right price to pay for that
+          question.
+        </div>
+        <div class="meta-row">
+          <span class="chip">NASDAQ: NFLX</span>
+          <span class="chip">Report date: August 16, 2026</span>
+          <span class="chip">Reference price: $78.16</span>
+          <span class="rating-badge"
+            ><span class="dot"></span> C — HOLD / WATCH</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <!-- ============ 1. EXECUTIVE SUMMARY ============ -->
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">
+          Netflix is no longer the hyper-growth subscription story of the 2010s.
+          It is a mature, extraordinarily profitable global entertainment
+          franchise — ~$48B TTM revenue, ~30% operating margins (29.7% TTM),
+          ~$12.5B of guided 2026 free cash flow, ~4.16B diluted shares shrinking
+          ~1.5%/yr, and a ~$325B market cap — whose growth engine is
+          decelerating on schedule (13–14% guided for 2026) while a young,
+          doubling ads business and international pricing carry the future.
+          Three independent analyses reached the same practical instruction:
+          <b>C — Hold/Watch at $78.16</b>. The disagreement — worth roughly 50%
+          of fair value — is entirely about what those facts are worth.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">$60–66</div>
+            <div class="note">
+              Anchored on Damodaran's fully modeled $62.84; Buffett $66–72 =
+              "fair-plus"; Munger $43–60 = conservative
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$70.07</div>
+            <div class="note">
+              Workbook-verified; tail-driven — the median outcome sits below the
+              current price
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$33 – $135</div>
+            <div class="note">
+              Severe bear $32.78 to extreme bull $135.18 — value is a range, not
+              a point
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Medium</div>
+            <div class="note">
+              Three independent frameworks land within ~$0.35 of the
+              workbook-weighted value
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$60–64 → $43–52</div>
+            <div class="note">
+              First tranche $60–64; accumulate $52–60; build with conviction
+              $43–52
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 22px">
+              Operating-margin durability
+            </div>
+            <div class="note">
+              Each 1pt of terminal margin ≈ $3–4/share — the price you pay for
+              durability is the investment
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. THE THREE POSITIONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">02</span>The Three Positions at the Table
+        </h2>
+        <p class="lead">
+          Each participant analyzed Netflix independently through a different
+          framework; their positions were then cross-examined to consensus.
+        </p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Hold / Watch</span
+                ><span class="small">at $78.16</span>
+              </div>
+              <p>
+                Explicit-reinvestment FCFF DCF: 9.0% WACC, 3.0% terminal growth,
+                margins to ~36.5%. Base value <b>$62.84</b>;
+                probability-weighted across five scenarios <b>$70.07</b>.
+                Expected upside at $78 is <b>−10.3%</b>; the 5-year annualized
+                expected return is <b>−2.2%</b> — a wonderful business at a
+                price with a negative margin of safety.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $62.84</span>
+                <span class="tag amber">Weighted $70.07</span>
+                <span class="tag">Buy zone $50–60</span>
+                <span class="tag">Confidence Medium</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span
+                ><span class="small">at ~$78</span>
+              </div>
+              <p>
+                Conservative DCF — 11.5% discount (WACC + 3), 2% terminal
+                growth, 18–20× normalized earnings cross-check: bear
+                <b>$35–45</b>, base <b>$43–60</b>, bull <b>$70–90</b>. Expected
+                return from $78 is <b>~+6.5%/yr</b> versus
+                <b>~+19.6%/yr at $55</b> — "a wonderful company sold at a rich
+                price, not a fair one."
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $43–60</span>
+                <span class="tag amber">Moat: Wide/Moderate</span>
+                <span class="tag">Entry $40–50</span>
+                <span class="tag">First tranche $60–65</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >B — Buy (price-contingent)</span
+                ><span class="small">at $78.16</span>
+              </div>
+              <p>
+                Base intrinsic value <b>~$70</b> ($66–72; bear ~$54, bull ~$93)
+                on ~$10.7B of normalized owner earnings at a 9–10% discount. At
+                $78.16 the stock trades ~29–30× normalized owner earnings and
+                ~11% <i>above</i> base — "fair-to-fully valued." Quality is
+                A-grade; today's price is C-grade. A buyer at <b>$52–64</b>, a
+                seller above $92.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $66–72</span>
+                <span class="tag">Buy zone $52–64</span>
+                <span class="tag">Owner earnings ~$10.7B</span>
+                <span class="tag">Quality A / Price C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. POINTS OF AGREEMENT ============ -->
+      <section>
+        <h2 class="sec"><span class="num">03</span>Points of Agreement</h2>
+        <p class="lead">
+          The uncontested consensus core — Round 2 of the debate. Items marked
+          ✅ were not even contested in cross-examination.
+        </p>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The business is wonderful — the debate is only about price.</b>
+              Every profile grades the company near-perfect on quality (Buffett
+              "quality A-grade"; Munger 6.9/10 overall
+              <i>driven down by valuation alone</i>; Damodaran "value-creating
+              by any reasonable test").
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The moat is real and empirically confirmed.</b> ~$17B of
+              content spend amortized over 325M+ memberships, a two-decade
+              brand, and ~30% operating margins against
+              breakeven-to-single-digit peer economics. Competitors now
+              <i>license</i> content to Netflix. Nobody grants the moat
+              "invincible," but nobody disputes its existence.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Cash generation is genuine and accelerating.</b> FCF went from
+              −$0.13B (2021) to ~$11.2B TTM and ~$12.5B guided for 2026; capex
+              is ~1.5% of revenue; content cash spend ≈ amortization, so FCF ≈
+              economic earnings.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Capital returns are disciplined and shareholder-friendly.</b>
+              ~$21B of buybacks in three years, a $25B authorization, $27.1B
+              remaining, shares shrinking ~1.5%/yr, no dividend, and no
+              completed dilutive M&amp;A.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >Growth is decelerating structurally, and that is fine — the
+                model still compounds.</b
+              >
+              Revenue 16% → 13% → 11.7% (Q3'26 guide); UCAN +10%; view hours
+              +2%. Pricing, ads and international ARPU — not membership
+              additions — are the next growth legs.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The WBD episode is the single management caveat.</b> An ~$82.7B
+              EV, leverage-financed acquisition attempt that ended in a $2.8B
+              termination fee. All three read the walk-away as disciplined and
+              the attempt as a warning.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Reported TTM earnings overstate normalized earnings.</b> The
+              $2.8B WBD fee (and ~$619M Brazil tax) inflate TTM net income;
+              normalized TTM EPS is ~$2.62–2.75 and normalized FCF ~$9–10.7B. No
+              participant uses $3.17 TTM EPS.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The multiple is de-rated but not cheap.</b> 24.6× TTM / ~29×
+              normalized earnings sits at the low end of Netflix's own five-year
+              range (36–52× at each year-end 2023–2025) — yet all three find no
+              margin of safety at $78 (Buffett 4/10, Munger 3/10, Damodaran
+              "negative").
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The failure point is valuation, not the company.</b> Each
+              profile's inversion identifies <i>paying too much</i> as the most
+              likely way to lose money — a failure that requires no bad news.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>No one rates D or E; no one rates A.</b> The company's quality
+              blocks short-side ratings and the price blocks top ratings.
+              Ratings: <b>B</b> (Buffett), <b>C</b> (Munger), <b>C</b>
+              (Damodaran).
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 4. POINTS OF CONTENTION & RESOLUTION ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">04</span>Points of Contention &amp; Resolution
+        </h2>
+        <p class="lead">
+          Round 3 — seven disputed points, cross-examined to resolution.
+        </p>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Reference price: $78.16 versus the $65–78 band.</b> Buffett and
+              Damodaran anchor on the August 14 close; Munger argues the stock
+              traded below $70 in July 2026, hit a two-year low of ~$65, and
+              sits 38% below the $126.71 high. <b>Resolved:</b> $78.16 is the
+              working reference price for all math; the actionable band $65–78
+              is recognized — the stock has traded through every profile's first
+              threshold within eight weeks.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Where does base-case intrinsic value sit?</b> Munger $43–60
+              (11.5% WACC+3 discount, 2% terminal growth); Damodaran $62.84
+              (9.0% WACC, 3.0% terminal growth); Buffett $66–72 (~9–10% discount
+              on ~$10.7B normalized owner earnings) — a ~67% spread.
+              <b>Resolved:</b> defensible central estimate ~$60–66, anchored on
+              Damodaran's $62.84; Buffett's $66–72 becomes the "fair-plus"
+              value; Munger's $43–60 the conservative value that must be
+              <i>paid for</i>, not <i>worth</i>.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>How much credit for the right tail?</b> Damodaran: bull $95.59
+              (20%) + extreme bull $135.18 (10%); Munger: a $135 case at 25% in
+              his 3-year scenario; Buffett refuses to weight any distribution.
+              <b>Resolved:</b> bull ~$93–96 (20%), extreme bull ~$135 (10%),
+              combined ~30% — the tail justifies watching closely and holding if
+              owned; it does not justify paying $78.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>What price compensates for the uncertainty?</b> Damodaran
+              $50–60 (preferred); Buffett $52–64; Munger first tranche $60–65,
+              Munger-style entry $40–50. <b>Resolved (unanimous):</b> the
+              composite ladder — first tranche $60–64, accumulate $52–60, build
+              with conviction $43–52. A dispute about sizing and temperament,
+              not about the stock.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Management quality and the WBD episode.</b> Munger 9/10 ("the
+              walk-away <i>is</i> the evidence of discipline"); Buffett 8/10
+              (the alarm was the attempt); Damodaran "Good to Excellent, with
+              one meaningful reservation" — the cost-of-capital question.
+              <b>Resolved:</b> 8/10 — elite operators with a capital-allocation
+              watch; WBD recidivism is a standing agenda item for every future
+              quarter.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The ~29× normalized multiple: fair, full, or rich?</b>
+              Buffett: fair-to-fully valued; Munger: rich (compression to 18–20×
+              = −35–40% even on perfect execution); Damodaran: reverse DCF — the
+              price embeds an ~8% WACC, ~13.5% initial growth, or ~40–42%
+              terminal margins. <b>Resolved:</b> at $78 the market pays for
+              modest execution of the base-to-bull path. 24.6× reported is
+              de-rated; ~29× normalized is full. Neither a bubble nor a bargain.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Moat width and the engagement signal.</b> Buffett: wide on
+              economics, moderate on durability (switching costs 4/10); Munger:
+              WIDE within premium subscription video (8.5/10) — flagging the
+              shift from semi-annual to annual engagement disclosure; Damodaran:
+              strong, not exceptional (view hours +2% = saturation).
+              <b>Resolved:</b> Wide on economics, Moderate on durability —
+              "Strong, not exceptional." Engagement (view hours) is the single
+              most-watched operating metric across all three frameworks.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 5. CONSENSUS VALUATION ============ -->
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Valuation</h2>
+        <p class="lead">
+          Reconciled scenario matrix — verified workbook values authoritative
+          for Damodaran's column; ranges from the other two frameworks.
+        </p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th class="right">Damodaran (workbook)</th>
+                <th class="right">Munger</th>
+                <th class="right">Buffett</th>
+                <th class="right">Consensus</th>
+                <th class="right">Probability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Severe bear</td>
+                <td class="right">$32.78</td>
+                <td class="right">$35 (low)</td>
+                <td class="right">—</td>
+                <td class="right"><b>~$33</b></td>
+                <td class="right">10%</td>
+              </tr>
+              <tr>
+                <td>Bear</td>
+                <td class="right">$45.10</td>
+                <td class="right">$35–45</td>
+                <td class="right">~$54</td>
+                <td class="right"><b>~$45–50</b></td>
+                <td class="right">20%</td>
+              </tr>
+              <tr class="hl">
+                <td>Base</td>
+                <td class="right">$62.84</td>
+                <td class="right">$43–60</td>
+                <td class="right">$66–72*</td>
+                <td class="right"><b>~$60–66</b></td>
+                <td class="right">40%</td>
+              </tr>
+              <tr>
+                <td>Bull</td>
+                <td class="right">$95.59</td>
+                <td class="right">$70–90</td>
+                <td class="right">~$93</td>
+                <td class="right"><b>~$93–96</b></td>
+                <td class="right">20%</td>
+              </tr>
+              <tr>
+                <td>Extreme bull</td>
+                <td class="right">$135.18</td>
+                <td class="right">$135†</td>
+                <td class="right">—</td>
+                <td class="right"><b>~$135</b></td>
+                <td class="right">10%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">
+          * Buffett's $66–72 reclassified as <b>fair-plus value</b> (his 9–10%
+          discount on ~$10.7B normalized owner earnings), not base value at a
+          10%+ hurdle. † Munger's $135 is his 3-year scenario (+73% path: ads
+          scale, ~34% margin, 30× multiple), not a DCF output; his DCF bull is
+          $70–90. Workbook-narrative conflict (recorded): the narrative rounds
+          the scenario values to $33 / $45 / $63 / $96 / $135; the verified
+          workbook values above are authoritative and used everywhere.
+        </p>
+
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 32px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">$32.78</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 43px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">$45.10</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 60px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">$62.84</div>
+            <div class="prob">40%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 92px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">$95.59</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 130px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">$135.18</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Intrinsic value per share</span
+          ><span>~$135</span>
+        </div>
+
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>
+            EV = 0.10(33) + 0.20(47.5) + 0.40(63) + 0.20(94.5) + 0.10(135) =
+            $70.4 ≈ $70/share
+          </h3>
+          <p class="big">
+            At $78.16 that is roughly <b>−10% expected upside</b>.
+            <b>Confidence: Medium.</b> Note the convergence: three independent
+            frameworks, reconciled through this matrix, land within
+            <b>$0.35 of Damodaran's workbook-weighted $70.07</b> — the consensus
+            does not manufacture a new number; it re-derives the same one
+            through a different route.
+          </p>
+        </div>
+
+        <div class="note-box" style="margin-top: 18px">
+          <b style="color: var(--blue)">Reverse-DCF check (uncontested):</b> at
+          $78.16 the price requires ~$333B of EV versus ~$269B of base-case EV.
+          Holding growth constant, the price is consistent with an
+          <b
+            >~8% WACC, or ~13.5% initial revenue growth, or ~40–42% terminal
+            margins</b
+          >
+          — each plausible, none the base case. The market is not assuming an
+          impossible business. It is assuming a successful one — specifically,
+          success between base and bull, with no cushion for disappointment.
+        </div>
+      </section>
+
+      <!-- ============ 6. PROS & CONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">06</span>Pros &amp; Cons — At ~$78
+        </h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>
+                Wonderful business at near-peak economics — ~30% operating
+                margins, 32%+ ROIC, 17–32% ROIC spread over a 9% WACC
+              </li>
+              <li>
+                Genuine FCF machine — ~$12.5B guided 2026 FCF, capex &lt;2% of
+                revenue, FCF ≈ net income by design
+              </li>
+              <li>
+                Moat proven in battle — the best-capitalized attackers on Earth
+                ended up licensing content back to Netflix
+              </li>
+              <li>
+                Two real second curves — ads doubling to ~$3B (250M ad-tier MAU,
+                upfronts nearly doubled) and live events — plus games/podcasts
+                as unpriced options
+              </li>
+              <li>
+                Fortress balance sheet and shareholder returns — net debt
+                ~$5.2B, ~17× coverage, $27.1B buyback capacity, shares shrinking
+                ~1.5%/yr
+              </li>
+              <li>
+                De-rated from its own history — 24.6× TTM at the low end of the
+                five-year range, 38% below the high; the market has done part of
+                the discounting already
+              </li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>
+                No margin of safety — price is ~25% above base ($62.84) and ~11%
+                above the probability-weighted value ($70.07)
+              </li>
+              <li>
+                Multiple compression alone is fatal — at 18–20× normalized
+                earnings the stock falls 35–40% even on perfect execution
+              </li>
+              <li>
+                Growth deceleration is real and guided — Q3'26 at +11.7%, UCAN
+                +10%, view hours +2%; pricing is the only lever left in
+                saturated markets
+              </li>
+              <li>
+                Engagement and attention risk — YouTube's $11.1B/quarter ad
+                machine, short-form video, and AI-generated content contest the
+                same 24 hours
+              </li>
+              <li>
+                The WBD shadow — a demonstrated appetite for leverage-financed
+                mega-M&amp;A; the next attempt may not end in a break fee
+              </li>
+              <li>
+                The content treadmill is re-arming — sports rights inflating,
+                guild contracts expired (WGA May 1, 2026; SAG-AFTRA/DGA June 30,
+                2026); a 2026 strike would freeze the pipeline
+              </li>
+              <li>
+                Mediocre expected return — ~+6.5%/yr (Munger) to −2.2%/yr
+                (Damodaran's 5-year), versus ~10% available in the index this
+                year
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. INVESTMENT RECOMMENDATION ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">07</span>Investment Recommendation
+        </h2>
+        <div class="consensus-box">
+          <h3>Rating: C — HOLD / WATCH</h3>
+          <p class="big">
+            Majority: Damodaran + Munger; Buffett's B — Buy is explicitly
+            price-contingent (his buy zone $52–64 is untouched by today's
+            quote). <b>Do not initiate at ~$78.</b> The company is wonderful and
+            the price already pays for success. Holders should hold — selling a
+            compounding franchise costs more in taxes and opportunity than it
+            saves. New money waits for the ladder.
+          </p>
+        </div>
+
+        <h3>Consensus price ladder</h3>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $92–95</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              >Reduce / avoid — paying for the bull case</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$78–92</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 62%"></div>
+            </div>
+            <span class="action"
+              >Hold only; no new money — fair-to-full value</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$70–78</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 46%"></div>
+            </div>
+            <span class="action"
+              >Watch — above the probability-weighted value</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$64–70</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 34%"></div>
+            </div>
+            <span class="action"
+              >Watch closely — at Buffett's entry boundary; thin margin</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$60–64</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 44%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              ><b>First tranche (small)</b> — Damodaran's buy zone opens</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$52–60</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 60%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              ><b>Accumulate</b> — Damodaran $50–60 ∩ Buffett $52–64</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$43–52</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 80%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              ><b>Build / high conviction</b> — Munger's entry; ~30%+ below
+              $62.84 base</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $43</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31; font-weight: 800"
+              >Exceptional risk/reward — if fundamentals are intact</span
+            >
+          </div>
+        </div>
+
+        <div class="warn-box" style="margin-top: 18px">
+          <b style="color: #7a5a08"
+            >The one disallowed move: mechanical averaging down.</b
+          >
+          The price must fall because the market is temporarily scared
+          <i>while the moat is intact</i> — view hours positive, margins
+          holding, ads on plan — not because engagement is rolling over.
+          Engagement is the difference between a gift and information.
+        </div>
+
+        <h3>What would change the rating</h3>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                Price reaches $50–60 without fundamental deterioration — the
+                rating is as price-gated as it is quality-gated
+              </li>
+              <li>
+                Operating-margin durability proven — 2026 31.5% delivered, then
+                held or expanded into 2027 with ad-margin visibility
+              </li>
+              <li>
+                Engagement holds — view hours stay positive through the switch
+                to annual disclosure; no deterioration shows up
+              </li>
+              <li>
+                Ads deliver — ~$3B in 2026 with a credible path to $8–10B,
+                without high-ARPU cannibalization
+              </li>
+              <li>
+                Capital allocation stays boring — no new mega-M&amp;A attempt
+                for a further two years; buybacks continue below intrinsic value
+              </li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                Engagement turns negative — view hours decline persistently; the
+                pricing engine breaks
+              </li>
+              <li>
+                Margin reversal — content/sports inflation outruns pricing
+                power; operating margin breaks below ~28%
+              </li>
+              <li>
+                A WBD-style deal that actually closes at a rich price — the
+                recidivism event
+              </li>
+              <li>
+                Price above ~$95–105 without fundamentals — priced for
+                perfection (Munger's &gt;$120 sell zone, Buffett's &gt;$92)
+              </li>
+              <li>
+                A 2026 guild strike that freezes the content pipeline
+                materially, or growth collapsing below ~8% with flat margins
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 8. FIVE CONSENSUS CONCLUSIONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">08</span>The Five Consensus Conclusions
+        </h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Business.</b> Netflix is a mature global
+              subscription-entertainment franchise, not a hyper-growth story —
+              one segment, ~325M+ memberships, ~1.5% capex/revenue, ~30%
+              margins, ~$10B normalized FCF, the only stand-alone profitable
+              streamer at scale, culturally embedded in ~190 countries.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Economics.</b> The sole determinant of value from here is
+              operating-margin durability. ROIC (17–32%) versus WACC (9.0%) is
+              settled in Netflix's favor; the open question is whether pricing,
+              ads and international ARPU keep outrunning content inflation,
+              sports-rights escalation and guild resets as growth decelerates
+              from ~13% toward ~3%.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Market's Expectations.</b> At ~$78, the market assumes ~8%
+              WACC, or ~13.5% near-term growth, or ~40% terminal margins — an
+              outcome <i>between</i> the base and bull cases, individually
+              plausible and collectively optimistic. The stock is not obviously
+              overvalued — and not cheap. The 38% de-rating from $126.71 was
+              rational and is not yet sufficient.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Valuation.</b> Base intrinsic value ~$60–66/share
+              (Damodaran workbook anchor $62.84); probability-weighted
+              ~$70/share (workbook $70.07); bear ~$45–50; bull ~$93–96 with an
+              extreme tail near $135. Confidence: Medium. At $78.16 the expected
+              upside is ~−10% — the weighted value is below the price, and the
+              median outcome is below both.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The Investment Decision.</b> Hold/Watch at ~$78 — majority C,
+              with Buffett's B contingent on price. Hold if owned. New money:
+              first tranche at $60–64, accumulate at $52–60, high conviction at
+              $43–52, provided engagement, margin durability, ads and FCF/share
+              remain intact. The three profiles disagree by ~50% on fair value
+              and agree on the remedy: let the price, not the story, make the
+              decision.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 9. FINAL JUDGMENT ============ -->
+      <section>
+        <h2 class="sec"><span class="num">09</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>
+            At a price of roughly <b>$78</b>, the market is effectively assuming
+            that Netflix will compound free cash flow at double-digit rates for
+            years while expanding margins into the mid-30s — an outcome between
+            the base case and the bull case of every framework examined. Three
+            independent lenses — owner-earnings value, multidisciplinary
+            quality, and fundamental DCF — all conclude the business itself is
+            one of the best on Earth: proven moat, ~30% margins, 32%+ ROIC,
+            ~$12.5B of guided 2026 FCF, a fortress balance sheet, and
+            shareholder-friendly capital returns. They also conclude, with a
+            candor rare in consensus documents, that they genuinely disagree on
+            what it is worth: roughly <b>$43–60</b> (Munger),
+            <b>$62.84</b> (Damodaran), and <b>$66–72</b> (Buffett) — a ~50%
+            spread driven almost entirely by the discount rate each profile
+            requires. What they do not disagree on is the instruction. At
+            <b>$78.16</b> there is no margin of safety; the expected return is
+            negative to mediocre; and the biggest risk to a purchase here is not
+            a bad company but a full price — multiple compression alone could
+            cost 35–40% without any operating disappointment. Therefore, at
+            today's price the consensus is to wait: hold if owned, watch
+            engagement and margin durability, begin the first tranche at
+            <b>$60–64</b>, accumulate at <b>$52–60</b>, build conviction at
+            <b>$43–52</b>, and let demonstrated economics — not the
+            streaming-wars narrative, not Ackman's 3.15M shares, not the 38%
+            drawdown — decide when a wonderful company becomes a wonderful
+            investment.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes three
+          analyses — <code>damodaran-analysis.md</code>,
+          <code>munger-analysis.md</code>, and
+          <code>buffet-analysis.md</code> (dated August 16, 2026) — which
+          themselves reference Netflix SEC filings (FY2025 10-K filed Jan 23,
+          2026; Q2 2026 10-Q and shareholder letter filed Jul 16–17, 2026; 2026
+          proxy), StockAnalysis.com, Investopedia, TipRanks, Variety, The
+          Hollywood Reporter, CNBC, and market data as of August 2026.
+          Damodaran's column uses the verified
+          <code>NFLX_Damodaran_Financial_Model.xlsx</code> scenario values
+          ($32.78 / $45.10 / $62.84 / $95.59 / $135.18 / $70.07), which
+          supersede any conflicting rounded values in the narrative. This
+          document is an educational synthesis of estimates about estimates — it
+          is <b>not investment advice</b>, and no valuation herein should be
+          treated as a price prediction or a recommendation to trade.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

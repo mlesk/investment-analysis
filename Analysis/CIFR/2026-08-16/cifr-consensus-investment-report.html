@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cipher Digital Inc. (CIFR) — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">
+          Synthesized Consensus · Five-Lens Deliberative Debate
+        </div>
+        <h1>Cipher Digital Inc. — Consensus Investment Report</h1>
+        <div class="sub">
+          A structured debate between five independent investment frameworks —
+          Damodaran fundamental valuation, Munger multidisciplinary quality,
+          Buffett owner-earnings value, Druckenmiller macro/tactical timing, and
+          Soros reflexivity — reconciled into a single synthesized analysis and
+          recommendation.
+        </div>
+        <div class="meta-row">
+          <span class="chip">NASDAQ: CIFR</span>
+          <span class="chip">Report date: August 16, 2026</span>
+          <span class="chip">Reference price band: ~$16–18</span>
+          <span class="rating-badge"
+            ><span class="dot"></span> C — HOLD / WATCH</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <!-- ============ 1. EXECUTIVE SUMMARY ============ -->
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">
+          Cipher Digital is no longer economically a Bitcoin miner. It is a
+          <b>data-center developer-and-landlord</b> that signs long-duration,
+          investment-grade HPC leases (Amazon/AWS, Fluidstack backed by Google,
+          and a third IG hyperscaler), finances construction with non-recourse
+          project bonds, and earns contracted rent. The contracted book —
+          <b>~$793M/yr average annualized NOI (Oct 2026–Sep 2036)</b> — is real
+          and ramping; the 4.4 GW un-leased pipeline is where the debate lives.
+          Five independent analyses landed at a <b>unanimous C — Hold/Watch</b>
+          posture (Munger's D is a price verdict; Druckenmiller's and Soros's C+
+          are timing verdicts): the business is real and well-executed, but the
+          current price already pays for the contracted book plus partial
+          pipeline credit, with no margin of safety.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$16</div>
+            <div class="note">
+              Synthesized midpoint of Munger ($7–11), Buffett ($10–14), and
+              Damodaran ($16.47 workbook)
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$19.3</div>
+            <div class="note">
+              EV = 0.10($5)+0.20($9)+0.40($16)+0.20($29)+0.10($48); tail-driven
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$5 – $48</div>
+            <div class="note">
+              Damodaran workbook spans $1.69–$70.89 — value is a distribution,
+              not a point
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low/Med</div>
+            <div class="note">
+              No campus has operated a full year; pipeline economics unproven
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$13–15 → $7–10</div>
+            <div class="note">
+              Start small at $13–15; build at $10–13; high conviction at $7–10
+              (thesis intact)
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 22px">Incremental ROIC</div>
+            <div class="note">
+              On new campus capital vs ~10% cost of capital; or growth destroys
+              value
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. THE FIVE POSITIONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">02</span>The Five Positions at the Table
+        </h2>
+        <p class="lead">
+          Each participant analyzed CIFR independently. Their positions were
+          then cross-examined.
+        </p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Hold / Watch</span
+                ><span class="small">at ~$17.86</span>
+              </div>
+              <p>
+                FCFF DCF (reinvestment tied to growth/ROIC): contracted leases
+                ramping to ~$1.4B revenue run-rate, ~48% terminal EBIT margin,
+                ~10% WACC, 2.5% terminal growth. Base value
+                <b>$16.47</b> (workbook); probability-weighted
+                <b>$21.55</b> (workbook; +20.7%, ~3.8% annualized) — but the
+                median outcome sits at the current price and the return fails to
+                compensate for the uncertainty.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $16.47</span>
+                <span class="tag amber">Weighted $21.55</span>
+                <span class="tag">Buy zone $13–15</span>
+                <span class="tag">Confidence Low/Med</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--red)">D — Avoid</span
+                ><span class="small">on price at ~$17.86</span>
+              </div>
+              <p>
+                Conservative DCF (WACC + 3% ≈ 15–16.5%, terminal ≤2%): bear
+                <b>$4–6</b>, base <b>$7–11</b>, bull <b>$20–30</b>. Quality
+                5/10; expected return ≈ <b>−30%</b>; ~$6.0B debt vs $562M book
+                equity. Rates the <i>price</i> a D while conceding the
+                <i>business</i> is real — he would buy at ≤$7.
+              </p>
+              <div class="tags">
+                <span class="tag red">Base $7–11</span>
+                <span class="tag red">E[R] −30%</span>
+                <span class="tag">Entry $9–10</span>
+                <span class="tag">&lt;$7 conviction</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Watch / Speculative Value</span
+                ><span class="small">at ~$17.86</span>
+              </div>
+              <p>
+                Owner-earnings DCF: conservative <b>$6–9</b>, base
+                <b>$10–14</b>, bull <b>$24–30</b>. Leases are ~98% funded with
+                project debt that amortizes first — near-term cash goes to
+                lenders, and normalized equity FCFE at full ramp is only
+                +$150–300M/yr. Margin of safety 3/10. Interested at $10–12;
+                compelling at $7–9.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $10–14</span>
+                <span class="tag">Moat: Narrow→Moderate</span>
+                <span class="tag">Entry $10–12</span>
+                <span class="tag">MoS 3/10</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro / Liquidity / Timing Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C+ — Constructive / Monitor</span
+                ><span class="small">6–18 mo horizon</span>
+              </div>
+              <p>
+                AI-power scarcity is the strongest structural trend, and
+                execution is proven (Black Pearl early, $810M at 6% priced 8×
+                oversubscribed). But consensus is already bullish (17 Strong
+                Buy, PT $32.18), the price sits below both moving averages, and
+                the equity is a levered call on credit availability. Scenarios:
+                base <b>$22</b>, bull <b>$28</b>, bear <b>$13</b>; E[R] ≈
+                <b>+25%</b>, but not a Druckenmiller-quality setup (ducks
+                59/120).
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $22</span>
+                <span class="tag amber">E[R] +25%</span>
+                <span class="tag">Entry $13–16</span>
+                <span class="tag">Asymmetry ~3.9×</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C+ — Speculative Opportunity</span
+                ><span class="small">12 mo horizon</span>
+              </div>
+              <p>
+                The most reflexive situation in the AI-infrastructure complex:
+                higher stock → cheaper financing → more contracted GW → higher
+                stock. The flywheel powered a +264% move and has reversed into a
+                −41% correction. Scenarios: boom <b>$36</b>, base <b>$20</b>,
+                bust <b>$9</b>; weighted ≈ <b>+32%</b>. A small, dynamic,
+                catalyst-driven long sized to the tail — never the mean.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $20</span>
+                <span class="tag amber">Weighted +32%</span>
+                <span class="tag">Entry $13–15</span>
+                <span class="tag">Bust tail −50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. THE DEBATE ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">03</span>The Debate: Agreement, Contention,
+          Resolution
+        </h2>
+        <p class="lead">
+          Round 1: opening statements. Round 2: uncontested common ground. Round
+          3: seven disputed points, cross-examined to resolution. Round 4: final
+          concessions.
+        </p>
+
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The business has changed identity.</b> CIFR is a data-center
+              developer-and-landlord, not a Bitcoin miner and not a GPU cloud;
+              it does not own the GPUs (the tenant brings them).
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >The scarce asset is power, land, and interconnection — not
+                GPUs.</b
+              >
+              This structurally insulates CIFR from GPU obsolescence and is the
+              core of the moat hypothesis.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The contracted book is real and unusually high-quality.</b>
+              ~$793M/yr avg annualized NOI (Oct 2026–Sep 2036) from Amazon/AWS,
+              Fluidstack with a Google backstop, and an IG hyperscaler; first
+              rent (Black Pearl) commenced two months early.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Execution is genuinely strong.</b> Black Pearl delivered early;
+              three non-recourse project financings at declining coupons (7.125%
+              → 6.125% → 6.0%), 8× oversubscribed; ~96–100% of equipment
+              secured.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Conventional metrics mislead.</b> GAAP EPS, P/E, and EBITDA are
+              unusable — FY25's −$822M loss is dominated by non-cash
+              warrant/derivative marks, impairments, and D&A.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Owner earnings are deeply negative today.</b> TTM FCF ≈ −$1.5B;
+              equity cash flows are back-loaded as project debt is serviced
+              first. A wager on future owner earnings, not current ones.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>One valuation-critical variable: incremental ROIC</b> on new
+              campus capital vs the ~10% cost of capital. Project returns of
+              ~15–19% would make the 5.3 GW platform a gold mine; returns at or
+              below the cost of capital would make growth value-destructive.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Value is a distribution, not a point.</b> The Damodaran
+              workbook spans ~$1.69 to ~$70.89; every profile warned against
+              manufactured precision.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The current price embeds substantial success.</b> The market
+              capitalizes the contracted book and gives meaningful credit to the
+              4.4 GW pipeline. Margin of safety: none of the five would buy at
+              ~$17.86.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>A C-family consensus in posture.</b> C (Damodaran), C
+              (Buffett), C+ (Druckenmiller), C+ (Soros), and D-on-price (Munger)
+              — reconciled into a unanimous C — Hold/Watch. Nobody recommends
+              shorting.
+            </div>
+          </div>
+        </div>
+
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Where does base-case intrinsic value sit?</b> Munger $7–11
+              (strictest discount), Buffett $10–14, Damodaran $16.47 (workbook),
+              tactical lenses ~$20–22 as near-term <i>path</i> prices. Munger
+              concedes the bull case is real; Damodaran concedes his number is
+              the center of a wide distribution. <b>Resolved:</b> consensus base
+              ≈ <b>~$16</b>.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>How much credit for the right tail (the 4.4 GW pipeline)?</b>
+              Damodaran monetizes it progressively (Bull $32.94, Extreme Bull
+              $70.89); Munger gives essentially none ("all of the $7.4B cap is
+              the pipeline"); Druckenmiller prices the 477 MW outside the ERCOT
+              queue as underpriced scarcity. <b>Resolved:</b> partial credit —
+              consensus Bull ~$29, Extreme Bull ~$48, combined ~30% — it
+              justifies watching, not paying.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>What price compensates for the uncertainty?</b> Damodaran
+              $13–15; Buffett $10–12 (compelling $7–9); Munger $9–10 (strong
+              ≤$7); tactical lenses $13–16 on dislocation. A dispute about
+              sizing and temperament, not the stock. <b>Resolved:</b> composite
+              ladder — start $13–15, build $10–13, conviction $7–10.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Management quality and dilution.</b> Munger 8/10 execution;
+              Buffett 6/10 (SBC $57.6M in H1 exceeded all H1 revenue; +13.3% YoY
+              dilution; ~205M potential shares); Damodaran "unproven ROIC."
+              Munger concedes half a point on incentives. <b>Resolved:</b>
+              <b>6/10</b> — strong execution, watchful on dilution and
+              compensation.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The time-horizon conflict.</b> Fundamental lenses (10-yr DCF)
+              value cash to equity over a decade; tactical lenses (6–18 mo)
+              target the near-term path (+25%/+32%). Fundamental lenses
+              challenge the tactical "if-everything-goes-right" paths; tactical
+              lenses reply that a decade is long enough for a reflexive bust.
+              <b>Resolved:</b> fundamental value anchors "is it cheap" (~$16);
+              tactical targets are a timing overlay, not a higher intrinsic
+              value.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >Is positive probability-weighted expected value a reason to
+                buy?</b
+              >
+              Damodaran +20.7%, Druckenmiller +25%, Soros +32% — all rate C/C+.
+              Munger computes −30%. Even where EV is positive it is tail-driven,
+              the median ≈ price, and the left tail (−50% to −89%) is
+              uninsurable. <b>Resolved:</b> positive EV is not sufficient to act
+              at ~$17.86.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Munger's D vs the C+ tactical lenses.</b> Munger rates the
+              <i>price</i> a D (expected return −30%; no margin of safety);
+              Druckenmiller/Soros rate the <i>timing</i> C+ (catalyst-driven
+              path). Munger concedes the business is real and would buy at ≤$7;
+              the tactical lenses concede the intrinsic value does not support
+              $17.86. <b>Resolved:</b> both honored in one ladder — D is the ≤$7
+              rung, C+ is the $13–16 dislocation entry.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 4. CONSENSUS VALUATION ============ -->
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">
+          Reconciled scenario matrix. The Damodaran column is the verified
+          Phase-2 workbook; the Consensus column is the synthesized midpoint of
+          all five profiles. "—" where a profile does not define that scenario.
+        </p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th class="right">Damodaran*</th>
+                <th class="right">Munger</th>
+                <th class="right">Buffett</th>
+                <th class="right">Druckenmiller</th>
+                <th class="right">Soros</th>
+                <th class="right">Consensus</th>
+                <th class="right">Prob.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Severe Bear</td>
+                <td class="right">$1.69</td>
+                <td class="right">—</td>
+                <td class="right">—</td>
+                <td class="right">$7</td>
+                <td class="right">$9</td>
+                <td class="right"><b>~$5</b></td>
+                <td class="right">10%</td>
+              </tr>
+              <tr>
+                <td>Bear</td>
+                <td class="right">$5.59</td>
+                <td class="right">$4–6</td>
+                <td class="right">$6–9</td>
+                <td class="right">$13</td>
+                <td class="right">$13</td>
+                <td class="right"><b>~$9</b></td>
+                <td class="right">20%</td>
+              </tr>
+              <tr>
+                <td>Conservative</td>
+                <td class="right">~$14</td>
+                <td class="right">$7–11</td>
+                <td class="right">—</td>
+                <td class="right">—</td>
+                <td class="right">—</td>
+                <td class="right"><b>~$11–14</b></td>
+                <td class="right">—</td>
+              </tr>
+              <tr class="hl">
+                <td>Base</td>
+                <td class="right">$16.47</td>
+                <td class="right">$7–11†</td>
+                <td class="right">$10–14</td>
+                <td class="right">~$22‡</td>
+                <td class="right">~$20‡</td>
+                <td class="right"><b>~$16</b></td>
+                <td class="right">40%</td>
+              </tr>
+              <tr>
+                <td>Bull</td>
+                <td class="right">$32.94</td>
+                <td class="right">$20–30</td>
+                <td class="right">$24–30</td>
+                <td class="right">$28</td>
+                <td class="right">$30</td>
+                <td class="right"><b>~$29</b></td>
+                <td class="right">20%</td>
+              </tr>
+              <tr>
+                <td>Extreme Bull</td>
+                <td class="right">$70.89</td>
+                <td class="right">—</td>
+                <td class="right">—</td>
+                <td class="right">$36</td>
+                <td class="right">$36</td>
+                <td class="right"><b>~$48</b></td>
+                <td class="right">10%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">
+          * Verified Phase-2 workbook values (ALL_MATCH): Severe Bear $1.69,
+          Bear $5.59, Base $16.47, Bull $32.94, Extreme Bull $70.89;
+          probability-weighted <b>$21.55</b> (+20.7% upside, ~3.8% 5-yr
+          annualized; WACC ~10.0%, terminal growth 2.5%). † Munger's $7–11 is
+          his conservative base at 15–16.5% discount; at 12% it rises to ~$16–20
+          (near the price — but then no margin of safety). ‡ Druckenmiller/Soros
+          Base values are <b>6–18-month path targets</b>, not 10-year intrinsic
+          values; the consensus Base anchors to the fundamental lenses.
+        </p>
+
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 6px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">$5</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 12px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">$9</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 21px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">$16</div>
+            <div class="prob">40%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 38px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">$29</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 63px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">$48</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus value per share</span><span>~$48</span>
+        </div>
+
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>
+            EV = 0.10×$5 + 0.20×$9 + 0.40×$16 + 0.20×$29 + 0.10×$48 ≈
+            $19.3/share
+          </h3>
+          <p class="big">
+            At ~$17.86 that is roughly <b>+8.1% expected upside</b>, or
+            <b>~1.6% annualized over five years</b> —
+            <b
+              >positive, tail-driven, and insufficient compensation for the
+              uncertainty</b
+            >. Confidence: <b>Low/Medium</b>. The consensus lands below
+            Damodaran's $21.55 (Munger's D and Buffett's C are genuinely part of
+            the synthesis) and above the fundamental base (the tactical lenses'
+            near-term path upside and the real pipeline optionality get partial
+            credit). The distribution is right-skewed but the median outcome
+            sits at the current price. Reverse-DCF check (uncontested): the
+            ~$17.86 price implies an EV of ~$9.36B — roughly
+            <b>6–7% more enterprise value than Damodaran's ~$8.8B base</b>:
+            <b
+              >the market is not pricing an absurd story — it is pricing
+              competent execution of the contracted book plus partial pipeline
+              credit.</b
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 5. PRICE LADDER ============ -->
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">
+          Where the five frameworks meet — the composite accumulation plan. Do
+          not initiate at ~$17.86.
+        </p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $24</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              >Reduce / avoid — excessive success priced in</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$20–24</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 82%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              >Avoid / trim — near-bull pipeline execution priced in</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$17–20</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 70%"></div>
+            </div>
+            <span class="action"
+              >Hold / watch (current zone) — base ≈ price, no margin of
+              safety</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$15–17</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 55%"></div>
+            </div>
+            <span class="action"
+              >Watch — margin of safety begins (Damodaran increasingly
+              interesting)</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$13–15</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 45%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Begin accumulating (starter) — Damodaran's buy zone;
+              Druckenmiller/Soros dislocation zone</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$10–13</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 60%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Accumulate (attractive) — Buffett's base territory; Damodaran
+              strongly attractive</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$7–10</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 80%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              ><b>High-conviction accumulation</b> — Buffett compelling $7–10;
+              Munger takes it seriously at $9–10</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $7</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31; font-weight: 800"
+              >Exceptional risk/reward — Munger's high-conviction zone; if the
+              contracted book and metrics remain intact</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 6. PROS & CONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">06</span>Pros &amp; Cons — At ~$17.86
+        </h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>
+                Contracted, investment-grade book — ~$793M/yr avg annualized NOI
+                (Amazon/AWS, Fluidstack with Google backstop, IG hyperscaler);
+                first rent already commenced, two months early
+              </li>
+              <li>
+                Landlord, not GPU-operator — insulated from GPU obsolescence;
+                the tenant bears IT/technology risk
+              </li>
+              <li>
+                Scarce power + land + interconnection moat — real, Texas-scale,
+                raised by the ERCOT batch process; 477 MW leasable outside the
+                queue
+              </li>
+              <li>
+                Credible execution and financing machine — three non-recourse
+                project bonds at declining coupons (7.125% → 6.125% → 6.0%), 8×
+                oversubscribed
+              </li>
+              <li>
+                Project-level, non-recourse debt — downside partially isolated;
+                $870M unrestricted liquidity; no near-term equity expected
+              </li>
+              <li>
+                Real pipeline optionality — 4.4 GW un-leased; Apollo 900 MW;
+                behind-the-meter generation
+              </li>
+              <li>
+                Positive (if thin) expected value — consensus weighted ~$19.3;
+                Damodaran $21.55; tactical lenses +25%/+32% over 6–18 months
+              </li>
+              <li>
+                No short thesis — four of five lenses C/C+; 13.4% short interest
+                is squeeze-prone on good news
+              </li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>
+                No margin of safety — consensus base ~$16 ≈ price; the market
+                embeds successful execution of the pivot
+              </li>
+              <li>
+                Owner earnings deeply negative — TTM FCF ≈ −$1.5B; equity cash
+                flows are back-loaded behind project debt
+              </li>
+              <li>
+                Extreme leverage — &gt;$6B debt principal vs $562M book equity
+                (D/E ~9.5–10.7); Altman Z 0.72; interest coverage negative
+              </li>
+              <li>
+                Structural dilution — +13.3% YoY; ~205M potential shares
+                (converts, 24.2M Google warrants, RSUs, $600M+ ATM); SBC $57.6M
+                in H1 exceeded all H1 revenue
+              </li>
+              <li>
+                Three tenants, one state — single-tenant campuses and full
+                Texas/ERCOT political concentration (Abbott audit, Batch Zero
+                uncertainty)
+              </li>
+              <li>
+                The pipeline is the price — Munger: essentially all of the $7.4B
+                cap is the unproven 4.4 GW
+              </li>
+              <li>
+                Financing dependence — the 6% project-bond model is the
+                reflexive crux; AI-infra credit spreads are widening and a
+                credit event would force dilution or stall the pipeline
+              </li>
+              <li>
+                Accounting opacity — warrant-liability mark-to-market ($150.5M
+                Q2-26 loss), converts, restricted cash, completion guarantees
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. TRIGGERS ============ -->
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                Contracted rent converts to shareholder cash — several quarters
+                of positive, growing FCF to equity after debt service
+              </li>
+              <li>
+                Incremental ROIC on new campus capital demonstrated ≥15% vs the
+                ~10% WACC
+              </li>
+              <li>
+                Pipeline leases signed at the 477 MW near-term sites
+                (Odessa/Reveille/Ulysses) and beyond
+              </li>
+              <li>
+                The next project financing prices at ≤6% and oversubscribed —
+                the reflexive financing loop stays intact
+              </li>
+              <li>
+                ERCOT Batch Zero / Abbott audit resolves with CIFR's 2 GW intact
+              </li>
+              <li>
+                Diluted share count stabilizes; SBC as % of revenue declines
+              </li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                A major contracted lease fails or a tenant renegotiates/exits —
+                the #1 idiosyncratic risk across all five profiles
+              </li>
+              <li>
+                A credit/financing event — project bonds price above ~7% or are
+                undersubscribed/pulled; a forced dilutive equity raise
+              </li>
+              <li>
+                ERCOT/Abbott audit strands the 2 GW batch pipeline sites or
+                materially delays energization
+              </li>
+              <li>
+                Share count balloons (+20–30% dilution) with no per-share value
+                creation
+              </li>
+              <li>Incremental ROIC on new campuses settles below ~10%</li>
+              <li>
+                Construction cost/MW breaks well above ~$12M; bitcoin breaks
+                &lt;$50K (sentiment and legacy tail)
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Incremental ROIC on new campus capital</b></td>
+                <td>The ultimate test — value creation vs destruction</td>
+                <td class="right">≥ 15% vs ~10% WACC</td>
+              </tr>
+              <tr>
+                <td><b>FCF to equity per diluted share</b></td>
+                <td>Owner economics after project debt service</td>
+                <td class="right">Positive &amp; growing</td>
+              </tr>
+              <tr>
+                <td><b>Delivered NOI vs ~$793M/yr anchor</b></td>
+                <td>Are the contracted leases converting to income</td>
+                <td class="right">On schedule</td>
+              </tr>
+              <tr>
+                <td><b>MW leased vs the 4.4 GW pipeline</b></td>
+                <td>The option the market is paying for</td>
+                <td class="right">Rising (477 MW near-term)</td>
+              </tr>
+              <tr>
+                <td><b>Next project financing coupon</b></td>
+                <td>The reflexive financing loop stays intact</td>
+                <td class="right">≤ 6%, oversubscribed</td>
+              </tr>
+              <tr>
+                <td><b>Diluted shares outstanding</b></td>
+                <td>Per-share economics (~205M potential above 415M)</td>
+                <td class="right">Stable</td>
+              </tr>
+              <tr>
+                <td><b>SBC as % of revenue</b></td>
+                <td>Compensation cost vs scale</td>
+                <td class="right">Declining</td>
+              </tr>
+              <tr>
+                <td><b>Construction cost per MW</b></td>
+                <td>Infrastructure efficiency (~$9–11M/MW today)</td>
+                <td class="right">&lt; ~$12M</td>
+              </tr>
+              <tr>
+                <td><b>Debt / book equity</b></td>
+                <td>Financial risk (D/E ~9.5–10.7 today)</td>
+                <td class="right">Manageable / stable</td>
+              </tr>
+              <tr>
+                <td><b>Bitcoin price (legacy tail)</b></td>
+                <td>Sentiment and residual Odessa economics</td>
+                <td class="right">&gt; $50K</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 8. FINAL JUDGMENT ============ -->
+      <section>
+        <h2 class="sec"><span class="num">08</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>
+            At a price of roughly <b>$17.86</b>, the market is effectively
+            assuming that Cipher Digital delivers its three contracted
+            investment-grade campus leases at the ~$793 million annual NOI
+            target, leases a meaningful portion of its 4.4 GW pipeline over the
+            next decade, holds roughly 45%+ stable operating margins, and earns
+            a ~10% cost of capital — while continuing to fund the buildout with
+            non-recourse project debt at ~6%. Five independent frameworks —
+            fundamental DCF, multidisciplinary quality, owner-earnings value,
+            macro/liquidity timing, and reflexivity — all land at a base
+            intrinsic value of roughly <b>$16 per share</b>, a
+            probability-weighted value of roughly <b>$19–22</b>, and a unanimous
+            <b>C: Hold/Watch</b> posture (Munger's D on price and the tactical
+            lenses' C+ on timing reconciled in the ladder). We agree the
+            business and the contracts are real, the moat hypothesis (power +
+            interconnection + execution) is plausible but unproven, the current
+            owner earnings are deeply negative, the leverage and dilution are
+            material, and the valuation already pays for success. The biggest
+            risks to any purchase here are
+            <b
+              >a contracted lease failing, a financing/credit event that forces
+              dilutive equity or stalls the pipeline, the Texas interconnection
+              process stranding the 2 GW batch sites, and an incremental ROIC
+              below the cost of capital</b
+            >. Therefore, at today's price we would wait: accumulate in stages
+            below <b>$15</b>, buy with conviction in the <b>$7–10</b> range, and
+            let demonstrated return on capital and delivered NOI — not lease
+            announcements or the stock price — decide whether this becomes a
+            wonderful compounder or merely a wonderful story.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes five analyses
+          — <code>damodaran-analysis.md</code>, <code>munger-analysis.md</code>,
+          <code>buffet-analysis.md</code>,
+          <code>druckenmiller-analysis.md</code>, and
+          <code>soros-analysis.md</code> (dated August 16, 2026) — which
+          themselves reference CIFR SEC filings (FY2025 10-K filed Feb 24, 2026;
+          Q2 2026 10-Q and business update Aug 4, 2026; 2026 DEF 14A), the Q2
+          2026 earnings call transcript, CIFR press releases (incl. the $810M
+          Stingray notes pricing), StockAnalysis market data, peer data (CORZ,
+          WULF, APLD, IREN), CNBC and TipRanks coverage, and Damodaran's NYU
+          datasets, plus market data as of August 2026. The Damodaran scenario
+          values are the verified Phase-2 workbook outputs ($1.69 / $5.59 /
+          $16.47 / $32.94 / $70.89; weighted $21.55), reproduced verbatim. This
+          document is an educational synthesis of estimates about estimates — it
+          is <b>not investment advice</b>, and no valuation herein should be
+          treated as a price prediction or a recommendation to trade. CIFR's
+          outcome distribution is unusually wide; treat every number on this
+          page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

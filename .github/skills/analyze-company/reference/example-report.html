@@ -1,0 +1,1444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IREN — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">
+          Synthesized Consensus · Three-Lens Deliberative Debate
+        </div>
+        <h1>IREN Limited — Consensus Investment Report</h1>
+        <div class="sub">
+          A structured debate between three independent investment frameworks —
+          Damodaran fundamental valuation, Munger multidisciplinary quality,
+          Buffett owner-earnings value, Druckenmiller valuation, and Soros valuation— reconciled into a single synthesized
+          analysis and recommendation.
+        </div>
+        <div class="meta-row">
+          <span class="chip">NASDAQ: IREN</span>
+          <span class="chip">Report date: August 16, 2026</span>
+          <span class="chip">Reference price band: ~$40–45</span>
+          <span class="rating-badge"
+            ><span class="dot"></span> C — HOLD / WATCH</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <!-- ============ 1. EXECUTIVE SUMMARY ============ -->
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">
+          IREN is no longer economically a Bitcoin miner. It is a power-first AI
+          infrastructure company converting ~4.5–5 GW of secured electricity
+          into contracted AI compute for Microsoft, NVIDIA, and others. Three
+          independent analyses — using three different frameworks —
+          independently reached the <b>same rating: C — Hold/Watch</b>. The
+          business and contracts are real; the economics are unproven; the
+          current price already pays for success.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">$38–42</div>
+            <div class="note">
+              Intersection of Damodaran ($42) and Munger ($35–38) base cases
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$52–53</div>
+            <div class="note">
+              Tail-driven; median outcome ≈ current price, not the weighted
+              value
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$5 – $165</div>
+            <div class="note">
+              An order-of-magnitude distribution — value is a range, not a point
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low/Med</div>
+            <div class="note">
+              Mature economics unknowable today; FY26 10-K not yet filed
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$30–35 → $20–25</div>
+            <div class="note">
+              Start small at $30–35; full conviction only at $20–25 (thesis
+              intact)
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 22px">Incremental ROIC</div>
+            <div class="note">
+              Must exceed ~11.5% WACC or growth destroys value
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. THE Five POSITIONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">02</span>The Three Positions at the Table
+        </h2>
+        <p class="lead">
+          Each participant analyzed IREN independently. Their positions were
+          then cross-examined.
+        </p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Hold / Watch</span
+                ><span class="small">at ~$45</span>
+              </div>
+              <p>
+                Explicit-reinvestment FCFF DCF: revenue → ~$9B, 40–42% EBIT
+                margins, 11.5% WACC, 3% terminal growth, terminal ROIC 15%. Base
+                value <b>~$42</b>; probability-weighted <b>~$57</b> (+27%, ~8%
+                annualized) — but the median outcome sits in the low $40s, and
+                ~8% is insufficient compensation for the uncertainty.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $42</span>
+                <span class="tag amber">Weighted $57</span>
+                <span class="tag">Buy zone $30–37</span>
+                <span class="tag">Confidence Low/Med</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span
+                ><span class="small">at ~$38</span>
+              </div>
+              <p>
+                Conservative DCF (12% discount, 2% terminal growth): bear
+                <b>$13–20</b>, base <b>$35–38</b>, bull <b>$65–75+</b>. Quality
+                score 5.5/10; pricing power 4/10; owner earnings negative. "An
+                exceptional business opportunity wrapped inside a mediocre
+                investment at the current price."
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $35–38</span>
+                <span class="tag amber">Moat: Moderate</span>
+                <span class="tag">Entry $20–25</span>
+                <span class="tag">&lt;$18 exceptional</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Watch / Speculative</span
+                ><span class="small">at ~$40–45</span>
+              </div>
+              <p>
+                Normalized owner-earnings DCF: bear <b>~$25</b>, base
+                <b>~$73</b>, bull <b>~$166</b>. The $73 base assumes $1.3B of
+                owner earnings that are <i>not yet demonstrated</i> — it is the
+                reward for proving the model, not today's value. Buffett fit
+                3/10; margin of safety 3/10.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $73*</span>
+                <span class="tag">Moat: Narrow→Moderate</span>
+                <span class="tag">Entry $25–30</span>
+                <span class="tag">*if proven</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro-Contextual Analysis Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Watch / Speculative</span
+                ><span class="small">at ~$40–45</span>
+              </div>
+              <p>
+                Macro-contextual analysis: bear <b>~$25</b>, base
+                <b>~$73</b>, bull <b>~$166</b>. The $73 base assumes $1.3B of
+                owner earnings that are <i>not yet demonstrated</i> — it is the
+                reward for proving the model, not today's value. Druckenmiller fit
+                3/10; margin of safety 3/10.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $73*</span>
+                <span class="tag">Moat: Narrow→Moderate</span>
+                <span class="tag">Entry $25–30</span>
+                <span class="tag">*if proven</span>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity Analysis Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Watch / Speculative</span
+                ><span class="small">at ~$40–45</span>
+              </div>
+              <p>
+                Reflexivity analysis: bear <b>~$25</b>, base
+                <b>~$73</b>, bull <b>~$166</b>. The $73 base assumes $1.3B of
+                owner earnings that are <i>not yet demonstrated</i> — it is the
+                reward for proving the model, not today's value. Soros fit
+                3/10; margin of safety 3/10.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $73*</span>
+                <span class="tag">Moat: Narrow→Moderate</span>
+                <span class="tag">Entry $25–30</span>
+                <span class="tag">*if proven</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ 3. THE DEBATE ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">03</span>The Debate: Agreement, Contention,
+          Resolution
+        </h2>
+        <p class="lead">
+          Round 1: opening statements. Round 2: uncontested common ground. Round
+          3: six disputed points, cross-examined to resolution. Round 4: final
+          concessions.
+        </p>
+
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The business has changed identity.</b> Bitcoin mining is the
+              legacy cash engine; the value of the stock is the AI
+              infrastructure buildout.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The scarce asset is power, not GPUs.</b> GPUs are purchasable;
+              grid interconnection, land, and permits are not. Speed
+              ("time-to-compute") is the only plausible moat.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The moat is real but unproven.</b> Grades: Narrow→Moderate
+              (Buffett), Moderate (Munger), Moderate→potentially Strong
+              (Damodaran). Nobody grants "wide."
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Conventional metrics mislead.</b> GAAP EPS, P/E, and EBITDA are
+              unusable: GPU depreciation is economically real, and EBITDA
+              ignores ~$2.6B/9-months of investing cash flow.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Owner earnings are negative today.</b> FY25 FCF ≈ −$1.1B. The
+              investment is a wager on future owner earnings, not current ones.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Execution brilliant; allocation unproven.</b> Microsoft,
+              NVIDIA, &gt;$4B ARR, 5 GW — real. But +33% shares in 9 months and
+              $820M co-CEO RSUs mean per-share economics are all that count.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>One valuation-critical variable: incremental ROIC</b> on new AI
+              capital (Damodaran), new capacity (Munger), and FCF/share after
+              maintenance CapEx (Buffett). ARR growth is meaningless if returns
+              fall below the cost of capital.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Value is a distribution, not a point.</b> All three produced
+              scenario spreads spanning an order of magnitude ($5 → $166) and
+              warned against manufactured precision.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The current price embeds successful execution.</b> Margin of
+              safety: "not enough" (Damodaran), 3/10 (Munger), 3/10 (Buffett).
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Rating: C — Hold/Watch.</b> Unanimous across three independent
+              frameworks. No A, no B, no D, no E.
+            </div>
+          </div>
+        </div>
+
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Reference price: $38 vs $43.67 vs $45.</b> Two weeks apart on
+              the same stock; every rating is insensitive across the band.
+              <b>Resolved:</b> working band ~$40–45.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Where does base value sit?</b> Munger $35–38 (12%/2% —
+              strictest), Damodaran $42, Buffett $73 (capitalizes unproven $1.3B
+              owner earnings). Buffett concedes $73 is "proven-execution value,"
+              not today's value. <b>Resolved:</b> base ≈ $38–42; $73 becomes the
+              upgrade target.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>How much credit for the right tail?</b> Bull estimates $75–80
+              (consensus) with an extreme tail at $140–165. The tail is real but
+              not likely (30–35% combined). <b>Resolved:</b> it justifies
+              watching, not paying.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>What price compensates for uncertainty?</b> Damodaran $30–37;
+              Buffett $25–30; Munger $20–25. A dispute about sizing and
+              temperament, not the stock. <b>Resolved:</b> composite ladder —
+              start $30–35, build $25–30, conviction $20–25.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Management: 8 vs 7 vs "not proven."</b> Munger concedes half a
+              point on compensation; Buffett holds on dilution; Damodaran's "has
+              IREN ever earned its cost of capital?" becomes monitoring metric
+              #1. <b>Resolved:</b> 7/10.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Does positive expected value justify buying?</b> All three
+              compute positive EV (+27% Damodaran, +13% Munger) yet all rate C —
+              EV is tail-driven, the median ≈ price, and the −50% to −70% left
+              tail is uninsurable. <b>Resolved:</b> positive EV is not
+              sufficient to act.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 4. CONSENSUS VALUATION ============ -->
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">
+          Reconciled scenario matrix, using midpoints where the three models
+          disagree.
+        </p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th class="right">Damodaran</th>
+                <th class="right">Munger</th>
+                <th class="right">Buffett</th>
+                <th class="right">Consensus</th>
+                <th class="right">Probability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Severe bear</td>
+                <td class="right">$5</td>
+                <td class="right">—</td>
+                <td class="right">—</td>
+                <td class="right"><b>~$5</b></td>
+                <td class="right">10%</td>
+              </tr>
+              <tr>
+                <td>Bear</td>
+                <td class="right">$17</td>
+                <td class="right">$13–20</td>
+                <td class="right">$25</td>
+                <td class="right"><b>~$15–20</b></td>
+                <td class="right">20%</td>
+              </tr>
+              <tr>
+                <td>Conservative</td>
+                <td class="right">~$30</td>
+                <td class="right">~$30</td>
+                <td class="right">—</td>
+                <td class="right"><b>~$30</b></td>
+                <td class="right">—</td>
+              </tr>
+              <tr class="hl">
+                <td>Base</td>
+                <td class="right">$42</td>
+                <td class="right">$35–38</td>
+                <td class="right">($73)*</td>
+                <td class="right"><b>~$38–42</b></td>
+                <td class="right">35%</td>
+              </tr>
+              <tr>
+                <td>Bull</td>
+                <td class="right">$81</td>
+                <td class="right">$65–75+</td>
+                <td class="right">$166†</td>
+                <td class="right"><b>~$75–80</b></td>
+                <td class="right">25%</td>
+              </tr>
+              <tr>
+                <td>Extreme bull</td>
+                <td class="right">$142</td>
+                <td class="right">—</td>
+                <td class="right">—</td>
+                <td class="right"><b>~$140–165</b></td>
+                <td class="right">10%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">
+          * Buffett's $73 reclassified as
+          <b>proven-execution value</b> (requires demonstrated $1.3B+ owner
+          earnings), not base value today. † Buffett's $166 assumed 15% growth
+          at a 10% discount on $1.7B normalized FCF — the outer tail.
+        </p>
+
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 6px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">$5</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 18px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">$15–20</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 38px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">$38–42</div>
+            <div class="prob">35%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 72px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">$75–80</div>
+            <div class="prob">25%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 130px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">$140–165</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Intrinsic value per share</span
+          ><span>~$165</span>
+        </div>
+
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>
+            EV = 0.10×$5 + 0.20×$17.5 + 0.35×$40 + 0.25×$77.5 + 0.10×$150 ≈
+            $52–53/share
+          </h3>
+          <p class="big">
+            At ~$43 that is roughly <b>+20% expected upside</b>, or
+            <b>~6–7% annualized</b> over three years —
+            <b
+              >positive, tail-driven, and insufficient compensation for the
+              uncertainty</b
+            >. The reverse-DCF check (uncontested) shows the ~$45 price requires
+            only ~8% more revenue than base assumptions, or a WACC of ~11.1%
+            instead of 11.5%:
+            <b
+              >the market is not assuming an impossible business — it is
+              assuming a successful one.</b
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 5. PRICE LADDER ============ -->
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">
+          Where the three frameworks meet — the composite accumulation plan. Do
+          not initiate at ~$40–45.
+        </p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $60</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              >Reduce / avoid — excessive success priced in</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$45–60</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 70%"></div>
+            </div>
+            <span class="action"
+              >Hold / watch — only for committed thesis holders</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$35–45</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 50%"></div>
+            </div>
+            <span class="action"
+              >Watch — interesting, insufficient margin of safety</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$30–35</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 45%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Begin accumulating — Damodaran's buy zone opens</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$25–30</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 60%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Accumulate — Buffett's value territory</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$20–25</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 80%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              ><b>High-conviction buy zone</b> — Munger's required price</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $20</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31; font-weight: 800"
+              >Exceptional risk/reward — if contracts and metrics intact</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 6. PROS & CONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">06</span>Pros &amp; Cons — At ~$40–45
+        </h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>
+                Scarce power moat — 4.5–5 GW secured where interconnection takes
+                years
+              </li>
+              <li>
+                Contracted demand — $13B+ signed Microsoft/NVIDIA; ~85% of
+                &gt;$4B ARR under contract
+              </li>
+              <li>Blue-chip counterparties validate the platform</li>
+              <li>
+                Speed advantage — self-build capability, "time-to-compute"
+              </li>
+              <li>
+                Strong liquidity — ~$7.6B cash plus investment-grade GPU
+                financing
+              </li>
+              <li>
+                Improving terms — customer prepayments cover ~45% of GPU CapEx
+              </li>
+              <li>
+                Fat right tail — $75–80 bull and $140+ extreme bull are real,
+                not fantasy
+              </li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>No margin of safety — price ≈ conservative base case</li>
+              <li>
+                Negative ROIC and owner earnings today — the bet is entirely on
+                the future
+              </li>
+              <li>
+                Reinvestment treadmill — $2.6B/9-months investing vs $289M
+                operating cash flow
+              </li>
+              <li>
+                GPU obsolescence — infrastructure-like buildings, inventory-like
+                chips
+              </li>
+              <li>
+                AI oversupply risk — capital floods in; pricing can compress
+                faster than demand grows
+              </li>
+              <li>
+                Dilution machine — +33% shares in nine months; $820M co-CEO RSU
+                grants
+              </li>
+              <li>
+                Complex capital structure — $6.7B+ convertibles, capped calls,
+                forwards, GPU debt
+              </li>
+              <li>
+                Concentration and accounting opacity — FY26 10-K not yet filed
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. TRIGGERS ============ -->
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Incremental ROIC on new AI capacity demonstrated ≥15%</li>
+              <li>
+                FCF turns sustainably positive, heading toward $1B+ annualized
+              </li>
+              <li>
+                Diluted share count stabilizes; revenue grows faster than shares
+              </li>
+              <li>
+                AI Cloud margins hold <i>after depreciation</i>; CapEx/MW
+                declines
+              </li>
+              <li>Utilization stays high; AI pricing holds</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                AI compute prices fall &gt;20–25% or utilization disappoints
+              </li>
+              <li>Microsoft/NVIDIA contracts renegotiated downward</li>
+              <li>
+                CapEx remains enormous indefinitely — the capital treadmill
+              </li>
+              <li>
+                Persistent 20–30% annual dilution with no per-share value
+                creation
+              </li>
+              <li>Incremental ROIC settles below ~10–12%</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Incremental ROIC</b></td>
+                <td>The ultimate test — value creation vs destruction</td>
+                <td class="right">≥ 15%</td>
+              </tr>
+              <tr>
+                <td><b>FCF per diluted share</b></td>
+                <td>Owner economics after maintenance CapEx</td>
+                <td class="right">Positive &amp; growing</td>
+              </tr>
+              <tr>
+                <td><b>AI Cloud ARR / % contracted</b></td>
+                <td>Quality and certainty of growth</td>
+                <td class="right">&gt;$4B, ~85%+ contracted</td>
+              </tr>
+              <tr>
+                <td><b>GPU utilization / pricing</b></td>
+                <td>Oversupply early-warning system</td>
+                <td class="right">High &amp; stable</td>
+              </tr>
+              <tr>
+                <td><b>CapEx per MW</b></td>
+                <td>Infrastructure efficiency</td>
+                <td class="right">Declining</td>
+              </tr>
+              <tr>
+                <td><b>Customer prepayments / CapEx</b></td>
+                <td>Who finances the growth</td>
+                <td class="right">Rising (~45%+ today)</td>
+              </tr>
+              <tr>
+                <td><b>Diluted shares outstanding</b></td>
+                <td>Per-share economics</td>
+                <td class="right">Stable</td>
+              </tr>
+              <tr>
+                <td><b>Net debt / EBITDA</b></td>
+                <td>Financial risk vs scale</td>
+                <td class="right">Manageable</td>
+              </tr>
+              <tr>
+                <td><b>Revenue &amp; EBITDA per MW</b></td>
+                <td>Is the scarce power actually becoming valuable</td>
+                <td class="right">Rising</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 8. FINAL JUDGMENT ============ -->
+      <section>
+        <h2 class="sec"><span class="num">08</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>
+            At a price of roughly <b>$40–45</b>, the market is effectively
+            assuming that IREN will successfully convert its scarce power
+            portfolio into a multi-billion-dollar AI infrastructure business
+            with strong margins and acceptable returns on capital. Three
+            independent frameworks — fundamental DCF, multidisciplinary quality,
+            and owner-earnings value — all land at a base intrinsic value of
+            roughly <b>$38–42 per share</b> and a rating of
+            <b>C: Hold/Watch</b>. We agree the business and the contracts are
+            real, the moat hypothesis is plausible but unproven, current returns
+            are negative, dilution is material, and the valuation already pays
+            for success. The biggest risks to any purchase here are
+            <b
+              >AI compute oversupply, GPU obsolescence, financing/dilution, and
+              an incremental ROIC below the cost of capital</b
+            >. Therefore, at today's price we would wait: accumulate in stages
+            below <b>$35</b>, buy with conviction in the <b>$20–25</b> range,
+            and let demonstrated return on capital — not ARR headlines — decide
+            whether this becomes a wonderful compounder or merely a wonderful
+            story.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes three
+          analyses — <code>damodaran-analysis.md</code>,
+          <code>munger-analysis.md</code>, and
+          <code>buffet-analysis.md</code> (dated August 16, 2026) — which
+          themselves reference IREN SEC filings (Mar 2026 10-Q, Dec 2025, Jun
+          2025 10-K), IREN investor releases, NVIDIA investor relations,
+          Damodaran's NYU datasets, and market data as of August 2026. The
+          FY2026 10-K was not yet filed as of this date. This document is an
+          educational synthesis of estimates about estimates — it is
+          <b>not investment advice</b>, and no valuation herein should be
+          treated as a price prediction or a recommendation to trade. IREN's
+          outcome distribution is unusually wide; treat every number on this
+          page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
