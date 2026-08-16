@@ -1,0 +1,1617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e.l.f. Beauty — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">
+          Synthesized Consensus · Five-Lens Deliberative Debate
+        </div>
+        <h1>e.l.f. Beauty — Consensus Investment Report</h1>
+        <div class="sub">
+          A structured debate between five independent investment frameworks —
+          Damodaran fundamental valuation, Munger multidisciplinary quality,
+          Buffett owner-earnings value, Druckenmiller macro/liquidity timing,
+          and Soros reflexivity — reconciled into a single synthesized analysis
+          and recommendation.
+        </div>
+        <div class="meta-row">
+          <span class="chip">NYSE: ELF</span>
+          <span class="chip">Report date: August 16, 2026</span>
+          <span class="chip">Reference price: $91.44</span>
+          <span class="rating-badge"
+            ><span class="dot"></span> C — HOLD / WATCH</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <!-- ============ 1. EXECUTIVE SUMMARY ============ -->
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">
+          e.l.f. Beauty is a genuinely excellent, asset-light mass-beauty
+          compounder — 30 straight quarters of growth, a real (if moderate)
+          value-and-culture moat, ~74% gross margins, and ~$230–280M of
+          normalized free cash flow. But its headline growth is currently
+          <b>borrowed</b> — ~91% of FY26 growth came from the Rhode acquisition,
+          Q1's +36% was price/refund-flattered with unit volume down, and the
+          flagship e.l.f. brand is declining organically. Five independent
+          frameworks place the fundamental intrinsic value at roughly
+          <b>~$44/share</b> base (probability-weighted ~$58) and converge on the
+          <b>same rating: C — Hold/Watch</b>. At $91.44 the market pays ~26×
+          forward earnings for a durable-growth multiple on an organic engine
+          that has not yet been proven self-sustaining.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$44</div>
+            <div class="note">
+              Tight fundamental cluster — Buffett ~$45, Munger $40–45, Damodaran
+              $43.84
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$58.15</div>
+            <div class="note">
+              Tail-driven (Damodaran workbook $57.08); median (Base ~$44) is 52%
+              below the price
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$25 – $130</div>
+            <div class="note">
+              Consensus scenarios; Damodaran workbook spans $8.29 – $159.77
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Medium</div>
+            <div class="note">
+              Base/median is the strongest part; the tails are wide
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value" style="font-size: 24px">$55 → $27–38</div>
+            <div class="note">
+              Fundamental accumulate $45–55, primary $40–45, conviction $27–38;
+              tactical starter $75–80
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 20px">
+              Organic ex-Rhode growth
+            </div>
+            <div class="note">
+              Must turn positive (2 consecutive quarters, units confirmed) or
+              the flywheel is acquisition-driven
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. THE FIVE POSITIONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">02</span>The Five Positions at the Table
+        </h2>
+        <p class="lead">
+          Each participant analyzed e.l.f. Beauty independently. Their positions
+          were then cross-examined.
+        </p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--red)"
+                  >D — Avoid (on price)</span
+                ><span class="small">at $91.44</span>
+              </div>
+              <p>
+                Five-scenario 10-yr FCFF DCF (WACC ~10%, terminal growth 3%,
+                beta ~1.50): base <b>$43.84</b>, weighted <b>$57.08</b>
+                (−37.6%). Reverse DCF: the price implies ~30–35% Y1 growth —
+                double management's own guide. "Value emerges below ~$55,
+                conviction below ~$45."
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $43.84</span>
+                <span class="tag amber">Weighted $57.08</span>
+                <span class="tag red">Upside −37.6%</span>
+                <span class="tag">Buy ≤$55</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span
+                ><span class="small">at $91.44</span>
+              </div>
+              <p>
+                Conservative DCF (WACC + 3% ≈ 14.5%, terminal ≤2%): base
+                <b>$40–45</b>, normal ~$65, bull ~$70 — the bull case sits ~23%
+                below the price. Expected return ≈ −51%. "A wonderful company;
+                the streak in beauty ends suddenly." First tranche ≤$52,
+                conviction &lt;$38.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base $40–45</span>
+                <span class="tag">Moat: Moderate</span>
+                <span class="tag red">E[R] ≈ −51%</span>
+                <span class="tag">Conviction &lt;$38</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Watch (price-contingent)</span
+                ><span class="small">at $91.44</span>
+              </div>
+              <p>
+                Owner-earnings DCF (~$185M normalized, SBC expensed):
+                conservative
+                <b>~$27</b>, neutral <b>~$45</b>, optimistic <b>~$68</b>,
+                weighted ~$45. At $91.44 the market pays ~2× intrinsic value.
+                "Great company; wrong price." Pay attention at $40–50, value
+                &lt;$35.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Base ~$45</span>
+                <span class="tag">Moat: Narrow→Moderate</span>
+                <span class="tag">Buy $40–50</span>
+                <span class="tag">Conviction &lt;$35</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro / Liquidity / Timing Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C+ — Monitor</span
+                ><span class="small">at $91.44</span>
+              </div>
+              <p>
+                Opportunity Score <b>72/150</b> (Monitor). 12-mo path: Base $95,
+                E[R] +4.4%, asymmetry ~1.5:1 — a fair, not compelling setup; the
+                dislocation already got bought. Refund cliff (~40% of Q1 EPS
+                one-time) is mis-modeled as run-rate. Do-not-initiate ≥$100;
+                dislocation re-entry &lt;$55.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Score 72/150</span>
+                <span class="tag">E[R] +4.4%</span>
+                <span class="tag">Asymmetry ~1.5:1</span>
+                <span class="tag red">Refund cliff</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)"
+                  >C — Wait / Monitor</span
+                ><span class="small">at $91.44</span>
+              </div>
+              <p>
+                Final score <b>58/100</b>; reflexivity Moderate; asymmetry
+                ~1.4:1. The affordable-beauty flywheel is real but
+                <b>near an inflection</b> — propped up by non-recurring fuel
+                (Rhode + refund) while the organic loop is negative. E[R] +3.6%.
+                Buy $75–80, conviction &lt;$65, do-not-initiate &gt;$100.
+              </p>
+              <div class="tags">
+                <span class="tag amber">Score 58/100</span>
+                <span class="tag">Reflexivity: Moderate</span>
+                <span class="tag">E[R] +3.6%</span>
+                <span class="tag">Conviction &lt;$65</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. THE DEBATE ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">03</span>The Debate: Agreement, Contention,
+          Resolution
+        </h2>
+        <p class="lead">
+          Round 1: opening statements. Round 2: uncontested common ground. Round
+          3: seven disputed points, cross-examined to resolution. Round 4: final
+          concessions.
+        </p>
+
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The business is genuinely excellent.</b> Asset-light (~1.4%
+              capex/sales), 71–74% gross margin, ~15–16% FCF conversion, 30
+              straight quarters of growth, one of ~6 of 516 public consumer
+              companies at ≥20% average growth.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The moat is real but moderate — not wide.</b> "Prestige quality
+              at ~$7," real brand equity, retailer-level shelf productivity —
+              but no pricing-power moat, no switching costs, no network effects,
+              and fashion/trend dependence.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >The recent growth is materially borrowed — the organic engine
+                is the crux.</b
+              >
+              FY26 growth ~91% Rhode acquisition + price; Q1 FY27 organic
+              ex-Rhode declined high-single-digit with unit volume negative. The
+              single most important agreement.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >The one-time tariff refund does not change the investment
+                case.</b
+              >
+              ~$50M (≈$0.68 of Q1 adj EPS, ~40% of Q1 EPS) is one-time, fully
+              reinvested, and net-zero on FY27 EBITDA; GM is guided flat
+              ex-refund.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Conventional metrics mislead.</b> Trailing P/E ~92 and TTM GAAP
+              EPS ~$0.99 are distorted by the tariff year, SBC (~3.3× net
+              income), contingent-consideration marks, and the refund.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Financial safety is adequate, not pristine.</b> Net debt ~$490M
+              (~1.2× adj EBITDA), interest coverage ~4.3–5.8×, Altman Z 3.7 — no
+              solvency risk; $744M of debt matures FY2030.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The stock is overvalued at $91.44 on any fundamental basis.</b>
+              Buffett ~2× weighted IV; Munger E[R] ≈ −51%; Damodaran weighted
+              $57.08 (−37.6%); tactical lenses only +3.6%/+4.4% (fair, not
+              compelling).
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Customer concentration is a first-order risk.</b> Top four
+              retailers = 52% of sales, no firm contracts; Ulta already fell
+              from 16% to &lt;10% in two years.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Rhode/celebrity-brand dependency is a structural risk.</b> ~33%
+              of Q1 sales; ~$1.4B goodwill/intangibles (26–37% of assets) at
+              impairment risk if the halo fades.
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >The right posture is price discipline, not avoidance or a
+                short.</b
+              >
+              Nobody recommends shorting; even Damodaran's D is "buy lower," not
+              "never own."
+            </div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt">
+              <b>The rating is a C-family consensus with one D.</b> Ratings:
+              Buffett C, Munger C, Druckenmiller C+, Soros C, Damodaran D (on
+              price) — reconciled into a single C — Hold / Watch.
+            </div>
+          </div>
+        </div>
+
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >Where does base intrinsic value sit? ($43–45 vs the tactical
+                $95)</b
+              >
+              Fundamental lenses cluster at ~$44 (Buffett ~$45, Munger $40–45,
+              Damodaran $43.84); Druckenmiller/Soros use ~$95 as a 12-mo
+              <i>path price</i>. Druckenmiller and Soros each explicitly concede
+              their $95 is a timing overlay, not an intrinsic value.
+              <b>Resolved:</b> consensus base ≈ <b>~$44</b>, at roughly half the
+              market price.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >Is the organic growth story real, or an acquisition/price
+                illusion?</b
+              >
+              FY26 +$323M was $293.5M (91%) Rhode; Q1 organic ex-Rhode declined
+              high-single-digit with price/mix +$137.4M vs volume −$11.7M. Soros
+              concedes the decline is diagnosable but not proven structural;
+              Damodaran concedes the brand retains real equity.
+              <b>Resolved:</b> organic (ex-Rhode) growth is THE
+              valuation-critical variable, currently negative — the
+              highest-value signal in the analysis.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >How much credit for the right tail (Rhode scaling, global,
+                haircare)?</b
+              >
+              Damodaran $84.31/$159.77; Munger $70/$85–100 at 20%/5%; tactical
+              $115/$135. Druckenmiller and Soros concede the tail is real but
+              path-dependent and fragile (celebrity-cycle risk).
+              <b>Resolved:</b> partial, evidence-gated credit — Bull ~$85,
+              Extreme Bull ~$130; it justifies watching closely, not paying.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>What price compensates for uncertainty?</b> Buffett $40–50 /
+              $27–35; Munger ≤$52 / &lt;$38; Damodaran ≤$55 / &lt;$45;
+              Druckenmiller &amp; Soros starter $75–80 / conviction &lt;$65 /
+              dislocation &lt;$55. A dispute about horizon and temperament, not
+              the stock. <b>Resolved:</b> composite ladder — fundamental
+              accumulate $45–55, primary $40–45, conviction $27–38; tactical
+              starter $75–80, dislocation &lt;$55.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Management quality and the SBC/dilution tax.</b> Buffett/Munger
+              8/10; Damodaran "Good" but sharpest on ROIC ~8–16% at/below WACC
+              and SBC ~3.3× net income. Munger and Buffett concede SBC must be
+              expensed and the incentive design rewards top-line over per-share
+              return. <b>Resolved:</b> consensus <b>7/10</b> — alignment and
+              execution excellent, discounted for dilution, ROIC, and
+              litigation.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b
+                >Does the one-time tariff refund change the case? What is the
+                refund-cliff risk?</b
+              >
+              All agree the refund (~40% of Q1 EPS) is one-time and net-zero to
+              FY27 EBITDA; Druckenmiller adds it is
+              <i>mis-modeled as run-rate</i> (consensus EPS $3.61 above the
+              $3.50–3.55 guide). Soros/Druckenmiller concede reinvestment is
+              rational. <b>Resolved:</b> the refund does not change value, but
+              the Q2 FY27 (Nov 2026) print is the designated refund-cliff
+              decision point.
+            </div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt">
+              <b>Damodaran's D vs the four C-family ratings.</b> Damodaran: base
+              $43.84 is 52% below price — that is a D-avoid. Munger counters his
+              C is price-contingent (won't hold at $91, buys at $40–50) — the
+              same ladder. Damodaran concedes his D is a price verdict (buy
+              ≤$55, conviction &lt;$45); Buffett/Munger concede the practical
+              difference is zero if the price never falls.
+              <b>Resolved:</b> D-vs-C is about price and framing, not the
+              business — unified into C — Hold/Watch with the composite ladder;
+              Damodaran's D honored as the strongest price statement.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 4. CONSENSUS VALUATION ============ -->
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">
+          Reconciled scenario matrix. The Damodaran column is the verified
+          Phase-2 workbook; the Consensus column is the synthesized midpoint of
+          all five profiles. Druckenmiller/Soros values are 12-month path-price
+          expectations, not intrinsic values.
+        </p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th class="right">Damodaran*</th>
+                <th class="right">Munger†</th>
+                <th class="right">Buffett</th>
+                <th class="right">Druckenmiller‡</th>
+                <th class="right">Soros‡</th>
+                <th class="right">Consensus</th>
+                <th class="right">Probability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Severe Bear</td>
+                <td class="right">$8.29</td>
+                <td class="right">—</td>
+                <td class="right">—</td>
+                <td class="right">$50</td>
+                <td class="right">$48</td>
+                <td class="right"><b>~$25</b></td>
+                <td class="right">10%</td>
+              </tr>
+              <tr>
+                <td>Bear</td>
+                <td class="right">$19.29</td>
+                <td class="right">$25–30</td>
+                <td class="right">~$27</td>
+                <td class="right">$72</td>
+                <td class="right">$72</td>
+                <td class="right"><b>~$30</b></td>
+                <td class="right">20%</td>
+              </tr>
+              <tr class="hl">
+                <td>Base</td>
+                <td class="right">$43.84</td>
+                <td class="right">$40–45</td>
+                <td class="right">~$45</td>
+                <td class="right">$95</td>
+                <td class="right">$95</td>
+                <td class="right"><b>~$44</b></td>
+                <td class="right">35%</td>
+              </tr>
+              <tr>
+                <td>Bull</td>
+                <td class="right">$84.31</td>
+                <td class="right">$70</td>
+                <td class="right">~$68</td>
+                <td class="right">$115</td>
+                <td class="right">$115</td>
+                <td class="right"><b>~$85</b></td>
+                <td class="right">25%</td>
+              </tr>
+              <tr>
+                <td>Extreme Bull</td>
+                <td class="right">$159.77</td>
+                <td class="right">$85–100</td>
+                <td class="right">—</td>
+                <td class="right">$135</td>
+                <td class="right">$135</td>
+                <td class="right"><b>~$130</b></td>
+                <td class="right">10%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">
+          * Verified Phase-2 workbook values: $8.29 / $19.29 / $43.84 / $84.31 /
+          $159.77; weighted <b>$57.08</b> (−37.6% upside; −9.0% 5-yr annualized;
+          WACC ~10.0%, terminal growth 3.0%). † Munger probabilities Bear 30% /
+          Base 45% / Bull 20% / Extreme Bull 5%; weighted ~$44.5. ‡
+          Druckenmiller (probs 12/24/34/20/10) and Soros (probs 10/25/35/20/10)
+          values are 12-month path prices, NOT intrinsic values; the consensus
+          Base deliberately anchors to the fundamental lenses (~$44).
+        </p>
+
+        <h3>Scenario distribution (consensus)</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 20px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">$25</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 24px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">$30</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 36px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">$44</div>
+            <div class="prob">35%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 70px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">$85</div>
+            <div class="prob">25%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 105px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">$130</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus value per share</span
+          ><span>~$130</span>
+        </div>
+
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>
+            EV = 0.10×$25 + 0.20×$30 + 0.35×$44 + 0.25×$85 + 0.10×$130 ≈
+            $58.15/share
+          </h3>
+          <p class="big">
+            At $91.44 that is roughly <b>−36% expected upside</b>, or
+            <b>−8.7% annualized</b> over five years —
+            <b
+              >decisively negative and insufficient compensation for the
+              uncertainty</b
+            >. The reverse-DCF check (uncontested) shows the $91.44 price
+            requires ~30–35% year-one growth — roughly double management's own
+            18–20% guidance — sustained for a decade, or ~35% terminal margins:
+            <b
+              >the market is pricing a sustained Bull-to-Extreme-Bull outcome,
+              not the base case.</b
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 5. PRICE LADDER ============ -->
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">
+          Where the five frameworks meet — the composite accumulation plan. Do
+          not initiate at $91.44.
+        </p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $100</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              >Do not initiate — all five avoid (fundamental lenses far above
+              IV)</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$91–100</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 92%"></div>
+            </div>
+            <span class="action" style="color: var(--red)"
+              ><b>Hold / Watch — do not initiate</b> (unanimous; no margin of
+              safety)</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$80–90</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 78%"></div>
+            </div>
+            <span class="action"
+              >Watch — still no margin of safety; a fade toward $85 is a
+              distribution signal</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$75–80</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-slate" style="width: 70%"></div>
+            </div>
+            <span class="action"
+              >Tactical starter — Druckenmiller/Soros first tranche (50/200-DMA;
+              ~2:1)</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$65–75</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 62%"></div>
+            </div>
+            <span class="action"
+              >Tactical accumulate — Druckenmiller/Soros (~3:1; refund-cliff air
+              pocket)</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$55–65</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 52%"></div>
+            </div>
+            <span class="action"
+              >Fundamental interest begins — Damodaran ≤$55; Druckenmiller
+              dislocation &lt;$55</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$45–55</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 46%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Accumulate (consensus zone) — approaching the ~$44 fundamental
+              base</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$40–45</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 60%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              >Primary accumulation — the ~$44 fundamental base cluster</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">$27–38</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 80%"></div>
+            </div>
+            <span class="action" style="color: var(--green)"
+              ><b>High-conviction value</b> — Buffett $27–35, Munger &lt;$38,
+              Damodaran &lt;$45</span
+            >
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $27</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31; font-weight: 800"
+              >Exceptional value / deep dislocation — thesis and balance sheet
+              intact</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 6. PROS & CONS ============ -->
+      <section>
+        <h2 class="sec">
+          <span class="num">06</span>Pros &amp; Cons — At $91.44
+        </h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>
+                Genuinely excellent business — 30 straight quarters of growth,
+                #1 unit / #2 dollar share in mass cosmetics
+              </li>
+              <li>
+                Real moat at the value end — "prestige quality at ~$7"; ~90% of
+                SKUs held volume in the 2026 price test
+              </li>
+              <li>
+                Asset-light economics — ~74% gross margin, capex &lt;1.5% of
+                sales, ~$230–280M normalized FCF
+              </li>
+              <li>
+                Aligned management — frozen salaries, 94% at-risk pay, buybacks
+                into weakness, honest disclosure
+              </li>
+              <li>
+                Multiple growth runways — skincare, e.l.f. Hair ($17B category),
+                international (21% vs peers &gt;70%), Rhode Sephora EU
+              </li>
+              <li>
+                A "trade-down" beneficiary — consumer strain supports
+                value-beauty share gains; premium peers are losing money
+              </li>
+              <li>
+                Adequate balance sheet — net debt ~$490M (~1.2× adj EBITDA),
+                Altman Z 3.7; no solvency risk
+              </li>
+              <li>
+                No short thesis — four of five lenses C/C+; ~13.6% short
+                interest is squeeze-prone on good news
+              </li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>
+                No margin of safety — consensus base ~$44 vs $91.44; expected
+                5-yr return ≈ −8.7%
+              </li>
+              <li>
+                The growth is borrowed — FY26 ~91% Rhode acquisition + price; Q1
+                organic ex-Rhode declined high-single-digit
+              </li>
+              <li>
+                The organic engine is the crux — two more negative organic
+                quarters expose the flywheel as acquisition-driven
+              </li>
+              <li>
+                Celebrity-brand concentration — Rhode ≈ 33% of Q1 sales; ~$1.4B
+                goodwill/intangibles at impairment risk
+              </li>
+              <li>
+                The refund cliff — ~40% of Q1 EPS one-time; consensus models
+                above company guidance; Q2 (Nov) is the air pocket
+              </li>
+              <li>
+                Customer concentration — top-4 retailers = 52% of sales, no
+                contracts; Ulta fell from 16% to &lt;10%
+              </li>
+              <li>
+                SBC/dilution tax — ~$87–97M/yr ≈ 3.3× net income; +3% share
+                creep; ROIC at/below WACC
+              </li>
+              <li>
+                Tariff regime risk — majority China-sourced; Section 301 at
+                10–12.5%; re-imposition is a first-order earnings risk
+              </li>
+              <li>
+                Macro/rates — war-time stagflation-lite punishes a beta-1.56
+                discretionary; ~26× forward vulnerable to de-rating
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. TRIGGERS ============ -->
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                Organic (ex-Rhode) growth turns positive for two consecutive
+                quarters with unit-volume confirmation — the highest-value
+                signal
+              </li>
+              <li>
+                Q2/Q3 ex-refund EPS holds ~$0.60–0.65 with GM ex-refund
+                ~+150–200bps (refund cliff absorbed)
+              </li>
+              <li>
+                Incremental ROIC demonstrably crosses the ~10–11.5% cost of
+                capital
+              </li>
+              <li>
+                Rhode Sephora-EU (19 countries) and Brazil sell-through deliver
+                with repeat rates holding
+              </li>
+              <li>
+                Dilution stabilizes — share count stops rising; SBC as % of
+                revenue declines
+              </li>
+              <li>
+                Tariff regime stabilizes — Section 301 stays ≤ current levels
+              </li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>
+                Organic decline deepens while Rhode decelerates simultaneously —
+                the flywheel is exposed (exit signal)
+              </li>
+              <li>
+                The Q2 (Nov 2026) refund-cliff print disappoints with consensus
+                EPS pushed further above guide
+              </li>
+              <li>
+                A Rhode/celebrity-brand cycle turn — halo fade, impairment of
+                the ~$1.4B goodwill/intangibles
+              </li>
+              <li>Tariff re-imposition without refund offset</li>
+              <li>
+                Share count balloons (+20–30% dilution) with no per-share value
+                creation
+              </li>
+              <li>
+                A macro recession/war-driven Fed hike — beta-1.56 discretionary
+                marks down hard
+              </li>
+              <li>An adverse securities-litigation outcome</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Organic (ex-Rhode) growth</b></td>
+                <td>
+                  The single valuation-critical variable — is the flywheel real?
+                </td>
+                <td class="right">
+                  Positive 2 consecutive quarters, units confirmed
+                </td>
+              </tr>
+              <tr>
+                <td><b>Incremental ROIC vs WACC</b></td>
+                <td>Does growth create or destroy per-share value</td>
+                <td class="right">&gt; ~10–11.5% WACC</td>
+              </tr>
+              <tr>
+                <td><b>Gross margin ex-refund</b></td>
+                <td>Core pricing power, cleaned of one-time refunds</td>
+                <td class="right">FY27 guide +200bps, flat ex-refund</td>
+              </tr>
+              <tr>
+                <td><b>Q2 FY27 print (Nov 2026)</b></td>
+                <td>Refund-cliff decision point — expectations air pocket</td>
+                <td class="right">Ex-refund EPS ~$0.60–0.65</td>
+              </tr>
+              <tr>
+                <td><b>Rhode sell-through / Sephora EU</b></td>
+                <td>
+                  Celebrity-brand tail compounds or fades (19 countries, Sep
+                  2026)
+                </td>
+                <td class="right">Repeat-purchase rates holding</td>
+              </tr>
+              <tr>
+                <td><b>Dilution-adjusted share count</b></td>
+                <td>Per-share economics after SBC (~3.3× net income)</td>
+                <td class="right">Stable / buybacks offset equity comp</td>
+              </tr>
+              <tr>
+                <td><b>Tariff regime</b></td>
+                <td>
+                  Section 301 10–12.5%, refund pipeline, re-imposition risk
+                </td>
+                <td class="right">Stays ≤ current levels, refunds settle</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 8. FINAL JUDGMENT ============ -->
+      <section>
+        <h2 class="sec"><span class="num">08</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>
+            At a price of roughly <b>$91.44</b>, the market is effectively
+            assuming that e.l.f. Beauty sustains ~30–35% year-one growth —
+            roughly double management's own 18–20% guidance — for a decade, or
+            compounds ~$185M of normalized owner earnings at ~18% forever, or
+            reaches ~35% terminal margins: a Bull-to-Extreme-Bull outcome on a
+            business whose organic engine (the flagship e.l.f. brand, ex-Rhode)
+            is currently <b>declining</b>, whose unit volumes are negative, and
+            whose "record" profitability was ~40% one-time tariff refund. Five
+            independent frameworks place the fundamental intrinsic value at
+            roughly <b>$44/share base</b> (probability-weighted ~$58), all agree
+            the stock is
+            <b>significantly overvalued at $91.44 with no margin of safety</b>,
+            and all converge on a unanimous <b>C — Hold / Watch</b> posture. The
+            biggest risks to any purchase here are the
+            <b>organic-growth illusion collapsing</b> (the flywheel exposed as
+            acquisition-driven), the
+            <b>Rhode celebrity-brand cycle turning</b> on ~1/3 of revenue with
+            ~$1.4B of goodwill at stake, the
+            <b>November refund-cliff air pocket</b>, and a
+            <b>tariff/macro regime break</b>. Therefore, at today's price we
+            would wait: accumulate in stages at <b>$45–55</b>, buy with
+            conviction at <b>$27–38</b>, and let demonstrated organic growth,
+            incremental ROIC versus the cost of capital, and the clean ex-refund
+            earnings run-rate — not the headline beats or the stock price —
+            decide whether this wonderful franchise becomes a wonderful
+            investment.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes five analyses
+          — <code>buffet-analysis.md</code>, <code>munger-analysis.md</code>,
+          <code>damodaran-analysis.md</code>,
+          <code>druckenmiller-analysis.md</code>, and
+          <code>soros-analysis.md</code> (dated August 16, 2026) — which
+          themselves reference e.l.f. Beauty SEC filings (FY2026 10-K filed May
+          21, 2026; Q1 FY2027 10-Q filed Aug 6, 2026; 2026 DEF 14A), the Q1 FY27
+          earnings call transcript, Reuters and CNBC earnings coverage,
+          StockAnalysis data, peer data (Estée Lauder, Coty, Ulta), and
+          Damodaran's NYU datasets. The Damodaran scenario values are the
+          verified Phase-2 workbook outputs of
+          <code>ELF_Damodaran_Financial_Model.xlsx</code> ($8.29 / $19.29 /
+          $43.84 / $84.31 / $159.77; weighted $57.08; −37.6% expected upside;
+          −9.0% 5-yr annualized), reproduced verbatim and treated as the source
+          of truth over any narrative disagreement. This document is an
+          educational synthesis of estimates about estimates — it is
+          <b>not investment advice</b>, and no valuation herein should be
+          treated as a price prediction or a recommendation to trade. Treat
+          every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

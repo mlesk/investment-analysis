@@ -1,0 +1,90 @@
+{
+  "company": "e.l.f. Beauty",
+  "ticker": "ELF",
+  "date": "2026-08-16",
+  "inputs": {
+    "price": 91.44,
+    "shares_mm": 59.01,
+    "cash_mm": 344.24,
+    "debt_mm": 929.30,
+    "revenue_run_rate_mm": 1636.47,
+    "growth_y1": 0.19,
+    "growth_decay": 0.035,
+    "margin_y1": 0.13,
+    "margin_terminal": 0.15,
+    "tax_rate": 0.25,
+    "wacc": 0.10,
+    "terminal_growth": 0.03,
+    "roic_terminal": 0.20,
+    "roic_initial": 0.40,
+    "margin_ramp": 0.004,
+    "min_growth": 0.03,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.10,
+      "growth_adj": -0.13,
+      "margin_adj": -0.04,
+      "wacc_adj": 0.03,
+      "tg_adj": -0.01,
+      "roic_adj": -0.10,
+      "description": "Organic e.l.f. declines, rhode turns, tariff shock; margins compress to high-single digits, risk spikes (WACC 13%)"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.20,
+      "growth_adj": -0.07,
+      "margin_adj": -0.02,
+      "wacc_adj": 0.015,
+      "tg_adj": -0.005,
+      "roic_adj": -0.06,
+      "description": "Organic stays weak, rhode normalizes, margins flat, higher risk (WACC 11.5%)"
+    },
+    {
+      "name": "Base",
+      "probability": 0.35,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "FY27 guide 18-20% met; Y1 19% decaying to 3%; SBC-honest margins 13% to 15%; ROIC 40% to 20%; WACC 10%, tg 3%"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "growth_adj": 0.06,
+      "margin_adj": 0.025,
+      "wacc_adj": -0.005,
+      "tg_adj": 0.005,
+      "roic_adj": 0.06,
+      "description": "Organic re-accelerates, rhode scales, margin expansion to 17.5%, tariff relief (WACC 9.5%, tg 3.5%)"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.10,
+      "growth_adj": 0.11,
+      "margin_adj": 0.05,
+      "wacc_adj": -0.01,
+      "tg_adj": 0.01,
+      "roic_adj": 0.12,
+      "description": "Global share gains, ~20% EBIT margin, durable low risk (WACC 9%, tg 4%)"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 3,
+    "rev_end": 8,
+    "rev_step": 1,
+    "margin_start": 0.12,
+    "margin_end": 0.22,
+    "margin_step": 0.02
+  },
+  "sensitivity": {
+    "g_values": [0.02, 0.025, 0.03, 0.035, 0.04],
+    "wacc_values": [0.085, 0.09, 0.095, 0.10, 0.105, 0.11, 0.115],
+    "rev_values": [3, 4, 5, 6, 7, 8],
+    "margin_values": [0.12, 0.14, 0.16, 0.18, 0.2, 0.22]
+  }
+}
