@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Lab Corporation — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">Synthesized Consensus · Five-Lens Deliberative Debate</div>
+        <h1>Rocket Lab Corporation — Consensus Investment Report</h1>
+        <div class="sub">A structured debate between five independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, and Soros reflexivity — reconciled into a single synthesized analysis and recommendation.</div>
+        <div class="meta-row">
+          <span class="chip">NASDAQ: RKLB</span>
+          <span class="chip">Report date: 2026-08-16</span>
+          <span class="chip">Reference price: $80.25</span>
+          <span class="rating-badge"><span class="dot"></span> C — HOLD / WATCH</span>
+        </div>
+      </div>
+    </header>
+
+
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">Rocket Lab is an exceptional, founder-run, vertically integrated space company — one of only two self-launching space powers on earth — with a real moat, a record <b>$2.36B</b> backlog, and extraordinary growth optionality in Neutron and Iridium. Five independent analyses — using five different frameworks — each refused to buy at <b>$80.25</b> and converged on the <b>same rating: C — Hold/Watch</b>. The business is not in dispute; the price, the binary Neutron/Iridium catalysts, and the equity-funded growth model are. The fundamental lenses value the equity at ~$6–16 (5–13× below price); the macro lenses see a balanced ~+11–12% 12-month price path.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$11</div>
+            <div class="note">Damodaran workbook anchor $11.00; Buffett ~$15; Munger $6.12 — ~86% below the $80.25 price</div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">$16.82</div>
+            <div class="note">Converges exactly on the verified Damodaran workbook value; still ~79% below the price</div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$5 – $50</div>
+            <div class="note">Severe bear ~$5, bull ~$25, extreme bull ~$50 — the ENTIRE fundamental distribution sits below the price</div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low/Med</div>
+            <div class="note">Direction of overvaluation robust (all five scenarios below price); magnitude hangs on the Neutron/Iridium binary</div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$62–72 → &lt;$20</div>
+            <div class="note">Tactical starter $62–72 (Soros); tactical accumulate $50–62 (Druckenmiller); fundamental accumulate $20–30; conviction &lt;$20</div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 22px">FCF inflection post-Neutron</div>
+            <div class="note">Adjusted-EBITDA-positive the quarter after first launch → FCF-positive 18–24 months later; gated by dilution and Iridium financing</div>
+          </div>
+          <div class="card">
+            <div class="label">Management</div>
+            <div class="value">6/10</div>
+            <div class="note">World-class founder-execution (Beck); docked for dilution, the $8B Iridium leverage, and insider selling ~$300M+</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">02</span>The Five Positions at the Table</h2>
+        <p class="lead">Each participant analyzed Rocket Lab independently. Their positions were then cross-examined in the debate.</p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch (do not buy at $80.25)</span><span class="small">at ~$80.25</span>
+              </div>
+              <p>Three-scenario DCF: bear <b>~$6</b>, base <b>~$15</b>, bull <b>~$26</b>, weighted <b>~$14</b>. The stock trades at ~62× trailing sales — roughly <b>5–6× my base-case intrinsic value</b> — and TTM FCF is <b>−$371M</b>: zero owner earnings. "Great company, terrible entry price. Price is what you pay, value is what you get." <b>Rating: C — Watch; I become interested only below ~$10.</b></p>
+              <div class="tags">
+                <span class="tag">Base ~$15</span><span class="tag">Moat: Moderate</span><span class="tag">Buy &lt;$10</span><span class="tag">No margin of safety</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">D — Avoid</span><span class="small">at ~$80.25</span>
+              </div>
+              <p>Conservative DCF (21.7% discount = WACC+3%, 0–2% terminal growth): bear <b>$3.44</b>, base <b>$6.12</b>, bull <b>$8.38</b>, weighted <b>$5.63</b>. Even my bull case is worth less than a tenth of the $80.25 price. "The market is not pricing the business; it is pricing a lottery ticket on Neutron and Iridium." <b>Rating: D — Avoid; buy only below ~$20.</b></p>
+              <div class="tags">
+                <span class="tag">Base $6.12</span><span class="tag">Weighted $5.63</span><span class="tag">Avoid &gt;$20</span><span class="tag">Lottery ticket</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">D — Avoid / Significantly Overvalued</span><span class="small">at ~$80.25</span>
+              </div>
+              <p>SBC-aware FCFF DCF (12% WACC, 3% terminal growth, ROIC 10%→18%): base <b>$11.00</b>; probability-weighted <b>$16.82</b> across five scenarios (severe bear <b>$4.91</b> / bear <b>$5.94</b> / bull <b>$25.09</b> / extreme bull <b>$50.22</b>). At $80.25 that is <b>−79.04% expected upside</b> and <b>−26.84% 5-year annualized</b> — a reverse DCF requires a "second SpaceX" outcome. Value emerges only below ~$25–30; conviction &lt;$20. <b>Rating: D — Avoid / Significantly Overvalued.</b></p>
+              <div class="tags">
+                <span class="tag">Base $11.00</span><span class="tag">Weighted $16.82</span><span class="tag">Upside −79.04%</span><span class="tag">Buy ≤$30</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro, Liquidity &amp; Expectations Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Monitor</span><span class="small">at ~$80.25 · 88/150</span>
+              </div>
+              <p>Probability-weighted <b>~+12% expected 12-month return (~$90)</b> with <b>~1.8:1 asymmetry</b> — positive, not exceptional. The macro is a headwind (10Y ~4.69%, hawkish Fed hold, energy shock) and the defining catalyst (Neutron first flight, end-2026) is binary and months out. Get aggressive on confirmation (Neutron on the pad/first-flight success, 10Y &lt;~4.3%) or a dislocation to <b>$50–65</b>.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$90</span><span class="tag">Asymmetry 1.8:1</span><span class="tag">Buy $50–65</span><span class="tag">Monitor</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity &amp; Disequilibrium Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Speculative; wait for dislocation</span><span class="small">at ~$80.25</span>
+              </div>
+              <p>A reflexive machine whose price funds its own growth (Q2'26 <b>$1.08B ATM</b>); the trend is real, the perception partially wrong (timeline + ~62× sales). Scenarios: bear <b>$58</b> / base <b>$88</b> / bull <b>$115</b> / extreme bull <b>$135</b> / extreme bear <b>$40</b>, weighted ≈<b>$89</b> (+11%), asymmetry <b>~1.1×</b> — fair, not exceptional. Attractive only after a dislocation into <b>$62–72</b> or a confirmed positive binary.</p>
+              <div class="tags">
+                <span class="tag">Weighted ~$89</span><span class="tag">Asymmetry 1.1×</span><span class="tag">Buy $62–72</span><span class="tag">Wait for dislocation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">03</span>The Debate: Agreement, Contention, Resolution</h2>
+        <p class="lead">Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions.</p>
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>This is an exceptional, real business.</b> Founder-run, vertically integrated — one of only two self-launching space powers on earth; real moat (flight heritage, private Mahia pad + US–NZ treaty, vertical integration, Iridium's scarce L-band spectrum); record Q2'26 revenue ($234M, +62% y/y); <b>$2.36B</b> record backlog (45.5% converts in 12 months).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The business is not in dispute; the price is.</b> No profile buys at $80.25; no profile recommends a short. Five frameworks, five refusals at the current price.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Neutron is THE swing factor.</b> Unflown, slipped ~five times, Stage-1 tank ruptured January 2026, "window narrowing"; ~14% probability of a 2026 launch (prediction markets). A successful first flight re-rates the entire story; a static-fire/first-flight failure flips the narrative from "when" to "if."</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Iridium is transformative but risky.</b> $8.0B EV ($54/share cash+stock), funded by a <b>$3.6B committed bridge</b> plus assumption of Iridium's <b>$1.775B term loan</b>; close mid-2027; financing and integration unbuilt; converts a net-cash fortress into a levered balance sheet.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Valuation is extreme.</b> 62× TTM sales / ~42× forward with no GAAP earnings through FY27 (consensus adj EPS −$0.05 FY26 / +$0.05 FY27); the price embeds a "second SpaceX" outcome the cash-flow math does not support.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Dilution is structural.</b> Shares +15.7% YoY (598.5M → ~641M guided); $1.08B ATM Q2'26 plus $1.12B FY25; $3.0B ATM authorization; 141.8M shares reserved (~24% overhang); evergreen plan +5%/yr. Growth is funded by shareholders, not by the business.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The cash bridge is real but finite.</b> Net cash ~$2.25B ($3.77/share) cushions a TTM FCF of <b>−$371M</b>; management guides adjusted-EBITDA-positive the quarter after a successful first Neutron flight and FCF-positive 18–24 months later.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The single valuation-critical variable is the FCF/EBITDA inflection after Neutron's first successful flight</b> — the hinge that reconciles the fundamental lenses (IV ~$6–16) with the macro lenses (12-mo price ~$88–103). If Neutron flies and the P&amp;L inflects, the equity-funded reinvestment turns value-creating; if it fails or slips, value converges toward net cash.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The macro is a headwind.</b> 10Y ~4.69% near its 52-week high, a hawkish Fed hold under Chair Warsh with three dissents for a hike, and an energy-driven inflation shock — a discount-rate headwind for a 2.63-beta, long-duration, cash-burning growth stock.</div>
+          </div>
+        </div>
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Reference price: intrinsic value vs 12-month price (the fundamental-vs-macro split).</b> Buffett/Munger/Damodaran frame scenario values as <b>intrinsic value today</b> (~$6–16; price 5–13× IV); Druckenmiller/Soros frame them as <b>12-month price expectations</b> (~$88–103). Cross-examination: Soros to the IV camp — "your $11–16 tells me nothing about the next quarter; the stock can run to $95 on a Neutron flight." Buffett to the price-path camp — "your $88–103 base is the consensus price target — the market's belief, not a mispricing." <b>Named concession:</b> Druckenmiller and Soros concede their cells are 12-month price paths, not IV ("on an IV basis I am as bearish as the fundamental lenses"). <b>Resolved:</b> the three IV models set the consensus IV; Druckenmiller/Soros inform the near-term ladder and triggers. Both frames converge: <b>do not initiate at $80.25.</b></div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Where does base-case intrinsic value actually sit?</b> Buffett ~$15 (moderate discount), Munger $6.12 (21.7% discount, 0–2% terminal growth — "demand a penalty"), Damodaran <b>$11.00</b> (verified workbook: 12% WACC, 3% terminal growth, SBC-aware margins, ROIC 10%→18%). Cross-examination: Munger to Buffett — "a 2.63-beta cash-burning business does not deserve your discount rate." Buffett concedes the discount-rate spread is the entire difference and publishes $6–26 as the range. <b>Resolved:</b> consensus base ≈ <b>~$11</b> (the workbook anchor); Buffett's ~$15 is the optimistic fundamental read, Munger's ~$6 the conservative. It sits ~86% below the price — the fundamental-vs-macro chasm made concrete.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>How much credit for the right tail (Neutron + Iridium)?</b> Fundamental IV: Damodaran bull <b>$25.09</b> / extreme bull <b>$50.22</b> (25%/10%); Buffett ~$26; Munger $8.38. Macro 12-mo price paths: Druckenmiller bull $135 (+68%); Soros bull $115 (+43%) / extreme bull $135 (+68%). Cross-examination: Damodaran to the macro camp — "your $135 is the consensus price target; my extreme-bull IV of <b>$50.22</b> is what the business is *worth* even if every catalyst lands, and it is <b>−37% below today's price</b>." Druckenmiller — "the market trades the binary; if Neutron flies, the stock re-rates toward $95+ before your IV catches up." <b>Named concession:</b> Druckenmiller concedes the tail is "real but already partially in the price"; Soros concedes it needs *both* Neutron *and* Iridium — "if one fails, the compound narrative breaks." <b>Resolved:</b> the right tail justifies watching and precludes a short, but does not justify buying at $80.25 — the market is paying for the price-path tail, not the value tail.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>What price compensates for the uncertainty?</b> Fundamental buy zones &lt;$10–30 (Buffett &lt;$10; Munger &lt;$20; Damodaran ≤$30 first tranche, &lt;$20 conviction); macro buy zones $50–72 (Druckenmiller $50–65 dislocation; Soros $62–72). Cross-examination: Buffett to Soros — "you'd buy at $62–72, 4–5× my base-case IV — where is your margin of safety?" Soros — "I buy a 12-month reflexive position with defined stops, cushioned by $3.77/share net cash and a $2.36B backlog; different games, same name." <b>Named concessions:</b> Druckenmiller concedes $50–65 is a trading/dislocation zone requiring confirmation (10Y &lt;~4.3%); Soros concedes $62–72 is tactical at only ~1.1–1.3×; Damodaran/Munger concede a successful Neutron de-risks value toward the $20–30 first-tranche zone. <b>Resolved (unanimous):</b> composite ladder — tactical starter <b>$62–72</b>, tactical accumulate <b>$50–62</b>, fundamental accumulate <b>$20–30</b>, high-conviction <b>&lt;$20</b>, hard do-not-initiate at $80.25. The dispute is about sizing, temperament, and horizon — nobody buys at $80.25.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Management quality &amp; the dilution / insider-selling question.</b> Buffett ~7/10 (world-class founder-execution; austere comp $6.83M, 88:1 pay ratio, forfeited RSUs, candid); Munger ~5–6/10 ("a CFO who realized <b>$86M</b> while the company lost <b>$198M</b> — the incentive picture is poisoned by structure"); Damodaran ~7/10 ("Excellent operationally, Good on capital allocation — but equity-funded growth pushes risk onto shareholders"); Soros ~6/10 (insider selling ~$300M+ into the drawdown). Cross-examination: Munger — "the dilution treadmill is the incentive problem in one data point." Buffett — "the equity raises fund exactly the growth the bulls demand, and Beck personally paid in forgone comp." <b>Named concessions:</b> Buffett concedes the dilution is real (+15.7% shares YoY, ~24% overhang); Soros concedes Beck's comp is austere but the cycle-low concentration remains a caution flag; Munger concedes Beck is an honest, superb founder — the dispute is the structure, not the man. <b>Resolved:</b> consensus management <b>6/10</b> — docked for dilution, the $8B Iridium leverage, and insider selling.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Is 62× trailing sales / no earnings / negative FCF a red flag or a growth-stage artifact?</b> The bear reading (Munger, Damodaran): ROIC <b>−5.5% &lt; WACC 12%</b>; OCF (−$222M) worse than the net loss (−$165M); working capital consumed ~$136M in H1'26; no owner earnings. The counter-reading (Buffett, partially Druckenmiller): high-quality organic growth (space systems +38.6% QoQ, cost per launch −31%, GM 21%→37%, record backlog) — a pre-profit hyper-grower with a real inflection path. Cross-examination: Damodaran to Buffett — "OCF − capex − SBC ≈ <b>−$393M</b> of economic cash consumption in FY25, funded entirely by ATM raises; the growth is real, the *funding* is the risk." <b>Named concession:</b> Druckenmiller concedes there is <b>no cash-flow valuation floor today</b> — "the market will not reward earnings until Neutron de-risks the P&amp;L."; Damodaran concedes the growth is genuinely organic and margins are inflecting on the gross line. <b>Resolved:</b> a <b>real fragility, not an artifact</b> — it is why the fundamental IV sits so far below the price, why no margin of safety exists at $80.25, and why the FCF/EBITDA inflection is the valuation-critical variable.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">Reconciled scenario matrix. The Damodaran column is the verified workbook (ALL_MATCH) and anchors the consensus IV; Druckenmiller/Soros columns are <b>12-month price expectations, not intrinsic value</b>.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+<th class="">Scenario</th><th class="right">Prob.</th><th class="right">Damodaran (workbook)</th><th class="right">Buffett</th><th class="right">Munger</th><th class="right">Druckenmiller†</th><th class="right">Soros†</th><th class="right">Consensus IV</th>              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<td>Severe bear</td><td class="right">10%</td><td class="right">$4.91</td><td class="right">~$6 *</td><td class="right">~$3.44 **</td><td class="right">~$55 (−31%)† *</td><td class="right">$40 (−50%)†</td><td class="right"><b>~$5</b></td>
+              </tr>
+              <tr>
+<td>Bear</td><td class="right">20%</td><td class="right">$5.94</td><td class="right">~$6–10 *</td><td class="right">$3.44–6.12 **</td><td class="right">$55 (−31%)†</td><td class="right">$58 (−28%)†</td><td class="right"><b>~$6</b></td>
+              </tr>
+              <tr class="hl">
+<td>Base</td><td class="right">35%</td><td class="right">$11.00</td><td class="right">~$15 *</td><td class="right">$6.12 **</td><td class="right">$103 (+28%)†</td><td class="right">$88 (+10%)†</td><td class="right"><b>~$11</b></td>
+              </tr>
+              <tr>
+<td>Bull</td><td class="right">25%</td><td class="right">$25.09</td><td class="right">~$26 *</td><td class="right">$8.38 **</td><td class="right">$135 (+68%)†</td><td class="right">$115 (+43%)†</td><td class="right"><b>~$25</b></td>
+              </tr>
+              <tr>
+<td>Extreme bull</td><td class="right">10%</td><td class="right">$50.22</td><td class="right">~$26+ *</td><td class="right">~$8.38+ **</td><td class="right">~$135 (+68%)† *</td><td class="right">$135 (+68%)†</td><td class="right"><b>~$50</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">* Buffett and Druckenmiller publish three-scenario distributions; severe-bear and extreme-bull cells are proxied from their published bear/bull extremes. <b> Munger publishes three scenarios (bear $3.44 / base $6.12 / bull $8.38) at a 21.7% discount; tails are his bear/bull extremes. † Druckenmiller/Soros cells are </b>12-month price expectations, NOT intrinsic values<b>; they inform the near-term ladder and triggers, not the consensus IV. Note: even the Extreme Bull fundamental scenario (</b>$50.22<b>) sits </b>−37% below the current price** — the entire fundamental distribution is below the market.</p>
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 10px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">~$5</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 12px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">~$6</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 22px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">~$11</div>
+            <div class="prob">35%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 50px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">~$25</div>
+            <div class="prob">25%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 100px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">~$50</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus intrinsic value per share</span><span>~$50</span>
+        </div>
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>EV = 0.10×$4.91 + 0.20×$5.94 + 0.35×$11.00 + 0.25×$25.09 + 0.10×$50.22 = 0.49 + 1.19 + 3.85 + 6.27 + 5.02 ≈ $16.82/share (verified workbook)</h3>
+          <p class="big">At $80.25 that is roughly <b>−79.04% expected upside</b> (≈ −79%) and <b>≈ −26.84% 5-year annualized</b> — a deeply negative expected return with no margin of safety. The consensus weighted value <b>converges exactly on Damodaran's verified workbook value ($16.82)</b>; the three fundamental weighted values span <b>$5.63 (Munger) → ~$14 (Buffett) → $16.82 (Damodaran)</b> — a simple midpoint (~$12) is a reasonable low-end read. Downside tail (severe bear): −94% from $80.25; upside tail (extreme bull): <b>−37% from $80.25</b> — *every* fundamental scenario sits below the price. Confidence: <b>Low/Medium</b>. The reverse-DCF check (uncontested): $80.25 requires <b>~$25–30B terminal revenue at 22–25% operating margins</b> — a "second SpaceX" outcome with &lt;10% probability — i.e., the market pays ~5× the weighted IV for the price-path bull story. Aggressive and, at the value level, unreachable by the fundamental math.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">Where the five frameworks meet — the composite accumulation plan. Do not initiate above ~$72; $80.25 sits firmly in the do-not-initiate zone.</p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $135</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / avoid — exceeds Druckenmiller's sell zone; consensus-PT territory fully spent; severe-overvaluation sell (Buffett/Munger)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$95–135</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 80%"></div>
+            </div>
+            <span class="action">Do not initiate / hold — Druckenmiller buys &gt;$95 only on confirmed Neutron success (post-catalyst momentum, not initiation)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$80–95</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 60%"></div>
+            </div>
+            <span class="action">Do not initiate — $80.25 sits here; above every profile's buy zone; no margin of safety</span>
+          </div>
+          <div class="rung">
+            <span class="price">$72–80</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 45%"></div>
+            </div>
+            <span class="action">Watch — just above Soros's $62–72 buy zone; cash+backlog floor not yet reached</span>
+          </div>
+          <div class="rung">
+            <span class="price">$62–72</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 50%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Tactical starter — Soros buy zone (near 200-day SMA / July-low region; ~1.1–1.3× asymmetry, cash+backlog floor)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$50–62</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Tactical accumulate — Druckenmiller dislocation zone ($50–65); ~1.8:1 asymmetry; requires Neutron trajectory + 10Y &lt;~4.3%</span>
+          </div>
+          <div class="rung">
+            <span class="price">$20–30</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 70%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31">Fundamental accumulate — Damodaran first-tranche zone ($22–30 accumulate, ≤$30); Munger &lt;$20 approaching</span>
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $20</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31"><b>High-conviction fundamental buy — Damodaran &amp; Munger conviction (&lt;$20); Buffett's deepest value zone (&lt;$10)</b></span>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">06</span>Pros &amp; Cons — At ~$80.25</h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>Exceptional, real business — one of only two self-launching space powers (build + launch + operate its own satellites); real moat (flight heritage, private NZ pad + US–NZ treaty, vertical integration, Iridium's scarce L-band spectrum)</li>
+              <li>Record execution &amp; backlog — Q2'26 revenue $234M (+62% y/y), $2.36B record backlog (45.5% converts in 12 months), $1B+ bookings in Q2 and post-quarter; cost per launch −31%, gross margin 21%→37% in three years</li>
+              <li>Transformative optionality — Neutron (13,000 kg reusable, ~$50–55M ASP, NSSL Lane 1 onboarded, ceiling tripled to $17B) and Iridium (&gt;$870M profitable recurring revenue, 2.5M subscribers) are genuine step-change catalysts</li>
+              <li>Fortress balance sheet today — ~$2.25B net cash ($3.77/share), current ratio 5.5, D/E 0.04 pre-Iridium; the cash bridge cushions the burn</li>
+              <li>Counter-cyclical demand — ~47% US-government-related revenue (defense-space priority: NSSL, SBAMT/Flatellite, SDA, HASTE); Europe re-arming (Rocket Lab Germany)</li>
+              <li>Already −47% off the high — 52-week range $37.57–$151.00; forward P/S ~42× (from ~62× TTM); ARK accumulating; short interest ~8.2% of float (squeeze fuel on good news)</li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>No margin of safety — price ~5× consensus weighted IV ($16.82) and ~7× consensus base IV (~$11); even the extreme-bull fundamental scenario ($50.22) is −37% below the price</li>
+              <li>Zero owner earnings — TTM FCF −$371M (OCF −$222M); losses every year since inception; OCF worse than the net loss; working capital consumed ~$136M in H1'26; quality ratio inverted</li>
+              <li>Unproven Neutron — unflown, slipped ~five times, Stage-1 tank rupture Jan 2026, "window narrowing"; ~14% probability of a 2026 launch (prediction markets); R&amp;D ~45% of FY25 revenue is a stranded-cost risk if it fails</li>
+              <li>Transformative-but-levered Iridium — $8.0B EV, $3.6B bridge + $1.775B term loan; financing/integration unbuilt; 5 "HIGH" risk factors in the 10-Q; converts net-cash fortress into a levered balance sheet</li>
+              <li>Structural dilution — shares +15.7% YoY; $1.08B ATM Q2'26 + $1.12B FY25; $3.0B ATM authorization; 141.8M shares reserved (~24% overhang); evergreen plan +5%/yr; growth funded by shareholders</li>
+              <li>Insider selling — ~$300M+ sold into the drawdown (Beck ~$286M, CFO/COO ~$30M); concentration at the cycle low is a caution flag</li>
+              <li>Macro headwind — 10Y ~4.69% near 52-week high, hawkish Fed hold (9–3, hike dissents), energy shock; a 2.63-beta, long-duration, cash-burning stock is the most rate-sensitive asset class</li>
+              <li>Uniform bullish consensus — 18 analysts Buy, avg PT $112.94; unanimity is itself a risk if Neutron slips (no low bar to beat)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Neutron first launch succeeds — clean static fire → first flight → cadence toward flight 10; unlocks NSSL Lane 1 task orders and flips the P&amp;L to adjusted-EBITDA-positive (the single strongest catalyst; Druckenmiller's "aggressive on confirmation"; Soros's loop-reengagement trigger)</li>
+              <li>FCF / P&amp;L inflection confirmed — adjusted EBITDA positive the quarter after first launch, FCF positive 18–24 months later, as guided; the cash bridge de-risked and GAAP losses narrowing</li>
+              <li>Iridium closes cleanly with a low-dilution financing — mid-2027, minimal new equity, visible synergies; re-rates RKLB from a launch story to an applications company</li>
+              <li>A margin of safety returns — price into the $50–65 dislocation zone (and/or below ~$30 fundamental zone) and/or a 10Y roll below ~4.3% with Fed confirmation — the valuation gate that would move Buffett's C toward a Buy</li>
+              <li>Dilution decelerates — ATM stays retired, share-count growth slows well below +15.7%/yr, and (once profitable) buybacks ≥ SBC</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Neutron static-fire or first-flight failure — the narrative flips to "if"; multiple compresses hard; the medium-lift thesis dies (Munger Scenario A; Soros's highest-risk catalyst; Druckenmiller's falsification signal: "exit on a first-flight failure with a long stand-down")</li>
+              <li>Neutron slips again into 2027 — kills the end-2026 narrative the current multiple partially pays for (Druckenmiller's most probable negative surprise)</li>
+              <li>Dilution-heavy Iridium financing or deal break — heavy new equity (shares &gt;+5%/yr), or the deal collapses with stranded costs and a re-levered balance sheet</li>
+              <li>FCF burn worsens without an inflection path — sustained negative OCF; the $2.25B cash bridge depletes faster than the Neutron/Iridium timeline can refill it</li>
+              <li>Macro de-rating — 10Y breaks and holds ~5%+, compressing a 42–62×-sales multiple with no earnings floor; and/or insider selling continues into weakness</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Neutron first-launch status</b></td>
+                <td>The binary hinge of the entire valuation</td>
+                <td class="right">Clean static fire → first flight, 2026–early 2027</td>
+              </tr>
+              <tr>
+                <td><b>FCF / EBITDA trajectory</b></td>
+                <td>The valuation-critical variable — does the P&amp;L inflect</td>
+                <td class="right">Adjusted EBITDA+ quarter-after-launch; FCF+ 18–24 months later</td>
+              </tr>
+              <tr>
+                <td><b>Iridium close &amp; financing</b></td>
+                <td>Applications re-rating; leverage &amp; dilution profile</td>
+                <td class="right">Close mid-2027 with low-dilution structure</td>
+              </tr>
+              <tr>
+                <td><b>Share count / dilution</b></td>
+                <td>The per-share tax (~+15.7% YoY, ~24% overhang)</td>
+                <td class="right">&lt;+5%/yr; ATM retired; buybacks ≥ SBC once profitable</td>
+              </tr>
+              <tr>
+                <td><b>Backlog conversion &amp; bookings</b></td>
+                <td>The smooth, high-visibility engine</td>
+                <td class="right">$2.36B converts at 45.5%/12mo; record bookings continue</td>
+              </tr>
+              <tr>
+                <td><b>Gross margin</b></td>
+                <td>P&amp;L inflection signal (Q3 trough is mix-driven)</td>
+                <td class="right">35–37% NG guide holds; GM recovers post-Q3</td>
+              </tr>
+              <tr>
+                <td><b>10Y Treasury / Fed</b></td>
+                <td>Discount-rate gate for a 42–62×-sales multiple</td>
+                <td class="right">&lt; ~4.3–4.4%; Fed cut path</td>
+              </tr>
+              <tr>
+                <td><b>Insider selling</b></td>
+                <td>Conviction signal at the cycle low</td>
+                <td class="right">Ceases; no further Beck/Spice sales into weakness</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">08</span>Technical Analysis</h2>
+        <p class="lead">Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th class="right">Value</th>
+                <th class="right">Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Price vs 200-day SMA</b></td>
+                <td class="right">$78.39</td>
+                <td class="right">+2.4% above</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 100-day SMA</b></td>
+                <td class="right">$89.93</td>
+                <td class="right">−10.8% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 50-day SMA</b></td>
+                <td class="right">$85.54</td>
+                <td class="right">−6.2% below</td>
+              </tr>
+              <tr>
+                <td><b>14-day RSI</b></td>
+                <td class="right">53.2</td>
+                <td class="right">Neutral (mid-range)</td>
+              </tr>
+              <tr>
+                <td><b>14-week RSI</b></td>
+                <td class="right">48.8</td>
+                <td class="right">Neutral</td>
+              </tr>
+              <tr>
+                <td><b>50-week RSI</b></td>
+                <td class="right">54.3</td>
+                <td class="right">Neutral-bullish</td>
+              </tr>
+              <tr>
+                <td><b>52-week high / low</b></td>
+                <td class="right">$151.00 / $37.57</td>
+                <td class="right">−46.9% from high · +113.6% from low</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">RSI &gt;70 overbought, &lt;30 oversold; SMA deltas are the price's % deviation from each average. At $80.25 the only bullish cross is the +2.4% above the 200-day SMA ($78.39); the stock sits −10.8% below the 100-day and −6.2% below the 50-day, with all three RSIs mid-range. The tape is neutral-to-negative — momentum is not yet confirming the thesis (Druckenmiller's "no price confirmation"; Soros's unresolved recovery-vs-lower-high).</p>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">09</span>The Five Consensus Conclusions</h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Business.</b> Rocket Lab is an exceptional, founder-run, vertically integrated space company — one of only two "self-launching" space powers on earth (build, launch, operate its own satellites) — with a real moat (flight heritage, private NZ pad + US–NZ treaty, vertical integration, Iridium's scarce L-band spectrum), a record $2.36B backlog, and extraordinary growth optionality in Neutron and Iridium. The business quality is not in dispute; the price is.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Economics.</b> The sole determinant of long-term per-share value is <b>the FCF/EBITDA inflection after Neutron's first successful flight</b> — whether an unflown medium-lift rocket and a levered $8B acquisition convert the equity-funded reinvestment (ROIC −5.5% vs ~12% WACC) into positive free cash flow inside a credible window. If Neutron flies and the P&amp;L inflects, growth turns value-creating; if it fails or slips, value converges toward net cash (~$3.77/share) and the backlog. The per-share tax is dilution (shares +15.7% YoY, ~24% issuance overhang), not interest.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Market's Expectations.</b> At $80.25 the market is implicitly assuming a successful Neutron first launch, an accretive Iridium close, ~40%+ revenue growth for years, a 10-year that does not break out to 5%+, and no further heavy dilution — a "second SpaceX" outcome requiring ~$25–30B terminal revenue at 22–25% operating margins, at ~5× the consensus weighted IV and 62× trailing sales / ~42× forward. Aggressive but not impossible; the consensus "Buy / $112.94 PT" reflects it. The Street's uniformity is itself a risk if Neutron slips.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Valuation.</b> Consensus base intrinsic value <b>~$11/share</b>; probability-weighted <b>~$16.82/share</b> (verified workbook anchor); bear <b>~$5–7</b>; bull <b>~$25</b>; extreme bull <b>~$50</b> (Damodaran workbook: $4.91 / $5.94 / $11.00 / $25.09 / $50.22, weighted $16.82, upside −79.04%, 5-yr annualized −26.84%). Confidence: <b>Low/Medium</b> — the direction of overvaluation is robust (the entire fundamental distribution sits below the price), the magnitude is uncertain (the Neutron/Iridium binary). The 12-month price-path lenses (Druckenmiller ~$90, Soros ≈$89, +11–12%) are balanced-to-positive but not exceptional (~1.1×–1.8× asymmetry). Both the base and weighted fundamental values are far below the $80.25 price — expected upside ≈ −79%, 5-year annualized ≈ −27%.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Investment Decision.</b> <b>C — Hold/Watch at ~$80.25; do not initiate above ~$72.</b> Tactical starter <b>$62–72</b> (Soros), tactical accumulate <b>$50–62</b> (Druckenmiller, on dislocation + confirmation), fundamental accumulate <b>$20–30</b>, high-conviction <b>&lt;$20</b> (Damodaran/Munger conviction; Buffett &lt;$10), provided the monitoring hierarchy (Neutron first-flight status &gt; FCF/EBITDA inflection &gt; Iridium close &amp; financing &gt; dilution/share count &gt; backlog &amp; margin) stays intact. Upgrades require proof — a successful Neutron first flight, a confirmed FCF inflection, a low-dilution Iridium close, and/or a margin of safety — and a 10Y roll below ~4.3%. The binary catalyst and the operating data, not the stock price, will deliver the verdict.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">10</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>At a price of <b>$80.25</b>, the market is paying ~62× trailing sales — about <b>five times the consensus probability-weighted intrinsic value of $16.82</b> and roughly seven times the ~$11 base — for a company that has produced <b>zero owner earnings</b> in its history (TTM FCF −$371M) and whose entire valuation rests on an <b>unflown medium-lift rocket (Neutron)</b> and a <b>levered $8B acquisition (Iridium)</b> landing roughly simultaneously. Five independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity-driven expectations, and reflexivity — all refuse to buy at this price, all land on a <b>C (Hold/Watch, or Monitor)</b> at the unified margin (with Munger and Damodaran recording <b>D — Avoid</b> as their intrinsic-value verdict), and all place the valuation-critical variable on the same hinge: <b>whether Neutron's first successful flight converts the equity-funded reinvestment into positive free cash flow inside a credible window, and whether dilution and the Iridium financing allow per-share value to compound at anything like the rate the price assumes.</b> We agree the business is exceptional, Neutron and Iridium are real but binary, the balance sheet is a fortress today but will be levered by Iridium, dilution is structural, the macro is a headwind, and the valuation embeds a "second SpaceX" outcome with no margin of safety and no earnings floor. The most dangerous risks are a <b>Neutron static-fire/first-flight failure</b> (which flips the narrative to "if" and compresses the multiple hard), <b>another Neutron slip into 2027</b>, a <b>dilution-heavy Iridium financing or deal break</b>, a <b>sustained cash burn without an inflection path</b>, and a <b>10-year regime shift above ~5%</b> on a 2.63-beta multiple with no cash-flow floor. Therefore, at today's price the consensus is to <b>hold and wait</b>: do not initiate above ~$72; take a tactical starter at <b>$62–72</b>, a tactical accumulate at <b>$50–62</b> (on dislocation and confirmation), a fundamental accumulate at <b>$20–30</b>, and high-conviction only <b>below $20</b>; and let the Neutron flight, the FCF inflection, the Iridium close, and the share count — not the "space power" narrative — decide whether this exceptional company becomes an exceptional investment.</p>
+        </div>
+      </section>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes five analyses — <code>buffet-analysis.md</code>, <code>munger-analysis.md</code>, <code>damodaran-analysis.md</code>, <code>druckenmiller-analysis.md</code>, and <code>soros-analysis.md</code> (dated August 16, 2026) — which themselves reference Rocket Lab SEC filings (FY2025 10-K, Q2 2026 10-Q, DEF 14A, Iridium S-4), the Q2 2026 earnings-call transcript, StockAnalysis datasets (including the shared fact pack), Reuters, CNBC, TipRanks, MarketWatch, BLS CPI, the FOMC statement, and Fed H.4.1, as of August 2026. Damodaran's scenario values are the verified <code>RKLB_Damodaran_Financial_Model.xlsx</code> workbook outputs (verifier: ALL_MATCH): Severe Bear $4.91 / Bear $5.94 / Base $11.00 / Bull $25.09 / Extreme Bull $50.22, probability-weighted $16.82, upside −79.04%, 5-yr annualized −26.84% (WACC 12.0%, terminal growth 3.0%, probabilities 0.10/0.20/0.35/0.25/0.10). This document is an educational synthesis of estimates about estimates — it is <b>not investment advice</b>, and no valuation herein should be treated as a price prediction or a recommendation to trade. Rocket Lab's outcome distribution is wide and binary; treat every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

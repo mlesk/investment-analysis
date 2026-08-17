@@ -1,0 +1,244 @@
+{
+  "company": "ServiceNow, Inc.",
+  "ticker": "NOW",
+  "exchange": "NYSE",
+  "date": "2026-08-16",
+  "reference_price": "$124.00",
+  "kicker": "Synthesized Consensus · Five-Lens Deliberative Debate",
+  "title": "ServiceNow, Inc. — Consensus Investment Report",
+  "subtitle": "A structured debate between five independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, and Soros reflexivity — reconciled into a single synthesized analysis and recommendation.",
+  "rating": "C — HOLD / WATCH",
+  "exec_summary": {
+    "lead": "ServiceNow is one of the highest-quality software franchises ever built — a wide-moat, 98%-renewal, ~31%-FCF-margin \"system of action\" for enterprise work with a real (but young) AI second curve. Five independent analyses — using five different frameworks — each refused to buy at **$124** and converged on the **same rating: C — Hold/Watch**. The business is not in dispute; the price, the per-share economics (stock-based compensation), and the durability of AI monetization are.",
+    "cards": [
+      {
+        "label": "Consensus base value",
+        "value": "~$100",
+        "note": "Midpoint of Buffett (~$130 \"proven-execution\"), Munger ($72–80), and Damodaran workbook ($93.57) — ~19% below price"
+      },
+      {
+        "label": "Probability-weighted value",
+        "value": "~$109",
+        "note": "Converges almost exactly on Damodaran's workbook $108.85; still below the $124 price"
+      },
+      {
+        "label": "Bear / Bull range",
+        "value": "$45 – $193",
+        "note": "Severe bear ~$45–65, bull ~$150, extreme tail ~$193 — a wide distribution driven by the SBC/margin judgment"
+      },
+      {
+        "label": "Confidence",
+        "value": "Low/Med",
+        "note": "AI revenue not yet recognized; organic cRPO decelerating; SBC is the swing variable"
+      },
+      {
+        "label": "Consensus entry plan",
+        "value": "$95–110 → <$80",
+        "note": "Start at $95–110; build $80–95; full conviction only below $80 (thesis intact)"
+      },
+      {
+        "label": "Valuation-critical metric",
+        "value": "AI durability · ROIC",
+        "value_style": "font-size: 22px",
+        "note": "AI-monetization durability and incremental ROIC vs ~9% WACC"
+      }
+    ]
+  },
+  "profiles_title": "The Five Positions at the Table",
+  "profiles_lead": "Each participant analyzed ServiceNow independently. Their positions were then cross-examined in the debate.",
+  "profiles": [
+    {
+      "name": "Warren Buffett",
+      "role": "Owner-Earnings Value Lens",
+      "verdict": "B — price-contingent (C at $124)",
+      "at": "at ~$124",
+      "paragraph": "Three-scenario DCF: conservative **~$74**, central **~$130**, optimistic **~$190**; a strict owner-earnings calculation that expenses dilution yields **$40–55**. The ~$130 base is the \"proven-execution\" value, not a bargain price. \"The question is not whether ServiceNow is a great company — it plainly is. It is how much future perfection is already priced in.\"",
+      "tags": ["Base ~$130*", "Moat: Wide", "Interest $95–100", "Compelling <$80"]
+    },
+    {
+      "name": "Charlie Munger",
+      "role": "Multidisciplinary Quality Lens",
+      "verdict": "C — Watch",
+      "at": "at ~$124",
+      "paragraph": "Conservative DCF (12% discount, 2% terminal growth): bear **$55–60**, conservative base **$72–80**, bull **$105–115**; fair value at a normal ~9% discount **$135–145**. At $124 you pay ~49× FCF after expensing stock-based compensation — \"a wonderful company at an unwonderful price.\" First tranche **~$85–100**, conviction **$70–80**.",
+      "tags": ["Base $72–80", "Moat: Wide", "First tranche $85–100", "Conviction $70–80"]
+    },
+    {
+      "name": "Aswath Damodaran",
+      "role": "Fundamental Valuation Lens",
+      "verdict": "C — Hold / Watch",
+      "at": "at ~$124",
+      "paragraph": "SBC-aware FCFF DCF (9% WACC, 3% terminal growth, margins 24%→32%): base **$93.57**; probability-weighted **$108.85** across five scenarios. At $124 that is **−12.2% expected upside** and **−2.6% 5-year annualized** — a negative expected return with no margin of safety. Buy zone **$80–95**, conviction below **$80**.",
+      "tags": ["Base $93.57", "Weighted $108.85", "Buy zone $80–95", "Confidence Low/Med"]
+    },
+    {
+      "name": "Stanley Druckenmiller",
+      "role": "Macro, Liquidity & Expectations Lens",
+      "verdict": "C+ — Monitor",
+      "at": "at ~$124 · 82/150",
+      "paragraph": "\"There is no Druckenmiller-quality opportunity in ServiceNow at ~$124 today.\" Expected 12-month return **~+13% (~$140)** with ~2.7:1 asymmetry — positive, not exceptional. Macro is a headwind: 10Y ~4.69% and rising, hawkish Fed hold. Buyer closer to **$95–110**; aggressive only if organic cRPO re-accelerates *and* the 10Y rolls below ~4.4%.",
+      "tags": ["12-mo ~$140", "Asymmetry 2.7:1", "Buy zone $95–110", "Monitor"]
+    },
+    {
+      "name": "George Soros",
+      "role": "Reflexivity & Disequilibrium Lens",
+      "verdict": "C — Hold / Wait for confirmation",
+      "at": "at ~$124",
+      "paragraph": "The ~38% YTD drawdown was a reflexive \"SaaSocalypse\" overshoot, now substantially corrected — the high-asymmetry long at $81–90 has been harvested. At $124 the risk/reward is ~2.1:1, roughly balanced. Aggressive long only **<$95**; scale in **$105–115**; the valuation breaks if organic cRPO falls below ~19.5% for a full quarter or GAAP EPS stays down while SBC rises.",
+      "tags": ["Expected ~+9%", "Asymmetry 2.1:1", "Aggressive <$95", "Scale-in $105–115"]
+    }
+  ],
+  "debate": {
+    "title": "The Debate: Agreement, Contention, Resolution",
+    "lead": "Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions.",
+    "agreements_title": "Uncontested consensus core",
+    "agreements": [
+      "**This is a best-in-class franchise.** Wide switching-cost moat, 98% renewal, ~$29B RPO (~1.8–2 years of contracted revenue), ~31% FCF margin, ~5% CapEx/revenue.",
+      "**The AI tailwind is real, not a story.** AI ACV crossed $1B (tracking to $1.5B), agentic deployments up ~9× in nine months, 50% of net-new business already non-seat-based. The \"SaaSocalypse\" fear was substantially contradicted by Q2 results.",
+      "**SBC / GAAP quality is the per-share tax.** ~$2.2B/yr of stock-based compensation (~15% of revenue) is larger than TTM GAAP net income ($1.67B). How the investor treats SBC is the single most consequential valuation judgment.",
+      "**The ~$12B M&A and $9.8B goodwill is an unproven, value-relevant risk.** Moveworks, Veza, Armis in 18 months; accounting ROIC (~10%) ≈ WACC only because of the acquisition step-up.",
+      "**The balance sheet is net-debt-neutral, not a solvency risk.** ~$6.7B cash+investments vs ~$8.45B debt → ~$1.75B net debt; interest coverage ~22×; Altman Z ~5.5.",
+      "**Valuation is the binding constraint.** At 77× GAAP / 27× forward / ~28× FCF / ~45× EV/EBITDA, every profile independently found **no margin of safety** at $124.",
+      "**Unanimous: do not buy at $124.** Five frameworks, five refusals — B-but-not-here (Buffett), C-Watch (Munger), C-Hold/Watch (Damodaran), C+-Monitor (Druckenmiller), C-Wait (Soros). No A; no short.",
+      "**One valuation-critical variable: AI-driven growth durability and incremental ROIC vs WACC.** Damodaran: \"economic ROIC (~30%+) >> 9% WACC, so growth creates value — only if AI monetization proves durable and SBC stays in check.\" Soros: \"does AI *add* volume faster than it *compresses* seats?\""
+    ],
+    "contentions_title": "Contested points — and how they were resolved",
+    "contentions": [
+      "**Reference price: intrinsic value vs 12-month price.** All five anchor on $124, but Buffett/Munger/Damodaran frame scenario values as intrinsic value today while Druckenmiller/Soros frame them as 12–18-month price expectations. Druckenmiller and Soros concede their cells are price paths, not IV. **Resolved:** the three IV models set the consensus IV; Druckenmiller/Soros inform the near-term ladder and triggers.",
+      "**Where does base-case intrinsic value actually sit?** Buffett ~$130 (capitalizes the rule-of-60 plan — concedes it is \"proven-execution value\"), Munger $72–80 (12%/2% — strictest), Damodaran $93.57 (verified workbook), Druckenmiller/Soros ~$139 (consensus price target, not IV). **Resolved:** consensus base ≈ **~$100**; Buffett's ~$130 becomes the upgrade target.",
+      "**How much credit for the right tail?** Damodaran bull $149.08 / extreme bull $238.20 (25% / 10%); Buffett ~$190; Munger $105–115; Druckenmiller $220; Soros $192. All agree the tail is real but unproven — the dispute is purely about weighting. Druckenmiller concedes the bull tail is \"already in the price.\" **Resolved:** consensus bull ~**$150**, extreme bull ~**$193**, combined ~35%.",
+      "**What price compensates for the uncertainty?** Buffett $95–100 interest / $80–90 attractive / <$80 compelling; Munger first tranche $85–100; Damodaran buy $80–95; Druckenmiller $95–110 (conditional); Soros $105–115 scale-in / <$95 aggressive. A dispute about sizing, temperament, and horizon — nobody buys at $124. **Resolved:** composite ladder — first tranche **$95–110**, accumulate **$80–95**, full conviction **<$80**.",
+      "**Management: 7/10 vs 8/10 vs \"Good, not proven.\"** Munger concedes compensation discipline is only 6/10; Damodaran concedes execution and buyback discipline are real; Soros concedes buybacks have so far offset dilution (share count flat-to-down). **Resolved:** consensus **7/10** — best-in-class execution and capital return, docked for a heavy SBC culture, an untested ~$12B M&A strategy, and the DOJ overhang.",
+      "**Is 77× GAAP / 27× forward and the GAAP earnings decline a red flag or a non-GAAP artifact?** The bear reading: Q2 GAAP net income fell y/y ($298M vs $385M); ~49× economic FCF on Munger's basis. The counter-reading: OCF/NI ~3.1×, ~31% FCF margin, buybacks offset dilution — \"structurally depressed, not manipulative.\" **Resolved:** a **real fragility, not a short** — it is why consensus IV sits below the non-GAAP-anchored price, and it caps how high the multiple can reasonably go."
+    ]
+  },
+  "valuation": {
+    "title": "Consensus Valuation",
+    "lead": "Reconciled scenario matrix, using midpoints of the three intrinsic-value models where they disagree. The Damodaran column is the verified workbook (ALL_MATCH).",
+    "matrix": {
+      "columns": ["Scenario", "Prob.", "Damodaran (workbook)", "Buffett", "Munger", "Druckenmiller†", "Soros†", "Consensus IV"],
+      "rows": [
+        { "cells": ["Severe bear", "10%", "$37.52", "~$48 *", "~$50 **", "$74 (−40%)†", "$74 (−40%)†", "~$45"] },
+        { "cells": ["Bear", "20%", "$56.30", "~$82 *", "$55–60", "$99 (−20%)†", "$100 (−19%)†", "~$65"] },
+        { "cells": ["Base", "35%", "$93.57", "~$130 *", "$72–80", "$139 (+12%)†", "$139 (+12%)†", "~$100"], "highlight": true },
+        { "cells": ["Bull", "25%", "$149.08", "~$192", "$105–115", "$180 (+45%)†", "$158 (+27%)†", "~$150"] },
+        { "cells": ["Extreme bull", "10%", "$238.20", "~$190+", "~$150 **", "$220 (+77%)†", "$192 (+55%)†", "~$193"] }
+      ]
+    },
+    "footnote": "* Buffett: Severe bear uses his strict SBC-adjusted owner-earnings basis (~$40–55); Bear uses his conservative DCF (~$74–90); his ~$130 Base is the \"proven-execution\" value. ** Munger: tail cells estimated from his published Bear $55–60 / Bull $105–115. † Druckenmiller/Soros cells are 12-month / 12–18-month **price expectations**, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV.",
+    "chart": {
+      "cols": [
+        { "scen": "Severe Bear", "val": "~$45", "prob": "10%", "height": 24, "fill": "fill-red" },
+        { "scen": "Bear", "val": "~$65", "prob": "20%", "height": 34, "fill": "fill-red" },
+        { "scen": "Base", "val": "~$100", "prob": "35%", "height": 52, "fill": "fill-amber" },
+        { "scen": "Bull", "val": "~$150", "prob": "25%", "height": 78, "fill": "fill-green" },
+        { "scen": "Extreme Bull", "val": "~$193", "prob": "10%", "height": 100, "fill": "fill-deep" }
+      ],
+      "axis_left": "$0",
+      "axis_mid": "Consensus intrinsic value per share",
+      "axis_right": "~$193"
+    },
+    "weighted": {
+      "formula": "EV = 0.10×$45 + 0.20×$65 + 0.35×$100 + 0.25×$150 + 0.10×$193 = 4.5 + 13.0 + 35.0 + 37.5 + 19.3 ≈ $109/share",
+      "text": "At $124 that is roughly **−11.9% expected upside** (≈ −12%) and **≈ −2.5% 5-year annualized** — **a negative expected return with no margin of safety**. The consensus weighted value converges almost exactly on Damodaran's workbook value ($108.85), making the SBC-aware, 9%-WACC, five-scenario framework the defensible anchor. Downside tail (severe bear): −64% from $124; upside tail (extreme bull): +56%. Confidence: **Low/Medium**. The reverse-DCF check (uncontested): the $124 price implies an EV ~32% above Damodaran's base case — it requires ~$58–60B terminal revenue (a sustained ~15%+ decade-long CAGR), a WACC of ~7.5–7.8%, or ~36–40% terminal EBIT margins: **the market is paying for the non-GAAP bull story — aggressive but not impossible, and no bargain.**"
+    }
+  },
+  "ladder": {
+    "title": "Consensus Price Ladder",
+    "lead": "Where the five frameworks meet — the composite accumulation plan. Do not initiate at ~$124; the do-not-initiate band is $110 and above.",
+    "rungs": [
+      { "price": "> $150", "width": 100, "fill": "fill-red", "action": "Reduce / avoid — exceeds consensus PT; severe-overvaluation sell", "color": "var(--red)" },
+      { "price": "$135–150", "width": 80, "fill": "fill-red", "action": "Hold existing, do not add — approaching the $140.25 PT", "color": "var(--red)" },
+      { "price": "$110–135", "width": 60, "fill": "fill-amber", "action": "Hold / watch — fair-to-rich, no margin of safety ($124 sits here)" },
+      { "price": "$95–110", "width": 45, "fill": "fill-green", "action": "Begin accumulating (starter position) — Buffett's interest zone; Druckenmiller's buy zone; Munger's first tranche", "color": "var(--green)" },
+      { "price": "$80–95", "width": 62, "fill": "fill-green", "action": "Accumulate (attractive) — Damodaran buy zone; Buffett attractive", "color": "var(--green)" },
+      { "price": "< $80", "width": 100, "fill": "fill-deep", "action": "High-conviction buy zone — if the monitoring hierarchy stays intact", "color": "#0e4d31", "bold": true }
+    ]
+  },
+  "proscons": {
+    "title": "Pros & Cons — At ~$124",
+    "for": [
+      "Best-in-class franchise — wide switching-cost moat, 98% renewal, ~$29B RPO (~1.8–2 years of contracted revenue)",
+      "Real AI tailwind — AI ACV >$1B (tracking to $1.5B), agentic deployments up 9×, AI Control Tower, 50% of net-new business non-seat-based",
+      "Cash machine — ~31% FCF margin, OCF ~3.1× net income, ~5% CapEx/revenue, pricing power (ProPlus >30%, AI SKUs 20–30% uplift)",
+      "Rising share & elongating contracts — 658 customers >$5M ACV; cybersecurity second engine (Armis/Veza)",
+      "Multiple already reset — forward P/E cut roughly in half (~45× → ~27×); short interest halved; stock back above its 200-day MA",
+      "Buybacks offset dilution — share count flat-to-down (1,047M → 1,034M); ~$4.2B of authorization remaining",
+      "Rule-of-60 / $32B-by-2030 ambition — the bull anchor, supported by two FY26 guide raises"
+    ],
+    "against": [
+      "No margin of safety — price ~19% above consensus base IV (~$100) and ~12% above weighted value (~$109)",
+      "SBC/GAAP quality — ~$2.2B/yr SBC (~15% of revenue) larger than net income; GAAP EPS $1.60; Q2 GAAP net income fell y/y ($298M vs $385M); ~49× economic FCF",
+      "Unproven ~$12B M&A — $9.8B goodwill; accounting ROIC (~10%) ≈ WACC only because of the step-up; integration/impairment risk",
+      "Rich valuation — 27× forward, ~28× FCF, ~45× EV/EBITDA, ~8.7× sales; no relative-value discount",
+      "Organic cRPO decelerating — 21.5% → ~20% cc guide; the live bearish signal (JPMorgan's \"odd lull\")",
+      "AI revenue not yet recognized — AI ACV is bookings; recognized AI revenue is a small fraction of the ~$15.8B subscription base",
+      "Macro headwind — 10Y ~4.69% and rising toward 5%; hawkish Fed hold; energy-driven inflation; long-duration multiple hostage to the long end",
+      "Crowded consensus — 49/49 Strong Buy, PT $140.25; short-covering fuel spent; DOJ + federal ~13% concentration overhangs"
+    ]
+  },
+  "triggers": {
+    "title": "What Changes the Rating",
+    "upgrade_title": "Upgrade C → B/A when:",
+    "upgrade": [
+      "Organic constant-currency cRPO re-accelerates ≥21% cc for two consecutive quarters (the single strongest signal)",
+      "AI ACV converts to recognized revenue — AI becomes visible in the subscription line (>2–3% of revenue) and ~$1.5B reached with margin",
+      "GAAP earnings quality inflects — GAAP net income resumes y/y growth while SBC as % of revenue stabilizes/declines",
+      "Incremental ROIC on the ~$12B M&A demonstrated > ~9% WACC — Armis/Veza/Moveworks integrate cleanly, goodwill defended",
+      "A margin of safety returns — price into $95–110 and/or a 10Y roll below ~4.4% with Fed confirmation of disinflation"
+    ],
+    "downgrade_title": "Downgrade C → D/E if:",
+    "downgrade": [
+      "Organic constant-currency cRPO below ~19.5% for a full quarter — the \"odd lull\" turning structural",
+      "Renewal rate falls below ~95% or seat compression appears in the base line — the moat's tripwire",
+      "GAAP EPS keeps falling while SBC as % of revenue rises — a GAAP-quality reckoning / multiple compression toward ~20× forward",
+      "SBC permanently outruns buybacks (share count grows 4–5%/yr) or M&A integration fails (goodwill impairment)",
+      "Macro de-rating — 10Y breaks and holds ~5%+; or price >$150 without fundamental acceleration (asymmetry exhausted)"
+    ],
+    "dashboard_title": "Consensus monitoring dashboard",
+    "dashboard": [
+      { "metric": "Organic cc cRPO growth", "why": "The hardest leading indicator of durable growth", "helps": "Re-accelerate ≥21% cc" },
+      { "metric": "AI ACV → recognized revenue", "why": "Does AI bookings become real subscription revenue", "helps": ">2–3% of revenue; $1.5B with margin" },
+      { "metric": "GAAP op margin / FCF margin", "why": "The SBC-aware read of the economics", "helps": "SBC % stable/declining; GAAP EPS up y/y" },
+      { "metric": "Renewal rate", "why": "The moat's tripwire", "helps": "~98% hold; <95% breaks" },
+      { "metric": "Incremental ROIC vs WACC", "why": "Value creation on the ~$12B M&A", "helps": "> ~9% WACC" },
+      { "metric": "SBC as % of revenue", "why": "The per-share tax (~$2.2B/yr today)", "helps": "Stabilize or decline" },
+      { "metric": "10Y Treasury yield", "why": "Discount-rate gate for a 27× forward multiple", "helps": "< ~4.4%" },
+      { "metric": "Diluted shares outstanding", "why": "Per-share compounding", "helps": "Flat-to-down (buybacks ≥ SBC)" }
+    ]
+  },
+  "technical": {
+    "title": "Technical Analysis",
+    "lead": "Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.",
+    "rows": [
+      { "metric": "Price vs 200-day SMA", "value": "$118.40", "delta": "+4.7% above" },
+      { "metric": "Price vs 100-day SMA", "value": "$120.90", "delta": "+2.6% above" },
+      { "metric": "Price vs 50-day SMA", "value": "$126.30", "delta": "−1.8% below" },
+      { "metric": "14-day RSI", "value": "55.4", "delta": "Neutral (mid-range)" },
+      { "metric": "14-week RSI", "value": "58.9", "delta": "Neutral-bullish" },
+      { "metric": "50-week RSI", "value": "62.1", "delta": "Bullish (rising)" },
+      { "metric": "52-week high / low", "value": "$140.25 / $82.44", "delta": "−11.6% from high · +50.4% from low" }
+    ],
+    "note": "Example values for illustration — replace with actual quotes fetched in Phase 1. RSI >70 overbought, <30 oversold; SMA deltas are the price's % deviation from each average."
+  },
+  "conclusions": {
+    "title": "The Five Consensus Conclusions",
+    "items": [
+      "**The Business.** ServiceNow is one of the highest-quality software franchises ever built — a wide-moat, 98%-renewal, ~31%-FCF-margin, low-capital \"system of action\" for enterprise work, converting its workflow position into the governance layer (AI Control Tower) for enterprise AI agents, with a real cybersecurity second engine. The business quality is not in dispute.",
+      "**The Economics.** The sole determinant of long-term per-share value is AI-monetization durability and incremental ROIC vs the ~9% cost of capital — gated by ~$2.2B/yr of stock-based compensation (larger than net income) and the unproven ~$12B M&A ($9.8B goodwill). Economic ROIC (~30%+) means growth creates value; accounting ROIC (~10%) ≈ WACC only because of the step-up.",
+      "**The Market's Expectations.** At $124 the market is implicitly assuming ~20% growth sustained for years, ~$55–60B terminal revenue, ~35%+ terminal margins with minimal SBC penalty, and a ~7.5–8% cost of capital — the non-GAAP AI bull story with no haircut. Aggressive but not impossible; the consensus \"Strong Buy / $140\" reflects it.",
+      "**The Valuation.** Consensus base intrinsic value ~$100/share; probability-weighted ~$109/share; bear ~$45–65; bull ~$150 with an extreme tail ~$193. Damodaran workbook: $37.52 / $56.30 / $93.57 / $149.08 / $238.20, weighted $108.85. Confidence: Low/Medium. Both the base and the weighted value are below the $124 price — expected upside ≈ −12%, 5-year annualized ≈ −2.5%.",
+      "**The Investment Decision.** C — Hold/Watch at ~$124; do not initiate. Begin accumulating at $95–110, build at $80–95, full conviction <$80 — provided the monitoring hierarchy (organic cRPO > AI revenue conversion > GAAP/FCF margins > renewal) stays intact. Upgrades require proof; the operating data and the 10-year, not the stock price, will deliver the verdict."
+    ]
+  },
+  "judgment": {
+    "title": "Final Consensus Judgment",
+    "paragraph": "At a price of **$124**, the market is effectively paying for ServiceNow to execute the non-GAAP bull story with essentially no penalty for stock-based compensation, acquisition integration risk, or AI-driven margin compression — sustained ~20% growth to a much larger revenue base, ~35% terminal margins, and a ~7.5–8% cost of capital. Five independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity-driven expectations, and reflexivity — all refuse to buy at this price, all land on a **C (Hold/Watch, or Monitor)**, and all place the valuation-critical variable on the same hinge: whether AI-driven growth is durable and whether its incremental returns exceed the ~9% cost of capital. We agree the franchise is best-in-class, the AI tailwind is real but unproven in recognized revenue, organic cRPO is the live leading indicator, SBC is the per-share tax, the ~$12B M&A is an untested bet, and the valuation already pays for success. The most dangerous risks are a structural organic-cRPO deceleration (below ~19.5% for a quarter), a GAAP/SBC reckoning that compresses the multiple toward ~20× forward, a 10-year regime shift above ~5%, and a competitive/hyperscaler absorption of the \"control plane.\" Therefore, at today's price the consensus is to **hold and wait**: accumulate in stages at **$95–110**, buy with conviction at **$80–95** and below **$80**, and let demonstrated organic bookings growth, AI revenue conversion, and GAAP-quality per-share FCF — not the AI-Control-Tower narrative — decide whether this wonderful company becomes a wonderful investment."
+  },
+  "sources_note": "This report synthesizes five analyses — `buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, and `soros-analysis.md` (dated August 16, 2026) — which themselves reference ServiceNow SEC filings (FY2025 10-K, Q2 2026 10-Q, 2026 Proxy), the Q2 2026 earnings-call transcript, Reuters, CNBC, WSJ, Invezz, StockAnalysis, the FOMC statement, Fed H.4.1, BLS CPI, and Damodaran's NYU datasets, as of August 2026. Damodaran's scenario values are the verified `NOW_Damodaran_Financial_Model.xlsx` workbook outputs (verifier: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is **not investment advice**, and no valuation herein should be treated as a price prediction or a recommendation to trade. ServiceNow's outcome distribution is wide; treat every number on this page as a hypothesis, not a fact.",
+  "figures": [
+    "$124", "~$100", "~$109", "$93.57", "$108.85", "$37.52", "$56.30",
+    "$149.08", "$238.20", "~$45", "~$65", "~$150", "~$193", "$95–110",
+    "$80–95", "C — HOLD / WATCH", "−12%", "−2.5%", "7/10"
+  ]
+}

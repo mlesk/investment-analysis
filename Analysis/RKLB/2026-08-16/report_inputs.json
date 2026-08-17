@@ -1,0 +1,251 @@
+{
+  "company": "Rocket Lab Corporation",
+  "ticker": "RKLB",
+  "exchange": "NASDAQ",
+  "date": "2026-08-16",
+  "reference_price": "$80.25",
+  "kicker": "Synthesized Consensus · Five-Lens Deliberative Debate",
+  "title": "Rocket Lab Corporation — Consensus Investment Report",
+  "subtitle": "A structured debate between five independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, and Soros reflexivity — reconciled into a single synthesized analysis and recommendation.",
+  "rating": "C — HOLD / WATCH",
+  "exec_summary": {
+    "lead": "Rocket Lab is an exceptional, founder-run, vertically integrated space company — one of only two self-launching space powers on earth — with a real moat, a record **$2.36B** backlog, and extraordinary growth optionality in Neutron and Iridium. Five independent analyses — using five different frameworks — each refused to buy at **$80.25** and converged on the **same rating: C — Hold/Watch**. The business is not in dispute; the price, the binary Neutron/Iridium catalysts, and the equity-funded growth model are. The fundamental lenses value the equity at ~$6–16 (5–13× below price); the macro lenses see a balanced ~+11–12% 12-month price path.",
+    "cards": [
+      {
+        "label": "Consensus base value",
+        "value": "~$11",
+        "note": "Damodaran workbook anchor $11.00; Buffett ~$15; Munger $6.12 — ~86% below the $80.25 price"
+      },
+      {
+        "label": "Probability-weighted value",
+        "value": "$16.82",
+        "note": "Converges exactly on the verified Damodaran workbook value; still ~79% below the price"
+      },
+      {
+        "label": "Bear / Bull range",
+        "value": "$5 – $50",
+        "note": "Severe bear ~$5, bull ~$25, extreme bull ~$50 — the ENTIRE fundamental distribution sits below the price"
+      },
+      {
+        "label": "Confidence",
+        "value": "Low/Med",
+        "note": "Direction of overvaluation robust (all five scenarios below price); magnitude hangs on the Neutron/Iridium binary"
+      },
+      {
+        "label": "Consensus entry plan",
+        "value": "$62–72 → <$20",
+        "note": "Tactical starter $62–72 (Soros); tactical accumulate $50–62 (Druckenmiller); fundamental accumulate $20–30; conviction <$20"
+      },
+      {
+        "label": "Valuation-critical metric",
+        "value": "FCF inflection post-Neutron",
+        "value_style": "font-size: 22px",
+        "note": "Adjusted-EBITDA-positive the quarter after first launch → FCF-positive 18–24 months later; gated by dilution and Iridium financing"
+      },
+      {
+        "label": "Management",
+        "value": "6/10",
+        "note": "World-class founder-execution (Beck); docked for dilution, the $8B Iridium leverage, and insider selling ~$300M+"
+      }
+    ]
+  },
+  "profiles_title": "The Five Positions at the Table",
+  "profiles_lead": "Each participant analyzed Rocket Lab independently. Their positions were then cross-examined in the debate.",
+  "profiles": [
+    {
+      "name": "Warren Buffett",
+      "role": "Owner-Earnings Value Lens",
+      "verdict": "C — Watch (do not buy at $80.25)",
+      "at": "at ~$80.25",
+      "paragraph": "Three-scenario DCF: bear **~$6**, base **~$15**, bull **~$26**, weighted **~$14**. The stock trades at ~62× trailing sales — roughly **5–6× my base-case intrinsic value** — and TTM FCF is **−$371M**: zero owner earnings. \"Great company, terrible entry price. Price is what you pay, value is what you get.\" **Rating: C — Watch; I become interested only below ~$10.**",
+      "tags": ["Base ~$15", "Moat: Moderate", "Buy <$10", "No margin of safety"]
+    },
+    {
+      "name": "Charlie Munger",
+      "role": "Multidisciplinary Quality Lens",
+      "verdict": "D — Avoid",
+      "at": "at ~$80.25",
+      "paragraph": "Conservative DCF (21.7% discount = WACC+3%, 0–2% terminal growth): bear **$3.44**, base **$6.12**, bull **$8.38**, weighted **$5.63**. Even my bull case is worth less than a tenth of the $80.25 price. \"The market is not pricing the business; it is pricing a lottery ticket on Neutron and Iridium.\" **Rating: D — Avoid; buy only below ~$20.**",
+      "tags": ["Base $6.12", "Weighted $5.63", "Avoid >$20", "Lottery ticket"]
+    },
+    {
+      "name": "Aswath Damodaran",
+      "role": "Fundamental Valuation Lens",
+      "verdict": "D — Avoid / Significantly Overvalued",
+      "at": "at ~$80.25",
+      "paragraph": "SBC-aware FCFF DCF (12% WACC, 3% terminal growth, ROIC 10%→18%): base **$11.00**; probability-weighted **$16.82** across five scenarios (severe bear **$4.91** / bear **$5.94** / bull **$25.09** / extreme bull **$50.22**). At $80.25 that is **−79.04% expected upside** and **−26.84% 5-year annualized** — a reverse DCF requires a \"second SpaceX\" outcome. Value emerges only below ~$25–30; conviction <$20. **Rating: D — Avoid / Significantly Overvalued.**",
+      "tags": ["Base $11.00", "Weighted $16.82", "Upside −79.04%", "Buy ≤$30"]
+    },
+    {
+      "name": "Stanley Druckenmiller",
+      "role": "Macro, Liquidity & Expectations Lens",
+      "verdict": "C — Monitor",
+      "at": "at ~$80.25 · 88/150",
+      "paragraph": "Probability-weighted **~+12% expected 12-month return (~$90)** with **~1.8:1 asymmetry** — positive, not exceptional. The macro is a headwind (10Y ~4.69%, hawkish Fed hold, energy shock) and the defining catalyst (Neutron first flight, end-2026) is binary and months out. Get aggressive on confirmation (Neutron on the pad/first-flight success, 10Y <~4.3%) or a dislocation to **$50–65**.",
+      "tags": ["12-mo ~$90", "Asymmetry 1.8:1", "Buy $50–65", "Monitor"]
+    },
+    {
+      "name": "George Soros",
+      "role": "Reflexivity & Disequilibrium Lens",
+      "verdict": "C — Speculative; wait for dislocation",
+      "at": "at ~$80.25",
+      "paragraph": "A reflexive machine whose price funds its own growth (Q2'26 **$1.08B ATM**); the trend is real, the perception partially wrong (timeline + ~62× sales). Scenarios: bear **$58** / base **$88** / bull **$115** / extreme bull **$135** / extreme bear **$40**, weighted ≈**$89** (+11%), asymmetry **~1.1×** — fair, not exceptional. Attractive only after a dislocation into **$62–72** or a confirmed positive binary.",
+      "tags": ["Weighted ~$89", "Asymmetry 1.1×", "Buy $62–72", "Wait for dislocation"]
+    }
+  ],
+  "debate": {
+    "title": "The Debate: Agreement, Contention, Resolution",
+    "lead": "Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions.",
+    "agreements_title": "Uncontested consensus core",
+    "agreements": [
+      "**This is an exceptional, real business.** Founder-run, vertically integrated — one of only two self-launching space powers on earth; real moat (flight heritage, private Mahia pad + US–NZ treaty, vertical integration, Iridium's scarce L-band spectrum); record Q2'26 revenue ($234M, +62% y/y); **$2.36B** record backlog (45.5% converts in 12 months).",
+      "**The business is not in dispute; the price is.** No profile buys at $80.25; no profile recommends a short. Five frameworks, five refusals at the current price.",
+      "**Neutron is THE swing factor.** Unflown, slipped ~five times, Stage-1 tank ruptured January 2026, \"window narrowing\"; ~14% probability of a 2026 launch (prediction markets). A successful first flight re-rates the entire story; a static-fire/first-flight failure flips the narrative from \"when\" to \"if.\"",
+      "**Iridium is transformative but risky.** $8.0B EV ($54/share cash+stock), funded by a **$3.6B committed bridge** plus assumption of Iridium's **$1.775B term loan**; close mid-2027; financing and integration unbuilt; converts a net-cash fortress into a levered balance sheet.",
+      "**Valuation is extreme.** 62× TTM sales / ~42× forward with no GAAP earnings through FY27 (consensus adj EPS −$0.05 FY26 / +$0.05 FY27); the price embeds a \"second SpaceX\" outcome the cash-flow math does not support.",
+      "**Dilution is structural.** Shares +15.7% YoY (598.5M → ~641M guided); $1.08B ATM Q2'26 plus $1.12B FY25; $3.0B ATM authorization; 141.8M shares reserved (~24% overhang); evergreen plan +5%/yr. Growth is funded by shareholders, not by the business.",
+      "**The cash bridge is real but finite.** Net cash ~$2.25B ($3.77/share) cushions a TTM FCF of **−$371M**; management guides adjusted-EBITDA-positive the quarter after a successful first Neutron flight and FCF-positive 18–24 months later.",
+      "**The single valuation-critical variable is the FCF/EBITDA inflection after Neutron's first successful flight** — the hinge that reconciles the fundamental lenses (IV ~$6–16) with the macro lenses (12-mo price ~$88–103). If Neutron flies and the P&L inflects, the equity-funded reinvestment turns value-creating; if it fails or slips, value converges toward net cash.",
+      "**The macro is a headwind.** 10Y ~4.69% near its 52-week high, a hawkish Fed hold under Chair Warsh with three dissents for a hike, and an energy-driven inflation shock — a discount-rate headwind for a 2.63-beta, long-duration, cash-burning growth stock."
+    ],
+    "contentions_title": "Contested points — and how they were resolved",
+    "contentions": [
+      "**Reference price: intrinsic value vs 12-month price (the fundamental-vs-macro split).** Buffett/Munger/Damodaran frame scenario values as **intrinsic value today** (~$6–16; price 5–13× IV); Druckenmiller/Soros frame them as **12-month price expectations** (~$88–103). Cross-examination: Soros to the IV camp — \"your $11–16 tells me nothing about the next quarter; the stock can run to $95 on a Neutron flight.\" Buffett to the price-path camp — \"your $88–103 base is the consensus price target — the market's belief, not a mispricing.\" **Named concession:** Druckenmiller and Soros concede their cells are 12-month price paths, not IV (\"on an IV basis I am as bearish as the fundamental lenses\"). **Resolved:** the three IV models set the consensus IV; Druckenmiller/Soros inform the near-term ladder and triggers. Both frames converge: **do not initiate at $80.25.**",
+      "**Where does base-case intrinsic value actually sit?** Buffett ~$15 (moderate discount), Munger $6.12 (21.7% discount, 0–2% terminal growth — \"demand a penalty\"), Damodaran **$11.00** (verified workbook: 12% WACC, 3% terminal growth, SBC-aware margins, ROIC 10%→18%). Cross-examination: Munger to Buffett — \"a 2.63-beta cash-burning business does not deserve your discount rate.\" Buffett concedes the discount-rate spread is the entire difference and publishes $6–26 as the range. **Resolved:** consensus base ≈ **~$11** (the workbook anchor); Buffett's ~$15 is the optimistic fundamental read, Munger's ~$6 the conservative. It sits ~86% below the price — the fundamental-vs-macro chasm made concrete.",
+      "**How much credit for the right tail (Neutron + Iridium)?** Fundamental IV: Damodaran bull **$25.09** / extreme bull **$50.22** (25%/10%); Buffett ~$26; Munger $8.38. Macro 12-mo price paths: Druckenmiller bull $135 (+68%); Soros bull $115 (+43%) / extreme bull $135 (+68%). Cross-examination: Damodaran to the macro camp — \"your $135 is the consensus price target; my extreme-bull IV of **$50.22** is what the business is *worth* even if every catalyst lands, and it is **−37% below today's price**.\" Druckenmiller — \"the market trades the binary; if Neutron flies, the stock re-rates toward $95+ before your IV catches up.\" **Named concession:** Druckenmiller concedes the tail is \"real but already partially in the price\"; Soros concedes it needs *both* Neutron *and* Iridium — \"if one fails, the compound narrative breaks.\" **Resolved:** the right tail justifies watching and precludes a short, but does not justify buying at $80.25 — the market is paying for the price-path tail, not the value tail.",
+      "**What price compensates for the uncertainty?** Fundamental buy zones <$10–30 (Buffett <$10; Munger <$20; Damodaran ≤$30 first tranche, <$20 conviction); macro buy zones $50–72 (Druckenmiller $50–65 dislocation; Soros $62–72). Cross-examination: Buffett to Soros — \"you'd buy at $62–72, 4–5× my base-case IV — where is your margin of safety?\" Soros — \"I buy a 12-month reflexive position with defined stops, cushioned by $3.77/share net cash and a $2.36B backlog; different games, same name.\" **Named concessions:** Druckenmiller concedes $50–65 is a trading/dislocation zone requiring confirmation (10Y <~4.3%); Soros concedes $62–72 is tactical at only ~1.1–1.3×; Damodaran/Munger concede a successful Neutron de-risks value toward the $20–30 first-tranche zone. **Resolved (unanimous):** composite ladder — tactical starter **$62–72**, tactical accumulate **$50–62**, fundamental accumulate **$20–30**, high-conviction **<$20**, hard do-not-initiate at $80.25. The dispute is about sizing, temperament, and horizon — nobody buys at $80.25.",
+      "**Management quality & the dilution / insider-selling question.** Buffett ~7/10 (world-class founder-execution; austere comp $6.83M, 88:1 pay ratio, forfeited RSUs, candid); Munger ~5–6/10 (\"a CFO who realized **$86M** while the company lost **$198M** — the incentive picture is poisoned by structure\"); Damodaran ~7/10 (\"Excellent operationally, Good on capital allocation — but equity-funded growth pushes risk onto shareholders\"); Soros ~6/10 (insider selling ~$300M+ into the drawdown). Cross-examination: Munger — \"the dilution treadmill is the incentive problem in one data point.\" Buffett — \"the equity raises fund exactly the growth the bulls demand, and Beck personally paid in forgone comp.\" **Named concessions:** Buffett concedes the dilution is real (+15.7% shares YoY, ~24% overhang); Soros concedes Beck's comp is austere but the cycle-low concentration remains a caution flag; Munger concedes Beck is an honest, superb founder — the dispute is the structure, not the man. **Resolved:** consensus management **6/10** — docked for dilution, the $8B Iridium leverage, and insider selling.",
+      "**Is 62× trailing sales / no earnings / negative FCF a red flag or a growth-stage artifact?** The bear reading (Munger, Damodaran): ROIC **−5.5% < WACC 12%**; OCF (−$222M) worse than the net loss (−$165M); working capital consumed ~$136M in H1'26; no owner earnings. The counter-reading (Buffett, partially Druckenmiller): high-quality organic growth (space systems +38.6% QoQ, cost per launch −31%, GM 21%→37%, record backlog) — a pre-profit hyper-grower with a real inflection path. Cross-examination: Damodaran to Buffett — \"OCF − capex − SBC ≈ **−$393M** of economic cash consumption in FY25, funded entirely by ATM raises; the growth is real, the *funding* is the risk.\" **Named concession:** Druckenmiller concedes there is **no cash-flow valuation floor today** — \"the market will not reward earnings until Neutron de-risks the P&L.\"; Damodaran concedes the growth is genuinely organic and margins are inflecting on the gross line. **Resolved:** a **real fragility, not an artifact** — it is why the fundamental IV sits so far below the price, why no margin of safety exists at $80.25, and why the FCF/EBITDA inflection is the valuation-critical variable."
+    ]
+  },
+  "valuation": {
+    "title": "Consensus Valuation",
+    "lead": "Reconciled scenario matrix. The Damodaran column is the verified workbook (ALL_MATCH) and anchors the consensus IV; Druckenmiller/Soros columns are **12-month price expectations, not intrinsic value**.",
+    "matrix": {
+      "columns": ["Scenario", "Prob.", "Damodaran (workbook)", "Buffett", "Munger", "Druckenmiller†", "Soros†", "Consensus IV"],
+      "rows": [
+        { "cells": ["Severe bear", "10%", "$4.91", "~$6 *", "~$3.44 **", "~$55 (−31%)† *", "$40 (−50%)†", "~$5"] },
+        { "cells": ["Bear", "20%", "$5.94", "~$6–10 *", "$3.44–6.12 **", "$55 (−31%)†", "$58 (−28%)†", "~$6"] },
+        { "cells": ["Base", "35%", "$11.00", "~$15 *", "$6.12 **", "$103 (+28%)†", "$88 (+10%)†", "~$11"], "highlight": true },
+        { "cells": ["Bull", "25%", "$25.09", "~$26 *", "$8.38 **", "$135 (+68%)†", "$115 (+43%)†", "~$25"] },
+        { "cells": ["Extreme bull", "10%", "$50.22", "~$26+ *", "~$8.38+ **", "~$135 (+68%)† *", "$135 (+68%)†", "~$50"] }
+      ]
+    },
+    "footnote": "* Buffett and Druckenmiller publish three-scenario distributions; severe-bear and extreme-bull cells are proxied from their published bear/bull extremes. ** Munger publishes three scenarios (bear $3.44 / base $6.12 / bull $8.38) at a 21.7% discount; tails are his bear/bull extremes. † Druckenmiller/Soros cells are **12-month price expectations, NOT intrinsic values**; they inform the near-term ladder and triggers, not the consensus IV. Note: even the Extreme Bull fundamental scenario (**$50.22**) sits **−37% below the current price** — the entire fundamental distribution is below the market.",
+    "chart": {
+      "cols": [
+        { "scen": "Severe Bear", "val": "~$5", "prob": "10%", "height": 10, "fill": "fill-red" },
+        { "scen": "Bear", "val": "~$6", "prob": "20%", "height": 12, "fill": "fill-red" },
+        { "scen": "Base", "val": "~$11", "prob": "35%", "height": 22, "fill": "fill-amber" },
+        { "scen": "Bull", "val": "~$25", "prob": "25%", "height": 50, "fill": "fill-green" },
+        { "scen": "Extreme Bull", "val": "~$50", "prob": "10%", "height": 100, "fill": "fill-deep" }
+      ],
+      "axis_left": "$0",
+      "axis_mid": "Consensus intrinsic value per share",
+      "axis_right": "~$50"
+    },
+    "weighted": {
+      "formula": "EV = 0.10×$4.91 + 0.20×$5.94 + 0.35×$11.00 + 0.25×$25.09 + 0.10×$50.22 = 0.49 + 1.19 + 3.85 + 6.27 + 5.02 ≈ $16.82/share (verified workbook)",
+      "text": "At $80.25 that is roughly **−79.04% expected upside** (≈ −79%) and **≈ −26.84% 5-year annualized** — a deeply negative expected return with no margin of safety. The consensus weighted value **converges exactly on Damodaran's verified workbook value ($16.82)**; the three fundamental weighted values span **$5.63 (Munger) → ~$14 (Buffett) → $16.82 (Damodaran)** — a simple midpoint (~$12) is a reasonable low-end read. Downside tail (severe bear): −94% from $80.25; upside tail (extreme bull): **−37% from $80.25** — *every* fundamental scenario sits below the price. Confidence: **Low/Medium**. The reverse-DCF check (uncontested): $80.25 requires **~$25–30B terminal revenue at 22–25% operating margins** — a \"second SpaceX\" outcome with <10% probability — i.e., the market pays ~5× the weighted IV for the price-path bull story. Aggressive and, at the value level, unreachable by the fundamental math."
+    }
+  },
+  "ladder": {
+    "title": "Consensus Price Ladder",
+    "lead": "Where the five frameworks meet — the composite accumulation plan. Do not initiate above ~$72; $80.25 sits firmly in the do-not-initiate zone.",
+    "rungs": [
+      { "price": "> $135", "width": 100, "fill": "fill-red", "action": "Reduce / avoid — exceeds Druckenmiller's sell zone; consensus-PT territory fully spent; severe-overvaluation sell (Buffett/Munger)", "color": "var(--red)" },
+      { "price": "$95–135", "width": 80, "fill": "fill-red", "action": "Do not initiate / hold — Druckenmiller buys >$95 only on confirmed Neutron success (post-catalyst momentum, not initiation)" },
+      { "price": "$80–95", "width": 60, "fill": "fill-amber", "action": "Do not initiate — $80.25 sits here; above every profile's buy zone; no margin of safety" },
+      { "price": "$72–80", "width": 45, "fill": "fill-amber", "action": "Watch — just above Soros's $62–72 buy zone; cash+backlog floor not yet reached" },
+      { "price": "$62–72", "width": 50, "fill": "fill-green", "action": "Tactical starter — Soros buy zone (near 200-day SMA / July-low region; ~1.1–1.3× asymmetry, cash+backlog floor)", "color": "var(--green)" },
+      { "price": "$50–62", "width": 62, "fill": "fill-green", "action": "Tactical accumulate — Druckenmiller dislocation zone ($50–65); ~1.8:1 asymmetry; requires Neutron trajectory + 10Y <~4.3%", "color": "var(--green)" },
+      { "price": "$20–30", "width": 70, "fill": "fill-deep", "action": "Fundamental accumulate — Damodaran first-tranche zone ($22–30 accumulate, ≤$30); Munger <$20 approaching", "color": "#0e4d31" },
+      { "price": "< $20", "width": 100, "fill": "fill-deep", "action": "High-conviction fundamental buy — Damodaran & Munger conviction (<$20); Buffett's deepest value zone (<$10)", "color": "#0e4d31", "bold": true }
+    ]
+  },
+  "proscons": {
+    "title": "Pros & Cons — At ~$80.25",
+    "for": [
+      "Exceptional, real business — one of only two self-launching space powers (build + launch + operate its own satellites); real moat (flight heritage, private NZ pad + US–NZ treaty, vertical integration, Iridium's scarce L-band spectrum)",
+      "Record execution & backlog — Q2'26 revenue $234M (+62% y/y), $2.36B record backlog (45.5% converts in 12 months), $1B+ bookings in Q2 and post-quarter; cost per launch −31%, gross margin 21%→37% in three years",
+      "Transformative optionality — Neutron (13,000 kg reusable, ~$50–55M ASP, NSSL Lane 1 onboarded, ceiling tripled to $17B) and Iridium (>$870M profitable recurring revenue, 2.5M subscribers) are genuine step-change catalysts",
+      "Fortress balance sheet today — ~$2.25B net cash ($3.77/share), current ratio 5.5, D/E 0.04 pre-Iridium; the cash bridge cushions the burn",
+      "Counter-cyclical demand — ~47% US-government-related revenue (defense-space priority: NSSL, SBAMT/Flatellite, SDA, HASTE); Europe re-arming (Rocket Lab Germany)",
+      "Already −47% off the high — 52-week range $37.57–$151.00; forward P/S ~42× (from ~62× TTM); ARK accumulating; short interest ~8.2% of float (squeeze fuel on good news)"
+    ],
+    "against": [
+      "No margin of safety — price ~5× consensus weighted IV ($16.82) and ~7× consensus base IV (~$11); even the extreme-bull fundamental scenario ($50.22) is −37% below the price",
+      "Zero owner earnings — TTM FCF −$371M (OCF −$222M); losses every year since inception; OCF worse than the net loss; working capital consumed ~$136M in H1'26; quality ratio inverted",
+      "Unproven Neutron — unflown, slipped ~five times, Stage-1 tank rupture Jan 2026, \"window narrowing\"; ~14% probability of a 2026 launch (prediction markets); R&D ~45% of FY25 revenue is a stranded-cost risk if it fails",
+      "Transformative-but-levered Iridium — $8.0B EV, $3.6B bridge + $1.775B term loan; financing/integration unbuilt; 5 \"HIGH\" risk factors in the 10-Q; converts net-cash fortress into a levered balance sheet",
+      "Structural dilution — shares +15.7% YoY; $1.08B ATM Q2'26 + $1.12B FY25; $3.0B ATM authorization; 141.8M shares reserved (~24% overhang); evergreen plan +5%/yr; growth funded by shareholders",
+      "Insider selling — ~$300M+ sold into the drawdown (Beck ~$286M, CFO/COO ~$30M); concentration at the cycle low is a caution flag",
+      "Macro headwind — 10Y ~4.69% near 52-week high, hawkish Fed hold (9–3, hike dissents), energy shock; a 2.63-beta, long-duration, cash-burning stock is the most rate-sensitive asset class",
+      "Uniform bullish consensus — 18 analysts Buy, avg PT $112.94; unanimity is itself a risk if Neutron slips (no low bar to beat)"
+    ]
+  },
+  "triggers": {
+    "title": "What Changes the Rating",
+    "upgrade_title": "Upgrade C → B/A when:",
+    "upgrade": [
+      "Neutron first launch succeeds — clean static fire → first flight → cadence toward flight 10; unlocks NSSL Lane 1 task orders and flips the P&L to adjusted-EBITDA-positive (the single strongest catalyst; Druckenmiller's \"aggressive on confirmation\"; Soros's loop-reengagement trigger)",
+      "FCF / P&L inflection confirmed — adjusted EBITDA positive the quarter after first launch, FCF positive 18–24 months later, as guided; the cash bridge de-risked and GAAP losses narrowing",
+      "Iridium closes cleanly with a low-dilution financing — mid-2027, minimal new equity, visible synergies; re-rates RKLB from a launch story to an applications company",
+      "A margin of safety returns — price into the $50–65 dislocation zone (and/or below ~$30 fundamental zone) and/or a 10Y roll below ~4.3% with Fed confirmation — the valuation gate that would move Buffett's C toward a Buy",
+      "Dilution decelerates — ATM stays retired, share-count growth slows well below +15.7%/yr, and (once profitable) buybacks ≥ SBC"
+    ],
+    "downgrade_title": "Downgrade C → D/E if:",
+    "downgrade": [
+      "Neutron static-fire or first-flight failure — the narrative flips to \"if\"; multiple compresses hard; the medium-lift thesis dies (Munger Scenario A; Soros's highest-risk catalyst; Druckenmiller's falsification signal: \"exit on a first-flight failure with a long stand-down\")",
+      "Neutron slips again into 2027 — kills the end-2026 narrative the current multiple partially pays for (Druckenmiller's most probable negative surprise)",
+      "Dilution-heavy Iridium financing or deal break — heavy new equity (shares >+5%/yr), or the deal collapses with stranded costs and a re-levered balance sheet",
+      "FCF burn worsens without an inflection path — sustained negative OCF; the $2.25B cash bridge depletes faster than the Neutron/Iridium timeline can refill it",
+      "Macro de-rating — 10Y breaks and holds ~5%+, compressing a 42–62×-sales multiple with no earnings floor; and/or insider selling continues into weakness"
+    ],
+    "dashboard_title": "Consensus monitoring dashboard",
+    "dashboard": [
+      { "metric": "Neutron first-launch status", "why": "The binary hinge of the entire valuation", "helps": "Clean static fire → first flight, 2026–early 2027" },
+      { "metric": "FCF / EBITDA trajectory", "why": "The valuation-critical variable — does the P&L inflect", "helps": "Adjusted EBITDA+ quarter-after-launch; FCF+ 18–24 months later" },
+      { "metric": "Iridium close & financing", "why": "Applications re-rating; leverage & dilution profile", "helps": "Close mid-2027 with low-dilution structure" },
+      { "metric": "Share count / dilution", "why": "The per-share tax (~+15.7% YoY, ~24% overhang)", "helps": "<+5%/yr; ATM retired; buybacks ≥ SBC once profitable" },
+      { "metric": "Backlog conversion & bookings", "why": "The smooth, high-visibility engine", "helps": "$2.36B converts at 45.5%/12mo; record bookings continue" },
+      { "metric": "Gross margin", "why": "P&L inflection signal (Q3 trough is mix-driven)", "helps": "35–37% NG guide holds; GM recovers post-Q3" },
+      { "metric": "10Y Treasury / Fed", "why": "Discount-rate gate for a 42–62×-sales multiple", "helps": "< ~4.3–4.4%; Fed cut path" },
+      { "metric": "Insider selling", "why": "Conviction signal at the cycle low", "helps": "Ceases; no further Beck/Spice sales into weakness" }
+    ]
+  },
+  "technical": {
+    "title": "Technical Analysis",
+    "lead": "Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.",
+    "rows": [
+      { "metric": "Price vs 200-day SMA", "value": "$78.39", "delta": "+2.4% above" },
+      { "metric": "Price vs 100-day SMA", "value": "$89.93", "delta": "−10.8% below" },
+      { "metric": "Price vs 50-day SMA", "value": "$85.54", "delta": "−6.2% below" },
+      { "metric": "14-day RSI", "value": "53.2", "delta": "Neutral (mid-range)" },
+      { "metric": "14-week RSI", "value": "48.8", "delta": "Neutral" },
+      { "metric": "50-week RSI", "value": "54.3", "delta": "Neutral-bullish" },
+      { "metric": "52-week high / low", "value": "$151.00 / $37.57", "delta": "−46.9% from high · +113.6% from low" }
+    ],
+    "note": "RSI >70 overbought, <30 oversold; SMA deltas are the price's % deviation from each average. At $80.25 the only bullish cross is the +2.4% above the 200-day SMA ($78.39); the stock sits −10.8% below the 100-day and −6.2% below the 50-day, with all three RSIs mid-range. The tape is neutral-to-negative — momentum is not yet confirming the thesis (Druckenmiller's \"no price confirmation\"; Soros's unresolved recovery-vs-lower-high)."
+  },
+  "conclusions": {
+    "title": "The Five Consensus Conclusions",
+    "items": [
+      "**The Business.** Rocket Lab is an exceptional, founder-run, vertically integrated space company — one of only two \"self-launching\" space powers on earth (build, launch, operate its own satellites) — with a real moat (flight heritage, private NZ pad + US–NZ treaty, vertical integration, Iridium's scarce L-band spectrum), a record $2.36B backlog, and extraordinary growth optionality in Neutron and Iridium. The business quality is not in dispute; the price is.",
+      "**The Economics.** The sole determinant of long-term per-share value is **the FCF/EBITDA inflection after Neutron's first successful flight** — whether an unflown medium-lift rocket and a levered $8B acquisition convert the equity-funded reinvestment (ROIC −5.5% vs ~12% WACC) into positive free cash flow inside a credible window. If Neutron flies and the P&L inflects, growth turns value-creating; if it fails or slips, value converges toward net cash (~$3.77/share) and the backlog. The per-share tax is dilution (shares +15.7% YoY, ~24% issuance overhang), not interest.",
+      "**The Market's Expectations.** At $80.25 the market is implicitly assuming a successful Neutron first launch, an accretive Iridium close, ~40%+ revenue growth for years, a 10-year that does not break out to 5%+, and no further heavy dilution — a \"second SpaceX\" outcome requiring ~$25–30B terminal revenue at 22–25% operating margins, at ~5× the consensus weighted IV and 62× trailing sales / ~42× forward. Aggressive but not impossible; the consensus \"Buy / $112.94 PT\" reflects it. The Street's uniformity is itself a risk if Neutron slips.",
+      "**The Valuation.** Consensus base intrinsic value **~$11/share**; probability-weighted **~$16.82/share** (verified workbook anchor); bear **~$5–7**; bull **~$25**; extreme bull **~$50** (Damodaran workbook: $4.91 / $5.94 / $11.00 / $25.09 / $50.22, weighted $16.82, upside −79.04%, 5-yr annualized −26.84%). Confidence: **Low/Medium** — the direction of overvaluation is robust (the entire fundamental distribution sits below the price), the magnitude is uncertain (the Neutron/Iridium binary). The 12-month price-path lenses (Druckenmiller ~$90, Soros ≈$89, +11–12%) are balanced-to-positive but not exceptional (~1.1×–1.8× asymmetry). Both the base and weighted fundamental values are far below the $80.25 price — expected upside ≈ −79%, 5-year annualized ≈ −27%.",
+      "**The Investment Decision.** **C — Hold/Watch at ~$80.25; do not initiate above ~$72.** Tactical starter **$62–72** (Soros), tactical accumulate **$50–62** (Druckenmiller, on dislocation + confirmation), fundamental accumulate **$20–30**, high-conviction **<$20** (Damodaran/Munger conviction; Buffett <$10), provided the monitoring hierarchy (Neutron first-flight status > FCF/EBITDA inflection > Iridium close & financing > dilution/share count > backlog & margin) stays intact. Upgrades require proof — a successful Neutron first flight, a confirmed FCF inflection, a low-dilution Iridium close, and/or a margin of safety — and a 10Y roll below ~4.3%. The binary catalyst and the operating data, not the stock price, will deliver the verdict."
+    ]
+  },
+  "judgment": {
+    "title": "Final Consensus Judgment",
+    "paragraph": "At a price of **$80.25**, the market is paying ~62× trailing sales — about **five times the consensus probability-weighted intrinsic value of $16.82** and roughly seven times the ~$11 base — for a company that has produced **zero owner earnings** in its history (TTM FCF −$371M) and whose entire valuation rests on an **unflown medium-lift rocket (Neutron)** and a **levered $8B acquisition (Iridium)** landing roughly simultaneously. Five independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity-driven expectations, and reflexivity — all refuse to buy at this price, all land on a **C (Hold/Watch, or Monitor)** at the unified margin (with Munger and Damodaran recording **D — Avoid** as their intrinsic-value verdict), and all place the valuation-critical variable on the same hinge: **whether Neutron's first successful flight converts the equity-funded reinvestment into positive free cash flow inside a credible window, and whether dilution and the Iridium financing allow per-share value to compound at anything like the rate the price assumes.** We agree the business is exceptional, Neutron and Iridium are real but binary, the balance sheet is a fortress today but will be levered by Iridium, dilution is structural, the macro is a headwind, and the valuation embeds a \"second SpaceX\" outcome with no margin of safety and no earnings floor. The most dangerous risks are a **Neutron static-fire/first-flight failure** (which flips the narrative to \"if\" and compresses the multiple hard), **another Neutron slip into 2027**, a **dilution-heavy Iridium financing or deal break**, a **sustained cash burn without an inflection path**, and a **10-year regime shift above ~5%** on a 2.63-beta multiple with no cash-flow floor. Therefore, at today's price the consensus is to **hold and wait**: do not initiate above ~$72; take a tactical starter at **$62–72**, a tactical accumulate at **$50–62** (on dislocation and confirmation), a fundamental accumulate at **$20–30**, and high-conviction only **below $20**; and let the Neutron flight, the FCF inflection, the Iridium close, and the share count — not the \"space power\" narrative — decide whether this exceptional company becomes an exceptional investment."
+  },
+  "sources_note": "This report synthesizes five analyses — `buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, and `soros-analysis.md` (dated August 16, 2026) — which themselves reference Rocket Lab SEC filings (FY2025 10-K, Q2 2026 10-Q, DEF 14A, Iridium S-4), the Q2 2026 earnings-call transcript, StockAnalysis datasets (including the shared fact pack), Reuters, CNBC, TipRanks, MarketWatch, BLS CPI, the FOMC statement, and Fed H.4.1, as of August 2026. Damodaran's scenario values are the verified `RKLB_Damodaran_Financial_Model.xlsx` workbook outputs (verifier: ALL_MATCH): Severe Bear $4.91 / Bear $5.94 / Base $11.00 / Bull $25.09 / Extreme Bull $50.22, probability-weighted $16.82, upside −79.04%, 5-yr annualized −26.84% (WACC 12.0%, terminal growth 3.0%, probabilities 0.10/0.20/0.35/0.25/0.10). This document is an educational synthesis of estimates about estimates — it is **not investment advice**, and no valuation herein should be treated as a price prediction or a recommendation to trade. Rocket Lab's outcome distribution is wide and binary; treat every number on this page as a hypothesis, not a fact.",
+  "figures": [
+    "$80.25", "C — HOLD / WATCH", "~$11", "$16.82", "$4.91", "$5.94",
+    "$11.00", "$25.09", "$50.22", "~$5", "~$6", "~$25", "~$50", "−79.04%",
+    "−26.84%", "$62–72", "$50–62", "$20–30", "6/10"
+  ]
+}

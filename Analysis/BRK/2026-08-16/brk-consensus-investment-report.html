@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berkshire Hathaway Inc. — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">Synthesized Consensus · Five-Lens Deliberative Debate</div>
+        <h1>Berkshire Hathaway Inc. — Consensus Investment Report</h1>
+        <div class="sub">A structured debate between five independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, and Soros reflexivity — reconciled into a single synthesized analysis and recommendation.</div>
+        <div class="meta-row">
+          <span class="chip">NYSE (BRK.B): BRK</span>
+          <span class="chip">Report date: 2026-08-16</span>
+          <span class="chip">Reference price: $504.03</span>
+          <span class="rating-badge"><span class="dot"></span> C — HOLD / WATCH</span>
+        </div>
+      </div>
+    </header>
+
+
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">Berkshire Hathaway is one of the great capital-allocating enterprises of the last 60 years — a set of wide-moated operating businesses (insurance + negative-cost float, BNSF, BHE, manufacturing/service/retail) behind a fortress balance sheet, plus a ~$684B financial-asset pool. Five independent analyses, using five different frameworks, each refused to buy at <b>$504.03</b> and converged on <b>C — Hold/Watch</b>: base intrinsic value ~$500 sits essentially at the market, the probability-weighted value (~$518) is only ~+2.5–3% above price, and the people with the most information signaled it themselves — <b>zero buybacks in Q4 2025</b>. The business is not in dispute; the price and the unproven quality of future capital deployment are.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$500</div>
+            <div class="note">Band ~$450–500; Damodaran workbook anchor $447.31; optimistic anchor $550–565 — price sits at fair value</div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$518</div>
+            <div class="note">≈ +2.5–3% vs $504.03 (annualized ~+0.5%); Damodaran workbook $490.84 — no margin of safety</div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$260 – $730</div>
+            <div class="note">Severe bear ~$260, bear ~$415, bull ~$620, extreme bull ~$730 (proven-deployment value)</div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low/Med</div>
+            <div class="note">Wide inter-lens spread; deployment quality unproven; workbook 1-sigma band ~$360–540</div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$440–455 → &lt;$380</div>
+            <div class="note">Watch/starter $440–490; accumulate $380–440; high-conviction $340–380; conviction &lt;$340</div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 20px">Deployment ROIC vs ~8% WACC</div>
+            <div class="note">Can the ~$300B+ excess cash be deployed above the ~8% cost of capital — or does it leak at ~4% T-bills?</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">02</span>The Five Positions at the Table</h2>
+        <p class="lead">Each participant analyzed Berkshire independently. Their positions were then cross-examined in the debate.</p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch/Hold</span><span class="small">at ~$504</span>
+              </div>
+              <p>A wide-moat, superbly-managed enterprise ($177.5B negative-cost float, fortress balance sheet, honest leadership) that is *fairly valued*, not cheap. Sum-of-parts owner-earnings DCF: bear <b>$415</b>, base <b>$500</b>, bull <b>$620</b>, weighted <b>$510</b> — base ≈ market, so zero margin of safety. "I do not pay fair price for wonderful when I can wait for the low-$400s and buy it at a 15–20% discount." First tranche <b>$380–430</b>, conviction <b>&lt;$340</b>.</p>
+              <div class="tags">
+                <span class="tag">Base ~$500</span><span class="tag">Moat: Wide</span><span class="tag">Interest $380–430</span><span class="tag">Conviction &lt;$340</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B — Buy (starter at fair value)</span><span class="small">at ~$504</span>
+              </div>
+              <p>The finest compounding machine Munger helped build — passes every business test and fails only the price test, softly. Conservative owner-earnings DCF (WACC ~10%, terminal growth 2%): floor <b>$410</b>, base <b>$500</b>, bull <b>$610</b>, weighted <b>$505</b>; fair-multiple variant ~$520–540. At 1.44× book with a fortress balance sheet, a starter for a permanent owner is rational; conviction reserved below ~$470, "gifts" below ~$420.</p>
+              <div class="tags">
+                <span class="tag">Base $500</span><span class="tag">Moat: Wide</span><span class="tag">Starter at $504</span><span class="tag">Conviction &lt;$470</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Hold</span><span class="small">at ~$504</span>
+              </div>
+              <p>Revenue-based FCFF DCF normalized to ~15.6% pre-tax margins, 8% WACC, GDP-like growth (verified workbook): bear <b>$310.98</b>, base <b>$447.31</b>, bull <b>$602.47</b>, weighted <b>$490.84</b> (severe-bear <b>$257.14</b>, extreme-bull <b>$871.86</b>). At $504 the market embeds an ~18–19% margin — reasonable but at the optimistic end. Zero Q4-25 buybacks say the shares were not cheap. Buy below ≈$420; reassess above ≈$560.</p>
+              <div class="tags">
+                <span class="tag">Base $447.31</span><span class="tag">Weighted $490.84</span><span class="tag">Buy zone &lt;$420</span><span class="tag">Confidence Low/Med</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro, Liquidity &amp; Expectations Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B — Hold/Monitor</span><span class="small">at ~$504 · 68/150</span>
+              </div>
+              <p>"There is no Druckenmiller-quality asymmetric opportunity in Berkshire at $504." Exceptional business with unusually clear downside (cash cushion, buyback floor, 0.61 beta), but ~1.45× book, ~22–24× forward operating earnings, no expectations gap, a neutral-to-tightening liquidity regime (10Y ~4.7%, Fed hold-to-hike), and a lagging tape (+0.3% YTD vs S&amp;P +13.7%). 18-month expectation: bear <b>$475</b>, base <b>$565</b>, bull <b>$640</b>, weighted ~<b>$556</b> (+10%). Wait for &lt;$460 or proof of the re-rating.</p>
+              <div class="tags">
+                <span class="tag">18-mo ~$556</span><span class="tag">Asymmetry ~4.5:1</span><span class="tag">Buy zone &lt;$455–460</span><span class="tag">Monitor</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity &amp; Disequilibrium Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B− — Accumulate on weakness</span><span class="small">at ~$504</span>
+              </div>
+              <p>The 'dead-money cash-hoarder' perception is diverging from reality as Abel's Q2-26 deployment (net equity buyer after 14 quarters of selling), ~19× buyback acceleration, and a ~$12B/yr T-bill earnings floor drive an early-stage reflexive re-rating — but not a boom-bust dislocation (asymmetry only ~2.4:1). Sum-of-parts: bear ~<b>$440</b>, base ~<b>$550</b>, bull ~<b>$645</b>, weighted ~<b>$546</b> (+8%). Accumulate on weakness, <b>$440–490</b>; re-rating shrinks with every 13F print.</p>
+              <div class="tags">
+                <span class="tag">Base ~$550</span><span class="tag">Asymmetry 2.4:1</span><span class="tag">Buy zone $440–490</span><span class="tag">B−</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">03</span>The Debate: Agreement, Contention, Resolution</h2>
+        <p class="lead">Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions.</p>
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Berkshire is two assets in one.</b> A set of moated operating businesses earning ~15% ROIC (insurance + negative-cost float, BNSF, BHE, manufacturing/service/retail), plus a ~$684B financial-asset pool marked at market. Value them separately; never capitalize the merged GAAP revenue line.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>GAAP metrics mislead.</b> The 12.7× trailing P/E is a mark-to-market mirage (TTM GAAP NI of ~$85.8B includes large unrealized gains); the real series is operating earnings (~$44.5–48B) and book-value growth (+4.7% H1-26).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The moat is wide and durable.</b> Negative-cost float ($176–177.5B; 87.1% combined ratio), GEICO's low-cost position, BNSF's Class-I duopoly economics, BHE's regulated base. Nobody grants less than wide.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The balance sheet is a fortress.</b> ~$365.5B cash/T-bills, ~$237B net cash, D/E ~17%, 22.5× interest coverage, ~$333B statutory surplus. Bankruptcy risk is negligible.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Management integrity and alignment are best-in-class.</b> No stock-based compensation; comp uncoupled from earnings and the stock price; Buffett ~13.7% economic / ~30% voting; Abel's letter owns mistakes openly.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>There is no margin of safety at $504.</b> Five frameworks, same verdict: base intrinsic value sits at or near the market price.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The single valuation-critical variable is deployment quality.</b> Whether the ~$300B+ excess cash is deployed at above- or below-cost-of-capital returns; underwriting and operating ROIC are stable.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Intrinsic value is a wide distribution, not a point.</b> The five profiles span ~$257–$872 across scenarios and ~$447–$565 on base case; all warn against manufacturing precision.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The $360B cash is both a strength and a drag.</b> At ~4% on T-bills against an 8% cost of capital it is a silent, slow value leak and the reason ROE is only ~12%.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>No one recommends a conviction buy or a sell at $504.</b> Ratings cluster C/B/B/B−/C — Hold/Watch and buy-on-weakness, with no outright short and no aggressive buy.</div>
+          </div>
+        </div>
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Fair-value anchor: ~$447–500 vs ~$550–565.</b> Damodaran anchors on the verified workbook base $447.31 (weighted $490.84); Buffett/Munger on ~$500; Druckenmiller/Soros on $550–565. The spread is almost entirely the multiple applied to operating earnings and the treatment of the cash pile — not the balance sheet. <b>Resolved:</b> base-case band ~<b>$450–500</b>, central <b>~$500</b>; $447 is the conservative workbook anchor, $550–565 the optimistic anchor.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Base-case intrinsic value: workbook $447 vs sum-of-parts ~$500 vs ~$550–565.</b> Munger concedes his $500 is above his own conservative no-growth sum-of-parts ($465–490); Druckenmiller concedes his $565 is an 18-month expectation, not a Damodaran-style IV. <b>Resolved:</b> consensus base <b>~$500</b> (median); the $550–565 values are reclassified as '18–24-month expectation,' not intrinsic value. The workbook is authoritative for Damodaran.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Right-tail credit: does the $360B deployment option justify paying up?</b> Damodaran: no separate optionality premium (his Bull $602 / Extreme Bull $872 already embed partial exercise); Soros: the market is *not* giving the cash at a discount. Soros concedes the asymmetry is only ~2.4:1 and shrinking; Munger concedes his bull values are 'the reward for demonstration, not value today.' <b>Resolved:</b> no separate deployment-option premium; Bull/Extreme-Bull are labeled 'proven-deployment value,' weighted at scenario probability, not bought at face value.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>The price that compensates for uncertainty (buy zones: &lt;$420 vs &lt;$455 vs $440–490 vs $380–430).</b> A real disagreement about *how much* compensation the uncertainty deserves. Damodaran concedes 'demanding $400 implies you believe the bear case is the base case — I do not.' <b>Resolved (composite ladder):</b> first meaningful accumulation ~<b>$440–455</b>, consensus accumulate <b>$380–440</b>, high-conviction <b>$340–380</b>, conviction <b>&lt;$340</b>; a small starter at fair value is a Munger-flagged, permanent-owner option.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Management/allocation: Q4-25 zero buybacks as discipline vs not-cheap signal vs superseded regime.</b> The same fact read three ways. Buffett concedes the ~4% T-bill drag is real; Soros concedes value-destructive deployment would make the reflexive re-rating a bear trap. <b>Resolved:</b> integrity 10/10 unanimously, but allocation is 9/10 historical / ~7/10 forward; 'Q4-25 zero buybacks says Berkshire won't overpay; Q2-26's full-priced $10B Alphabet placement says Abel will pay near-full price for a top-3 stake' — internally consistent and watchful.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>The honest earnings multiple: ~17× vs ~22–24×.</b> A normalization dispute over whether insurance investment income belongs in the capitalized stream. Damodaran concedes ~17× is a quality-justified premium vs the S&amp;P's ~23×; Buffett concedes the 12.7× GAAP headline is misleadingly cheap. <b>Resolved:</b> ~17–24× normalized operating earnings is the honest range; <b>P/B ~1.44–1.45× (near the top of the historical 1.0–1.6× band) is the operative valuation metric.</b></div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">Reconciled scenario matrix. The Damodaran column is the verified workbook, used verbatim (ALL_MATCH). Druckenmiller/Soros extreme slots (†) are 12–24-month price expectations, not intrinsic values.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+<th class="">Scenario</th><th class="right">Prob.</th><th class="right">Damodaran (workbook)</th><th class="right">Buffett</th><th class="right">Munger</th><th class="right">Druckenmiller†</th><th class="right">Soros†</th><th class="right">Consensus IV</th>              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<td>Severe bear</td><td class="right">5%</td><td class="right">$257.14</td><td class="right">—</td><td class="right">—</td><td class="right">~$400 †</td><td class="right">~$370 †</td><td class="right"><b>~$260</b></td>
+              </tr>
+              <tr>
+<td>Bear</td><td class="right">20%</td><td class="right">$310.98</td><td class="right">$415</td><td class="right">$410</td><td class="right">$475 †</td><td class="right">~$440 †</td><td class="right"><b>~$415</b></td>
+              </tr>
+              <tr class="hl">
+<td>Base</td><td class="right">45%</td><td class="right">$447.31</td><td class="right">$500</td><td class="right">$500</td><td class="right">$565 †</td><td class="right">~$550 †</td><td class="right"><b>~$500</b></td>
+              </tr>
+              <tr>
+<td>Bull</td><td class="right">20%</td><td class="right">$602.47</td><td class="right">$620</td><td class="right">$610</td><td class="right">$640 †</td><td class="right">~$645 †</td><td class="right"><b>~$620</b></td>
+              </tr>
+              <tr>
+<td>Extreme bull</td><td class="right">10%</td><td class="right">$871.86</td><td class="right">—</td><td class="right">—</td><td class="right">~$695 †</td><td class="right">~$620 †</td><td class="right"><b>~$730</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">† Druckenmiller/Soros cells are 12–24-month <b>price expectations</b>, not intrinsic-value estimates; they inform the near-term ladder and triggers, not the consensus IV. Consensus probabilities (5/20/45/20/10 = 100%) reconcile the five lenses' distributions. Consensus value per scenario is the central estimate across profiles (Severe Bear ≈ Damodaran's $257.14, the sole rigorous IV; Base = the $500 median; Extreme Bull = a blend of Damodaran's $871.86 tempered by the ~$620–695 tail paths).</p>
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 26px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">~$260</div>
+            <div class="prob">5%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 42px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">~$415</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 51px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">~$500</div>
+            <div class="prob">45%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 63px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">~$620</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 74px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">~$730</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus intrinsic value per Class B share</span><span>~$730</span>
+        </div>
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>EV = 0.05×~$260 + 0.20×~$415 + 0.45×~$500 + 0.20×~$620 + 0.10×~$730 ≈ $518/share (Damodaran workbook: $490.84)</h3>
+          <p class="big">At $504.03 that is roughly <b>+2.5–3% expected upside (annualized ≈ +0.5%)</b> — essentially flat, <b>no margin of safety</b>. Confidence: <b>Low/Medium</b>. The consensus weighted value (~$518) sits modestly above the workbook's $490.84 because the other four lenses weight their right tails more generously — but both are at or near the price. Reverse-DCF check (uncontested): the $504 price implies an <b>~18–19% pre-tax operating margin</b> (three-plus points above Damodaran's normalized 15.6%) or sustained 8–9% book-value growth — plausible, at the optimistic end of reasonable, and the good news is already banked: the market gives you neither a margin-of-safety gift nor a free re-rating option.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">Where the five frameworks meet — the composite accumulation plan. Do not initiate at $504.03; the do-not-initiate band is ~$490–560.</p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $620</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce — unanimous sell zone (Buffett/Munger &gt;$620; Druckenmiller ≥~$615–625)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$560–620</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 80%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Trim / reassess — Damodaran reduces &gt;$560; Soros reduces &gt;$580–590</span>
+          </div>
+          <div class="rung">
+            <span class="price">$490–560</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 60%"></div>
+            </div>
+            <span class="action">Do-not-initiate / Hold — no margin of safety (current price $504.03 sits here)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$440–490</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 45%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Watch — starter zone opens for long-horizon quality buyers (Soros $440–490; Druckenmiller &lt;$455–460; Munger conviction &lt;$470)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$410–440</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 55%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Starter / begin accumulating — Damodaran &lt;$420; Buffett first tranche $380–430; Munger 'gifts' &lt;$420</span>
+          </div>
+          <div class="rung">
+            <span class="price">$380–410</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Accumulate — Buffett's value territory</span>
+          </div>
+          <div class="rung">
+            <span class="price">$340–380</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 80%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31">High-conviction accumulate — Buffett accumulate band</span>
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $340</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31"><b>Conviction buy — the 30–40% margin of safety all value lenses demand</b></span>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">06</span>Pros &amp; Cons — At ~$504</h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>Wide, durable moats — negative-cost float ($176–177.5B, 87.1% combined ratio), GEICO low-cost auto, BNSF Class-I duopoly, BHE regulated base</li>
+              <li>Fortress balance sheet — ~$365.5B cash/T-bills, ~$237B net cash, D/E ~17%, ~$333B statutory surplus, 22.5× interest coverage, 0.61 beta</li>
+              <li>Best-in-class management and incentives — no stock comp, radical candor, 13.7% owner-alignment, 60+ years of letters</li>
+              <li>A ~$12B/yr risk-free earnings floor from the T-bill pile — cash is now an earnings asset, not just idle ballast</li>
+              <li>A real deployment option — the shift of ~$300B+ excess cash into productive assets is the only credible path to a re-rating (Bull ~$620 / Extreme Bull ~$730)</li>
+              <li>Cheap vs the index — ~17× normalized operating earnings vs S&amp;P ~23×; 1.44× book near the top of BRK's own range but not a bubble</li>
+              <li>Downside protection — a buyback floor, negative-cost float, and diversified operating base make the left tail survivable (Severe Bear ~$260, not $0)</li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>No margin of safety — consensus base ~$500 ≈ price; weighted ~$518 ≈ +2.5%; the market has already paid for the good news</li>
+              <li>Sub-cost-of-capital cash drag — ~$360B at ~4% vs 8% WACC leaks value ~4%/yr of the cushion; ROE capped at ~12%</li>
+              <li>Deployment risk / unproven large-deal judgment — Q4-25 zero buybacks said 'not cheap'; the full-priced $10B Alphabet placement and homebuilder adds near cycle peaks are the first big test of Abel's allocation ('forced spending' is the bear trap)</li>
+              <li>Equity-portfolio concentration — 66% in five mega-caps (Alphabet, AmEx, Apple, BofA, Coca-Cola); a growth/AI drawdown marks a $323.8B book down through GAAP earnings</li>
+              <li>GEICO claims inflation — underwriting −39% H1-26, loss ratio 75.3% vs 70.4%; a real margin-compression story at the margin</li>
+              <li>Higher-for-longer regime — sticky inflation, Fed hold-to-hike, 10Y ~4.70% cap the multiple; the tape is a laggard (+0.3% YTD vs S&amp;P +13.7%)</li>
+              <li>Scale — 'the math of compounding works against us' (Abel); the 19.7% historical compound cannot repeat at $1.08T</li>
+              <li>Succession / moat-perception risk — Buffett (95) fully stepping back is a tail event that could compress the P/B premium</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B / B+ / A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Demonstrated high-ROIC deployment — Abel deploys $50B+/yr at visibly ~10%+ returns with buybacks continuing (Druckenmiller's re-rate-to-1.6×-book trigger)</li>
+              <li>Price falls into the $380–440 accumulate zone (the margin of safety the value lenses require) or below ~$340 (conviction, all lenses)</li>
+              <li>GEICO loss ratio inflects back below ~73% (Druckenmiller's margin-recovery trigger)</li>
+              <li>Sustained buyback acceleration (~$4B+/qtr) keeping cash below ~$370B (Soros's validation of the reflexive loop)</li>
+              <li>Q3/Q4 13Fs confirm continued net equity buying — deployment is a regime, not a one-off</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D / E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>GEICO loss ratio &gt;77% for two consecutive quarters (claims inflation turns structural)</li>
+              <li>Cash re-accumulates to a new record while buybacks stall ('dead money confirmed' — Soros's falsification)</li>
+              <li>A visibly value-destructive deployment (e.g., a large Alphabet add marked down sharply — 'forced spending' dominates the narrative)</li>
+              <li>A growth/AI drawdown with the 66% top-5 concentration — Loop D contagion marks the book down through GAAP earnings and re-widens the discount</li>
+              <li>A succession / moat-perception shock (Buffett's full departure creating sustained governance stress) or a value-destructive mega-deal pattern under Abel</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Deployment ROIC vs WACC</b></td>
+                <td>The valuation-critical variable — is the ~$300B+ cash deployed above the ~8% cost of capital</td>
+                <td class="right">ROIC &gt; ~8% WACC</td>
+              </tr>
+              <tr>
+                <td><b>Buyback cadence &amp; cash trajectory</b></td>
+                <td>Management's own scoreboard on cheapness</td>
+                <td class="right">Cash &lt; ~$370B; ≥~$4B/qtr buybacks</td>
+              </tr>
+              <tr>
+                <td><b>GEICO loss / combined ratio</b></td>
+                <td>Claims inflation is the live margin-compression story</td>
+                <td class="right">Loss ratio &lt; ~73%; combined &lt; ~90%</td>
+              </tr>
+              <tr>
+                <td><b>Equity-portfolio concentration/drawdown</b></td>
+                <td>66% in top-5 names; a drawdown hits book and GAAP earnings (Loop D)</td>
+                <td class="right">No sustained drawdown; book growth ≥ 8%/yr</td>
+              </tr>
+              <tr>
+                <td><b>Operating pre-tax margin</b></td>
+                <td>The reverse-DCF anchor (15.6% vs 18–19% priced)</td>
+                <td class="right">Holds ~15.6%+; no margin compression</td>
+              </tr>
+              <tr>
+                <td><b>Insurance underwriting cycle</b></td>
+                <td>Negative-cost float is the source of the moat</td>
+                <td class="right">Combined ratio stays below 100%</td>
+              </tr>
+              <tr>
+                <td><b>Deployment quality / 13F prints</b></td>
+                <td>Is the Q2-26 buying a regime or a one-off; is it value-accretive</td>
+                <td class="right">Continued net buying at sensible prices</td>
+              </tr>
+              <tr>
+                <td><b>Succession / governance</b></td>
+                <td>Buffett (95) stepping back is a tail that could compress the P/B premium</td>
+                <td class="right">Orderly, sustained transition to Abel</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">08</span>The Five Consensus Conclusions</h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Business.</b> Berkshire is two assets in one — a set of wide-moated operating businesses (insurance + negative-cost float, BNSF, BHE, manufacturing/service/retail) earning ~15% ROIC, plus a ~$684B marketable financial-asset pool (cash + equities) priced at market. Value them separately; never capitalize the merged GAAP revenue line.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Economics.</b> The sole determinant of long-term per-share value is <b>return on incremental deployed capital vs an ~8% cost of capital</b>. ROIC above WACC on the ~$300B+ excess cash makes the deployment option worth many times today's price; parking it at ~4% T-bills leaks value; deploying it badly is the bear trap. Underwriting and operating ROIC are stable — the deployment decision is where value is made or lost.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Market's Expectations.</b> At $504 the market is assuming <b>successful gradual deployment</b> — an ~18–19% pre-tax operating margin and/or 8–9% book-value growth, with no discount for the cash pile. Plausible, at the optimistic end of reasonable, not heroic — which is why this is a Hold, not a Sell. But the good news is banked.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Valuation.</b> Base intrinsic value <b>~$500/share</b> (band ~$450–500; Damodaran workbook anchor $447.31); probability-weighted consensus <b>~$515–520</b> (Damodaran workbook $490.84); bear <b>~$415</b>; severe-bear tail <b>~$260</b>; bull <b>~$620</b>; extreme-bull <b>~$730</b> (proven-deployment value). Confidence: <b>Low/Medium</b>. The weighted value is essentially at the price (+2.5–3%, annualized ~+0.5%).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Investment Decision.</b> C — Hold/Watch at $504.03. Do not initiate in the <b>$490–560</b> band. Begin accumulating at <b>$440–455</b>, accumulate <b>$380–440</b>, high-conviction <b>$340–380</b>, conviction <b>&lt;$340</b> — provided the thesis metrics (deployment ROIC vs WACC, buyback cadence, GEICO loss ratio, equity concentration) remain intact. Upgrades require proof — demonstrated deployment returns, a margin of safety, or a break lower in price — not narrative.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">09</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>At a price of <b>$504.03</b> (1.44× book), the market is effectively assuming Berkshire will hold an ~18–19% pre-tax operating margin and compound a $360B cash pile and a $323.8B equity portfolio at equity-like returns. Five independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro-timing, and reflexivity — all land at a base intrinsic value of roughly <b>$500</b> (range $447–565), a probability-weighted value of roughly <b>$515–520</b>, and a rating cluster of <b>C/B/B/B−/C</b> that reconciles to <b>C — Hold/Watch</b>. We agree the business is genuinely wonderful, the moats are wide, the balance sheet is a fortress, the management is exceptional — and the price already pays for all of it. The valuation-critical variable is not underwriting or revenue; it is whether Greg Abel can deploy the ~$300B+ of excess cash at above-cost-of-capital returns — and that is, today, unproven. The market's own behavior (zero buybacks in Q4-25; a full-priced $10B Alphabet placement in Q2-26) says Berkshire is fairly valued, not cheap. Therefore, at today's price we would wait: hold existing positions, do not initiate in the $490–560 band, begin accumulating at ~$440–455, build at $380–440, and let demonstrated return on deployed capital — not the deployment *narrative* — decide whether this becomes a wonderful compounder bought at a fair price or a wonderful compounder finally bought at a discount.</p>
+        </div>
+      </section>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes five analyses — <code>buffet-analysis.md</code>, <code>munger-analysis.md</code>, <code>damodaran-analysis.md</code>, <code>druckenmiller-analysis.md</code>, and <code>soros-analysis.md</code> (dated August 16, 2026) — which themselves reference Berkshire's FY2025 10-K (filed 2026-03-02), Q1/Q2 2026 10-Qs, the Q2 2026 13F, the 2026 DEF 14A, the 2025 shareholder letter, Damodaran's NYU datasets, and market data as of 2026-08-14 (Yahoo Finance), plus the shared fact pack <code>fact-pack.json</code>. Damodaran's scenario values are the verified <code>BRK_Damodaran_Financial_Model.xlsx</code> workbook outputs (verifier: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is <b>not investment advice</b>, and no valuation herein should be treated as a price prediction or a recommendation to trade. Berkshire's outcome distribution is wide; treat every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

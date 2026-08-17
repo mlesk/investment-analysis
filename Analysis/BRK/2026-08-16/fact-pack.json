@@ -1,0 +1,63 @@
+{
+  "company": "Berkshire Hathaway Inc.",
+  "ticker": "BRK",
+  "primary_listing": "BRK.B (NYSE Class B); BRK.A also trades",
+  "date": "2026-08-16",
+  "market_data": {
+    "reference_price_brk_b": 504.03,
+    "as_of": "2026-08-14 close (Yahoo Finance)",
+    "52w_range": [464.01, 537.74],
+    "shares_outstanding_b_class_equiv_mm": 2140,
+    "market_cap_bn": 1079,
+    "enterprise_value_bn": 1170,
+    "trailing_pe": 12.67,
+    "eps_ttm": 39.77,
+    "pb": 1.44,
+    "ps_ttm": 2.48,
+    "beta_5y": 0.61,
+    "analyst_avg_price_target": 547.67,
+    "analyst_high_price_target": 604.0
+  },
+  "financials_ttm": {
+    "revenue_bn": 384.69,
+    "net_income_bn": 85.77,
+    "profit_margin_pct": 22.3,
+    "roe_pct": 12.12,
+    "roa_pct": 6.01,
+    "total_cash_mrq_bn": 365.51,
+    "debt_to_equity_pct": 17.14,
+    "levered_fcf_ttm_bn": 71.98
+  },
+  "balance_sheet": {
+    "total_assets_2025_12_31_bn": 1222,
+    "total_assets_2026_06_30_bn": 1263,
+    "equity_securities_fv_ni_2026_06_30_bn": 323.8,
+    "insurance_float_estimate_bn": 170,
+    "note": "Float and per-share book value should be re-confirmed by subagents from the 2025 10-K (filed 2026-03-02) and Q1/Q2 2026 10-Qs."
+  },
+  "fiscal_calendar": {
+    "fy_ends": "December 31",
+    "latest_10k": "FY2025, filed 2026-03-02",
+    "latest_10q": "Q2 2026, filed 2026-08-10",
+    "def14a_2026": "available April 2026"
+  },
+  "key_events_and_narrative": {
+    "ceo": "Greg Abel (CEO since 2025); Warren Buffett (95) remains Chairman",
+    "cash_deployment": "Q2 2026 cash balance fell as Abel deployed ~$35B from cash reserves (increased stakes in Alphabet, Delta Air Lines, homebuilders); committed $10B to Alphabet's $80B capital raise",
+    "alphabet_position": "Alphabet now a top-3 equity holding, ~$31B stake (~8.8% of equity portfolio as of July 2026); new tech-position since 2025",
+    "buybacks": "Continued share repurchases in Q2 2026",
+    "dividend": "No dividend; capital returned via buybacks",
+    "operating_revenue_2025_bn": 371.4,
+    "q2_2026_eps_actual": 6.03,
+    "q2_2026_eps_estimate": 5.13,
+    "q4_2025_revenue_bn": 111.44,
+    "q4_2025_earnings_bn": 19.2
+  },
+  "primary_sources": [
+    "https://www.berkshirehathaway.com/ (official IR; annual/interim reports, letters)",
+    "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json (SEC XBRL company facts, CIK 0001067983)",
+    "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983 (EDGAR filings: FY2025 10-K, Q1/Q2 2026 10-Qs, DEF 14A)",
+    "https://finance.yahoo.com/quote/BRK-B/ (market data, key statistics, news)"
+  ],
+  "usage_note": "All five lens subagents MUST start from these figures. Re-verify any figure you rely on against a fetched primary source and cite it. The revenue-based FCFF workbook model is an approximation for a conglomerate/insurer; Damodaran subagent should additionally discuss sum-of-parts (insurance float + operating businesses + investments) in the narrative."
+}

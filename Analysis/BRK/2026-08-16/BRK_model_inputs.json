@@ -1,0 +1,89 @@
+{
+  "company": "Berkshire Hathaway",
+  "ticker": "BRK",
+  "date": "2026-08-16",
+  "inputs": {
+    "price": 504.03,
+    "shares_mm": 2140.0,
+    "cash_mm": 365510.0,
+    "debt_mm": 117700.0,
+    "revenue_run_rate_mm": 384690.0,
+    "growth_y1": 0.04,
+    "growth_decay": 0.003,
+    "margin_y1": 0.156,
+    "margin_terminal": 0.16,
+    "tax_rate": 0.21,
+    "wacc": 0.08,
+    "terminal_growth": 0.025,
+    "roic_terminal": 0.1,
+    "roic_initial": 0.15,
+    "margin_ramp": 0.005,
+    "min_growth": 0.02,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.05,
+      "growth_adj": -0.07,
+      "margin_adj": -0.05,
+      "wacc_adj": 0.015,
+      "tg_adj": -0.005,
+      "roic_adj": -0.05,
+      "description": "Equity-market crash + P&C underwriting loss cycle + recession; IV $278"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.15,
+      "growth_adj": -0.03,
+      "margin_adj": -0.03,
+      "wacc_adj": 0.008,
+      "tg_adj": -0.003,
+      "roic_adj": -0.04,
+      "description": "Muted markets, soft insurance pricing, mild recession; IV $322"
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Normalized operating earnings, ~15.6% margins, 8% WACC; IV $428"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "growth_adj": 0.02,
+      "margin_adj": 0.02,
+      "wacc_adj": -0.004,
+      "tg_adj": 0.004,
+      "roic_adj": 0.03,
+      "description": "Strong equity markets, firm pricing, productive capital deployment; IV $530"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.1,
+      "growth_adj": 0.04,
+      "margin_adj": 0.045,
+      "wacc_adj": -0.008,
+      "tg_adj": 0.007,
+      "roic_adj": 0.06,
+      "description": "Exceptional equity compounding + successful large-scale deployment; IV $683"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 2,
+    "rev_end": 8,
+    "margin_start": 0.1,
+    "margin_end": 0.3,
+    "margin_step": 0.02
+  },
+  "sensitivity": {
+    "g_values": [0.0, 0.01, 0.02, 0.025, 0.03],
+    "wacc_values": [0.07, 0.08, 0.09, 0.1, 0.11],
+    "rev_values": [2, 3, 4, 5, 6],
+    "margin_values": [0.12, 0.14, 0.16, 0.18, 0.2]
+  }
+}
