@@ -1,0 +1,247 @@
+{
+  "company": "Reddit, Inc.",
+  "ticker": "RDDT",
+  "exchange": "NYSE",
+  "date": "2026-08-20",
+  "reference_price": "$151.71",
+  "kicker": "Synthesized Consensus · Six-Lens Deliberative Debate",
+  "title": "Reddit, Inc. — Consensus Investment Report",
+  "subtitle": "A structured debate between six independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, Soros reflexivity, and Minervini trend trading (standalone) — reconciled into a single synthesized analysis and recommendation.",
+  "rating": "C — HOLD / WATCH",
+  "exec_summary": {
+    "lead": "Reddit is one of the rarest assets in consumer internet — a wide-moat community network (“the toll booth on human conversation”) growing revenue 66.6% TTM at 91.4% gross margins with $2.77B net cash — but ~50% of its traffic is rented from Google, its per-share economics carry a $338M/yr SBC tax, and the stock has been re-rated −46% from its high on a single Google-related disclosure event. Six independent analyses, using six different frameworks, all refused to buy at **$151.71**: five converge on **C — Hold/Watch** (Druckenmiller C+, Soros a conditional B−), and Minervini reads the tape as a standalone trading D. The business is not in dispute; the Google referral pathway, the SBC treatment, and a price that embeds ~53% first-year growth are.",
+    "cards": [
+      {
+        "label": "Consensus base value",
+        "value": "~$100",
+        "note": "Damodaran's verified workbook $109.50 anchor, haircut for the unanimous SBC judgment; Buffett $123 (“proven-execution”); Munger $40 inversion floor — ~34% below the price"
+      },
+      {
+        "label": "Probability-weighted value",
+        "value": "~$124",
+        "note": "Consensus ~$123.50 vs Damodaran's workbook-weighted $141.61 — both below the $151.71 price"
+      },
+      {
+        "label": "Bear / Bull range",
+        "value": "$45 – $290",
+        "note": "Workbook bear $45.27 (−70%) and bull $423.27 (+179%); consensus bull ~$290 discounts the extreme tail"
+      },
+      {
+        "label": "Confidence",
+        "value": "Low/Med",
+        "note": "A 3× base-case spread ($40–$123) and a binary, unobservable Google variable"
+      },
+      {
+        "label": "Consensus entry plan",
+        "value": "$95–115 → Under $75",
+        "note": "Starter $95–115; accumulate $75–95; high-conviction Under $75 (Munger starter Under $45)"
+      },
+      {
+        "label": "Valuation-critical metric",
+        "value": "Google referral durability",
+        "value_style": "font-size: 22px",
+        "note": "~50% of traffic Google-sourced; monitor DAUq, ARPU, licensing renewal, SBC % revenue"
+      }
+    ]
+  },
+  "profiles_title": "The Five Positions at the Table",
+  "profiles_lead": "Each participant analyzed Reddit independently. Their positions were then cross-examined in the debate. Minervini's trading lens stands outside the valuation consensus.",
+  "profiles": [
+    {
+      "name": "Warren Buffett",
+      "role": "Owner-Earnings Value Lens",
+      "verdict": "C — Watch",
+      "at": "at $151.71",
+      "paragraph": "Three-scenario SBC-adjusted owner-earnings DCF (10–12% discount, terminal growth ≤3%): bear **$65**, base **$123**, bull **$251**, weighted **~$131** (30/50/20). “A wonderful business at a price that already pays for a great deal of the future — ~43× FCF once stock-based compensation is treated as the real cost it is.” Buyer at **$85–95**; compelling below **$75**; reduce above **$180**.",
+      "tags": ["Base $123", "Weighted ~$131", "Moat: Wide", "Buy zone $85–95"]
+    },
+    {
+      "name": "Charlie Munger",
+      "role": "Multidisciplinary Quality Lens",
+      "verdict": "C — Watch",
+      "at": "at $151.71",
+      "paragraph": "Conservative net-of-SBC DCF (16.5% discount, 2% terminal growth): bear **$27**, base **$40**, bull **$50**, weighted **~$35**; even ignoring SBC entirely, base is only $60. “The wonderful company at a wonderful price — and wonderful prices are how wonderful companies become mediocre investments.” Starter below **$45**, conviction below **$35**; reduce at or above **$150**.",
+      "tags": ["Base $40", "Weighted ~$35", "Starter Under $45", "Reduce at $150"]
+    },
+    {
+      "name": "Aswath Damodaran",
+      "role": "Fundamental Valuation Lens",
+      "verdict": "C — Hold / Watch",
+      "at": "at $151.71",
+      "paragraph": "Verified five-scenario FCFF workbook (12.0% WACC, 3.0% terminal growth, 24% normalized tax): bear **$45.27**, conservative **$70.40**, base **$109.50**, optimistic **$194.16**, bull **$423.27**; weighted **$141.61** = **−6.7%** expected upside and **−1.4%** 5-yr annualized. The price embeds ~53% Y1 growth. Buy **$75–95**, conviction below **$75**; reduce at or above **$190**.",
+      "tags": ["Base $109.50", "Weighted $141.61", "WACC 12.0%", "Buy zone $75–95"]
+    },
+    {
+      "name": "Stanley Druckenmiller",
+      "role": "Macro, Liquidity & Expectations Lens",
+      "verdict": "C+ — Monitor",
+      "at": "at $151.71 · 78/150",
+      "paragraph": "12-month price paths bear **$120** / base **$165** / bull **$210**, weighted **~$161**, plus tails **$88** (10%) and **$290** (5%). “Buy the Google-panic dislocation in the best ad business on the internet, if and when it arrives below ~$135.” Expected ~+6% at $151.71; >+20% entered at $120–135. Buy zone **$110–135**; reduce above **$215**.",
+      "tags": ["12-mo ~$161", "Buy zone $110–135", "Buy the panic", "Monitor"]
+    },
+    {
+      "name": "George Soros",
+      "role": "Reflexivity & Disequilibrium Lens",
+      "verdict": "B− — Overshoot long",
+      "at": "at $151.71",
+      "paragraph": "12-month paths bear **$120** / base **$165** / bull **$210**, weighted **~$171**, extremes **$95** (10%) and **$270** (10%). The AI-victim narrative has overshot reality — monetization (ads +64%, US ARPU +51%) has decoupled from traffic; 10% short interest plus a $1B buyback plus a binary Google-renewal catalyst create ~2.2:1 asymmetry. Scale in **$115–140**; reduce above **$205**.",
+      "tags": ["12-mo ~$171", "Asymmetry 2.2:1", "Scale-in $115–140", "Overshoot"]
+    }
+  ],
+  "debate": {
+    "title": "The Debate: Agreement, Contention, Resolution",
+    "lead": "Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions. Minervini's trading view is recorded but stands outside the valuation consensus.",
+    "agreements_title": "Uncontested consensus core",
+    "agreements": [
+      "**The franchise is exceptional.** 91.4% gross margin, 28.25% operating margin, 36.7% FCF margin, ~$7.5M TTM capex, $2.77B net cash, 8 straight quarters of 60%+ revenue growth.",
+      "**The moat is wide on the community side, rented on the distribution side.** The 20-year, 26B+ post corpus and two-sided network effect are genuinely defensible; ~50% of traffic arriving via Google is not.",
+      "**SBC is the per-share tax.** $338M TTM = 12.2% of revenue and ~39% of net income; how each lens treats it is the single largest driver of the valuation spread.",
+      "**The Q2'26 print was a template event, not an operating collapse.** −21% on 2026-07-30 while revenue grew +61.1% — the market repriced the Google referral pathway, not the P&L.",
+      "**No margin of safety at $151.71.** Five of six lenses place their central value below the price; nobody calls the stock cheap.",
+      "**The S&P 500 inclusion was a flow event, not a story change.** +16.5% on 08-14 fully faded by 08-19; index membership does not change the Google dependency.",
+      "**Google is a four-way dependency** — traffic source (~50%), advertising rival, AI-disintermediator (AI Overviews), and licensing customer (~$60M/yr, renewal in doubt).",
+      "**Unanimous: do not initiate at $151.71.** C (Buffett), C (Munger), C (Damodaran), C+ (Druckenmiller), B− (Soros), D-trading (Minervini). No outright buyer today; no one shorts the moat.",
+      "**One valuation-critical variable: the durability of Google-sourced traffic.** Every lens, in its own vocabulary, lands on the same hinge.",
+      "**The distribution is wide and two-tailed.** Beta 2.03; bear cases −70% to −85%; bull tails +78% to +179%; a binary licensing renewal; a crowded short base."
+    ],
+    "contentions_title": "Contested points — and how they were resolved",
+    "contentions": [
+      "**Reference-price framing: intrinsic value vs 12-month price paths.** Buffett/Munger/Damodaran publish intrinsic values; Druckenmiller ($120/165/210) and Soros ($95–270) publish 12-month price expectations; Minervini publishes trend extrapolations. Damodaran: “mixing price paths into a scenario table is how consensus reports manufacture precision.” **Concessions:** Druckenmiller and Soros each concede their cells are price paths, not IV. **Resolved:** the three fundamental models set the consensus IV (workbook as anchor); the macro lenses inform the near-term ladder and triggers only.",
+      "**Where does base-case intrinsic value actually sit? The 3× spread.** Munger **$40** (net-of-SBC at 16.5% discount, 2% tg), Damodaran **$109.50** (verified workbook, 12.0% WACC), Buffett **$123** (SBC-adjusted, 14% growth at 11%). The SBC treatment is the crux. **Concessions:** Munger concedes $40 is a never-pay floor, not a central estimate (his no-SBC variant: $60); Damodaran concedes his model assumes SBC discipline rather than expensing the current bill; Buffett concedes $123 is “what it is worth if it compounds,” not what he would pay. **Resolved:** consensus base ≈ **~$100**; Buffett's $123 becomes the upgrade target; Munger's $40 maps to the bear/conservative rows.",
+      "**How much credit for the right tail?** Damodaran optimistic **$194.16** / bull **$423.27** (20% / 10%); Buffett **$251**; Soros **$210** / extreme **$270**; Druckenmiller tail **$290**; Munger **$50**. All agree the tail is real but unproven — the dispute is weighting. **Concessions:** Damodaran concedes his bull cell is model-consistent but assumption-extreme; Soros concedes $270 is a reflexivity re-rating path, not a DCF; Buffett will not defend above $251. **Resolved:** consensus optimistic ~**$185**, bull ~**$290**, combined ~30% — the tail justifies watching, not paying.",
+      "**What price compensates for the uncertainty?** Buy zones span Under $45 (Munger) to $115–140 (Soros). **Concessions:** Druckenmiller concedes $110–135 is a trading zone, not a value zone; Munger concedes his $45 requires the bear scenario to arrive as price, and accepts the composite ladder. **Resolved:** do not initiate at or above ~$150; starter **$95–115**, accumulate **$75–95**, conviction **Under $75** — a dispute about sizing and temperament, not about today's price.",
+      "**Management: excellence vs the disclosure retreat.** For: candid founder, $3.1M cash comp, 11.3:1 pay ratio, SBC declining, $1B buyback into the post-earnings dip at ~$157.57. Against: ~74% voting control, SBC ~39% of net income, buybacks at ~29× FCF, and retiring the logged-in DAUq disclosure “right as the metric turns.” **Concessions:** Buffett 7→6; Munger rounds 6.5 down; Soros concedes the retreat is a credibility ding, not proven fraud. **Resolved:** consensus management score **6/10**.",
+      "**Is Google dependence the valuation-critical variable?** ~50% of traffic Google-sourced; the ~$60M/yr licensing renewal is binary and unobservable (management only knows one side). **Concessions:** Soros concedes the renewal is a bounded binary (~10–20% of the tail), not the whole case; Druckenmiller concedes macro (10Y 4.65%) is a multiplier, not a driver. **Resolved:** the durability of Google-sourced traffic is the one variable; monitoring hierarchy: Google referral health → DAUq (US logged-in) → ARPU → licensing renewal → SBC % revenue → Q3'26 print."
+    ]
+  },
+  "valuation": {
+    "title": "Consensus Valuation",
+    "lead": "Reconciled scenario matrix. The Damodaran column is the verified workbook (formulas engine ALL_MATCH). Druckenmiller/Soros cells are 12-month price expectations, shown for timing only.",
+    "matrix": {
+      "columns": ["Scenario", "Prob.", "Damodaran (workbook)", "Buffett", "Munger", "Druckenmiller†", "Soros†", "Consensus IV"],
+      "rows": [
+        { "cells": ["Bear", "10%", "$45.27", "$65", "$27", "$88 (−42%)†", "$95 (−37%)†", "~$50"] },
+        { "cells": ["Conservative", "25%", "$70.40", "—", "$23 *", "$120 (−21%)†", "$120 (−21%)†", "~$70"] },
+        { "cells": ["Base", "35%", "$109.50", "$123", "$40 **", "$165 (+9%)†", "$165 (+9%)†", "~$100"], "highlight": true },
+        { "cells": ["Optimistic", "20%", "$194.16", "—", "—", "$210 (+38%)†", "$210 (+38%)†", "~$185"] },
+        { "cells": ["Bull", "10%", "$423.27", "$251", "$50", "$290 (+91%)†", "$270 (+78%)†", "~$290"] }
+      ]
+    },
+    "footnote": "* Munger's $23 severe-bear maps to the Conservative row. ** Munger's $40 Base is his net-of-SBC, 16.5%-discount inversion floor — see the base-case contention. † Druckenmiller/Soros cells are 12-month price expectations, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV. Minervini's technical paths are excluded (trading view only).",
+    "chart": {
+      "cols": [
+        { "scen": "Bear", "val": "~$50", "prob": "10%", "height": 24, "fill": "fill-red" },
+        { "scen": "Conservative", "val": "~$70", "prob": "25%", "height": 34, "fill": "fill-red" },
+        { "scen": "Base", "val": "~$100", "prob": "35%", "height": 52, "fill": "fill-amber" },
+        { "scen": "Optimistic", "val": "~$185", "prob": "20%", "height": 78, "fill": "fill-green" },
+        { "scen": "Bull", "val": "~$290", "prob": "10%", "height": 100, "fill": "fill-deep" }
+      ],
+      "axis_left": "$0",
+      "axis_mid": "Consensus intrinsic value per share",
+      "axis_right": "~$290"
+    },
+    "weighted": {
+      "formula": "EV = 0.10×~$50 + 0.25×~$70 + 0.35×~$100 + 0.20×~$185 + 0.10×~$290 = 5.0 + 17.5 + 35.0 + 37.0 + 29.0 ≈ $123.50 (~$124) — versus Damodaran's workbook-weighted 0.10×$45.27 + 0.25×$70.40 + 0.35×$109.50 + 0.20×$194.16 + 0.10×$423.27 = $141.61",
+      "text": "At **$151.71** that is roughly **−18.6% expected upside** and **≈ −4.0% 5-year annualized** — **a negative expected return with no margin of safety**. The consensus weighted value (~$124) sits modestly below Damodaran's verified workbook-weighted $141.61, because the two SBC-expensing lenses (Buffett, Munger) drag the base and tail cells down. Reverse-DCF check (uncontested, Damodaran §12): the $151.71 price embeds **~53% Y1 revenue growth at a 12.0% WACC** — bull-case execution priced as the base expectation. Downside tail: −70% (workbook bear $45.27); upside tail: +179% (workbook bull $423.27). Confidence: **Low/Medium**."
+    }
+  },
+  "ladder": {
+    "title": "Consensus Price Ladder",
+    "lead": "Where the six frameworks meet — the composite plan. Do not initiate at $151.71: the do-not-initiate band is at or above ~$150, and the reference price sits just inside it.",
+    "rungs": [
+      { "price": "Over $215", "width": 100, "fill": "fill-red", "action": "Reduce / avoid — exceeds every lens's reduce line and the ~$215.63 analyst PT cluster", "color": "var(--red)" },
+      { "price": "$190–215", "width": 88, "fill": "fill-red", "action": "Reduce / trim — Damodaran's reduce zone; Soros reduces above $205", "color": "var(--red)" },
+      { "price": "$150–190", "width": 62, "fill": "fill-amber", "action": "Hold existing, do not add — Munger's reduce floor to consensus reduce lines; do-not-initiate band ($151.71 sits here)", "color": "var(--gold)" },
+      { "price": "$115–150", "width": 46, "fill": "fill-green", "action": "Watch — first tranche for thesis buyers (Soros $115–140; Druckenmiller $110–135)", "color": "var(--green)" },
+      { "price": "$95–115", "width": 58, "fill": "fill-green", "action": "Begin accumulating (starter) — between Druckenmiller's $110 floor and Damodaran's $95 ceiling", "color": "var(--green)" },
+      { "price": "$75–95", "width": 72, "fill": "fill-deep", "action": "Accumulate (attractive) — Damodaran's buy zone; Buffett's interest zone ($85–95)", "color": "#0e4d31" },
+      { "price": "Under $75", "width": 100, "fill": "fill-deep", "action": "High-conviction buy — Damodaran conviction, Buffett compelling; Munger starter Under $45", "color": "#0e4d31", "bold": true }
+    ]
+  },
+  "proscons": {
+    "title": "Pros & Cons — At $151.71",
+    "for": [
+      "Exceptional franchise — 91.4% GM, 28.25% op margin, 36.7% FCF margin, ~zero capex, $2.77B net cash",
+      "A real, widening moat — 20-year corpus, 130.3M DAUq (+18%), two-sided network effects competitors could not replicate",
+      "Monetization engine intact — ARPU +36%, ads +64% in the “choppy” quarter; US ARPU $11.85 vs multiples of that at Meta",
+      "Second curves — AI data licensing, e-commerce (Shopify GA), video, international (+84%)",
+      "Capital return — $1B buyback executing (~$157.57 avg, $760M left) into the post-earnings dip",
+      "Already de-risked — −46% from the 52-week high, 25.1× forward, S&P 500 membership bid",
+      "Positioning powder-keg — 9.99% of shares short (13.4% of float) into a buyback and a binary catalyst"
+    ],
+    "against": [
+      "No margin of safety — price ~34% above consensus base (~$100) and ~19% above the consensus weighted (~$124)",
+      "Google dependence — ~50% of traffic Google-sourced; the Q2'26 DAUq miss and −21% print is the template for how growth stalls",
+      "SBC/GAAP quality — SBC $338M TTM (12.2% of revenue, ~39% of net income); ~43× FCF after expensing it",
+      "Binary licensing overhang — ~$60M/yr Google deal renewal in doubt; termination priced at −25–35%",
+      "Deceleration + de-rating spiral — growth 77.7% → 61.1%; estimate cuts underway (Bernstein $190→$180); multiple compression risk",
+      "Governance and disclosure — ~74% voting control; securities litigation; logged-in DAUq disclosure retired “as the metric turns”",
+      "Broken tape — below all three major moving averages; early Stage 4 per Minervini; overhead supply $158–184"
+    ]
+  },
+  "triggers": {
+    "title": "What Changes the Rating",
+    "upgrade_title": "Upgrade C → B/A when:",
+    "upgrade": [
+      "The Q3'26 print (~Nov 2026) clears Google fears — revenue at/above the $860–870M guide with DAUq re-acceleration and US logged-in DAUq no longer deteriorating",
+      "The Google data-licensing deal is renewed or expanded — removes the binary overhang",
+      "ARPU keeps compounding (+30%+) and international monetization proves out (+84% revenue growth sustained)",
+      "SBC as % of revenue declines toward high single digits and the diluted share count is flat-to-down",
+      "A margin of safety returns — price into $95–115 or below with the monitoring hierarchy intact"
+    ],
+    "downgrade_title": "Downgrade C → D/E if:",
+    "downgrade": [
+      "Google referrals structurally decline for two consecutive quarters; US logged-in DAUq goes negative",
+      "The Google data-licensing deal is terminated without replacement (−25–35% tail)",
+      "ARPU growth stalls below ~20% while DAU growth decelerates — the monetization-trend inversion",
+      "SBC re-accelerates above ~15% of revenue or the buyback is abandoned",
+      "A close below ~$140.67, then the 52-week low $119.27 — Stage 4 confirmation (Minervini's tripwire)"
+    ],
+    "dashboard_title": "Consensus monitoring dashboard",
+    "dashboard": [
+      { "metric": "Google referral health → DAUq", "why": "The valuation-critical pathway (~50% of traffic)", "helps": "DAUq +18% holds; US logged-in stabilizes" },
+      { "metric": "ARPU (US $11.85)", "why": "The monetization engine that has decoupled from traffic", "helps": "+30%+ compounding" },
+      { "metric": "Google data-licensing renewal", "why": "The binary, unobservable catalyst (~$60M/yr)", "helps": "Renewed or replaced" },
+      { "metric": "SBC as % of revenue", "why": "The per-share tax ($338M TTM, ~39% of net income)", "helps": "Decline toward high single digits" },
+      { "metric": "Diluted share count", "why": "Per-share compounding vs the buyback", "helps": "Flat-to-down" },
+      { "metric": "Q3'26 print", "why": "First quarter without logged-in disclosure", "helps": "Guide met; DAU stable; narrative repair" },
+      { "metric": "Short interest / float", "why": "Squeeze fuel on any positive catalyst", "helps": "Falling on strength" },
+      { "metric": "10Y Treasury yield", "why": "Duration gate for a 25× forward multiple on beta 2.03", "helps": "Below ~4.4%" }
+    ]
+  },
+  "technical": {
+    "title": "Technical Analysis",
+    "lead": "Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast. Computed from Yahoo Finance daily and weekly OHLC through the 2026-08-19 close.",
+    "rows": [
+      { "metric": "Price vs 200-day SMA", "value": "-14.4%", "delta": "Below" },
+      { "metric": "Price vs 100-day SMA", "value": "-7.8%", "delta": "Below" },
+      { "metric": "Price vs 50-day SMA", "value": "-12.8%", "delta": "Below" },
+      { "metric": "14-day RSI", "value": "42.7", "delta": "Neutral (mid-range)" },
+      { "metric": "14-week RSI", "value": "45.9", "delta": "Neutral" },
+      { "metric": "50-week RSI", "value": "50.9", "delta": "Neutral" },
+      { "metric": "52-week high / low", "value": "282.95 / 119.27", "delta": "-46.4% from high, +27.2% from low" }
+    ],
+    "note": "Price is below all three major moving averages with neutral mid-range momentum — the arithmetic of a broken uptrend, not yet washed-out oversold. RSI below 30 signals oversold, above 70 overbought; SMA deltas are the price's deviation from each average. Mark Minervini's standalone trading lens reads this tape as an early Stage 4 decline and rates RDDT D (Avoid) — a trading view, not part of the consensus recommendation."
+  },
+  "conclusions": {
+    "title": "The Five Consensus Conclusions",
+    "items": [
+      "**The Business.** Reddit is one of the great consumer-internet franchises — “the toll booth on human conversation” — a wide-moat community network with 91.4% gross margins, 36.7% FCF margins, near-zero capital intensity, a $2.77B net-cash fortress, and a 26B+ post corpus that search engines and AI labs pay to license. The business quality is not in dispute.",
+      "**The Economics.** The sole determinant of long-term value is the durability of Google-sourced traffic. If the referral pathway holds, ARPU compounding (+36%) makes the base case conservative; if AI search re-platforms it, the bear/conservative outcomes ($45.27 / $70.40 workbook, 35% combined) arrive. Monitoring hierarchy: Google referral health → DAUq (US logged-in) → ARPU → data-licensing renewal → SBC % revenue → Q3'26 print.",
+      "**The Market's Expectations.** At $151.71 the market assumes ~53% first-year revenue growth at a 12% WACC (Damodaran's reverse DCF) — bull-case execution priced as the base expectation, ~26% above consensus revenue. The $215.63 average PT is anchored to forward non-GAAP EPS (~$7.56) that ignores normalized taxes and the SBC bill. Aggressive, not impossible — and no bargain.",
+      "**The Valuation.** Consensus base intrinsic value ~$100/share; probability-weighted ~$124/share; bear ~$50; bull ~$290 with a workbook extreme of $423.27. Damodaran's verified workbook: $45.27 / $70.40 / $109.50 / $194.16 / $423.27, weighted $141.61. Confidence: Low/Medium. Both the consensus base and the consensus weighted value are below the $151.71 price — expected upside ≈ −19%, 5-year annualized ≈ −4.0%.",
+      "**The Investment Decision.** C — HOLD / WATCH at $151.71; do not initiate at or above ~$150. Begin accumulating at $95–115, build at $75–95, full conviction under $75 (Munger's prices below $45), provided the monitoring hierarchy stays intact. Upgrades require proof — the Q3'26 print, the Google renewal, and ARPU durability, not the stock price, will deliver the verdict."
+    ]
+  },
+  "judgment": {
+    "title": "Final Consensus Judgment",
+    "paragraph": "At a price of **$151.71**, the market is effectively paying for Reddit to execute its optimistic scenario — ~53% first-year growth, sustained ARPU compounding, and a benign Google relationship — with essentially no penalty for the ~$338M/yr SBC bill, the binary licensing renewal, or the controlled-company governance. Six independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity expectations, reflexivity, and trend trading — all refuse to buy at this price. Five land on a **C (Hold/Watch)** or better-but-conditional (Druckenmiller C+, Soros B−), and one reads the chart as an outright **D**. We agree the franchise is exceptional, the moat is wide on the community side and rented on the distribution side, SBC is the per-share tax, management is excellent-but-scored-6/10 for the disclosure retreat, and the valuation already pays for the optimistic path. The most dangerous risks are a structural Google-referral decline, a terminated data-licensing deal, an SBC re-acceleration, and a de-rating spiral on the first further deceleration. Therefore, at today's price the consensus is to **hold and wait**: do not initiate at or above ~$150, accumulate in stages at **$95–115** and **$75–95**, buy with conviction **under $75**, and let the Q3'26 print, the Google renewal, and the ARPU trajectory — not the AI-victim narrative or the index membership — decide whether this wonderful company becomes a wonderful investment."
+  },
+  "sources_note": "This report synthesizes six analyses — buffet-analysis.md, munger-analysis.md, damodaran-analysis.md, druckenmiller-analysis.md, soros-analysis.md, and minervini-analysis.md (dated August 20, 2026) — which themselves reference Reddit SEC filings (Q2'26 10-Q filed 2026-07-31, Q2'26 8-K exhibits, FY2025 10-K, 2026 DEF 14A proxy), StockAnalysis, TipRanks, MarketBeat, Reuters, Business Wire, 24/7 Wall St., and Yahoo Finance daily/weekly OHLC data, as of August 2026. Damodaran's scenario values are the verified RDDT_Damodaran_Financial_Model.xlsx workbook outputs (formulas engine: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is not investment advice, and no valuation herein should be treated as a price prediction or a recommendation to trade. Reddit's outcome distribution is wide; treat every number on this page as a hypothesis, not a fact.",
+  "figures": [
+    "$151.71", "$45.27", "$70.40", "$109.50", "$194.16", "$423.27", "$141.61",
+    "~$100", "~$124", "~$50", "~$70", "~$185", "~$290",
+    "C — HOLD / WATCH", "−18.6%", "−4.0%", "~53%", "6/10",
+    "Over $215", "$190–215", "$150–190", "$115–150", "$95–115", "$75–95", "Under $75"
+  ]
+}

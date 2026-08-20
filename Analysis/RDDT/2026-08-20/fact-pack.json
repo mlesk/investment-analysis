@@ -1,0 +1,78 @@
+{
+  "company": "Reddit, Inc.",
+  "ticker": "RDDT",
+  "exchange": "NYSE",
+  "analysis_date": "2026-08-20",
+  "reference_price": 151.71,
+  "reference_price_note": "2026-08-19 close (analysis date 2026-08-20 pre-market)",
+  "market_data": {
+    "shares_outstanding_mm": 192.4,
+    "market_cap_bn": 29.19,
+    "beta": 2.03,
+    "pe_ttm": 35.36,
+    "pe_forward": 25.1,
+    "ps_ttm": 10.5,
+    "pfcf_ttm": 28.65,
+    "analyst_consensus": "Buy (33 analysts)",
+    "avg_price_target": 215.63,
+    "earnings_date_last": "2026-07-30 (Q2 2026; shares fell ~21% on the print)"
+  },
+  "financials": {
+    "revenue_ttm_mm": 2778.8,
+    "revenue_ttm_growth": 0.666,
+    "revenue_2025_mm": 2202.5,
+    "revenue_2024_mm": 1300.2,
+    "advertising_revenue_ttm_mm": 2625.0,
+    "other_revenue_ttm_mm": 153.5,
+    "gross_margin_ttm": 0.9144,
+    "operating_margin_ttm": 0.2825,
+    "net_margin_ttm": 0.3135,
+    "operating_income_ttm_mm": 785.0,
+    "net_income_ttm_mm": 871.1,
+    "eps_ttm": 4.29,
+    "operating_cash_flow_ttm_mm": 1026.0,
+    "free_cash_flow_ttm_mm": 1019.0,
+    "fcf_margin_ttm": 0.3666,
+    "cash_and_investments_mm": 2786.0,
+    "total_debt_mm": 20.9,
+    "net_cash_mm": 2765.0,
+    "net_cash_per_share": 13.63
+  },
+  "technicals": {
+    "as_of": "2026-08-19 close, computed from Yahoo Finance daily/weekly OHLC",
+    "price_vs_sma50_pct": -12.8,
+    "price_vs_sma100_pct": -7.8,
+    "price_vs_sma200_pct": -14.4,
+    "sma50": 173.94,
+    "sma100": 164.53,
+    "sma200": 177.14,
+    "rsi_14d": 42.7,
+    "rsi_14w": 45.9,
+    "rsi_50w": 50.9,
+    "wk52_high": 282.95,
+    "wk52_low": 119.27,
+    "pct_from_52w_high": -46.4,
+    "pct_from_52w_low": 27.2
+  },
+  "recent_price_action": [
+    "2026-08-13 close ~157.50",
+    "2026-08-14 close 184.28 (+16.5% on S&P 500 inclusion announcement)",
+    "2026-08-17 close 178.34",
+    "2026-08-18 close 167.54 (joined S&P 500 at open, replaced AvalonBay)",
+    "2026-08-19 close 151.71 (-4.1%)"
+  ],
+  "key_events": [
+    "S&P 500 inclusion effective 2026-08-18 (announced 2026-08-14); stock spiked then faded",
+    "Q2 2026 earnings 2026-07-30; shares plunged ~21% despite strong headline growth (Google search-referral concerns)",
+    "Google search-referral weakness is a named analyst concern (invezz/Reuters 2026-08-14)",
+    "Reddit testing TikTok-style audio/video experience (TechCrunch 2026-08-17)",
+    "Raymond James raised PT to $205 from $200, Strong Buy (2026-08-18)"
+  ],
+  "primary_sources": [
+    "https://stockanalysis.com/stocks/rddt/",
+    "https://stockanalysis.com/stocks/rddt/financials/",
+    "https://query1.finance.yahoo.com/v8/finance/chart/RDDT (daily+weekly OHLC)",
+    "https://www.reuters.com/business/finance/reddit-surges-sp-500-inclusion-set-replace-avalonbay-2026-08-14/",
+    "https://www.businesswire.com/news/home/20260814586211/en/Reddit-Will-Be-Added-to-the-SP-500/"
+  ]
+}

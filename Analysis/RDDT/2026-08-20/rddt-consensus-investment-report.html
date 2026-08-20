@@ -1,0 +1,1183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit, Inc. — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">Synthesized Consensus · Six-Lens Deliberative Debate</div>
+        <h1>Reddit, Inc. — Consensus Investment Report</h1>
+        <div class="sub">A structured debate between six independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, Soros reflexivity, and Minervini trend trading (standalone) — reconciled into a single synthesized analysis and recommendation.</div>
+        <div class="meta-row">
+          <span class="chip">NYSE: RDDT</span>
+          <span class="chip">Report date: 2026-08-20</span>
+          <span class="chip">Reference price: $151.71</span>
+          <span class="rating-badge"><span class="dot"></span> C — HOLD / WATCH</span>
+        </div>
+      </div>
+    </header>
+
+
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">Reddit is one of the rarest assets in consumer internet — a wide-moat community network (“the toll booth on human conversation”) growing revenue 66.6% TTM at 91.4% gross margins with $2.77B net cash — but ~50% of its traffic is rented from Google, its per-share economics carry a $338M/yr SBC tax, and the stock has been re-rated −46% from its high on a single Google-related disclosure event. Six independent analyses, using six different frameworks, all refused to buy at <b>$151.71</b>: five converge on <b>C — Hold/Watch</b> (Druckenmiller C+, Soros a conditional B−), and Minervini reads the tape as a standalone trading D. The business is not in dispute; the Google referral pathway, the SBC treatment, and a price that embeds ~53% first-year growth are.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$100</div>
+            <div class="note">Damodaran's verified workbook $109.50 anchor, haircut for the unanimous SBC judgment; Buffett $123 (“proven-execution”); Munger $40 inversion floor — ~34% below the price</div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$124</div>
+            <div class="note">Consensus ~$123.50 vs Damodaran's workbook-weighted $141.61 — both below the $151.71 price</div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$45 – $290</div>
+            <div class="note">Workbook bear $45.27 (−70%) and bull $423.27 (+179%); consensus bull ~$290 discounts the extreme tail</div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low/Med</div>
+            <div class="note">A 3× base-case spread ($40–$123) and a binary, unobservable Google variable</div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$95–115 → Under $75</div>
+            <div class="note">Starter $95–115; accumulate $75–95; high-conviction Under $75 (Munger starter Under $45)</div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 22px">Google referral durability</div>
+            <div class="note">~50% of traffic Google-sourced; monitor DAUq, ARPU, licensing renewal, SBC % revenue</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">02</span>The Five Positions at the Table</h2>
+        <p class="lead">Each participant analyzed Reddit independently. Their positions were then cross-examined in the debate. Minervini's trading lens stands outside the valuation consensus.</p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span><span class="small">at $151.71</span>
+              </div>
+              <p>Three-scenario SBC-adjusted owner-earnings DCF (10–12% discount, terminal growth ≤3%): bear <b>$65</b>, base <b>$123</b>, bull <b>$251</b>, weighted <b>~$131</b> (30/50/20). “A wonderful business at a price that already pays for a great deal of the future — ~43× FCF once stock-based compensation is treated as the real cost it is.” Buyer at <b>$85–95</b>; compelling below <b>$75</b>; reduce above <b>$180</b>.</p>
+              <div class="tags">
+                <span class="tag">Base $123</span><span class="tag">Weighted ~$131</span><span class="tag">Moat: Wide</span><span class="tag">Buy zone $85–95</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span><span class="small">at $151.71</span>
+              </div>
+              <p>Conservative net-of-SBC DCF (16.5% discount, 2% terminal growth): bear <b>$27</b>, base <b>$40</b>, bull <b>$50</b>, weighted <b>~$35</b>; even ignoring SBC entirely, base is only $60. “The wonderful company at a wonderful price — and wonderful prices are how wonderful companies become mediocre investments.” Starter below <b>$45</b>, conviction below <b>$35</b>; reduce at or above <b>$150</b>.</p>
+              <div class="tags">
+                <span class="tag">Base $40</span><span class="tag">Weighted ~$35</span><span class="tag">Starter Under $45</span><span class="tag">Reduce at $150</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Hold / Watch</span><span class="small">at $151.71</span>
+              </div>
+              <p>Verified five-scenario FCFF workbook (12.0% WACC, 3.0% terminal growth, 24% normalized tax): bear <b>$45.27</b>, conservative <b>$70.40</b>, base <b>$109.50</b>, optimistic <b>$194.16</b>, bull <b>$423.27</b>; weighted <b>$141.61</b> = <b>−6.7%</b> expected upside and <b>−1.4%</b> 5-yr annualized. The price embeds ~53% Y1 growth. Buy <b>$75–95</b>, conviction below <b>$75</b>; reduce at or above <b>$190</b>.</p>
+              <div class="tags">
+                <span class="tag">Base $109.50</span><span class="tag">Weighted $141.61</span><span class="tag">WACC 12.0%</span><span class="tag">Buy zone $75–95</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro, Liquidity &amp; Expectations Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C+ — Monitor</span><span class="small">at $151.71 · 78/150</span>
+              </div>
+              <p>12-month price paths bear <b>$120</b> / base <b>$165</b> / bull <b>$210</b>, weighted <b>~$161</b>, plus tails <b>$88</b> (10%) and <b>$290</b> (5%). “Buy the Google-panic dislocation in the best ad business on the internet, if and when it arrives below ~$135.” Expected ~+6% at $151.71; &gt;+20% entered at $120–135. Buy zone <b>$110–135</b>; reduce above <b>$215</b>.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$161</span><span class="tag">Buy zone $110–135</span><span class="tag">Buy the panic</span><span class="tag">Monitor</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity &amp; Disequilibrium Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B− — Overshoot long</span><span class="small">at $151.71</span>
+              </div>
+              <p>12-month paths bear <b>$120</b> / base <b>$165</b> / bull <b>$210</b>, weighted <b>~$171</b>, extremes <b>$95</b> (10%) and <b>$270</b> (10%). The AI-victim narrative has overshot reality — monetization (ads +64%, US ARPU +51%) has decoupled from traffic; 10% short interest plus a $1B buyback plus a binary Google-renewal catalyst create ~2.2:1 asymmetry. Scale in <b>$115–140</b>; reduce above <b>$205</b>.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$171</span><span class="tag">Asymmetry 2.2:1</span><span class="tag">Scale-in $115–140</span><span class="tag">Overshoot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">03</span>The Debate: Agreement, Contention, Resolution</h2>
+        <p class="lead">Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions. Minervini's trading view is recorded but stands outside the valuation consensus.</p>
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The franchise is exceptional.</b> 91.4% gross margin, 28.25% operating margin, 36.7% FCF margin, ~$7.5M TTM capex, $2.77B net cash, 8 straight quarters of 60%+ revenue growth.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The moat is wide on the community side, rented on the distribution side.</b> The 20-year, 26B+ post corpus and two-sided network effect are genuinely defensible; ~50% of traffic arriving via Google is not.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>SBC is the per-share tax.</b> $338M TTM = 12.2% of revenue and ~39% of net income; how each lens treats it is the single largest driver of the valuation spread.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Q2'26 print was a template event, not an operating collapse.</b> −21% on 2026-07-30 while revenue grew +61.1% — the market repriced the Google referral pathway, not the P&amp;L.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>No margin of safety at $151.71.</b> Five of six lenses place their central value below the price; nobody calls the stock cheap.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The S&amp;P 500 inclusion was a flow event, not a story change.</b> +16.5% on 08-14 fully faded by 08-19; index membership does not change the Google dependency.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Google is a four-way dependency</b> — traffic source (~50%), advertising rival, AI-disintermediator (AI Overviews), and licensing customer (~$60M/yr, renewal in doubt).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Unanimous: do not initiate at $151.71.</b> C (Buffett), C (Munger), C (Damodaran), C+ (Druckenmiller), B− (Soros), D-trading (Minervini). No outright buyer today; no one shorts the moat.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>One valuation-critical variable: the durability of Google-sourced traffic.</b> Every lens, in its own vocabulary, lands on the same hinge.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The distribution is wide and two-tailed.</b> Beta 2.03; bear cases −70% to −85%; bull tails +78% to +179%; a binary licensing renewal; a crowded short base.</div>
+          </div>
+        </div>
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Reference-price framing: intrinsic value vs 12-month price paths.</b> Buffett/Munger/Damodaran publish intrinsic values; Druckenmiller ($120/165/210) and Soros ($95–270) publish 12-month price expectations; Minervini publishes trend extrapolations. Damodaran: “mixing price paths into a scenario table is how consensus reports manufacture precision.” <b>Concessions:</b> Druckenmiller and Soros each concede their cells are price paths, not IV. <b>Resolved:</b> the three fundamental models set the consensus IV (workbook as anchor); the macro lenses inform the near-term ladder and triggers only.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Where does base-case intrinsic value actually sit? The 3× spread.</b> Munger <b>$40</b> (net-of-SBC at 16.5% discount, 2% tg), Damodaran <b>$109.50</b> (verified workbook, 12.0% WACC), Buffett <b>$123</b> (SBC-adjusted, 14% growth at 11%). The SBC treatment is the crux. <b>Concessions:</b> Munger concedes $40 is a never-pay floor, not a central estimate (his no-SBC variant: $60); Damodaran concedes his model assumes SBC discipline rather than expensing the current bill; Buffett concedes $123 is “what it is worth if it compounds,” not what he would pay. <b>Resolved:</b> consensus base ≈ <b>~$100</b>; Buffett's $123 becomes the upgrade target; Munger's $40 maps to the bear/conservative rows.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>How much credit for the right tail?</b> Damodaran optimistic <b>$194.16</b> / bull <b>$423.27</b> (20% / 10%); Buffett <b>$251</b>; Soros <b>$210</b> / extreme <b>$270</b>; Druckenmiller tail <b>$290</b>; Munger <b>$50</b>. All agree the tail is real but unproven — the dispute is weighting. <b>Concessions:</b> Damodaran concedes his bull cell is model-consistent but assumption-extreme; Soros concedes $270 is a reflexivity re-rating path, not a DCF; Buffett will not defend above $251. <b>Resolved:</b> consensus optimistic ~<b>$185</b>, bull ~<b>$290</b>, combined ~30% — the tail justifies watching, not paying.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>What price compensates for the uncertainty?</b> Buy zones span Under $45 (Munger) to $115–140 (Soros). <b>Concessions:</b> Druckenmiller concedes $110–135 is a trading zone, not a value zone; Munger concedes his $45 requires the bear scenario to arrive as price, and accepts the composite ladder. <b>Resolved:</b> do not initiate at or above ~$150; starter <b>$95–115</b>, accumulate <b>$75–95</b>, conviction <b>Under $75</b> — a dispute about sizing and temperament, not about today's price.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Management: excellence vs the disclosure retreat.</b> For: candid founder, $3.1M cash comp, 11.3:1 pay ratio, SBC declining, $1B buyback into the post-earnings dip at ~$157.57. Against: ~74% voting control, SBC ~39% of net income, buybacks at ~29× FCF, and retiring the logged-in DAUq disclosure “right as the metric turns.” <b>Concessions:</b> Buffett 7→6; Munger rounds 6.5 down; Soros concedes the retreat is a credibility ding, not proven fraud. <b>Resolved:</b> consensus management score <b>6/10</b>.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Is Google dependence the valuation-critical variable?</b> ~50% of traffic Google-sourced; the ~$60M/yr licensing renewal is binary and unobservable (management only knows one side). <b>Concessions:</b> Soros concedes the renewal is a bounded binary (~10–20% of the tail), not the whole case; Druckenmiller concedes macro (10Y 4.65%) is a multiplier, not a driver. <b>Resolved:</b> the durability of Google-sourced traffic is the one variable; monitoring hierarchy: Google referral health → DAUq (US logged-in) → ARPU → licensing renewal → SBC % revenue → Q3'26 print.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">Reconciled scenario matrix. The Damodaran column is the verified workbook (formulas engine ALL_MATCH). Druckenmiller/Soros cells are 12-month price expectations, shown for timing only.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+<th class="">Scenario</th><th class="right">Prob.</th><th class="right">Damodaran (workbook)</th><th class="right">Buffett</th><th class="right">Munger</th><th class="right">Druckenmiller†</th><th class="right">Soros†</th><th class="right">Consensus IV</th>              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<td>Bear</td><td class="right">10%</td><td class="right">$45.27</td><td class="right">$65</td><td class="right">$27</td><td class="right">$88 (−42%)†</td><td class="right">$95 (−37%)†</td><td class="right"><b>~$50</b></td>
+              </tr>
+              <tr>
+<td>Conservative</td><td class="right">25%</td><td class="right">$70.40</td><td class="right">—</td><td class="right">$23 *</td><td class="right">$120 (−21%)†</td><td class="right">$120 (−21%)†</td><td class="right"><b>~$70</b></td>
+              </tr>
+              <tr class="hl">
+<td>Base</td><td class="right">35%</td><td class="right">$109.50</td><td class="right">$123</td><td class="right">$40 **</td><td class="right">$165 (+9%)†</td><td class="right">$165 (+9%)†</td><td class="right"><b>~$100</b></td>
+              </tr>
+              <tr>
+<td>Optimistic</td><td class="right">20%</td><td class="right">$194.16</td><td class="right">—</td><td class="right">—</td><td class="right">$210 (+38%)†</td><td class="right">$210 (+38%)†</td><td class="right"><b>~$185</b></td>
+              </tr>
+              <tr>
+<td>Bull</td><td class="right">10%</td><td class="right">$423.27</td><td class="right">$251</td><td class="right">$50</td><td class="right">$290 (+91%)†</td><td class="right">$270 (+78%)†</td><td class="right"><b>~$290</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">* Munger's $23 severe-bear maps to the Conservative row. ** Munger's $40 Base is his net-of-SBC, 16.5%-discount inversion floor — see the base-case contention. † Druckenmiller/Soros cells are 12-month price expectations, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV. Minervini's technical paths are excluded (trading view only).</p>
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 24px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">~$50</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 34px"></div>
+            </div>
+            <div class="scen">Conservative</div>
+            <div class="val">~$70</div>
+            <div class="prob">25%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 52px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">~$100</div>
+            <div class="prob">35%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 78px"></div>
+            </div>
+            <div class="scen">Optimistic</div>
+            <div class="val">~$185</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 100px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">~$290</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus intrinsic value per share</span><span>~$290</span>
+        </div>
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>EV = 0.10×~$50 + 0.25×~$70 + 0.35×~$100 + 0.20×~$185 + 0.10×~$290 = 5.0 + 17.5 + 35.0 + 37.0 + 29.0 ≈ $123.50 (~$124) — versus Damodaran's workbook-weighted 0.10×$45.27 + 0.25×$70.40 + 0.35×$109.50 + 0.20×$194.16 + 0.10×$423.27 = $141.61</h3>
+          <p class="big">At <b>$151.71</b> that is roughly <b>−18.6% expected upside</b> and <b>≈ −4.0% 5-year annualized</b> — <b>a negative expected return with no margin of safety</b>. The consensus weighted value (~$124) sits modestly below Damodaran's verified workbook-weighted $141.61, because the two SBC-expensing lenses (Buffett, Munger) drag the base and tail cells down. Reverse-DCF check (uncontested, Damodaran §12): the $151.71 price embeds <b>~53% Y1 revenue growth at a 12.0% WACC</b> — bull-case execution priced as the base expectation. Downside tail: −70% (workbook bear $45.27); upside tail: +179% (workbook bull $423.27). Confidence: <b>Low/Medium</b>.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">Where the six frameworks meet — the composite plan. Do not initiate at $151.71: the do-not-initiate band is at or above ~$150, and the reference price sits just inside it.</p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">Over $215</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / avoid — exceeds every lens's reduce line and the ~$215.63 analyst PT cluster</span>
+          </div>
+          <div class="rung">
+            <span class="price">$190–215</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 88%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / trim — Damodaran's reduce zone; Soros reduces above $205</span>
+          </div>
+          <div class="rung">
+            <span class="price">$150–190</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: var(--gold)">Hold existing, do not add — Munger's reduce floor to consensus reduce lines; do-not-initiate band ($151.71 sits here)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$115–150</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 46%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Watch — first tranche for thesis buyers (Soros $115–140; Druckenmiller $110–135)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$95–115</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 58%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Begin accumulating (starter) — between Druckenmiller's $110 floor and Damodaran's $95 ceiling</span>
+          </div>
+          <div class="rung">
+            <span class="price">$75–95</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 72%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31">Accumulate (attractive) — Damodaran's buy zone; Buffett's interest zone ($85–95)</span>
+          </div>
+          <div class="rung">
+            <span class="price">Under $75</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31"><b>High-conviction buy — Damodaran conviction, Buffett compelling; Munger starter Under $45</b></span>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">06</span>Pros &amp; Cons — At $151.71</h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>Exceptional franchise — 91.4% GM, 28.25% op margin, 36.7% FCF margin, ~zero capex, $2.77B net cash</li>
+              <li>A real, widening moat — 20-year corpus, 130.3M DAUq (+18%), two-sided network effects competitors could not replicate</li>
+              <li>Monetization engine intact — ARPU +36%, ads +64% in the “choppy” quarter; US ARPU $11.85 vs multiples of that at Meta</li>
+              <li>Second curves — AI data licensing, e-commerce (Shopify GA), video, international (+84%)</li>
+              <li>Capital return — $1B buyback executing (~$157.57 avg, $760M left) into the post-earnings dip</li>
+              <li>Already de-risked — −46% from the 52-week high, 25.1× forward, S&amp;P 500 membership bid</li>
+              <li>Positioning powder-keg — 9.99% of shares short (13.4% of float) into a buyback and a binary catalyst</li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>No margin of safety — price ~34% above consensus base (~$100) and ~19% above the consensus weighted (~$124)</li>
+              <li>Google dependence — ~50% of traffic Google-sourced; the Q2'26 DAUq miss and −21% print is the template for how growth stalls</li>
+              <li>SBC/GAAP quality — SBC $338M TTM (12.2% of revenue, ~39% of net income); ~43× FCF after expensing it</li>
+              <li>Binary licensing overhang — ~$60M/yr Google deal renewal in doubt; termination priced at −25–35%</li>
+              <li>Deceleration + de-rating spiral — growth 77.7% → 61.1%; estimate cuts underway (Bernstein $190→$180); multiple compression risk</li>
+              <li>Governance and disclosure — ~74% voting control; securities litigation; logged-in DAUq disclosure retired “as the metric turns”</li>
+              <li>Broken tape — below all three major moving averages; early Stage 4 per Minervini; overhead supply $158–184</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>The Q3'26 print (~Nov 2026) clears Google fears — revenue at/above the $860–870M guide with DAUq re-acceleration and US logged-in DAUq no longer deteriorating</li>
+              <li>The Google data-licensing deal is renewed or expanded — removes the binary overhang</li>
+              <li>ARPU keeps compounding (+30%+) and international monetization proves out (+84% revenue growth sustained)</li>
+              <li>SBC as % of revenue declines toward high single digits and the diluted share count is flat-to-down</li>
+              <li>A margin of safety returns — price into $95–115 or below with the monitoring hierarchy intact</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Google referrals structurally decline for two consecutive quarters; US logged-in DAUq goes negative</li>
+              <li>The Google data-licensing deal is terminated without replacement (−25–35% tail)</li>
+              <li>ARPU growth stalls below ~20% while DAU growth decelerates — the monetization-trend inversion</li>
+              <li>SBC re-accelerates above ~15% of revenue or the buyback is abandoned</li>
+              <li>A close below ~$140.67, then the 52-week low $119.27 — Stage 4 confirmation (Minervini's tripwire)</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Google referral health → DAUq</b></td>
+                <td>The valuation-critical pathway (~50% of traffic)</td>
+                <td class="right">DAUq +18% holds; US logged-in stabilizes</td>
+              </tr>
+              <tr>
+                <td><b>ARPU (US $11.85)</b></td>
+                <td>The monetization engine that has decoupled from traffic</td>
+                <td class="right">+30%+ compounding</td>
+              </tr>
+              <tr>
+                <td><b>Google data-licensing renewal</b></td>
+                <td>The binary, unobservable catalyst (~$60M/yr)</td>
+                <td class="right">Renewed or replaced</td>
+              </tr>
+              <tr>
+                <td><b>SBC as % of revenue</b></td>
+                <td>The per-share tax ($338M TTM, ~39% of net income)</td>
+                <td class="right">Decline toward high single digits</td>
+              </tr>
+              <tr>
+                <td><b>Diluted share count</b></td>
+                <td>Per-share compounding vs the buyback</td>
+                <td class="right">Flat-to-down</td>
+              </tr>
+              <tr>
+                <td><b>Q3'26 print</b></td>
+                <td>First quarter without logged-in disclosure</td>
+                <td class="right">Guide met; DAU stable; narrative repair</td>
+              </tr>
+              <tr>
+                <td><b>Short interest / float</b></td>
+                <td>Squeeze fuel on any positive catalyst</td>
+                <td class="right">Falling on strength</td>
+              </tr>
+              <tr>
+                <td><b>10Y Treasury yield</b></td>
+                <td>Duration gate for a 25× forward multiple on beta 2.03</td>
+                <td class="right">Below ~4.4%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">08</span>Technical Analysis</h2>
+        <p class="lead">Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast. Computed from Yahoo Finance daily and weekly OHLC through the 2026-08-19 close.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th class="right">Value</th>
+                <th class="right">Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Price vs 200-day SMA</b></td>
+                <td class="right">-14.4%</td>
+                <td class="right">Below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 100-day SMA</b></td>
+                <td class="right">-7.8%</td>
+                <td class="right">Below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 50-day SMA</b></td>
+                <td class="right">-12.8%</td>
+                <td class="right">Below</td>
+              </tr>
+              <tr>
+                <td><b>14-day RSI</b></td>
+                <td class="right">42.7</td>
+                <td class="right">Neutral (mid-range)</td>
+              </tr>
+              <tr>
+                <td><b>14-week RSI</b></td>
+                <td class="right">45.9</td>
+                <td class="right">Neutral</td>
+              </tr>
+              <tr>
+                <td><b>50-week RSI</b></td>
+                <td class="right">50.9</td>
+                <td class="right">Neutral</td>
+              </tr>
+              <tr>
+                <td><b>52-week high / low</b></td>
+                <td class="right">282.95 / 119.27</td>
+                <td class="right">-46.4% from high, +27.2% from low</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">Price is below all three major moving averages with neutral mid-range momentum — the arithmetic of a broken uptrend, not yet washed-out oversold. RSI below 30 signals oversold, above 70 overbought; SMA deltas are the price's deviation from each average. Mark Minervini's standalone trading lens reads this tape as an early Stage 4 decline and rates RDDT D (Avoid) — a trading view, not part of the consensus recommendation.</p>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">09</span>The Five Consensus Conclusions</h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Business.</b> Reddit is one of the great consumer-internet franchises — “the toll booth on human conversation” — a wide-moat community network with 91.4% gross margins, 36.7% FCF margins, near-zero capital intensity, a $2.77B net-cash fortress, and a 26B+ post corpus that search engines and AI labs pay to license. The business quality is not in dispute.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Economics.</b> The sole determinant of long-term value is the durability of Google-sourced traffic. If the referral pathway holds, ARPU compounding (+36%) makes the base case conservative; if AI search re-platforms it, the bear/conservative outcomes ($45.27 / $70.40 workbook, 35% combined) arrive. Monitoring hierarchy: Google referral health → DAUq (US logged-in) → ARPU → data-licensing renewal → SBC % revenue → Q3'26 print.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Market's Expectations.</b> At $151.71 the market assumes ~53% first-year revenue growth at a 12% WACC (Damodaran's reverse DCF) — bull-case execution priced as the base expectation, ~26% above consensus revenue. The $215.63 average PT is anchored to forward non-GAAP EPS (~$7.56) that ignores normalized taxes and the SBC bill. Aggressive, not impossible — and no bargain.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Valuation.</b> Consensus base intrinsic value ~$100/share; probability-weighted ~$124/share; bear ~$50; bull ~$290 with a workbook extreme of $423.27. Damodaran's verified workbook: $45.27 / $70.40 / $109.50 / $194.16 / $423.27, weighted $141.61. Confidence: Low/Medium. Both the consensus base and the consensus weighted value are below the $151.71 price — expected upside ≈ −19%, 5-year annualized ≈ −4.0%.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Investment Decision.</b> C — HOLD / WATCH at $151.71; do not initiate at or above ~$150. Begin accumulating at $95–115, build at $75–95, full conviction under $75 (Munger's prices below $45), provided the monitoring hierarchy stays intact. Upgrades require proof — the Q3'26 print, the Google renewal, and ARPU durability, not the stock price, will deliver the verdict.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">10</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>At a price of <b>$151.71</b>, the market is effectively paying for Reddit to execute its optimistic scenario — ~53% first-year growth, sustained ARPU compounding, and a benign Google relationship — with essentially no penalty for the ~$338M/yr SBC bill, the binary licensing renewal, or the controlled-company governance. Six independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity expectations, reflexivity, and trend trading — all refuse to buy at this price. Five land on a <b>C (Hold/Watch)</b> or better-but-conditional (Druckenmiller C+, Soros B−), and one reads the chart as an outright <b>D</b>. We agree the franchise is exceptional, the moat is wide on the community side and rented on the distribution side, SBC is the per-share tax, management is excellent-but-scored-6/10 for the disclosure retreat, and the valuation already pays for the optimistic path. The most dangerous risks are a structural Google-referral decline, a terminated data-licensing deal, an SBC re-acceleration, and a de-rating spiral on the first further deceleration. Therefore, at today's price the consensus is to <b>hold and wait</b>: do not initiate at or above ~$150, accumulate in stages at <b>$95–115</b> and <b>$75–95</b>, buy with conviction <b>under $75</b>, and let the Q3'26 print, the Google renewal, and the ARPU trajectory — not the AI-victim narrative or the index membership — decide whether this wonderful company becomes a wonderful investment.</p>
+        </div>
+      </section>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes six analyses — buffet-analysis.md, munger-analysis.md, damodaran-analysis.md, druckenmiller-analysis.md, soros-analysis.md, and minervini-analysis.md (dated August 20, 2026) — which themselves reference Reddit SEC filings (Q2'26 10-Q filed 2026-07-31, Q2'26 8-K exhibits, FY2025 10-K, 2026 DEF 14A proxy), StockAnalysis, TipRanks, MarketBeat, Reuters, Business Wire, 24/7 Wall St., and Yahoo Finance daily/weekly OHLC data, as of August 2026. Damodaran's scenario values are the verified RDDT_Damodaran_Financial_Model.xlsx workbook outputs (formulas engine: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is not investment advice, and no valuation herein should be treated as a price prediction or a recommendation to trade. Reddit's outcome distribution is wide; treat every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
