@@ -6,29 +6,29 @@
 
 ## Bottom Line First
 
-**Rating: C — Hold / Watch.** At $5.91 the stock trades *at* (marginally *below*) its ~$5.93/share net cash, so the market is already pricing the entire clinical pipeline at **$0**. My five-scenario success-conditional DCF puts the franchise's probability-weighted value at $24.63/share, but that outcome only materializes if the SION-451 dual-combination program is approved and commercialized — a roughly 8% probability (range 5–15%) given a lead program that just failed Phase 2a, an NBD1 mechanism Vertex has repeatedly defended against challengers, and ~$300M+ of additional capital and 5–7 years still required. Applying that gate plus a dilution haircut yields a full expected value of roughly **$7.0–7.4/share** — only ~19–26% above price, with an expected annualized return (~3%) below the risk-free rate for a binary, volatile asset. There is limited *downside* cushion (net cash), but the expected return does not adequately compensate for the uncertainty. Do not buy at $5.91; watch for a materially cheaper entry (≤ ~$4.50) or for clinical data that shifts the probability of success.
+**Rating: C — Hold / Watch.** At $5.91 the stock trades _at_ (marginally _below_) its ~$5.93/share net cash, so the market is already pricing the entire clinical pipeline at **$0**. My five-scenario success-conditional DCF puts the franchise's probability-weighted value at $24.63/share, but that outcome only materializes if the SION-451 dual-combination program is approved and commercialized — a roughly 8% probability (range 5–15%) given a lead program that just failed Phase 2a, an NBD1 mechanism Vertex has repeatedly defended against challengers, and ~$300M+ of additional capital and 5–7 years still required. Applying that gate plus a dilution haircut yields a full expected value of roughly **$7.0–7.4/share** — only ~19–26% above price, with an expected annualized return (~3%) below the risk-free rate for a binary, volatile asset. There is limited _downside_ cushion (net cash), but the expected return does not adequately compensate for the uncertainty. Do not buy at $5.91; watch for a materially cheaper entry (≤ ~$4.50) or for clinical data that shifts the probability of success.
 
-| Metric | Value |
-|---|---|
-| Current price (8/17/26) | $5.91 (-8.5% on day) |
-| Market capitalization | ~$267M |
-| Cash + securities (6/30/26) | $268.3M; no debt |
-| Net cash per share | ~$5.93 |
-| Book value per share | ~$5.88 |
-| Price/Book | ~0.9x (vs biotech avg ~2.4x) [SOU][9] |
-| Base WACC (no debt) | 14.0% |
-| Success-case revenue anchor (Y0) | $150M (~1.5% of the ~$10B+ CF market) |
+| Metric                                          | Value                                     |
+| ----------------------------------------------- | ----------------------------------------- | ---------------- | -------- |
+| Current price (8/17/26)                         | $5.91 (-8.5% on day)                      |
+| Market capitalization                           | ~$267M                                    |
+| Cash + securities (6/30/26)                     | $268.3M; no debt                          |
+| Net cash per share                              | ~$5.93                                    |
+| Book value per share                            | ~$5.88                                    |
+| Price/Book                                      | ~0.9x (vs biotech avg ~2.4x) [SOU][9]     |
+| Base WACC (no debt)                             | 14.0%                                     |
+| Success-case revenue anchor (Y0)                | $150M (~1.5% of the ~$10B+ CF market)     |
 | Severe Bear / Bear / Base / Bull / Ext. Bull IV | $5.56 / $8.05 / $15.73 / $45.32 / $144.74 |
-| Severe Bear / Extreme Bull value / share | ≈ $5.56 / ≈ $144.74 |
-| Bear / Bull value / share | ≈ $8.05 / ≈ $45.32 |
-| Base intrinsic value / share | ≈ $15.73 |
-| Workbook weighted IV (success-conditional) | $24.63 |
-| Probability-weighted value / share | ≈ $24.63 |
-| Implied upside at | ≈ **+317%** (annualized ≈ +22.6%) |
-| Probability of commercial success (gate) | 8% central (5–15%) |
-| **Full expected value/share** | **~$7.0–7.4** (after dilution haircut) |
-| Buy zone | ≤ $4.50 | Sell/reduce zone | ≥ $15.00 |
-| Investment rating | **C — Hold / Watch** |
+| Severe Bear / Extreme Bull value / share        | ≈ $5.56 / ≈ $144.74                       |
+| Bear / Bull value / share                       | ≈ $8.05 / ≈ $45.32                        |
+| Base intrinsic value / share                    | ≈ $15.73                                  |
+| Workbook weighted IV (success-conditional)      | $24.63                                    |
+| Probability-weighted value / share              | ≈ $24.63                                  |
+| Implied upside at                               | ≈ **+317%** (annualized ≈ +22.6%)         |
+| Probability of commercial success (gate)        | 8% central (5–15%)                        |
+| **Full expected value/share**                   | **~$7.0–7.4** (after dilution haircut)    |
+| Buy zone                                        | ≤ $4.50                                   | Sell/reduce zone | ≥ $15.00 |
+| Investment rating                               | **C — Hold / Watch**                      |
 
 ---
 
@@ -38,7 +38,7 @@
 
 Sionna is a clinical-stage biotech trying to build a better medicine for **cystic fibrosis (CF)**, a genetic disease where the CFTR protein fails to transport chloride, producing thick mucus and lung damage. Roughly 40,000 Americans and ~105,000 people worldwide live with CF [SOU][7][SOU][8]. Vertex Pharmaceuticals owns the standard of care — Trikafta and successor Alyftrek — a franchise that generates **~$10B+/yr** of the ~$12.6B in total Vertex revenue [SOU][10], giving Vertex a near-monopoly in CF [SOU][6].
 
-Sionna's thesis: instead of *correcting* the mutant CFTR (what Vertex's modulators do), **directly stabilize NBD1**, a domain of the CFTR protein that degrades rapidly when F508del (the most common mutation, ~90% of patients) is present. Sionna's "NBD1 stabilizer" (SION-719 / SION-451) is engineered to restore the protein's half-life toward wild-type, potentially *in addition to or instead of* Vertex's drug [SOU][1][SOU][4].
+Sionna's thesis: instead of _correcting_ the mutant CFTR (what Vertex's modulators do), **directly stabilize NBD1**, a domain of the CFTR protein that degrades rapidly when F508del (the most common mutation, ~90% of patients) is present. Sionna's "NBD1 stabilizer" (SION-719 / SION-451) is engineered to restore the protein's half-life toward wild-type, potentially _in addition to or instead of_ Vertex's drug [SOU][1][SOU][4].
 
 Sionna currently has **no revenue, no approved product, and ~59 employees** [SOU][1]. It is a pure option on its pipeline: money in, clinical data out.
 
@@ -56,11 +56,11 @@ Sionna currently has **no revenue, no approved product, and ~59 employees** [SOU
 
 Three fundamental inputs:
 
-| Input | True today | Expected to change | Why | Evidence | What could break it |
-|---|---|---|---|---|---|
-| **Cash flows** | None (pre-revenue, -$56.7M H1 loss) | Positive FCFF only if approved & commercialized (~5–7 yrs out) | Successful launch of SION-451 combo | Phase 1 safety/PK met; SION-719 Phase 2a missed [SOU][4] | Approval never happens; franchise launches weak |
-| **Growth** | None | Franchise scaling from ~$150M launch to peak (scenario-dependent) | CF market exists; F508del ~90% of patients | Vertex's ~$10B+ franchise proves market [SOU][10] | Vertex blocks share; market ceiling caps growth |
-| **Risk** | Extreme: binary clinical risk | Falls after each data readout; falls to ~10–12% WACC only in success | De-risking over time | Historical phase attrition; challengers failed vs Vertex [SOU][6] | Another failed trial; capital needs |
+| Input          | True today                          | Expected to change                                                   | Why                                        | Evidence                                                          | What could break it                             |
+| -------------- | ----------------------------------- | -------------------------------------------------------------------- | ------------------------------------------ | ----------------------------------------------------------------- | ----------------------------------------------- |
+| **Cash flows** | None (pre-revenue, -$56.7M H1 loss) | Positive FCFF only if approved & commercialized (~5–7 yrs out)       | Successful launch of SION-451 combo        | Phase 1 safety/PK met; SION-719 Phase 2a missed [SOU][4]          | Approval never happens; franchise launches weak |
+| **Growth**     | None                                | Franchise scaling from ~$150M launch to peak (scenario-dependent)    | CF market exists; F508del ~90% of patients | Vertex's ~$10B+ franchise proves market [SOU][10]                 | Vertex blocks share; market ceiling caps growth |
+| **Risk**       | Extreme: binary clinical risk       | Falls after each data readout; falls to ~10–12% WACC only in success | De-risking over time                       | Historical phase attrition; challengers failed vs Vertex [SOU][6] | Another failed trial; capital needs             |
 
 ### Business lifecycle
 
@@ -93,14 +93,14 @@ Sionna (formerly Sling Therapeutics, incorporated 2019) has **no revenue history
 
 ### Does Sionna have a moat?
 
-| Advantage | Assessment | Does it translate into value? |
-|---|---|---|
+| Advantage                                              | Assessment                                                                     | Does it translate into value?      |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------ | ---------------------------------- |
 | Intellectual property / mechanism (NBD1 stabilization) | Plausible scientific differentiation; but clinical validation just failed once | Not yet — no evidence it beats SOC |
-| Regulatory/approval advantage | None; a challenger must clear a higher efficacy bar vs Trikafta | No |
-| Network/brand/distribution | None (no commercial infrastructure) | No |
-| Cost advantage | Irrelevant pre-revenue | No |
+| Regulatory/approval advantage                          | None; a challenger must clear a higher efficacy bar vs Trikafta                | No                                 |
+| Network/brand/distribution                             | None (no commercial infrastructure)                                            | No                                 |
+| Cost advantage                                         | Irrelevant pre-revenue                                                         | No                                 |
 
-The one thing Sionna has is **a differentiated mechanism that could (in theory) be combined with or used instead of Vertex's drugs** — but its own Phase 2a data showed no sweat-chloride improvement on top of Trikafta (p=0.7), which is precisely the evidence that would have validated the moat. As the market concluded, the moat is unproven and the incumbent's is *de-risked* by the failure [SOU][6].
+The one thing Sionna has is **a differentiated mechanism that could (in theory) be combined with or used instead of Vertex's drugs** — but its own Phase 2a data showed no sweat-chloride improvement on top of Trikafta (p=0.7), which is precisely the evidence that would have validated the moat. As the market concluded, the moat is unproven and the incumbent's is _de-risked_ by the failure [SOU][6].
 
 **Competitive Advantage Rating: None** (prospectively weak; unproven).
 
@@ -132,7 +132,7 @@ Evaluated by observable economics:
 
 - **Growth decomposition:** for a CF franchise, growth = (share of F508del-eligible patients won) × (CF market growth ~3%/yr) + (geographic expansion). There is no revenue to decompose today.
 - **Fundamental growth:** **Expected Growth = Reinvestment Rate × ROIC** is inapplicable pre-revenue; growth is contingent on clinical success first.
-- **Growth quality:** *potential* high-quality (high-margin chronic franchise) but currently **nonexistent** — no growth to classify.
+- **Growth quality:** _potential_ high-quality (high-margin chronic franchise) but currently **nonexistent** — no growth to classify.
 - **Growth duration:** even in success, a second-gen CF therapy faces a **hard market ceiling** (~$10B+ CF market; a realistic leader might reach ~$3–6B peak, ~30–60% share — this is built into the Bull/Extreme Bull scenarios). Growth slows as share saturates and as Vertex's next-generation products (Alyftrek, gene-editing) defend the market.
 
 ---
@@ -140,6 +140,7 @@ Evaluated by observable economics:
 ## 7. Risk Analysis
 
 **Business risk (extreme):**
+
 - **Clinical/technological:** the entire franchise rests on an unproven mechanism; the lead NBD1-stabilizer program just missed its Phase 2a endpoint (placebo-adjusted sweat chloride -1.0 mmol/L, p=0.7) [SOU][4].
 - **Competitive:** Vertex's near-monopoly and fast-following next-gen pipeline [SOU][6][SOU][10]; prior CF challengers failed.
 - **Regulatory:** FDA/EMA approval bar vs an effective incumbent.
@@ -150,6 +151,7 @@ Evaluated by observable economics:
 **Valuation risk:** enormous — the analysis is dominated by terminal assumptions and by the probability of success gate (see §14).
 
 **Failure risk (probabilities, my estimates):**
+
 - Severe distress / business-model failure: high — 85–90% probability the franchise never reaches meaningful commercialization.
 - Permanent impairment: possible via cash burn + dilution over 3+ years if nothing works.
 - Dilution: near-certain before any commercial launch (runway to 2028; development to ~2030-33).
@@ -158,19 +160,19 @@ Evaluated by observable economics:
 
 ## 8. Cost of Capital & Required Return
 
-| Input | Value | Rationale |
-|---|---|---|
-| Risk-free rate | 4.3% | 10-yr UST (2026, estimate) |
-| Equity risk premium | 4.5% | Damodaran-style mature-market ERP |
-| Beta | 2.1 | Clinical-stage micro-cap biotech; binary clinical risk; Damodaran biotech betas 1.5–2.5 |
-| Small-cap/liquidity | embedded | ~$267M market cap |
-| Cost of equity | 4.3% + 2.1 × 4.5% ≈ **13.8%** | → use **14%** |
-| Cost of debt | n/a | No debt |
-| WACC | **14.0%** | All-equity |
+| Input               | Value                         | Rationale                                                                               |
+| ------------------- | ----------------------------- | --------------------------------------------------------------------------------------- |
+| Risk-free rate      | 4.3%                          | 10-yr UST (2026, estimate)                                                              |
+| Equity risk premium | 4.5%                          | Damodaran-style mature-market ERP                                                       |
+| Beta                | 2.1                           | Clinical-stage micro-cap biotech; binary clinical risk; Damodaran biotech betas 1.5–2.5 |
+| Small-cap/liquidity | embedded                      | ~$267M market cap                                                                       |
+| Cost of equity      | 4.3% + 2.1 × 4.5% ≈ **13.8%** | → use **14%**                                                                           |
+| Cost of debt        | n/a                           | No debt                                                                                 |
+| WACC                | **14.0%**                     | All-equity                                                                              |
 
-The 14% base WACC is deliberately conservative for the success-conditional franchise: even a commercialized CF drug would carry commercialization and competitive-execution risk until proven, and the scenario WACCs decline to 12–12.5% only in the Bull/Extreme Bull (stronger, more de-risked) outcomes, and rise to 15.5–17% in the Bear/Severe Bear outcomes. A *de-risked marketed* franchise might justify 9–11%, which is a source of upside in the bull scenarios but not in the base.
+The 14% base WACC is deliberately conservative for the success-conditional franchise: even a commercialized CF drug would carry commercialization and competitive-execution risk until proven, and the scenario WACCs decline to 12–12.5% only in the Bull/Extreme Bull (stronger, more de-risked) outcomes, and rise to 15.5–17% in the Bear/Severe Bear outcomes. A _de-risked marketed_ franchise might justify 9–11%, which is a source of upside in the bull scenarios but not in the base.
 
-**ROIC vs WACC:** currently meaningless (no ROIC). In the success case the model assumes terminal ROIC 25% (initial 30%) — comfortably above the 14% WACC, so *if* the franchise exists, growth is value-creating. The entire risk is whether the franchise exists.
+**ROIC vs WACC:** currently meaningless (no ROIC). In the success case the model assumes terminal ROIC 25% (initial 30%) — comfortably above the 14% WACC, so _if_ the franchise exists, growth is value-creating. The entire risk is whether the franchise exists.
 
 ---
 
@@ -179,6 +181,7 @@ The 14% base WACC is deliberately conservative for the success-conditional franc
 The workbook models the SION-451 dual-combination CF franchise **as if commercialized** (a "success-case product DCF"), anchored on a defensible early-commercial revenue estimate. The CF market is ~$10B+ [SOU][10]; a new entrant's first full commercial year is modeled at **$150M (~1.5% share)** — a conservative launch anchor. All figures below are the workbook's deterministic outputs for the **Base** scenario.
 
 ### Base-year normalization
+
 - Success-case Year-0 revenue anchor: **$150M**
 - Y1 growth: **+50%** (launch ramp), decaying 15 pts/yr to a 3% floor
 - EBIT margin: ramps from **-10%** (launch losses) to **~35%** by Y10 (cap 40%)
@@ -186,18 +189,18 @@ The workbook models the SION-451 dual-combination CF franchise **as if commercia
 
 ### Explicit 10-year forecast (Base, $M)
 
-| Year | Y1 | Y2 | Y3 | Y4 | Y5 | Y6 | Y7 | Y8 | Y9 | Y10 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Revenue | 225 | 304 | 365 | 383 | 394 | 406 | 418 | 431 | 444 | 457 |
-| Growth | 50% | 35% | 20% | 5% | 3% | 3% | 3% | 3% | 3% | 3% |
-| EBIT margin | -10% | -5% | 0% | 5% | 10% | 15% | 20% | 25% | 30% | 35% |
-| EBIT | -22 | -15 | 0 | 19 | 39 | 61 | 84 | 108 | 133 | 160 |
-| NOPAT | -18 | -12 | 0 | 15 | 31 | 48 | 66 | 85 | 105 | 126 |
-| Reinvestment | -30 | -14 | 0 | 3 | 3 | 5 | 7 | 10 | 12 | 15 |
-| FCFF | 12 | 2 | 0 | 12 | 28 | 43 | 59 | 75 | 93 | 111 |
-| PV of FCFF (14%) | 10 | 2 | 0 | 7 | 14 | 20 | 23 | 26 | 29 | 30 |
+| Year             | Y1   | Y2  | Y3  | Y4  | Y5  | Y6  | Y7  | Y8  | Y9  | Y10 |
+| ---------------- | ---- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Revenue          | 225  | 304 | 365 | 383 | 394 | 406 | 418 | 431 | 444 | 457 |
+| Growth           | 50%  | 35% | 20% | 5%  | 3%  | 3%  | 3%  | 3%  | 3%  | 3%  |
+| EBIT margin      | -10% | -5% | 0%  | 5%  | 10% | 15% | 20% | 25% | 30% | 35% |
+| EBIT             | -22  | -15 | 0   | 19  | 39  | 61  | 84  | 108 | 133 | 160 |
+| NOPAT            | -18  | -12 | 0   | 15  | 31  | 48  | 66  | 85  | 105 | 126 |
+| Reinvestment     | -30  | -14 | 0   | 3   | 3   | 5   | 7   | 10  | 12  | 15  |
+| FCFF             | 12   | 2   | 0   | 12  | 28  | 43  | 59  | 75  | 93  | 111 |
+| PV of FCFF (14%) | 10   | 2   | 0   | 7   | 14  | 20  | 23  | 26  | 29  | 30  |
 
-*(Model artifact note: early-year FCFF is flattered by the framework's reinvestment convention on negative NOPAT; the same convention applies across all scenarios and prior runs, so it is internally consistent.)*
+_(Model artifact note: early-year FCFF is flattered by the framework's reinvestment convention on negative NOPAT; the same convention applies across all scenarios and prior runs, so it is internally consistent.)_
 
 **Base outputs:** PV of explicit FCFF $161.8M; terminal FCFF $114.5M; terminal value $1,041M; PV of terminal value $280.9M; **EV $442.7M**; + net cash $268.3M → equity $711.0M → **IV = $15.73/share**. Terminal value is ~63% of EV — a reminder that most of this company's value (if any) sits far in the future.
 
@@ -207,7 +210,7 @@ The workbook models the SION-451 dual-combination CF franchise **as if commercia
 
 - Terminal growth 3% (< long-run nominal GDP) and below WACC in every scenario.
 - Terminal ROIC 25% → terminal reinvestment rate = g/ROIC = 3%/25% = 12% (low-capital pharma-like).
-- Terminal value asks: *"20 years from now, is a ~$460M-revenue, ~35%-margin second-gen CF franchise worth ~$1.0B?"* — yes, plausibly (that is ~7x NOPAT at a 14% cost of capital). The model does **not** assume Sionna ever displaces Vertex; even the Extreme Bull (~$3.9B peak, ~40% of the CF market) stops short of Vertex's franchise size, consistent with the market ceiling and prior-challenger history.
+- Terminal value asks: _"20 years from now, is a ~$460M-revenue, ~35%-margin second-gen CF franchise worth ~$1.0B?"_ — yes, plausibly (that is ~7x NOPAT at a 14% cost of capital). The model does **not** assume Sionna ever displaces Vertex; even the Extreme Bull (~$3.9B peak, ~40% of the CF market) stops short of Vertex's franchise size, consistent with the market ceiling and prior-challenger history.
 
 ---
 
@@ -215,7 +218,7 @@ The workbook models the SION-451 dual-combination CF franchise **as if commercia
 
 - **Pre-revenue:** P/E, EV/Sales, EV/EBITDA are all undefined.
 - **P/B ~0.9x** vs biotech industry ~2.4x and a broad peer group ~6.6x [SOU][9]. On book value the stock looks "cheap" — but book value ≈ cash, and the market is paying ~0.9x for a cash pile it doubts will create value. Simply Wall St's own checks score the stock 2/6 on valuation ("leans expensive rather than obviously cheap" once pipeline prospects are reset) [SOU][9].
-- **Comparable lens:** for a post-miss single-asset biotech, the relevant comp is *net cash*; the stock trades essentially at (slightly below) it. Versus the sell-side average 1-yr target of $17.20 and high of $63 [SOU][2], the market has already collapsed to ~one-third of even the average target — but those targets are largely stale (Guggenheim downgraded to Neutral on 8/11/26 [SOU][2]) and predate/underweight the Phase 2a failure.
+- **Comparable lens:** for a post-miss single-asset biotech, the relevant comp is _net cash_; the stock trades essentially at (slightly below) it. Versus the sell-side average 1-yr target of $17.20 and high of $63 [SOU][2], the market has already collapsed to ~one-third of even the average target — but those targets are largely stale (Guggenheim downgraded to Neutral on 8/11/26 [SOU][2]) and predate/underweight the Phase 2a failure.
 - **Fundamental driver of any multiple:** multiples here are driven almost entirely by the probability-weighted success of the pipeline, which the market prices at zero. No peer-multiple method adds information beyond the DCF.
 
 ---
@@ -234,13 +237,13 @@ Is that assumption reasonable? **Too pessimistic as a point estimate, but reason
 
 The workbook's five scenarios describe the **franchise outcome distribution given the SION-451 program commercializes** (probabilities sum to 1.0). Each scenario has its own DCF sheet.
 
-| Scenario | Prob. | Y10 / peak revenue | Y10 margin | WACC | Term. g | EV | IV/share | Story |
-|---|---|---|---|---|---|---|---|---|
-| Severe Bear | 0.30 | $211M | 17% | 17.0% | 0.5% | -$17M | **$5.56** | Program effectively dead / negligible niche; franchise value ≈ 0; only net cash matters |
-| Bear | 0.25 | $261M | 25% | 15.5% | 2.0% | $95M | **$8.05** | Delayed/niche: narrow indication, weak adoption vs Vertex |
-| Base | 0.25 | $457M | 35% | 14.0% | 3.0% | $443M | **$15.73** | Modest second-gen franchise (~5% of CF market) |
-| Bull | 0.12 | $1,279M | 40% | 12.5% | 3.5% | $1,780M | **$45.32** | Strong franchise; genuine Trikafta alternative (~12–15% share) |
-| Extreme Bull | 0.08 | $3,875M | 45% | 12.0% | 4.0% | $6,274M | **$144.74** | CF franchise leader (~40% share); major Vertex displacement |
+| Scenario     | Prob. | Y10 / peak revenue | Y10 margin | WACC  | Term. g | EV      | IV/share    | Story                                                                                   |
+| ------------ | ----- | ------------------ | ---------- | ----- | ------- | ------- | ----------- | --------------------------------------------------------------------------------------- |
+| Severe Bear  | 0.30  | $211M              | 17%        | 17.0% | 0.5%    | -$17M   | **$5.56**   | Program effectively dead / negligible niche; franchise value ≈ 0; only net cash matters |
+| Bear         | 0.25  | $261M              | 25%        | 15.5% | 2.0%    | $95M    | **$8.05**   | Delayed/niche: narrow indication, weak adoption vs Vertex                               |
+| Base         | 0.25  | $457M              | 35%        | 14.0% | 3.0%    | $443M   | **$15.73**  | Modest second-gen franchise (~5% of CF market)                                          |
+| Bull         | 0.12  | $1,279M            | 40%        | 12.5% | 3.5%    | $1,780M | **$45.32**  | Strong franchise; genuine Trikafta alternative (~12–15% share)                          |
+| Extreme Bull | 0.08  | $3,875M            | 45%        | 12.0% | 4.0%    | $6,274M | **$144.74** | CF franchise leader (~40% share); major Vertex displacement                             |
 
 All per-scenario checks pass (terminal g < WACC; terminal reinvestment < 100%; terminal FCFF > 0; IV > 0). The Severe Bear case lands at ≈ net cash — exactly the "abandonment" floor. The heavy left-skew (55% probability in the two weakest outcomes) reflects a single-asset company whose lead already failed against an entrenched incumbent.
 
@@ -253,7 +256,7 @@ The value-critical assumptions are **(1) WACC and (2) terminal revenue × margin
 - **WACC × terminal growth (Base-sheet share value):** at WACC 10% / g 3% the share value roughly triples vs the 14% base; at WACC 18% / g 1% it roughly halves. IV is extremely sensitive to the discount rate — a direct consequence of valuing far-future cash flows.
 - **Terminal margin × mature revenue (implied terminal EV):** $1B at 10% margin ≈ $0.7B EV; $6B at 50% ≈ $19B EV. This is the full range the pipeline could command in success.
 
-**Valuation-critical assumptions, ranked:** (1) P(success) gate (see §16) — *the* dominant variable; (2) terminal revenue (share captured from Vertex); (3) discount rate; (4) terminal margin; (5) growth decay. Effort is concentrated accordingly.
+**Valuation-critical assumptions, ranked:** (1) P(success) gate (see §16) — _the_ dominant variable; (2) terminal revenue (share captured from Vertex); (3) discount rate; (4) terminal margin; (5) growth decay. Effort is concentrated accordingly.
 
 ---
 
@@ -263,7 +266,7 @@ The value-critical assumptions are **(1) WACC and (2) terminal revenue × margin
 - **B. Market-implied fundamentals:** zero probability-weighted terminal revenue; ~0% success probability.
 - **C. My forecast:** ~8% success probability; if successful, a probability-weighted franchise value of $24.63/share (dominated by modest-to-niche outcomes); full expected value ~$7.0–7.4.
 
-**Conclusion:** the market is *too pessimistic in the tail* (it grants the pipeline no value at all) but **not wrong enough to overcome the risk.** The gap between price ($5.91) and my full expected value (~$7.0–7.4) is real but small (~19–26%), and it is dwarfed by the uncertainty. This is the signature of a fairly-to-modestly-priced lottery ticket, not a mispricing.
+**Conclusion:** the market is _too pessimistic in the tail_ (it grants the pipeline no value at all) but **not wrong enough to overcome the risk.** The gap between price ($5.91) and my full expected value (~$7.0–7.4) is real but small (~19–26%), and it is dwarfed by the uncertainty. This is the signature of a fairly-to-modestly-priced lottery ticket, not a mispricing.
 
 ---
 
@@ -281,7 +284,7 @@ From the workbook: success-conditional weighted IV **W = $24.63/share**; net cas
 
 **Dilution haircut:** commercializing will require additional capital beyond the current runway-to-2028 (a Phase 1→3→NDA path realistically costs several hundred million dollars more). Assuming ~20–25% share dilution before commercialization, the franchise component is worth ~75% of its undiluted value: **full expected value ≈ $7.0–7.4/share** (central **~$7.2**).
 
-**What the workbook's $24.63 represents vs my full value — stated clearly:** the workbook's probability-weighted value is the **success-conditional franchise value** (i.e., the expected value of the SION-451 franchise *given* it reaches the market, net of the cash held). It is **not** the value of the stock today. The stock's full expected value is **net cash plus P(success) × (franchise value net of cash), less expected dilution** — ~$7.0–7.4/share. The pipeline also carries a small **expansion-option** (additional indications/mutations, combination potential) that I am not separately valuing beyond the scenario range.
+**What the workbook's $24.63 represents vs my full value — stated clearly:** the workbook's probability-weighted value is the **success-conditional franchise value** (i.e., the expected value of the SION-451 franchise _given_ it reaches the market, net of the cash held). It is **not** the value of the stock today. The stock's full expected value is **net cash plus P(success) × (franchise value net of cash), less expected dilution** — ~$7.0–7.4/share. The pipeline also carries a small **expansion-option** (additional indications/mutations, combination potential) that I am not separately valuing beyond the scenario range.
 
 ---
 
@@ -318,16 +321,16 @@ The honest statement: intrinsic value for SION is a **wide range** — roughly *
 
 Success-conditional workbook values (given franchise exists):
 
-| Scenario | Prob. | Value/share | Return vs $5.91 |
-|---|---|---|---|
-| Severe Bear | 0.30 | $5.56 | −6% |
-| Bear | 0.25 | $8.05 | +36% |
-| Base | 0.25 | $15.73 | +166% |
-| Bull | 0.12 | $45.32 | +667% |
-| Extreme Bull | 0.08 | $144.74 | +2,349% |
+| Scenario     | Prob. | Value/share | Return vs $5.91 |
+| ------------ | ----- | ----------- | --------------- |
+| Severe Bear  | 0.30  | $5.56       | −6%             |
+| Bear         | 0.25  | $8.05       | +36%            |
+| Base         | 0.25  | $15.73      | +166%           |
+| Bull         | 0.12  | $45.32      | +667%           |
+| Extreme Bull | 0.08  | $144.74     | +2,349%         |
 
 - **Workbook weighted (success-conditional): $24.63**
-- **Probability-weighted intrinsic value: ≈$24.63 (success-conditional, verified workbook)
+- \*\*Probability-weighted intrinsic value: ≈$24.63 (success-conditional, verified workbook)
 - **Full expected value (with 8% success gate + dilution): ~$7.2** (range $7.0–7.4)
 - **Expected upside vs price: ~+19–26%**
 - **Expected annualized return (7-yr horizon): ~2.5–3.3%** — below the risk-free rate
@@ -388,6 +391,7 @@ The stock is not overvalued (it sits at the net-cash floor), so it is not a D/Av
 ---
 
 ## Position Summary
+
 - Rating: **C — Hold / Watch** — trades at net cash with the pipeline priced at $0; expected value above price, but the expected return does not compensate for binary clinical risk.
 - Intrinsic value: bear=$5.56 base=$15.73 bull=$45.32 | weighted=$24.63 (success-conditional; workbook) · **full expected value ~$7.0–7.4** (net cash + 8% success gate − dilution)
 - Buy zone: ≤ $4.50 | Sell/reduce zone: ≥ $15.00

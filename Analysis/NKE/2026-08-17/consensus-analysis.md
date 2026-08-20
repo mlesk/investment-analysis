@@ -14,26 +14,26 @@
 
 To keep the debate honest, the analyses were first reconciled against a common fact base. No participant disputes these figures (values from `fact-pack.json`, SEC/EDGAR FY2026 10-K, J.P. Morgan 8/4/26, UBS Evidence Lab, Seeking Alpha, StockAnalysis, Yahoo Finance, TradingView):
 
-| Fact | Value | Source in analyses |
-|---|---|---|
-| Reference price | **$39.09** (prev close $40.73; 52-wk low $38.86 just touched) | all |
-| Market cap / EV | **$57.99B / $62.44B** | all |
-| Diluted shares | **~1,483M** | all |
-| TTM revenue | **$46.4B** (flat YoY, +0.19%) | all |
-| TTM net income / EPS | **$3.11B / $2.10** (net margin 6.7%) | all |
-| Gross / operating margin | **43.25% / 9.01%** (op margin down from 14.3% FY22) | all |
-| Cash / total debt | **$9.03B / $11.04B** → net debt ≈ **$2.0B** | all |
-| FCF (TTM) | **$1.89B** (−49% YoY); FCF/NI ~61% | all |
-| ROE / ROIC | **22.1% / ~19.6%** (both roughly halved from FY22 peaks) | all |
-| P/E TTM / fwd; EV/EBITDA | **18.6× / 23.8× / 12.7×** | all |
-| Dividend | **4.03%** fwd yield, **~104% fwd payout**, 24-yr growth streak | all |
-| Greater China FY26 | **−11%** to $5.85B; share **−590 bps since 2019 to 12.9%**; segment profit 25%→12% | Soros / Buffett |
-| Wholesale / Direct FY26 | **+6%** to $27.5B / **−6%** to $17.7B (deliberate rebalancing) | Soros / Buffett |
-| Stock-based comp | **~$715–800M/yr** (~23% of net income) | Buffett / Damodaran |
-| Buybacks | FY26 cut to **$146M** (from $2.99B FY25) — paused | Buffett |
-| Short interest / Beta | **~4.77%** (falling MoM) / **1.12** | Soros / Minervini |
-| Sell-side | Hold consensus; avg PT **$50.66** (range $23–$94); JPM Underweight PT **$40**; revisions 18 down / 2 up | all |
-| Next catalyst | **FQ1 FY27 earnings ~Sep 29, 2026**; revenue guided down low-to-mid single digits; flat EPS guided for three quarters | Soros / Minervini |
+| Fact                     | Value                                                                                                                 | Source in analyses  |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Reference price          | **$39.09** (prev close $40.73; 52-wk low $38.86 just touched)                                                         | all                 |
+| Market cap / EV          | **$57.99B / $62.44B**                                                                                                 | all                 |
+| Diluted shares           | **~1,483M**                                                                                                           | all                 |
+| TTM revenue              | **$46.4B** (flat YoY, +0.19%)                                                                                         | all                 |
+| TTM net income / EPS     | **$3.11B / $2.10** (net margin 6.7%)                                                                                  | all                 |
+| Gross / operating margin | **43.25% / 9.01%** (op margin down from 14.3% FY22)                                                                   | all                 |
+| Cash / total debt        | **$9.03B / $11.04B** → net debt ≈ **$2.0B**                                                                           | all                 |
+| FCF (TTM)                | **$1.89B** (−49% YoY); FCF/NI ~61%                                                                                    | all                 |
+| ROE / ROIC               | **22.1% / ~19.6%** (both roughly halved from FY22 peaks)                                                              | all                 |
+| P/E TTM / fwd; EV/EBITDA | **18.6× / 23.8× / 12.7×**                                                                                             | all                 |
+| Dividend                 | **4.03%** fwd yield, **~104% fwd payout**, 24-yr growth streak                                                        | all                 |
+| Greater China FY26       | **−11%** to $5.85B; share **−590 bps since 2019 to 12.9%**; segment profit 25%→12%                                    | Soros / Buffett     |
+| Wholesale / Direct FY26  | **+6%** to $27.5B / **−6%** to $17.7B (deliberate rebalancing)                                                        | Soros / Buffett     |
+| Stock-based comp         | **~$715–800M/yr** (~23% of net income)                                                                                | Buffett / Damodaran |
+| Buybacks                 | FY26 cut to **$146M** (from $2.99B FY25) — paused                                                                     | Buffett             |
+| Short interest / Beta    | **~4.77%** (falling MoM) / **1.12**                                                                                   | Soros / Minervini   |
+| Sell-side                | Hold consensus; avg PT **$50.66** (range $23–$94); JPM Underweight PT **$40**; revisions 18 down / 2 up               | all                 |
+| Next catalyst            | **FQ1 FY27 earnings ~Sep 29, 2026**; revenue guided down low-to-mid single digits; flat EPS guided for three quarters | Soros / Minervini   |
 
 **Consensus reading of the facts:** Nike is a genuinely great consumer brand in a real reset — the balance sheet is fortress-grade, the brand still commands premium pricing and #1 global share, but the moat is eroding, earnings power has roughly halved, and the stock sits at a 12-year low just above its 52-week low. Every participant agrees on the facts; the entire debate turns on **one question: is the decline a cycle (recoverable) or structural (permanent)?**
 
@@ -90,13 +90,13 @@ To keep the debate honest, the analyses were first reconciled against a common f
 
 ### Contention 2 — Where does base-case intrinsic value actually sit?
 
-| Profile | Base value/share | Driver of the difference |
-|---|---|---|
-| Buffett | ~$34 | 10% hurdle, normalized owner earnings ~$3.5B, partial structural share loss |
-| Munger | $38 | 10.5% discount, 2% terminal growth, conservative FCF margins |
-| Soros | ~$40 | Reflexive framework, weighted IV |
-| Druckenmiller | $48–52 | 12–18-month **price path**, not IV |
-| Damodaran (workbook) | **$53.33** | 8.1% WACC, 2.5% terminal growth, margins normalizing to ~12% |
+| Profile              | Base value/share | Driver of the difference                                                    |
+| -------------------- | ---------------- | --------------------------------------------------------------------------- |
+| Buffett              | ~$34             | 10% hurdle, normalized owner earnings ~$3.5B, partial structural share loss |
+| Munger               | $38              | 10.5% discount, 2% terminal growth, conservative FCF margins                |
+| Soros                | ~$40             | Reflexive framework, weighted IV                                            |
+| Druckenmiller        | $48–52           | 12–18-month **price path**, not IV                                          |
+| Damodaran (workbook) | **$53.33**       | 8.1% WACC, 2.5% terminal growth, margins normalizing to ~12%                |
 
 - **Munger's challenge to Damodaran:** "Your $53.33 assumes the margin normalization (9.0% → 12% EBIT) and the China stabilization that are exactly the contested assumptions. You are capitalizing the recovery."
 - **Damodaran's rebuttal:** "Normalizing a cyclical trough is not optimism; gross margin fell from 47.5% to 43.25% on wholesale mix and inventory clearing — recovery to ~45.5% is the historical midpoint, not a bull case. And the market's $39.09 implies ~1.5% terminal growth, which prices China as dead forever."
@@ -106,22 +106,22 @@ To keep the debate honest, the analyses were first reconciled against a common f
 ### Contention 3 — How much credit for the right tail?
 
 - **Damodaran:** bull $95.99, extreme bull $162.58 (25% / 10%). **Buffett:** ~$47. **Munger:** ~$48. **Soros:** ~$50–56. **Druckenmiller:** $62–70 (aggressive).
-- **Cross-examination:** Damodaran's bull requires China to re-accelerate at +5% CAGR and DTC to reach 35–40% of revenue. The majority's response: a brand whose share is *falling* (China −590 bps, ankle-biters at ~17%) does not get to claim those re-acceleration scenarios at high weight. Buffett: "I refuse to weight my $47 bull heavily — it is the reward for demonstrated recovery, not the value today."
+- **Cross-examination:** Damodaran's bull requires China to re-accelerate at +5% CAGR and DTC to reach 35–40% of revenue. The majority's response: a brand whose share is _falling_ (China −590 bps, ankle-biters at ~17%) does not get to claim those re-acceleration scenarios at high weight. Buffett: "I refuse to weight my $47 bull heavily — it is the reward for demonstrated recovery, not the value today."
 - **Named concession:** Damodaran concedes his distribution is right-skewed — "the median outcome sits well below the weighted value; my weighted $62.22 is an expectation, not a central value."
 - **Resolution:** Consensus bull ≈ **~$58**, extreme bull ≈ **~$85**. Damodaran's own cells stand in his column but are not fully credited; the fundamental lenses' ~$50 bull caps the consensus.
 
 ### Contention 4 — What price compensates for the uncertainty?
 
-| Profile | Buy zone | Conviction |
-|---|---|---|
-| Buffett | $23–28 | $20s "compelling" |
-| Munger | $29–33 (accumulate) | < $25 |
-| Damodaran | $30–45 (buy on weakness) | < $30 |
-| Druckenmiller | $38–42 (tactical only) | — (trade) |
-| Soros | $28–33 (dislocation only) | below ~$33 asymmetry clears ~2× |
+| Profile       | Buy zone                  | Conviction                      |
+| ------------- | ------------------------- | ------------------------------- |
+| Buffett       | $23–28                    | $20s "compelling"               |
+| Munger        | $29–33 (accumulate)       | < $25                           |
+| Damodaran     | $30–45 (buy on weakness)  | < $30                           |
+| Druckenmiller | $38–42 (tactical only)    | — (trade)                       |
+| Soros         | $28–33 (dislocation only) | below ~$33 asymmetry clears ~2× |
 
 - **Damodaran's argument:** "At $30–45 the expected return finally compensates for the uncertainty I measure; demanding $25 implies you believe the bear case is the base case."
-- **Munger's rebuttal:** "I demand a 30–40% margin of safety on a business whose mature economics nobody can predict. $38 is the top of my *conservative* base — that is fair value for success, not a bargain."
+- **Munger's rebuttal:** "I demand a 30–40% margin of safety on a business whose mature economics nobody can predict. $38 is the top of my _conservative_ base — that is fair value for success, not a bargain."
 - **Buffett's synthesis:** "We disagree on when to buy, not on whether today is the time. None of us buys with conviction at $39. A patient investor can satisfy all of us: **start small at $33–39, build at $28–33, go to full conviction at $23–28 and below.**"
 - **Resolution (unanimous):** Adopt the composite ladder in Part II. The dispute is about sizing and temperament, not about the stock.
 
@@ -139,7 +139,7 @@ To keep the debate honest, the analyses were first reconciled against a common f
 - **Druckenmiller:** **Cycle-ish.** China stabilizes by early 2027, trough in FY27, re-rating to 15–15.5× once the trough is visible. "The market prices zero recovery; a modest one re-rates the stock."
 - **Buffett / Munger / Soros:** **Partially structural.** China share −590 bps since 2019 and local-brand preference are secular, not cyclical; ankle-biters (On/Hoka/Brooks) at ~17% combined are a permanent fragmentation of the moat; the −49% FCF decline is evidence demand is broken, not just timing. Munger: "volume is falling even at 4%+ price increases — that is not a cycle, that is a brand losing pricing power."
 - **Cross-examination:** Damodaran concedes his entire bull-to-base case rests on the recovery actually showing up in margins and China comps. Munger concedes wholesale +6% and the World Cup are real, "but I refuse to pay for them." Soros concedes the market may be over-extrapolating, "but the negative loop is unconfirmed-broken."
-- **Named concession:** Buffett concedes the *category* is durable and the brand is not destroyed — "the moat is wounded, not dead."
+- **Named concession:** Buffett concedes the _category_ is durable and the brand is not destroyed — "the moat is wounded, not dead."
 - **Resolution:** **NOT cleanly resolved** — this is the decisive, genuinely open uncertainty. The consensus prices ~40% of the cycle-recovery view into its base (~$40) and treats the question as the monitored hinge: the monitoring hierarchy and the Q1 FY27 print (Sep 29, 2026), China comps, and margin trajectory will adjudicate it. This is the honest center of the whole debate.
 
 ## Round 4: Final Rebuttals and Concessions (The Last Word)
@@ -184,15 +184,15 @@ Elliott Hill's turnaround is credible, candid, and insider-aligned (CEO and Tim 
 
 Reconciled scenario matrix. The **Damodaran column is the verified workbook (ALL_MATCH) — authoritative, verbatim.** Druckenmiller/Soros columns are 12–18-month price expectations (†), not intrinsic value; they inform the near-term ladder and triggers, not the consensus IV.
 
-| Scenario | Prob. | Damodaran (workbook) | Buffett | Munger | Druckenmiller† | Soros† | **Consensus IV** |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Severe bear | 10% | **$2.39** | ~$22 | $28 | ~$22–28 (−43–28%) | ~$25 (−36%) | **~$24** |
-| Bear | 20% | **$15.28** | ~$28 * | ~$32 ** | ~$32–35 (−18–8%) | ~$32 (−18%) | **~$31** |
-| Base | 35% | **$53.33** | ~$34 * | $38 | ~$48–52 (+23–33%) | ~$40 (+2%) | **~$40** |
-| Bull | 25% | **$95.99** | ~$47 * | ~$48 ** | ~$62–70 (+58–79%) | ~$50 (+28%) | **~$58** |
-| Extreme bull | 10% | **$162.58** | ~$47 * | ~$48 ** | ~$62–70 (+58–79%) | ~$56 (+43%) | **~$85** |
+| Scenario     | Prob. | Damodaran (workbook) | Buffett |    Munger |    Druckenmiller† |      Soros† | **Consensus IV** |
+| ------------ | ----: | -------------------: | ------: | --------: | ----------------: | ----------: | ---------------: |
+| Severe bear  |   10% |            **$2.39** |    ~$22 |       $28 | ~$22–28 (−43–28%) | ~$25 (−36%) |         **~$24** |
+| Bear         |   20% |           **$15.28** | ~$28 \* | ~$32 \*\* |  ~$32–35 (−18–8%) | ~$32 (−18%) |         **~$31** |
+| Base         |   35% |           **$53.33** | ~$34 \* |       $38 | ~$48–52 (+23–33%) |  ~$40 (+2%) |         **~$40** |
+| Bull         |   25% |           **$95.99** | ~$47 \* | ~$48 \*\* | ~$62–70 (+58–79%) | ~$50 (+28%) |         **~$58** |
+| Extreme bull |   10% |          **$162.58** | ~$47 \* | ~$48 \*\* | ~$62–70 (+58–79%) | ~$56 (+43%) |         **~$85** |
 
-\* Buffett's base $34 is his 10%-hurdle DCF; his bull is $47 and he caps the extreme tail at his bull value. ** Munger: base $38, bull $48; tail cells capped at his bull. † Druckenmiller/Soros cells are 12–18-month **price expectations**, not intrinsic values. The workbook-verified Damodaran scenario IVs are $2.39 / $15.28 / $53.33 / $95.99 / $162.58, weighted $62.22.
+\* Buffett's base $34 is his 10%-hurdle DCF; his bull is $47 and he caps the extreme tail at his bull value. ** Munger: base $38, bull $48; tail cells capped at his bull. † Druckenmiller/Soros cells are 12–18-month **price expectations\*\*, not intrinsic values. The workbook-verified Damodaran scenario IVs are $2.39 / $15.28 / $53.33 / $95.99 / $162.58, weighted $62.22.
 
 **Probability-weighted consensus value:**
 
@@ -233,16 +233,16 @@ At $39.09: **~+17% expected upside, ~+3% 5-year annualized** — positive but th
 
 ### Consensus price ladder
 
-| Price band | Consensus action |
-|---|---|
-| > $75 | **Reduce / avoid** — exceeds every lens target except Damodaran's extreme bull tail |
-| $56–75 | **Reduce / trim** — only tail-value remains for any holder |
-| $45–56 | **Hold existing, do not add** — Soros sell/reduce ($50–56); Druckenmiller take-profits ($48–50); Damodaran upper hold ($45–58) |
-| **$39–45** | **Do-not-initiate / watch** — $39.09 sits here; fundamental majority refuses; only Druckenmiller's tactical trade ($38–42) |
-| **$33–39** | **Watch / small tactical starter** — Damodaran buy-on-weakness upper zone ($30–45); Soros avoids without confirmation |
-| **$28–33** | **Begin accumulating (starter position)** — Soros dislocation; Munger accumulate; Damodaran conviction <$30 |
-| **$23–28** | **Accumulate (attractive)** — Buffett's buy zone |
-| < $23 | **High-conviction / exceptional** — Munger conviction <$25; Buffett compelling $20s; asymmetry clears ~2× |
+| Price band | Consensus action                                                                                                               |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| > $75      | **Reduce / avoid** — exceeds every lens target except Damodaran's extreme bull tail                                            |
+| $56–75     | **Reduce / trim** — only tail-value remains for any holder                                                                     |
+| $45–56     | **Hold existing, do not add** — Soros sell/reduce ($50–56); Druckenmiller take-profits ($48–50); Damodaran upper hold ($45–58) |
+| **$39–45** | **Do-not-initiate / watch** — $39.09 sits here; fundamental majority refuses; only Druckenmiller's tactical trade ($38–42)     |
+| **$33–39** | **Watch / small tactical starter** — Damodaran buy-on-weakness upper zone ($30–45); Soros avoids without confirmation          |
+| **$28–33** | **Begin accumulating (starter position)** — Soros dislocation; Munger accumulate; Damodaran conviction <$30                    |
+| **$23–28** | **Accumulate (attractive)** — Buffett's buy zone                                                                               |
+| < $23      | **High-conviction / exceptional** — Munger conviction <$25; Buffett compelling $20s; asymmetry clears ~2×                      |
 
 ### What would upgrade the rating (C → B/A)
 
@@ -262,30 +262,30 @@ At $39.09: **~+17% expected upside, ~+3% 5-year annualized** — positive but th
 
 ### Consensus monitoring dashboard
 
-| Metric | Why it matters | Signal that helps |
-|---|---|---|
-| Greater China revenue growth | The swing variable (−11% FY26) | Stabilize toward 0/+; positive two quarters |
-| EBIT margin recovery | The Damodaran-vs-Buffett hinge (9.0% TTM) | Toward 12%+ normalized; gross ~45% |
-| FCF / diluted share | Working-capital normalization (FCF −49% YoY) | FCF/NI >80%; OCF/NI ≥1 |
-| DTC vs wholesale mix | Wholesale +6% recovery vs Direct −6% | Wholesale-led growth holds; DTC margins stabilize |
-| Dividend policy | 4.03% yield, ~104% fwd payout — the tripwire | Maintained, or reset with a buyback plan |
-| Short interest & insider flow | SI ~4.77% and falling; April insider buys | SI keeps falling; insiders keep buying |
-| Analyst revisions | 18 down / 2 up | Revisions flatten, then rise |
-| Price vs 50/100/200-day SMA | Below all MAs; RSI oversold | Reclaim SMA50 $42.75, then SMA100 $43.88 |
+| Metric                        | Why it matters                               | Signal that helps                                 |
+| ----------------------------- | -------------------------------------------- | ------------------------------------------------- |
+| Greater China revenue growth  | The swing variable (−11% FY26)               | Stabilize toward 0/+; positive two quarters       |
+| EBIT margin recovery          | The Damodaran-vs-Buffett hinge (9.0% TTM)    | Toward 12%+ normalized; gross ~45%                |
+| FCF / diluted share           | Working-capital normalization (FCF −49% YoY) | FCF/NI >80%; OCF/NI ≥1                            |
+| DTC vs wholesale mix          | Wholesale +6% recovery vs Direct −6%         | Wholesale-led growth holds; DTC margins stabilize |
+| Dividend policy               | 4.03% yield, ~104% fwd payout — the tripwire | Maintained, or reset with a buyback plan          |
+| Short interest & insider flow | SI ~4.77% and falling; April insider buys    | SI keeps falling; insiders keep buying            |
+| Analyst revisions             | 18 down / 2 up                               | Revisions flatten, then rise                      |
+| Price vs 50/100/200-day SMA   | Below all MAs; RSI oversold                  | Reclaim SMA50 $42.75, then SMA100 $43.88          |
 
 ## 7. Technical Analysis
 
 Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — from the shared fact pack (computed from daily market data, August 17, 2026). A snapshot of positioning, not a forecast.
 
-| Indicator | Value | Position vs price |
-|---|---|---|
-| Price vs 200-day SMA | $53.09 | **−26.4% below** |
-| Price vs 100-day SMA | $43.88 | **−10.9% below** |
-| Price vs 50-day SMA | $42.75 | **−8.6% below** |
-| 14-day RSI | 35.68 | **Oversold (approaching 30)** |
-| 14-week RSI | 33.23 | Weak / oversold zone |
-| 50-week RSI | 39.96 | Weak (below 40) |
-| 52-week high / low | $80.17 / $38.86 | **−51.2% from high · +0.6% from low** |
+| Indicator            | Value           | Position vs price                     |
+| -------------------- | --------------- | ------------------------------------- |
+| Price vs 200-day SMA | $53.09          | **−26.4% below**                      |
+| Price vs 100-day SMA | $43.88          | **−10.9% below**                      |
+| Price vs 50-day SMA  | $42.75          | **−8.6% below**                       |
+| 14-day RSI           | 35.68           | **Oversold (approaching 30)**         |
+| 14-week RSI          | 33.23           | Weak / oversold zone                  |
+| 50-week RSI          | 39.96           | Weak (below 40)                       |
+| 52-week high / low   | $80.17 / $38.86 | **−51.2% from high · +0.6% from low** |
 
 Beta 1.12; short interest ~4.77%. The price sits below every moving average in a fully inverted/descending MA stack, RSI is oversold at every horizon, and the stock trades essentially at its 52-week low — deeply oversold, technically broken, and (per the reflexivity lens) prone to a violent snap-back on any real inflection. These are the same numbers the Minervini lens reads as a 0/8 Trend Template.
 
@@ -331,4 +331,4 @@ At a price of **$39.09**, the market is pricing Nike as a structurally broken, n
 
 ---
 
-*Sources: the six profile analyses cited above (`buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, `soros-analysis.md`, `minervini-analysis.md`) and the shared `fact-pack.json`, which themselves reference Nike SEC filings (FY2026 10-K filed 2026-07-15), J.P. Morgan's downgrade (8/4/2026, Underweight, PT $40), Evercore's "no re-rating" note, UBS Evidence Lab secondary-market data, Seeking Alpha, StockAnalysis, Yahoo Finance, TradingView, and MarketBeat, as of August 17, 2026. Damodaran's scenario values are the verified `NKE_Damodaran_Financial_Model.xlsx` workbook outputs (verifier: ALL_MATCH). This synthesis is an **estimate of estimates — not investment advice**; no valuation herein should be treated as a price prediction or a recommendation to trade. Nike's outcome distribution is wide and the cycle-vs-structural question is genuinely unresolved — treat every number on this page as a hypothesis, not a fact.*
+_Sources: the six profile analyses cited above (`buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, `soros-analysis.md`, `minervini-analysis.md`) and the shared `fact-pack.json`, which themselves reference Nike SEC filings (FY2026 10-K filed 2026-07-15), J.P. Morgan's downgrade (8/4/2026, Underweight, PT $40), Evercore's "no re-rating" note, UBS Evidence Lab secondary-market data, Seeking Alpha, StockAnalysis, Yahoo Finance, TradingView, and MarketBeat, as of August 17, 2026. Damodaran's scenario values are the verified `NKE_Damodaran_Financial_Model.xlsx` workbook outputs (verifier: ALL_MATCH). This synthesis is an **estimate of estimates — not investment advice**; no valuation herein should be treated as a price prediction or a recommendation to trade. Nike's outcome distribution is wide and the cycle-vs-structural question is genuinely unresolved — treat every number on this page as a hypothesis, not a fact._

@@ -6,7 +6,7 @@
 **Participants:** Warren Buffett (value investing & owner earnings), Charlie Munger (multidisciplinary quality), Aswath Damodaran (fundamental valuation), Stanley Druckenmiller (macro-first, expectations & liquidity), George Soros (reflexivity & disequilibrium), and Mark Minervini (trend/momentum — **standalone trading view, included in the debate but not part of the consensus recommendation**)
 **Reference materials:** `buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, `soros-analysis.md`, `minervini-analysis.md`, and `fact-pack.json` (all in this folder)
 
-> **Method note:** This document runs a structured deliberative debate between the six completed analyses, surfaces every point of agreement and disagreement, forces each position through cross-examination, and then records a reconciled consensus. Nothing below introduces new valuation math; it synthesizes, challenges, and merges what the six profiles already concluded. Where a profile's narrative value conflicts with the verified Damodaran workbook, the workbook wins and the conflict is recorded as a point of contention (see Contention 2). The single most important reconciliation in this debate: **Damodaran's workbook weighted value of $24.63 is SUCCESS-CONDITIONAL** — it is the expected value of the SION-451 franchise *given it reaches the market*, which happens with only ~8% probability. The consensus probability-weighted value must therefore be a **TRUE expected value** (net cash + P(success) × franchise option, less expected dilution ≈ **$7.0–7.4/share**), not the success-conditional $24.63. Reconcile that split explicitly and transparently is a central task of this debate.
+> **Method note:** This document runs a structured deliberative debate between the six completed analyses, surfaces every point of agreement and disagreement, forces each position through cross-examination, and then records a reconciled consensus. Nothing below introduces new valuation math; it synthesizes, challenges, and merges what the six profiles already concluded. Where a profile's narrative value conflicts with the verified Damodaran workbook, the workbook wins and the conflict is recorded as a point of contention (see Contention 2). The single most important reconciliation in this debate: **Damodaran's workbook weighted value of $24.63 is SUCCESS-CONDITIONAL** — it is the expected value of the SION-451 franchise _given it reaches the market_, which happens with only ~8% probability. The consensus probability-weighted value must therefore be a **TRUE expected value** (net cash + P(success) × franchise option, less expected dilution ≈ **$7.0–7.4/share**), not the success-conditional $24.63. Reconcile that split explicitly and transparently is a central task of this debate.
 
 ---
 
@@ -14,26 +14,26 @@
 
 To keep the debate honest, the six analyses were first reconciled against a common fact base. No participant disputes these figures:
 
-| Fact | Value | Source in analyses |
-|---|---|---|
-| Reference price (Aug 17, 2026) | **$5.91** (−8.5% on day; prev close $6.46) | all six |
-| Market capitalization / EV | **~$267M / ≈ −$1M** (trades AT net cash) | all six |
-| Shares outstanding | **45,212,399** (7/31/26) | all six |
-| Cash + securities (6/30/26) | **$268.3M** (Dec-25: $310.3M) | all six |
-| Net cash / share | **~$5.93** | all six |
-| Book value / share | **~$5.88** | all six |
-| Revenue | **None** (pre-revenue; no approved products) | all six |
-| Q2-26 / H1-26 net loss | **−$29.9M / −$56.7M** | all six |
-| H1-26 cash burn | **~$42M** (op cash flow −$44.1M H1) | all six |
-| Debt | **None** (total liabilities ~$17.5M) | all six |
-| Employees | **~59** | all six |
-| Runway | **into 2028** (pre-failure guide) | all six |
-| 52-week range | **$4.01 – $54.97** (YTD −85.6%, 1-yr −71.6%) | all six |
-| Pipeline (headline) | **SION-719 Phase 2a add-on MISSED (p=0.7), not advancing as add-on to SOC (8/10/26); SION-451 + SION-2222 preferred dual combo, Phase 1 safety/PK met** | all six |
-| Management stance | **"evaluating next steps," "plans to take actions to preserve capital"** | all six |
-| Dilution levers | **$250M ATM (Leerink, unused as of 6/30/26); 7.34M options @ $20.06 strike; $79.7M unrecognized SBC** | all six |
-| Sell-side | **Avg 1-yr target $17.20 (stale, pre-crash); Guggenheim → Neutral 8/11/26** | all six |
-| Competitive context | **Vertex dominates CF (Trikafta SOC; CF franchise ~$10B+/yr, estimate); F508del ~90% of CF patients; prior CF challengers have failed** | all six |
+| Fact                           | Value                                                                                                                                                   | Source in analyses |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Reference price (Aug 17, 2026) | **$5.91** (−8.5% on day; prev close $6.46)                                                                                                              | all six            |
+| Market capitalization / EV     | **~$267M / ≈ −$1M** (trades AT net cash)                                                                                                                | all six            |
+| Shares outstanding             | **45,212,399** (7/31/26)                                                                                                                                | all six            |
+| Cash + securities (6/30/26)    | **$268.3M** (Dec-25: $310.3M)                                                                                                                           | all six            |
+| Net cash / share               | **~$5.93**                                                                                                                                              | all six            |
+| Book value / share             | **~$5.88**                                                                                                                                              | all six            |
+| Revenue                        | **None** (pre-revenue; no approved products)                                                                                                            | all six            |
+| Q2-26 / H1-26 net loss         | **−$29.9M / −$56.7M**                                                                                                                                   | all six            |
+| H1-26 cash burn                | **~$42M** (op cash flow −$44.1M H1)                                                                                                                     | all six            |
+| Debt                           | **None** (total liabilities ~$17.5M)                                                                                                                    | all six            |
+| Employees                      | **~59**                                                                                                                                                 | all six            |
+| Runway                         | **into 2028** (pre-failure guide)                                                                                                                       | all six            |
+| 52-week range                  | **$4.01 – $54.97** (YTD −85.6%, 1-yr −71.6%)                                                                                                            | all six            |
+| Pipeline (headline)            | **SION-719 Phase 2a add-on MISSED (p=0.7), not advancing as add-on to SOC (8/10/26); SION-451 + SION-2222 preferred dual combo, Phase 1 safety/PK met** | all six            |
+| Management stance              | **"evaluating next steps," "plans to take actions to preserve capital"**                                                                                | all six            |
+| Dilution levers                | **$250M ATM (Leerink, unused as of 6/30/26); 7.34M options @ $20.06 strike; $79.7M unrecognized SBC**                                                   | all six            |
+| Sell-side                      | **Avg 1-yr target $17.20 (stale, pre-crash); Guggenheim → Neutral 8/11/26**                                                                             | all six            |
+| Competitive context            | **Vertex dominates CF (Trikafta SOC; CF franchise ~$10B+/yr, estimate); F508del ~90% of CF patients; prior CF challengers have failed**                 | all six            |
 
 **Consensus reading of the facts:** Sionna is a single-thesis, pre-revenue CF biotech whose lead NBD1-stabilizer add-on program (SION-719) failed its Phase 2a proof-of-concept on Aug 10, 2026 and was dropped as an add-on to standard of care — collapsing the stock ~92% in a week to essentially its net-cash value. What remains is a net-cash-backed option on the SION-451 dual-combination franchise (and on any strategic alternative). The debate is almost entirely about **how much (if any) pipeline value to credit after the failure, and at what price the uncertainty is compensated** — not about the balance sheet (uncontested) or the business model (a single-asset bet). Every profile independently refused to buy at $5.91.
 
@@ -53,7 +53,7 @@ To keep the debate honest, the six analyses were first reconciled against a comm
 
 ### Damodaran's position (C — Hold / Watch)
 
-> "At $5.91 the stock trades *at* (marginally *below*) its **~$5.93/share net cash**, so the market is already pricing the entire clinical pipeline at **$0**. My five-scenario success-conditional DCF puts the franchise's probability-weighted value at **$24.63/share**, but that outcome only materializes if the SION-451 dual-combination program is approved and commercialized — a roughly **8% probability** (range 5–15%) given a lead program that just failed Phase 2a, an NBD1 mechanism Vertex has repeatedly defended against challengers, and ~$300M+ of additional capital and 5–7 years still required. Applying that gate plus a dilution haircut yields a full expected value of roughly **$7.0–7.4/share** — only ~19–26% above price, with an expected annualized return (~3%) below the risk-free rate for a binary, volatile asset. There is limited *downside* cushion (net cash), but the expected return does not adequately compensate for the uncertainty. Workbook (success-conditional): severe bear $5.56, bear $8.05, base $15.73, bull $45.32, extreme bull $144.74, weighted $24.63 (+317% upside, +22.6% 7-yr annualized — only if the franchise commercializes). **Do not buy at $5.91; watch for ≤ ~$4.50 or positive SION-451 patient data. Rating: C — Hold / Watch.**"
+> "At $5.91 the stock trades _at_ (marginally _below_) its **~$5.93/share net cash**, so the market is already pricing the entire clinical pipeline at **$0**. My five-scenario success-conditional DCF puts the franchise's probability-weighted value at **$24.63/share**, but that outcome only materializes if the SION-451 dual-combination program is approved and commercialized — a roughly **8% probability** (range 5–15%) given a lead program that just failed Phase 2a, an NBD1 mechanism Vertex has repeatedly defended against challengers, and ~$300M+ of additional capital and 5–7 years still required. Applying that gate plus a dilution haircut yields a full expected value of roughly **$7.0–7.4/share** — only ~19–26% above price, with an expected annualized return (~3%) below the risk-free rate for a binary, volatile asset. There is limited _downside_ cushion (net cash), but the expected return does not adequately compensate for the uncertainty. Workbook (success-conditional): severe bear $5.56, bear $8.05, base $15.73, bull $45.32, extreme bull $144.74, weighted $24.63 (+317% upside, +22.6% 7-yr annualized — only if the franchise commercializes). **Do not buy at $5.91; watch for ≤ ~$4.50 or positive SION-451 patient data. Rating: C — Hold / Watch.**"
 
 ### Druckenmiller's position (C− — Monitor)
 
@@ -61,11 +61,11 @@ To keep the debate honest, the six analyses were first reconciled against a comm
 
 ### Soros's position (C — Neutral; do not short)
 
-> "Sionna is the textbook *completed bust* in a far-from-equilibrium state: after a single Phase 2a failure, a once high-flying NBD1-stabilizer challenger to Vertex's CF monopoly has been repriced from narrative-dream to net-cash. The stock trades at **$5.91 versus ~$5.93 of net cash** — the market now prices the entire remaining pipeline (SION-451 dual combo, the NBD1 platform, IP) at roughly **zero, or slightly negative**. Reflexivity has swung from a self-reinforcing boom (peak ~$55) to a violent bust (−86% to −92% in a week). The Soros question is no longer 'is the boom justified?' — it is 'has the bust overshot?' My probability-weighted intrinsic value is **~$5.95**, essentially equal to the current price: at cash the trade is roughly fair (expected return ≈ −3%), with the option value of SION-451 roughly offsetting ongoing cash burn. Asymmetry only turns genuinely favorable **below ~$4.50–5.00** (a ≥20% discount to net cash, E[R] ≈ +26%) or on a **positive catalyst**. Shorting a net-cash stock at RSI-14 ≈ 21 is, in Soros terms, attacking an exhausted negative loop. My scenarios: bear $4.00, base $5.50, bull $10.00, weighted ~$5.95. **Rating: C — Neutral; scale in on dislocation, do not chase $5.91.**"
+> "Sionna is the textbook _completed bust_ in a far-from-equilibrium state: after a single Phase 2a failure, a once high-flying NBD1-stabilizer challenger to Vertex's CF monopoly has been repriced from narrative-dream to net-cash. The stock trades at **$5.91 versus ~$5.93 of net cash** — the market now prices the entire remaining pipeline (SION-451 dual combo, the NBD1 platform, IP) at roughly **zero, or slightly negative**. Reflexivity has swung from a self-reinforcing boom (peak ~$55) to a violent bust (−86% to −92% in a week). The Soros question is no longer 'is the boom justified?' — it is 'has the bust overshot?' My probability-weighted intrinsic value is **~$5.95**, essentially equal to the current price: at cash the trade is roughly fair (expected return ≈ −3%), with the option value of SION-451 roughly offsetting ongoing cash burn. Asymmetry only turns genuinely favorable **below ~$4.50–5.00** (a ≥20% discount to net cash, E[R] ≈ +26%) or on a **positive catalyst**. Shorting a net-cash stock at RSI-14 ≈ 21 is, in Soros terms, attacking an exhausted negative loop. My scenarios: bear $4.00, base $5.50, bull $10.00, weighted ~$5.95. **Rating: C — Neutral; scale in on dislocation, do not chase $5.91.**"
 
 ### Minervini's position (F — Do not buy; STANDALONE TRADING VIEW, reference only)
 
-> "Under Minervini's SEPA framework, SION fails every critical criterion at once. No earnings, no revenue, no fundamental acceleration to underwrite. Technically it is in a confirmed **Stage 4 downtrend** — trading ~85% below its 50/100/200-day moving averages, near its 52-week low, with a completely broken base and a 14-day RSI of 21.5 (deeply oversold). There is no valid VCP, no pivot, no institutional accumulation, and the catalyst is negative (a failed Phase 2a). An oversold bounce is *possible*, but oversold is not an entry — Minervini buys strength, not weakness. Technical price targets: bear $4.01 (52-wk low), base $5.50–6.50, bull $8–10 (relief rally). The oversold reading only argues against shorting, not for buying. **Rating: F — Do not buy; belongs on a watchlist at most. This is a trading view, not part of the fundamental consensus.**"
+> "Under Minervini's SEPA framework, SION fails every critical criterion at once. No earnings, no revenue, no fundamental acceleration to underwrite. Technically it is in a confirmed **Stage 4 downtrend** — trading ~85% below its 50/100/200-day moving averages, near its 52-week low, with a completely broken base and a 14-day RSI of 21.5 (deeply oversold). There is no valid VCP, no pivot, no institutional accumulation, and the catalyst is negative (a failed Phase 2a). An oversold bounce is _possible_, but oversold is not an entry — Minervini buys strength, not weakness. Technical price targets: bear $4.01 (52-wk low), base $5.50–6.50, bull $8–10 (relief rally). The oversold reading only argues against shorting, not for buying. **Rating: F — Do not buy; belongs on a watchlist at most. This is a trading view, not part of the fundamental consensus.**"
 
 ---
 
@@ -90,49 +90,49 @@ All six participants independently converged on the following. Items marked ✅ 
 
 ### Contention 1 — Reference price: net-cash floor vs fair value (is "at cash" a floor or a fair price?)
 
-- **The value lenses (Buffett, Munger):** $5.91 ≈ net cash $5.93 is a **FAIR price for cash plus a free option — not a bargain.** You receive zero discount for the risk that the cash is burned without creating franchise value; the "floor" is at best the balance sheet today, and it erodes with burn. A true margin of safety would require buying meaningfully *below* net cash.
+- **The value lenses (Buffett, Munger):** $5.91 ≈ net cash $5.93 is a **FAIR price for cash plus a free option — not a bargain.** You receive zero discount for the risk that the cash is burned without creating franchise value; the "floor" is at best the balance sheet today, and it erodes with burn. A true margin of safety would require buying meaningfully _below_ net cash.
 - **The macro lenses (Druckenmiller, Soros):** At net cash the downside is floored (cash + no debt + runway into 2028) and the pipeline option is free — this is the rare "expectations fully washed out" moment, structurally attractive even if catalytically poor. EV ≈ −$1M means the market pays nothing (slightly negative) for every molecule and the NBD1 platform.
-- **Damodaran (the arbiter):** $5.91 prices the pipeline at $0 — *harsh but rational* given the data; not a large error. The market is "rounding to zero," a defensible posture that nonetheless grants the pipeline no credit at all.
+- **Damodaran (the arbiter):** $5.91 prices the pipeline at $0 — _harsh but rational_ given the data; not a large error. The market is "rounding to zero," a defensible posture that nonetheless grants the pipeline no credit at all.
 - **Cross-examination:** Buffett to Soros: "A floor that erodes with burn is not a floor — $5.93 of cash today is ~$5.5–5.7 by early 2028, and ~$4.00–5.00 if the pipeline stalls. You are describing a slowly sinking ship with good lighting." Soros to Buffett: "And you refuse to buy a company trading at its book value with positive optionality, after the bust is complete and no leverage remains to force further selling. At some price you must pay attention to the asymmetry."
 - **Named concession:** Soros and Druckenmiller concede their scenario cells are **12–24-month price expectations, not intrinsic values**; on an intrinsic-value basis the fundamental answer is ~net cash. Buffett concedes the near-term downside is genuinely cushioned by the balance sheet (the bust is not a solvency event).
 - **Resolution:** The consensus anchors on **net cash (~$5.93) as both the intrinsic-value floor and the reference** — the stock is **not overvalued** (it is not a D on price grounds alone), but the price does **not compensate for the binary risk** either. **Do not initiate at $5.91.** Both frames converge on the same action.
 
 ### Contention 2 — Where does base-case intrinsic value actually sit? (net cash ~$5.93 vs success-conditional $15.73 vs full EV ~$7.0–7.4)
 
-| Profile | Base value/share | Basis |
-|---|---|---|
-| Buffett | **~$5.93** | Net cash; zero pipeline credit (owner-earnings basis not applicable) |
-| Munger | **$5.93** | Net cash; rNPV of the combo nets to ≈$0–1 after development cost — "the only number I trust" |
-| Damodaran | **$15.73** (success-conditional) / **~$7.0–7.4** (full EV) | Workbook Base is the franchise value *given* commercialization; gated by ~8% P(success) + dilution |
-| Druckenmiller | $6.00 (12-mo) | Price-path / consensus-anchored — NOT an IV |
-| Soros | $5.50 | Reflexive base — the modal "cash + no catalyst" outcome |
-| Minervini | $5.50–6.50 (technical) | Trading consolidation band — NOT an IV |
+| Profile       | Base value/share                                           | Basis                                                                                              |
+| ------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Buffett       | **~$5.93**                                                 | Net cash; zero pipeline credit (owner-earnings basis not applicable)                               |
+| Munger        | **$5.93**                                                  | Net cash; rNPV of the combo nets to ≈$0–1 after development cost — "the only number I trust"       |
+| Damodaran     | **$15.73** (success-conditional) / **~$7.0–7.4** (full EV) | Workbook Base is the franchise value _given_ commercialization; gated by ~8% P(success) + dilution |
+| Druckenmiller | $6.00 (12-mo)                                              | Price-path / consensus-anchored — NOT an IV                                                        |
+| Soros         | $5.50                                                      | Reflexive base — the modal "cash + no catalyst" outcome                                            |
+| Minervini     | $5.50–6.50 (technical)                                     | Trading consolidation band — NOT an IV                                                             |
 
-- **Munger's challenge to Damodaran:** "Your $15.73 assumes the franchise exists — it does not yet, and the very same NBD1 thesis just failed in patients. A success-conditional DCF is a statement about a company that does not currently exist." 
-- **Damodaran's concession (the crux):** "Correct — and that is exactly why I gate it. The workbook's $24.63 and $15.73 are **success-conditional**: the value of the SION-451 franchise *if* it reaches the market. The stock's value today is the real-options equation: **net cash + P(success) × (franchise value net of cash), less expected dilution ≈ $7.0–7.4/share.** Anyone who quotes $24.63 as the stock's price target is making the same category error the pre-crash market made."
+- **Munger's challenge to Damodaran:** "Your $15.73 assumes the franchise exists — it does not yet, and the very same NBD1 thesis just failed in patients. A success-conditional DCF is a statement about a company that does not currently exist."
+- **Damodaran's concession (the crux):** "Correct — and that is exactly why I gate it. The workbook's $24.63 and $15.73 are **success-conditional**: the value of the SION-451 franchise _if_ it reaches the market. The stock's value today is the real-options equation: **net cash + P(success) × (franchise value net of cash), less expected dilution ≈ $7.0–7.4/share.** Anyone who quotes $24.63 as the stock's price target is making the same category error the pre-crash market made."
 - **The workbook gate (verified):** The workbook Base is **$15.73**, weighted (success-conditional) **$24.63**; these are the authoritative Damodaran matrix values. The consensus does not relabel them as stock values.
 - **Named concessions:** Buffett and Munger concede the option is not literally zero (positive Phase 1 safety/PK data and a preferred combo exist) and that ~$7.0–7.4 is a fair representation of its small positive expected value. Soros concedes the full EV (~$7.0–7.4) is the honest central estimate; at ~$5.95 he is only marginally lower because he discounts the strategic-alternative path differently.
 - **Resolution:** Consensus **base (modal) intrinsic value ≈ net cash ~$5.93** (the most likely outcome: no franchise, cash decays); consensus **true probability-weighted value ≈ $7.2 (range $7.0–7.4)**. The success-conditional $15.73/$24.63 are franchise values, not stock values — recorded as the Damodaran matrix column only.
 
 ### Contention 3 — How much credit for the right tail after the Phase 2a miss?
 
-- **Soros / Druckenmiller:** The pipeline option is genuinely **free at cash** — SION-451 + SION-2222 has *positive* Phase 1 data (safety/PK met, preferred combo identified), a different molecule in a different regimen (standalone dual combo, not an add-on), and the strategic-alternative path (partnering, out-license, takeout of $268M cash + IP) is under-appreciated by a market fixated on the dead program. A credible Phase 2 plan could reprice the option from ~$0 to several dollars.
+- **Soros / Druckenmiller:** The pipeline option is genuinely **free at cash** — SION-451 + SION-2222 has _positive_ Phase 1 data (safety/PK met, preferred combo identified), a different molecule in a different regimen (standalone dual combo, not an add-on), and the strategic-alternative path (partnering, out-license, takeout of $268M cash + IP) is under-appreciated by a market fixated on the dead program. A credible Phase 2 plan could reprice the option from ~$0 to several dollars.
 - **Buffett / Munger:** It is a **lottery ticket** — the add-on failure extrapolates to the platform (the same CFHBE model that predicted the failure underpins SION-451); paying full cash for a 92%-likely-to-fail option is not value investing. "A free lottery ticket is still a lottery ticket — and this one has a 92% chance of burning your cash."
 - **Damodaran (the arbiter):** ~8% P(success); the market's ~0% pricing is **harsh but rational** — not a large error. His credit to the tail is small but real: ~8% × ~$18.70 franchise option ≈ **$1.1–1.5/share** on top of net cash.
-- **Cross-examination:** Munger to Soros: "You call it free optionality; I call it a negative-expected-value spend of $268M of shareholders' cash on a program with no patient efficacy data. The option is only 'free' if the cash were not being spent to pursue it." Soros to Munger: "You are pricing the failure of the *add-on* as the failure of the *platform*. SION-451 is a different molecule in a different regimen; the market is extrapolating one null to everything. That is recency bias, and it is exactly where bust reflexivity overshoots."
+- **Cross-examination:** Munger to Soros: "You call it free optionality; I call it a negative-expected-value spend of $268M of shareholders' cash on a program with no patient efficacy data. The option is only 'free' if the cash were not being spent to pursue it." Soros to Munger: "You are pricing the failure of the _add-on_ as the failure of the _platform_. SION-451 is a different molecule in a different regimen; the market is extrapolating one null to everything. That is recency bias, and it is exactly where bust reflexivity overshoots."
 - **Named concessions:** Soros and Druckenmiller concede the option's probability is **low (~8%)** and the cash **decays** with time — the edge is only sufficient at a discount to cash or on a confirmed catalyst, not at $5.91. Buffett and Munger concede the option is not literally zero (positive Phase 1 data exist) but they will not pay for it at full cash.
 - **Resolution:** The right tail is **real but low-probability**. Consensus credits it at **~$1.1–1.5/share** (≈ 8% × franchise option), which is the entire gap between net cash (~$5.93) and the full EV (~$7.0–7.4). The consensus **buys the tail only at ≤$4.50–5.50 or on a positive, dated catalyst** — never at full cash.
 
 ### Contention 4 — What price compensates for the uncertainty?
 
-| Profile | Buy zone begins | High-conviction zone |
-|---|---|---|
-| Buffett | **None** (only a large discount to net cash + a credible SION-451 path would warrant a speculative revisit) | — |
-| Munger | **$3.50–4.00** (speculative only) | **<$3.00** |
-| Damodaran | **≤$4.50** | — |
-| Druckenmiller | **$4.50–5.50** (speculative starter, below net cash) | on a catalyst |
-| Soros | **$4.50–5.00** (≥20% discount to net cash; E[R] ≈ +26%) | on a catalyst |
-| Minervini | **None** (trading view; no base, no pivot) | — |
+| Profile       | Buy zone begins                                                                                             | High-conviction zone |
+| ------------- | ----------------------------------------------------------------------------------------------------------- | -------------------- |
+| Buffett       | **None** (only a large discount to net cash + a credible SION-451 path would warrant a speculative revisit) | —                    |
+| Munger        | **$3.50–4.00** (speculative only)                                                                           | **<$3.00**           |
+| Damodaran     | **≤$4.50**                                                                                                  | —                    |
+| Druckenmiller | **$4.50–5.50** (speculative starter, below net cash)                                                        | on a catalyst        |
+| Soros         | **$4.50–5.00** (≥20% discount to net cash; E[R] ≈ +26%)                                                     | on a catalyst        |
+| Minervini     | **None** (trading view; no base, no pivot)                                                                  | —                    |
 
 - **The tension:** the fundamental lenses demand a **real discount to cash** (≤$4.50, where the failure case is already embedded and the option is nearly free), while the macro lenses would take a speculative starter at **$4.50–5.50** (below net cash, toward the $4.01 52-wk low) and Buffett refuses to engage at any price without a credible SION-451 path.
 - **Cross-examination:** Buffett to Soros: "You would buy at $4.50–5.00 — that is still only a ~15–24% discount to a cash pile that is being consumed. Where is the margin of safety for a binary that fails ~92% of the time?" Druckenmiller to the value lenses: "At $5.50 you can lose ~30% at worst (the cash floor) and make +100–400% if anything works. That is the asymmetry you are all describing but refusing to price."
@@ -153,7 +153,7 @@ All six participants independently converged on the following. Items marked ✅ 
 
 - **Soros:** A **completed bust, likely exhausted** — the downside reflexivity is spent (no leverage, no debt, no forced selling), the boom/bust loop has fully played out (peak ~$55 → −89% → at cash), and we are at a possible turning point. The remaining downside is boring cash-burn decay, not narrative collapse.
 - **Munger:** A **cash-burning zombie whose floor erodes** — "the 'protected downside' is a slowly sinking floor: $5.93 today, ~$5.5–5.7 by early 2028, ~$4.00–5.00 if the pipeline stalls." There is a ~40% chance of a −32% outcome and only ~15% combined chance of a ≥2×. "It's down a lot" is not a thesis.
-- **Damodaran (the arbiter):** A **fairly-to-modestly-priced lottery ticket** — the market is *too pessimistic in the tail* (it grants the pipeline no value at all) but *not wrong enough to overcome the risk*. The gap between price ($5.91) and full EV (~$7.0–7.4) is real but small (~19–26%) and dwarfed by the uncertainty.
+- **Damodaran (the arbiter):** A **fairly-to-modestly-priced lottery ticket** — the market is _too pessimistic in the tail_ (it grants the pipeline no value at all) but _not wrong enough to overcome the risk_. The gap between price ($5.91) and full EV (~$7.0–7.4) is real but small (~19–26%) and dwarfed by the uncertainty.
 - **Cross-examination:** Munger to Soros: "Every month without a catalyst, the floor sinks and the option decays — that is time decay on a position you cannot stop out because there is no liquidity and no institutional floor." Soros to Munger: "A bust with no leverage is closer to exhaustion than a leveraged bust — the financing channel is muted, the cash is real and insulated, and the single belief holding the price down ('pipeline = zero') is fragile: it can be broken by one credible data point."
 - **Named concessions:** Munger concedes the bust is largely priced and there is **no short** (oversold, cash-floored, illiquid). Soros concedes the edge at $5.91 is **~zero** (E[R] ≈ −3%) and only turns positive at ≤$4.50–5.00 or on a catalyst.
 - **Resolution:** Neither pure — SION is a **cash-floored lottery ticket**. The bust is likely exhausted (no short, downside cushioned near-term by the balance sheet), but the price does not yet pay you to buy it outright. The disciplined position is **wait/scale-in on dislocation or on a positive catalyst** — not a conviction buy at $5.91, and not a short.
@@ -162,7 +162,7 @@ All six participants independently converged on the following. Items marked ✅ 
 
 ## Round 4: Final Rebuttals and Concessions (The Last Word)
 
-- **Buffett concedes** his D is a **circle-of-competence / margin-of-safety verdict**, not a claim the stock is overvalued — it trades at its cash floor. On the unified margin he accepts **C− (Hold/Watch)**: "I will not buy a lottery ticket priced at its cash, but I also will not pretend a net-cash company with a live (if low-probability) program is worth materially less than what it holds. Wait and watch; revisit only at a large discount to net cash *and* a credible SION-451 path."
+- **Buffett concedes** his D is a **circle-of-competence / margin-of-safety verdict**, not a claim the stock is overvalued — it trades at its cash floor. On the unified margin he accepts **C− (Hold/Watch)**: "I will not buy a lottery ticket priced at its cash, but I also will not pretend a net-cash company with a live (if low-probability) program is worth materially less than what it holds. Wait and watch; revisit only at a large discount to net cash _and_ a credible SION-451 path."
 - **Munger concedes** his D is likewise a **quality verdict** — on the unified margin he accepts **C−**, with a hard caveat: no price above ~$4.50 is more than a speculation, and his conviction remains <$3.00. "Interesting is not an edge; a 92% failure probability is not a margin of safety."
 - **Damodaran concedes** his workbook's $24.63 is **success-conditional** and must never be quoted as the stock's value; the true expected value is ~$7.0–7.4. He accepts the unanimous **C−** and re-affirms his triggers: buy only ≤$4.50 or on positive SION-451 patient data.
 - **Druckenmiller concedes** his $8.26 weighted 12-month value is a **price-path projection, not an IV** — and that the positive EV is dominated by fat bullish tails on a low-probability binary. He accepts the unified **C−**, sized as a small speculative starter at most, with a hard requirement of a dated catalyst or a better price before any aggression.
@@ -204,15 +204,15 @@ Honest, transparent, and appropriately cautious after the Phase 2a miss (prompt 
 
 Reconciled scenario matrix. The **consensus probability column is a TRUE-probability distribution** — it folds the ~92% probability that the franchise never commercializes into the Severe-bear row (per Damodaran's ~8% P(success) gate), so the probability-weighted value below is a **true expected value**, not the success-conditional workbook value. The **Damodaran column is the verified workbook** (success-conditional, verbatim); the **Consensus IV column tracks the workbook as the defensible anchor** for the success states and ≈ net cash for the dominant failure state:
 
-| Scenario | Consensus prob. | Damodaran (workbook) | Buffett | Munger | Druckenmiller† | Soros† | **Consensus IV** |
-|---|---|---|---:|---:|---:|---:|---:|---:|
-| Severe bear / franchise never commercializes | **94.4%** | **$5.56** | ~$4.00 | $4.00 | $5.20 (−12%) | $4.00 | **~$5.93** * |
-| Bear / niche | **2.0%** | **$8.05** | ~$5.93 | $5.93 | $6.00 (+1.5%) | $5.50 | **~$8.05** |
-| Base / modest franchise | **2.0%** | **$15.73** | ~$12.00 | $12.00 | $6.00–12.00 | $10.00 | **~$15.73** |
-| Bull / strong franchise | **0.96%** | **$45.32** | ~$12–15 | $12.00–22.50 | $12.00 (+103%) | $10.00 | **~$45.32** |
-| Extreme bull / franchise leader | **0.64%** | **$144.74** | ~$15+ | $22.50 | $30.00 (+408%) | $16–18 | **~$144.74** |
+| Scenario                                     | Consensus prob. | Damodaran (workbook) | Buffett |       Munger | Druckenmiller† | Soros† | **Consensus IV** |
+| -------------------------------------------- | --------------- | -------------------- | ------: | -----------: | -------------: | -----: | ---------------: |
+| Severe bear / franchise never commercializes | **94.4%**       | **$5.56**            |  ~$4.00 |        $4.00 |   $5.20 (−12%) |  $4.00 |    **~$5.93** \* |
+| Bear / niche                                 | **2.0%**        | **$8.05**            |  ~$5.93 |        $5.93 |  $6.00 (+1.5%) |  $5.50 |       **~$8.05** |
+| Base / modest franchise                      | **2.0%**        | **$15.73**           | ~$12.00 |       $12.00 |    $6.00–12.00 | $10.00 |      **~$15.73** |
+| Bull / strong franchise                      | **0.96%**       | **$45.32**           | ~$12–15 | $12.00–22.50 | $12.00 (+103%) | $10.00 |      **~$45.32** |
+| Extreme bull / franchise leader              | **0.64%**       | **$144.74**          |   ~$15+ |       $22.50 | $30.00 (+408%) | $16–18 |     **~$144.74** |
 
-\* The Severe-bear Consensus IV is ≈ net cash (~$5.93) — the present value of the abandonment option in the dominant failure state; the workbook's $5.56 is the success-conditional "negligible niche" version of the same floor. Buffett and Munger's $4.00 reflect the burn-down path *within* the failure state.
+\* The Severe-bear Consensus IV is ≈ net cash (~$5.93) — the present value of the abandonment option in the dominant failure state; the workbook's $5.56 is the success-conditional "negligible niche" version of the same floor. Buffett and Munger's $4.00 reflect the burn-down path _within_ the failure state.
 † Druckenmiller/Soros cells are **12-month / 12–24-month price expectations, not intrinsic values**; they inform the near-term ladder and triggers, not the consensus IV. **The consensus IV is a TRUE expected-value construct: ~94% of the probability mass sits at the net-cash floor, and only ~0.6% reaches the $144.74 tail.**
 
 ## 5. Probability-Weighted Consensus Value
@@ -223,12 +223,12 @@ $$ \text{EV} = 0.944(\$5.93) + 0.020(\$8.05) + 0.020(\$15.73) + 0.0096(\$45.32) 
 - Expected upside vs $5.91: **~+19–26%** (central ~+22%). Expected 7-year annualized return: **~2.5–3.3%** — below the risk-free rate for a binary, volatile asset.
 - Downside tail (severe bear / failure, ~94% of the mass): ≈ **net cash**, not a −94% loss; the real long-run downside is the slow burn-down toward ~$4.00–5.00 if the pipeline stalls. Upside tail (extreme bull): ~0.6% probable, +2,349% from $5.91.
 - **Confidence: Low** — P(success) (5–15%) spans the whole value range ($6.6–8.7); a single binary clinical outcome dominates.
-- **Critical reconciliation (uncontested after Contention 2):** the workbook's probability-weighted value of **$24.63 (upside +317%, 7-yr annualized +22.6%) is SUCCESS-CONDITIONAL** — it assumes the SION-451 franchise commercializes. It is the expected value of the franchise *given* it reaches the market, not the value of the stock today. The consensus probability-weighted value **$7.0–7.4 is the TRUE expected value** — net cash plus P(success) × franchise option, less expected dilution. Quoting $24.63 as a price target repeats the pre-crash category error.
+- **Critical reconciliation (uncontested after Contention 2):** the workbook's probability-weighted value of **$24.63 (upside +317%, 7-yr annualized +22.6%) is SUCCESS-CONDITIONAL** — it assumes the SION-451 franchise commercializes. It is the expected value of the franchise _given_ it reaches the market, not the value of the stock today. The consensus probability-weighted value **$7.0–7.4 is the TRUE expected value** — net cash plus P(success) × franchise option, less expected dilution. Quoting $24.63 as a price target repeats the pre-crash category error.
 
 ## 6. Reverse-DCF Check (What Does $5.91 Assume?)
 
 - At $5.91, market equity ≈ $267M; net cash ≈ $268.3M → **implied EV ≈ −$1M ≈ $0**.
-- The reverse-DCF grid (terminal EV vs revenue × margin) shows that *any* terminal revenue/margin combination produces a positive franchise EV. Therefore **at $5.91 the market is implicitly assuming the franchise is worth zero — i.e., ~0% probability-weighted terminal revenue / ~0% success probability.** It is paying for net cash alone (actually a hair less), assigning the entire pipeline **zero** credit.
+- The reverse-DCF grid (terminal EV vs revenue × margin) shows that _any_ terminal revenue/margin combination produces a positive franchise EV. Therefore **at $5.91 the market is implicitly assuming the franchise is worth zero — i.e., ~0% probability-weighted terminal revenue / ~0% success probability.** It is paying for net cash alone (actually a hair less), assigning the entire pipeline **zero** credit.
 - **Is that assumption reasonable?** Damodaran: **too pessimistic as a point estimate, reasonable as a risk-adjusted stance** — his ~8% P(success) justifies ~$1.1–1.5/share of franchise option value on top of net cash, but the market's "rounding to zero" is a defensible posture given the data. Munger/Buffett: roughly correct until shown otherwise — the market is not wrong enough to overcome the risk. Soros/Druckenmiller: an overshoot worth exploiting **at the margin** (only at a discount to cash or on a catalyst).
 - **Consensus read:** $5.91 does **not** demand any pipeline success — it pays for the abandonment floor with no credit at all. That is the entire debate: whether ~0% is "correctly pessimistic" (then there is no edge) or "reflexively overshot" (then the edge is small and only payable below net cash). The consensus lands in between: **harsh-but-rational, small edge, buy only on discount or catalyst.**
 
@@ -262,14 +262,14 @@ $$ \text{EV} = 0.944(\$5.93) + 0.020(\$8.05) + 0.020(\$15.73) + 0.0096(\$45.32) 
 
 ### Consensus price ladder
 
-| Price band | Consensus action |
-|---|---|
-| **> $8.00** | **Reduce / avoid** — above Munger's sell zone (>$8.00) and Soros's ($8.50–10); sell into any re-rating without fundamental progress |
-| **$7.40–8.00** | **Do not initiate** — above the consensus full EV (~$7.0–7.4); the hard do-not-initiate band; no new money |
-| **$5.91–7.40** | **Hold / watch** — at/below full EV but at/above net cash; **$5.91 sits here**; no new money without a catalyst |
-| **$4.50–5.50** | **Speculative starter** — below net cash (~$5.93); Druckenmiller's zone; Soros scale-in; the option is nearly free |
-| **< $4.50** | **Speculative accumulate** — deep discount to net cash (≥24%); Damodaran buy zone; Munger speculative zone |
-| **< $3.50** | **High-conviction speculative buy** — Munger conviction zone (<$3.00); the deepest margin of safety |
+| Price band     | Consensus action                                                                                                                    |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **> $8.00**    | **Reduce / avoid** — above Munger's sell zone (>$8.00) and Soros's ($8.50–10); sell into any re-rating without fundamental progress |
+| **$7.40–8.00** | **Do not initiate** — above the consensus full EV (~$7.0–7.4); the hard do-not-initiate band; no new money                          |
+| **$5.91–7.40** | **Hold / watch** — at/below full EV but at/above net cash; **$5.91 sits here**; no new money without a catalyst                     |
+| **$4.50–5.50** | **Speculative starter** — below net cash (~$5.93); Druckenmiller's zone; Soros scale-in; the option is nearly free                  |
+| **< $4.50**    | **Speculative accumulate** — deep discount to net cash (≥24%); Damodaran buy zone; Munger speculative zone                          |
+| **< $3.50**    | **High-conviction speculative buy** — Munger conviction zone (<$3.00); the deepest margin of safety                                 |
 
 ### What would upgrade the rating (C− → C/B)
 
@@ -289,38 +289,38 @@ $$ \text{EV} = 0.944(\$5.93) + 0.020(\$8.05) + 0.020(\$15.73) + 0.0096(\$45.32) 
 
 ### Consensus monitoring dashboard
 
-| Metric | Why it matters | Direction that helps |
-|---|---|---|
-| SION-451 advancement decision & Phase 2 design | The binary hinge of the entire valuation | Credible Phase 2 plan announced (H2-26–H1-27) |
-| PreciSION confounder analysis / translational credibility | The fate of the CFHBE model underpinning SION-451 | Confounders rehabilitate the add-on thesis |
-| Strategic transaction (partner / out-license / takeout) | The cash-discount compressor | Premium to net cash; credible counterparty |
-| Cash & burn trajectory | The floor itself (~$42M/H1 burn) | Burn decelerates; no emergency financing |
-| ATM / dilution | The per-share tax (~2× share count at ~$6) | ATM stays unused; no sub-cash raise |
-| SION-451 / pipeline newsflow | The option-value driver | Positive patient efficacy data |
-| Price vs $4.01 low / net cash | The floor's integrity | Holds ≥ ~$4.50–5.00 (net cash minus burn) |
+| Metric                                                    | Why it matters                                    | Direction that helps                          |
+| --------------------------------------------------------- | ------------------------------------------------- | --------------------------------------------- |
+| SION-451 advancement decision & Phase 2 design            | The binary hinge of the entire valuation          | Credible Phase 2 plan announced (H2-26–H1-27) |
+| PreciSION confounder analysis / translational credibility | The fate of the CFHBE model underpinning SION-451 | Confounders rehabilitate the add-on thesis    |
+| Strategic transaction (partner / out-license / takeout)   | The cash-discount compressor                      | Premium to net cash; credible counterparty    |
+| Cash & burn trajectory                                    | The floor itself (~$42M/H1 burn)                  | Burn decelerates; no emergency financing      |
+| ATM / dilution                                            | The per-share tax (~2× share count at ~$6)        | ATM stays unused; no sub-cash raise           |
+| SION-451 / pipeline newsflow                              | The option-value driver                           | Positive patient efficacy data                |
+| Price vs $4.01 low / net cash                             | The floor's integrity                             | Holds ≥ ~$4.50–5.00 (net cash minus burn)     |
 
 ## 9. Technical Analysis
 
 Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.
 
-| Indicator | Value | Position |
-|---|---|---|
-| Price vs 200-day SMA | **$39.26** | −84.9% below |
-| Price vs 100-day SMA | **$39.42** | −85.0% below |
-| Price vs 50-day SMA | **$38.38** | −84.6% below |
-| 14-day RSI | **21.5** | Deeply oversold (below 30) |
-| 14-week RSI | **28.1** | Oversold |
-| 50-week RSI | **42.0** | Weak |
-| 52-week high / low | **$4.01 / $54.97** | −89% from high · +47% from low |
+| Indicator            | Value              | Position                       |
+| -------------------- | ------------------ | ------------------------------ |
+| Price vs 200-day SMA | **$39.26**         | −84.9% below                   |
+| Price vs 100-day SMA | **$39.42**         | −85.0% below                   |
+| Price vs 50-day SMA  | **$38.38**         | −84.6% below                   |
+| 14-day RSI           | **21.5**           | Deeply oversold (below 30)     |
+| 14-week RSI          | **28.1**           | Oversold                       |
+| 50-week RSI          | **42.0**           | Weak                           |
+| 52-week high / low   | **$4.01 / $54.97** | −89% from high · +47% from low |
 
-**Read:** Every indicator confirms a **confirmed Stage 4 decline** — the stock trades ~85% below all three major moving averages (SMA cluster $38.38–$39.42, 5–7× the current quote), and all three RSIs are weak-to-oversold (14-day 21.5 deeply oversold, 14-week 28.1 oversold, 50-week 42.0 weak). The tape is **downtrend intact, momentum exhausted but not inflected**: RSI-14 21.5 argues against *shorting* (the move is largely spent), but it is not a buy signal (there is no base, no pivot, no accumulation). This matches Druckenmiller's "no price confirmation" and Soros's "bust likely exhausted but not reversed." The two levels the trading lens is watching: the **$4.01 52-week low** (technical floor near the fundamental worst case) and the **~$6.50–8.00** old-breakdown shelf (now resistance).
+**Read:** Every indicator confirms a **confirmed Stage 4 decline** — the stock trades ~85% below all three major moving averages (SMA cluster $38.38–$39.42, 5–7× the current quote), and all three RSIs are weak-to-oversold (14-day 21.5 deeply oversold, 14-week 28.1 oversold, 50-week 42.0 weak). The tape is **downtrend intact, momentum exhausted but not inflected**: RSI-14 21.5 argues against _shorting_ (the move is largely spent), but it is not a buy signal (there is no base, no pivot, no accumulation). This matches Druckenmiller's "no price confirmation" and Soros's "bust likely exhausted but not reversed." The two levels the trading lens is watching: the **$4.01 52-week low** (technical floor near the fundamental worst case) and the **~$6.50–8.00** old-breakdown shelf (now resistance).
 
 ## 10. Mark Minervini Trading View (STANDALONE — reference only, not part of the consensus)
 
 Under Minervini's SEPA framework this is an **F — Do not buy** (included in the debate for completeness; it does not inform the fundamental consensus rating):
 
 - **Trend:** Confirmed **Stage 4 downtrend** — ~85% below the 50/100/200-day SMAs, near the 52-week low, completely broken base; no higher low, no accumulation signal.
-- **Momentum:** **RSI-14 21.5 (deeply oversold)** — bounce potential, but oversold is explicitly *not* an entry; Minervini buys strength and base breakouts, never falling knives.
+- **Momentum:** **RSI-14 21.5 (deeply oversold)** — bounce potential, but oversold is explicitly _not_ an entry; Minervini buys strength and base breakouts, never falling knives.
 - **Risk/reward bands (technical):** immediate downside −32% (to the $4.01 low) vs a realistic oversold relief rally of +35–70% (to $8–10) — but the rally lacks base/RS character, so it is a trade, not a position.
 - **Watchlist conditions** (what would change the call): a new multi-month base built ~$5–8 with decreasing volatility (a genuine VCP) while the 200-day SMA flattens/rises; a re-cross above the 50-day on expanding volume; positive relative strength vs XBI; a positive, dated catalyst (SION-451 Phase 2 plan, partnership, or strategic transaction). None exist today.
 

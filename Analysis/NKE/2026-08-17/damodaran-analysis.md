@@ -8,19 +8,19 @@
 
 Nike trades at a material discount to intrinsic value amid execution concerns and China headwinds, but its brand moat, DTC transition, and margin recovery opportunity justify selective accumulation. Intrinsic value base case: **$53.33** (verified workbook), probability-weighted **$62.22** — ≈36% upside to base, ≈59% to the weighted value. Current price embeds excessive pessimism about turnaround execution. Rating reflects belief that Wall Street has overcorrected on near-term China softness and FX headwinds while underestimating long-term DTC economics and margin leverage.
 
-| **Metric**          | **Value**  | **Context**                                   |
-| ------------------- | ---------- | --------------------------------------------- |
-| Current Price       | $39.09     | —                                             |
+| **Metric**          | **Value**  | **Context**                                      |
+| ------------------- | ---------- | ------------------------------------------------ |
+| Current Price       | $39.09     | —                                                |
 | Intrinsic Value (B) | $53.33     | +36% upside; bear $15, bull $96; weighted $62.22 |
-| Market Cap          | $57.99B    | Undervalued by $1.5–6B                        |
-| EV                  | $59.02B    | (Debt – Cash adjusted)                        |
-| P/E (TTM)           | 18.6x      | Below historical 20–24x despite higher ROE    |
-| EV/EBITDA (TTM)     | 12.0x      | Mid-cycle valuation                           |
-| Price/Book          | 20.5x      | Justified by 22% ROE                          |
-| **Revenue (TTM)**   | **$46.4B** | **Flat YoY; margin compression in wholesale** |
-| **FCF (TTM)**       | **$1.89B** | **Down from $3.3B; working-cap drag**         |
-| **Net Margin**      | **6.70%**  | **Compressed; 2019 was 7.5%**                 |
-| **ROIC (est.)**     | **~14%**   | **Above WACC; excess returns sustainable**    |
+| Market Cap          | $57.99B    | Undervalued by $1.5–6B                           |
+| EV                  | $59.02B    | (Debt – Cash adjusted)                           |
+| P/E (TTM)           | 18.6x      | Below historical 20–24x despite higher ROE       |
+| EV/EBITDA (TTM)     | 12.0x      | Mid-cycle valuation                              |
+| Price/Book          | 20.5x      | Justified by 22% ROE                             |
+| **Revenue (TTM)**   | **$46.4B** | **Flat YoY; margin compression in wholesale**    |
+| **FCF (TTM)**       | **$1.89B** | **Down from $3.3B; working-cap drag**            |
+| **Net Margin**      | **6.70%**  | **Compressed; 2019 was 7.5%**                    |
+| **ROIC (est.)**     | **~14%**   | **Above WACC; excess returns sustainable**       |
 
 ---
 
@@ -436,7 +436,7 @@ _(Full DCF from Section VII above.)_
 
 | **Scenario**           | **Probability** | **Value per Share** | **Contribution** |
 | ---------------------- | --------------- | ------------------- | ---------------- |
-| Severe Bear            | 10%             | $2.39              | $0.24            |
+| Severe Bear            | 10%             | $2.39               | $0.24            |
 | Bear                   | 20%             | $15.28              | $3.06            |
 | Base                   | 35%             | $53.33              | $18.67           |
 | Bull                   | 25%             | $95.99              | $24.00           |

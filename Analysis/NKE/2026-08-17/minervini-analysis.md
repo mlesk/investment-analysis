@@ -1,4 +1,5 @@
 # Minervini SEPA Analysis — Nike (NKE)
+
 **Date:** 2026-08-17 | **Price:** $39.09 | **Lens:** Mark Minervini (SEPA / technical trading)
 
 ---
@@ -11,21 +12,21 @@ Nike is a $57.99B global athletic brand with real franchises, a fortress balance
 
 ### Executive Summary
 
-| Dimension | Value | Minervini read |
-|---|---|---|
-| Price | $39.09 (prev close $40.73) | Below every major MA; at 52-wk low |
-| Trend Template | **0/8** | Not a valid setup (≤6/8 fails) |
-| Stage | **Stage 4 — Decline** | Lower highs/lows; avoid |
-| 52-wk position | +0.6% above low; −51.2% below high | No leadership, no base |
-| RSI 14d / 14w / 50w | 35.68 / 33.23 / 39.96 | Oversold-weak, no reversal confirmation |
-| EPS TTM YoY | −2.78% (3yr CAGR −13.4%) | Declining, no acceleration |
-| Revenue TTM YoY | +0.19% (3yr CAGR −3.2%) | Flat-to-declining |
-| Margins | GM 43.25% / OM 9.01% / NM 6.70% | Compressed vs Nike's history |
-| VCP | None | No pivot price |
-| Relative Strength | Severe laggard (est. rank <20) | Fails RS ≥ 70 gate |
-| Catalyst | Elliott Hill turnaround | Narrative, unconfirmed |
-| Market | S&P 500 at record highs | Stock fighting a strong tape |
-| **Eligibility** | **F — Avoid** | Great company ≠ good trade |
+| Dimension           | Value                              | Minervini read                          |
+| ------------------- | ---------------------------------- | --------------------------------------- |
+| Price               | $39.09 (prev close $40.73)         | Below every major MA; at 52-wk low      |
+| Trend Template      | **0/8**                            | Not a valid setup (≤6/8 fails)          |
+| Stage               | **Stage 4 — Decline**              | Lower highs/lows; avoid                 |
+| 52-wk position      | +0.6% above low; −51.2% below high | No leadership, no base                  |
+| RSI 14d / 14w / 50w | 35.68 / 33.23 / 39.96              | Oversold-weak, no reversal confirmation |
+| EPS TTM YoY         | −2.78% (3yr CAGR −13.4%)           | Declining, no acceleration              |
+| Revenue TTM YoY     | +0.19% (3yr CAGR −3.2%)            | Flat-to-declining                       |
+| Margins             | GM 43.25% / OM 9.01% / NM 6.70%    | Compressed vs Nike's history            |
+| VCP                 | None                               | No pivot price                          |
+| Relative Strength   | Severe laggard (est. rank <20)     | Fails RS ≥ 70 gate                      |
+| Catalyst            | Elliott Hill turnaround            | Narrative, unconfirmed                  |
+| Market              | S&P 500 at record highs            | Stock fighting a strong tape            |
+| **Eligibility**     | **F — Avoid**                      | Great company ≠ good trade              |
 
 ---
 
@@ -33,18 +34,18 @@ Nike is a $57.99B global athletic brand with real franchises, a fortress balance
 
 Screening questions, answered honestly with **no partial credit**:
 
-| Gate | Verdict | Evidence |
-|---|---|---|
-| Growth-oriented company with substantial growth? | **No (currently)** | Revenue +0.19% TTM, 3yr CAGR −3.2%; EPS TTM −2.78%, 3yr CAGR −13.4% [YF][1][SA][3] |
-| Fundamental acceleration now? | **No** | Q4 FY26 revenue flat at $10.97B, Direct −6%, Greater China −11%; no EPS/revenue acceleration [YF][1][SA][3] |
-| Market or industry leader? | **Laggard** | −47.8% 1yr while S&P 500 +21.4% (total return); RS rank est. <20 [SPY][4] |
-| Confirmed Stage 2 advance? | **No — Stage 4** | Price below all MAs; 200-day declining; 12-yr low [YF][1][TV][2] |
-| Institutional demand apparent? | **No — distribution** | New lows, elevated short interest, no accumulation [SA][3] |
-| Constructive price/volume behavior? | **No** | Declining on heavy volume, no base [TV][2] |
-| Meaningful catalyst? | **Narrative only** | Elliott Hill turnaround is unconfirmed; next earnings Sep 29, 2026 [SA][3] |
-| Supportive market environment? | **Mixed for this stock** | Broad tape strong, but NKE is a laggard fighting the tape [SPY][4] |
-| Specific low-risk entry now? | **No** | No pivot, no base, no entry [TV][2] |
-| Actionable today? | **No** | Watchlist only |
+| Gate                                             | Verdict                  | Evidence                                                                                                    |
+| ------------------------------------------------ | ------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| Growth-oriented company with substantial growth? | **No (currently)**       | Revenue +0.19% TTM, 3yr CAGR −3.2%; EPS TTM −2.78%, 3yr CAGR −13.4% [YF][1][SA][3]                          |
+| Fundamental acceleration now?                    | **No**                   | Q4 FY26 revenue flat at $10.97B, Direct −6%, Greater China −11%; no EPS/revenue acceleration [YF][1][SA][3] |
+| Market or industry leader?                       | **Laggard**              | −47.8% 1yr while S&P 500 +21.4% (total return); RS rank est. <20 [SPY][4]                                   |
+| Confirmed Stage 2 advance?                       | **No — Stage 4**         | Price below all MAs; 200-day declining; 12-yr low [YF][1][TV][2]                                            |
+| Institutional demand apparent?                   | **No — distribution**    | New lows, elevated short interest, no accumulation [SA][3]                                                  |
+| Constructive price/volume behavior?              | **No**                   | Declining on heavy volume, no base [TV][2]                                                                  |
+| Meaningful catalyst?                             | **Narrative only**       | Elliott Hill turnaround is unconfirmed; next earnings Sep 29, 2026 [SA][3]                                  |
+| Supportive market environment?                   | **Mixed for this stock** | Broad tape strong, but NKE is a laggard fighting the tape [SPY][4]                                          |
+| Specific low-risk entry now?                     | **No**                   | No pivot, no base, no entry [TV][2]                                                                         |
+| Actionable today?                                | **No**                   | Watchlist only                                                                                              |
 
 **Eligibility rating: F.** NKE fails the critical Minervini gates — trend, earnings acceleration, relative strength, and entry point — simultaneously. It is not a candidate for a Minervini trade today. A cheap-looking, broken chart is not a setup; a setup requires a completed base, a pivot, and confirmation.
 
@@ -88,17 +89,17 @@ Screening questions, answered honestly with **no partial credit**:
 
 Evaluated **explicitly and numerically** (technicals from the shared fact pack, computed from daily data; SMA150 interpolated as an estimate between SMA100 and SMA200) [YF][1][TV][2]:
 
-| # | Criterion | Numeric | Pass? |
-|---|---|---|---|
-| 1 | Price > 50-day MA | $39.09 < $42.75 (price −8.6%) | ❌ |
-| 2 | Price > 150-day MA | $39.09 < ~$48 (est.; SMA100 $43.88, SMA200 $53.09) | ❌ |
-| 3 | Price > 200-day MA | $39.09 < $53.09 (price −26.4%) | ❌ |
-| 4 | 50-day > 150-day MA | $42.75 < ~$48 (est.) | ❌ |
-| 5 | 50-day > 200-day MA | $42.75 < $53.09 | ❌ |
-| 6 | 150-day > 200-day MA | ~$48 (est.) < $53.09 | ❌ |
-| 7 | 200-day MA rising | 200-day at $53.09 vs price $39.09 and 12-yr low → clearly declining | ❌ |
-| 8 | ≥30% above 52-wk low AND within ~25% of 52-wk high | +0.6% above low (needs ≥30%); −51.2% below high (needs ≤25%) | ❌ |
-| 9 | RS ≥ 70 (80–90+ pref.) | Est. rank <20; severe laggard vs record-high S&P 500 | ❌ |
+| #   | Criterion                                          | Numeric                                                             | Pass? |
+| --- | -------------------------------------------------- | ------------------------------------------------------------------- | ----- |
+| 1   | Price > 50-day MA                                  | $39.09 < $42.75 (price −8.6%)                                       | ❌    |
+| 2   | Price > 150-day MA                                 | $39.09 < ~$48 (est.; SMA100 $43.88, SMA200 $53.09)                  | ❌    |
+| 3   | Price > 200-day MA                                 | $39.09 < $53.09 (price −26.4%)                                      | ❌    |
+| 4   | 50-day > 150-day MA                                | $42.75 < ~$48 (est.)                                                | ❌    |
+| 5   | 50-day > 200-day MA                                | $42.75 < $53.09                                                     | ❌    |
+| 6   | 150-day > 200-day MA                               | ~$48 (est.) < $53.09                                                | ❌    |
+| 7   | 200-day MA rising                                  | 200-day at $53.09 vs price $39.09 and 12-yr low → clearly declining | ❌    |
+| 8   | ≥30% above 52-wk low AND within ~25% of 52-wk high | +0.6% above low (needs ≥30%); −51.2% below high (needs ≤25%)        | ❌    |
+| 9   | RS ≥ 70 (80–90+ pref.)                             | Est. rank <20; severe laggard vs record-high S&P 500                | ❌    |
 
 **Trend Template Score: 0/8 → Not a valid Trend Template setup** (≤6/8 fails). Every single criterion fails. There is no nuance here to investigate — the price structure is unambiguously bearish: price below all MAs, a fully inverted/descending MA stack, a declining 200-day, near the 52-week low, and catastrophic relative strength. MA slopes are all down.
 
@@ -224,7 +225,7 @@ Minervini wants leaders making new highs. NKE is the opposite — a laggard maki
 **Maximum Chase Price:** N/A — there is nothing to chase; any chase would be buying far below the 200-day with no confirmation
 **Current Distance From Pivot:** N/A (price +0.6% above 52-wk low)
 
-**Is the stock buyable today? → Option 7: "No setup — watch only" (with trend damage, effectively Option 8 territory).** The honest answer: **Do not buy.** No setup exists; buying would be bottom-fishing a broken Stage 4 chart, which is explicitly outside the Minervini method. The stock belongs on a watchlist for a *future* base, not in a portfolio today.
+**Is the stock buyable today? → Option 7: "No setup — watch only" (with trend damage, effectively Option 8 territory).** The honest answer: **Do not buy.** No setup exists; buying would be bottom-fishing a broken Stage 4 chart, which is explicitly outside the Minervini method. The stock belongs on a watchlist for a _future_ base, not in a portfolio today.
 
 ---
 
@@ -247,7 +248,7 @@ Minervini wants leaders making new highs. NKE is the opposite — a laggard maki
 
 ## 16. Position Management & Selling Rules
 
-Applicable only once a valid setup exists; today there is none. The rules that *would* govern a hypothetical future long (from a completed base breakout): cut the position if price violates the pivot on expanded volume, if it loses the 50-day MA, or if relative strength deteriorates further; let a winner run while the trend is intact; sell into climax rather than at the first green day. None of these can be applied because **there is no position to manage** — and there should not be.
+Applicable only once a valid setup exists; today there is none. The rules that _would_ govern a hypothetical future long (from a completed base breakout): cut the position if price violates the pivot on expanded volume, if it loses the 50-day MA, or if relative strength deteriorates further; let a winner run while the trend is intact; sell into climax rather than at the first green day. None of these can be applied because **there is no position to manage** — and there should not be.
 
 ---
 
@@ -280,25 +281,25 @@ Relevant mistakes to **avoid** with NKE today:
 
 ## 19. Trade Quality Scorecard
 
-| Dimension | Score | Assessment |
-|---|---:|---|
-| Earnings Growth | 1/10 | EPS TTM −2.78% YoY |
-| Earnings Acceleration | 0/10 | Decelerating/negative |
-| Revenue Growth | 2/10 | +0.19% TTM; flat Q4 |
-| Margin Expansion | 1/10 | OM 9.0%, compressed |
-| Trend Template | 0/10 | 0/8 |
-| Stage 2 Structure | 0/10 | Stage 4 |
-| Relative Strength | 1/10 | Severe laggard |
-| Industry Leadership | 2/10 | Weak group |
-| VCP Quality | 0/10 | None |
-| Volume / Accumulation | 1/10 | Distribution |
-| Institutional Sponsorship | 2/10 | High but declining/saturated |
-| Catalyst | 3/10 | Unconfirmed turnaround |
-| Market Environment | 7/10 | Broad tape strong (doesn't rescue stock) |
-| Entry-Point Quality | 0/10 | No entry |
-| Risk/Reward | 1/10 | Undefinable/negative |
-| Price Extension | 2/10 | No valid pivot to be near |
-| **Total** | **23/160** | ≈ 14/100 — **fails** |
+| Dimension                 |      Score | Assessment                               |
+| ------------------------- | ---------: | ---------------------------------------- |
+| Earnings Growth           |       1/10 | EPS TTM −2.78% YoY                       |
+| Earnings Acceleration     |       0/10 | Decelerating/negative                    |
+| Revenue Growth            |       2/10 | +0.19% TTM; flat Q4                      |
+| Margin Expansion          |       1/10 | OM 9.0%, compressed                      |
+| Trend Template            |       0/10 | 0/8                                      |
+| Stage 2 Structure         |       0/10 | Stage 4                                  |
+| Relative Strength         |       1/10 | Severe laggard                           |
+| Industry Leadership       |       2/10 | Weak group                               |
+| VCP Quality               |       0/10 | None                                     |
+| Volume / Accumulation     |       1/10 | Distribution                             |
+| Institutional Sponsorship |       2/10 | High but declining/saturated             |
+| Catalyst                  |       3/10 | Unconfirmed turnaround                   |
+| Market Environment        |       7/10 | Broad tape strong (doesn't rescue stock) |
+| Entry-Point Quality       |       0/10 | No entry                                 |
+| Risk/Reward               |       1/10 | Undefinable/negative                     |
+| Price Extension           |       2/10 | No valid pivot to be near                |
+| **Total**                 | **23/160** | ≈ 14/100 — **fails**                     |
 
 Per the method: **a numerical score does not override critical failures.** NKE fails the Trend Template, is in Stage 4, and has a broken setup — a low score merely confirms the no-buy verdict.
 
@@ -308,35 +309,35 @@ Per the method: **a numerical score does not override critical failures.** NKE f
 
 ### Final Trade Plan
 
-| Field | Value |
-|---|---|
-| Ticker | NKE |
-| Current Price | $39.09 |
-| Stage | 4 |
-| Trend Template | 0/8 |
-| Relative Strength | Severe laggard (est. rank <20) |
-| Industry Rank | Bottom of weak apparel/footwear group |
-| Quarterly EPS Growth | Negative (TTM −2.78% YoY) |
-| Quarterly Revenue Growth | ~Flat (Q4 FY26 +0%/$10.97B) |
-| EPS Acceleration | No |
-| Revenue Acceleration | No |
-| Margin Expansion | No (contraction) |
-| VCP | No |
-| Number of Contractions | N/A |
-| Pivot | None |
-| Breakout Volume Requirement | N/A |
-| Ideal Entry | N/A (no setup) |
-| Maximum Chase | N/A |
-| Initial Stop | N/A |
-| Risk Per Share | N/A |
-| Recommended Account Risk | 0% (no trade) |
-| Recommended Position Size | 0% |
-| Market Environment | Confirmed uptrend (broad) — stock fights tape |
-| Catalyst | Elliott Hill turnaround — unconfirmed |
-| Primary Failure Signal | Close below $38.86 on volume |
-| Minervini Setup Score | ~14/100 |
-| Final Classification | **F** |
-| Action | **Avoid** |
+| Field                       | Value                                         |
+| --------------------------- | --------------------------------------------- |
+| Ticker                      | NKE                                           |
+| Current Price               | $39.09                                        |
+| Stage                       | 4                                             |
+| Trend Template              | 0/8                                           |
+| Relative Strength           | Severe laggard (est. rank <20)                |
+| Industry Rank               | Bottom of weak apparel/footwear group         |
+| Quarterly EPS Growth        | Negative (TTM −2.78% YoY)                     |
+| Quarterly Revenue Growth    | ~Flat (Q4 FY26 +0%/$10.97B)                   |
+| EPS Acceleration            | No                                            |
+| Revenue Acceleration        | No                                            |
+| Margin Expansion            | No (contraction)                              |
+| VCP                         | No                                            |
+| Number of Contractions      | N/A                                           |
+| Pivot                       | None                                          |
+| Breakout Volume Requirement | N/A                                           |
+| Ideal Entry                 | N/A (no setup)                                |
+| Maximum Chase               | N/A                                           |
+| Initial Stop                | N/A                                           |
+| Risk Per Share              | N/A                                           |
+| Recommended Account Risk    | 0% (no trade)                                 |
+| Recommended Position Size   | 0%                                            |
+| Market Environment          | Confirmed uptrend (broad) — stock fights tape |
+| Catalyst                    | Elliott Hill turnaround — unconfirmed         |
+| Primary Failure Signal      | Close below $38.86 on volume                  |
+| Minervini Setup Score       | ~14/100                                       |
+| Final Classification        | **F**                                         |
+| Action                      | **Avoid**                                     |
 
 ### Final Judgment
 
@@ -364,11 +365,11 @@ Per the method: **a numerical score does not override critical failures.** NKE f
 
 These are **bottom-fishing probability estimates for a 6–12-month holding period from $39.09** — provided for honesty, **not** as a recommendation (there is no Minervini entry). A real Minervini trade would only exist after a future base breakout, at which point these odds reset.
 
-| Scenario | Description | Price range (est.) | Prob. (est.) |
-|---|---|---|---|
-| Bear (Stage 4 continues) | Breaks $38.86 → new lows; China/Direct weakness persists | $27–$33 (−15% to −30%) | 45% |
-| Base (chop) | Sidesways base-building $37–44, no trend | $37–$44 (−5% to +10%) | 35% |
-| Bull (turnaround confirmed) | Strong Sep 29 print + RS inflection; reclaims SMA50/100 | $47–$55 (+20% to +40%) | 20% |
+| Scenario                    | Description                                              | Price range (est.)     | Prob. (est.) |
+| --------------------------- | -------------------------------------------------------- | ---------------------- | ------------ |
+| Bear (Stage 4 continues)    | Breaks $38.86 → new lows; China/Direct weakness persists | $27–$33 (−15% to −30%) | 45%          |
+| Base (chop)                 | Sidesways base-building $37–44, no trend                 | $37–$44 (−5% to +10%)  | 35%          |
+| Bull (turnaround confirmed) | Strong Sep 29 print + RS inflection; reclaims SMA50/100  | $47–$55 (+20% to +40%) | 20%          |
 
 **Expected return (estimate):** 0.45 × (−22.5%) + 0.35 × (+2.5%) + 0.20 × (+30%) ≈ **−3.2%** (roughly −3% to −5%). Negative expected value from current price without a confirmed setup.
 
@@ -385,11 +386,12 @@ These are **bottom-fishing probability estimates for a 6–12-month holding peri
 5. Seeking Alpha — NKE research/headlines — https://seekingalpha.com/symbol/NKE
 6. Nike Investor Relations — corporate/financial context — https://www.nike.com/corporate/investors
 
-*Technicals (SMA50/100/200, RSI 14d/14w/50w, 52-wk high/low distances, short interest, beta, performance returns) are taken verbatim from the shared fact pack; SMA150 is an estimate interpolated between SMA100 and SMA200. RS rank and scenario probabilities are labeled estimates.*
+_Technicals (SMA50/100/200, RSI 14d/14w/50w, 52-wk high/low distances, short interest, beta, performance returns) are taken verbatim from the shared fact pack; SMA150 is an estimate interpolated between SMA100 and SMA200. RS rank and scenario probabilities are labeled estimates._
 
 ---
 
 ## Position Summary
+
 - Rating: **F — Avoid.** Great company, broken trade: Stage 4 decline, 0/8 Trend Template, no pivot, declining earnings, severe RS laggard. Do not buy; watchlist only for a future Stage 1→2 base.
 - Intrinsic value: **N/A for trading lens** — entry/stop framework replaces it: no valid entry (no pivot); logical invalidation = close below $38.86; nearest resistance $42.75/$43.88/$53.09. (Marked: trading view, not intrinsic value.)
 - Buy zone: none today (undefined until a completed base breakout) | Sell/reduce zone: N/A (no position; a break below $38.86 confirms Stage 4 continuation)

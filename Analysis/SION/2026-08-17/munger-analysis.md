@@ -28,30 +28,30 @@ lottery tickets — especially ones where the incumbent's investors are betting 
 
 ## Executive Summary
 
-| Metric | Value | Source |
-|---|---|---|
-| Rating (Munger) | **D — Avoid** | This analysis |
-| Price (8/17/26) | $5.91 (−8.5%) | [5][6] |
-| Market cap | ~$267M | [5][6] |
-| Cash + securities (6/30/26) | $268.3M (Dec-25: $310.3M) | [2] |
-| Net cash / share | ~$5.93 | Estimate: $268.3M ÷ 45.21M sh |
-| Book value / share | ~$5.88 | Estimate: $265.8M ÷ 45.21M sh |
-| Enterprise value | ≈ −$1M (trades at net cash) | Estimate: $267.2M − $268.3M |
-| Revenue | None (pre-revenue, no approved products) | [1][2] |
-| Net loss Q2 26 / H1 26 | $29.9M / $56.7M | [2] |
-| H1-26 cash burn | ~$42M | Estimate: $310.3M − $268.3M |
-| R&D / G&A, Q2 26 | $21.9M / $10.6M | [2] |
-| Debt | None | [2] |
-| Shares outstanding (7/31/26) | 45,212,399 | Fact pack (10-Q cover) |
-| Employees | ~59 | [5] |
-| 52-week range | $4.01 – $54.97 | [5][6] |
-| YTD / 1-yr return | −85.6% / −71.6% | [5] |
-| Analyst avg 1-yr target | $17.20 (stale, pre-crash) | [5][6] |
-| Consensus rating | Hold (11 analysts) | [6] |
-| Conservative IV (bear/base/bull) | $4.00 / $5.93 / $12.00 | This analysis (see §6) |
-| Weighted IV | ~$6.28 (+6% vs. price) | This analysis (see §7) |
-| Buy zone (speculative only) | $3.50 – $4.00; conviction < $3.00 | This analysis |
-| Sell / reduce zone | > $8.00 | This analysis |
+| Metric                           | Value                                    | Source                        |
+| -------------------------------- | ---------------------------------------- | ----------------------------- |
+| Rating (Munger)                  | **D — Avoid**                            | This analysis                 |
+| Price (8/17/26)                  | $5.91 (−8.5%)                            | [5][6]                        |
+| Market cap                       | ~$267M                                   | [5][6]                        |
+| Cash + securities (6/30/26)      | $268.3M (Dec-25: $310.3M)                | [2]                           |
+| Net cash / share                 | ~$5.93                                   | Estimate: $268.3M ÷ 45.21M sh |
+| Book value / share               | ~$5.88                                   | Estimate: $265.8M ÷ 45.21M sh |
+| Enterprise value                 | ≈ −$1M (trades at net cash)              | Estimate: $267.2M − $268.3M   |
+| Revenue                          | None (pre-revenue, no approved products) | [1][2]                        |
+| Net loss Q2 26 / H1 26           | $29.9M / $56.7M                          | [2]                           |
+| H1-26 cash burn                  | ~$42M                                    | Estimate: $310.3M − $268.3M   |
+| R&D / G&A, Q2 26                 | $21.9M / $10.6M                          | [2]                           |
+| Debt                             | None                                     | [2]                           |
+| Shares outstanding (7/31/26)     | 45,212,399                               | Fact pack (10-Q cover)        |
+| Employees                        | ~59                                      | [5]                           |
+| 52-week range                    | $4.01 – $54.97                           | [5][6]                        |
+| YTD / 1-yr return                | −85.6% / −71.6%                          | [5]                           |
+| Analyst avg 1-yr target          | $17.20 (stale, pre-crash)                | [5][6]                        |
+| Consensus rating                 | Hold (11 analysts)                       | [6]                           |
+| Conservative IV (bear/base/bull) | $4.00 / $5.93 / $12.00                   | This analysis (see §6)        |
+| Weighted IV                      | ~$6.28 (+6% vs. price)                   | This analysis (see §7)        |
+| Buy zone (speculative only)      | $3.50 – $4.00; conviction < $3.00        | This analysis                 |
+| Sell / reduce zone               | > $8.00                                  | This analysis                 |
 
 ---
 
@@ -60,7 +60,7 @@ lottery tickets — especially ones where the incumbent's investors are betting 
 **Rating: OUTSIDE.**
 
 - **Can I explain the business to a 12-year-old?** The surface story is simple — "a pill that
-  fixes the broken protein in CF patients." But the *investment question* is not the mechanism;
+  fixes the broken protein in CF patients." But the _investment question_ is not the mechanism;
   it is whether a Phase 1 dual combination of two unproven CFTR modulators will (a) work in
   patients, (b) beat Trikafta, the existing standard of care, and (c) do so better than the
   many prior challengers that have failed against Vertex. I have no edge in that judgment.
@@ -90,40 +90,40 @@ Ask not "what makes SION go up," but "what destroys this investment?" The honest
 clinical data itself. That is precisely what happened on August 10 — the lead program's
 hypothesis was disproven in patients, and the stock fell 92% in a single session [1][6]. The
 failure mode I feared is not hypothetical; it has already occurred. Inversion tells me the
-remaining thesis now rests on a *second* bet (SION-451 dual combo) that inherits the burden of
+remaining thesis now rests on a _second_ bet (SION-451 dual combo) that inherits the burden of
 the failed first bet.
 
 **2. Survival of the fittest / ecological niche (biology).**
-Sionna's chosen niche — an NBD1-stabilizer *add-on* to Trikafta — has been eliminated by
+Sionna's chosen niche — an NBD1-stabilizer _add-on_ to Trikafta — has been eliminated by
 selection. What remains, a standalone dual combo that would compete directly against Trikafta,
 is the harshest niche in CF: a single dominant species (Vertex, ~$12.6B TTM revenue, Trikafta/
 Kaftrio as SOC, ~90% of F508del patients carrying the target mutation) has already out-competed
 every prior challenger [8]. In Darwinian terms the market's reaction was instructive: Vertex
-rallied ~7% and analysts raised Vertex targets because Sionna's failure *removed a threat*
+rallied ~7% and analysts raised Vertex targets because Sionna's failure _removed a threat_
 [7]. The ecosystem just voted, and it voted for the incumbent.
 
 **3. Probability thinking & expected value (mathematics).**
-A pre-revenue clinical-stage company is not valued by DCF but by *probability-weighted
-outcomes*. Doing that honestly (see §7) yields ~+6% expected return with a ~40% chance of
+A pre-revenue clinical-stage company is not valued by DCF but by _probability-weighted
+outcomes_. Doing that honestly (see §7) yields ~+6% expected return with a ~40% chance of
 losing a third of your money and only ~15% combined chance of a ≥2x. That is a poor
-risk/reward *even before* the quality failures. Munger: "Take the simple idea and take it
+risk/reward _even before_ the quality failures. Munger: "Take the simple idea and take it
 seriously" — the simple idea here is that you are buying net cash at full price plus a
 near-worthless option.
 
 **4. Incentive-caused bias / social proof / anchoring (psychology).**
-Three biases are concentrated here: (a) *Incentive-caused bias* — management has every
+Three biases are concentrated here: (a) _Incentive-caused bias_ — management has every
 incentive to attribute the failure to "confounders" rather than to a dead thesis; their jobs,
 equity, and the franchise depend on it [1]. Munger distrusts the bearer of bad news who has
-something to gain from a hopeful interpretation. (b) *Social proof* — the stock went from ~$51
-to $4 on a story; the crowd was emphatically wrong in both directions. (c) *Anchoring* — a
+something to gain from a hopeful interpretation. (b) _Social proof_ — the stock went from ~$51
+to $4 on a story; the crowd was emphatically wrong in both directions. (c) _Anchoring_ — a
 $17.20 average analyst target, five downgrades to $5–7, and litigation firms circling are all
 anchors that say nothing about intrinsic value [6][7]. I discard all of them.
 
 **Opportunity cost (economics).**
 The marginal dollar here — a low-probability, high-variance claim on an unproven pipeline at
 full cash price — competes with everything else. Even if the weighted math were positive,
-Munger's opportunity-cost test asks: is this the best use of capital with the *least
-uncertainty*? It is not.
+Munger's opportunity-cost test asks: is this the best use of capital with the _least
+uncertainty_? It is not.
 
 ---
 
@@ -137,7 +137,7 @@ an investor must internalize:
 2. **Moat never existed; what could have been a moat (NBD1 science) failed its first test.**
    There is no product, no revenue, no brand, no network effect, no switching cost.
 3. **The remaining program is an underdog's long shot.** SION-451 + SION-2222 met only
-   safety/PK objectives in 120 healthy volunteers; it has shown *no efficacy in patients* and
+   safety/PK objectives in 120 healthy volunteers; it has shown _no efficacy in patients_ and
    would compete head-to-head with Trikafta [1].
 4. **Capital decay.** ~$42M burned in H1-26; the company now "plans to take actions to preserve
    capital" [1][2]. Preservation means the pipeline slows; not preserving means dilution. Either
@@ -150,15 +150,17 @@ an investor must internalize:
    pessimistic reading.
 
 **Psychology-of-misjudgment self-check (relevant items):**
-- *Overconfidence* — the fact that specialized analysts were 90% wrong here is a standing
+
+- _Overconfidence_ — the fact that specialized analysts were 90% wrong here is a standing
   rebuke to any confidence I might have.
-- *Confirmation bias* — the bullish case ("cash-rich, options on multiple programs") is
+- _Confirmation bias_ — the bullish case ("cash-rich, options on multiple programs") is
   seductive precisely because it flatters a contrarian instinct. I reject it.
-- *Loss aversion / sunk cost* — "it's down 92%, it must be cheap" is anchoring, not analysis.
-- *Authority worship* — the $17.20 target is stale; the current "Hold" consensus post-dates the
+- _Loss aversion / sunk cost_ — "it's down 92%, it must be cheap" is anchoring, not analysis.
+- _Authority worship_ — the $17.20 target is stale; the current "Hold" consensus post-dates the
   failure and still embeds hope [6].
 
 **Avoid-stupidity checklist:**
+
 - Don't invest in complex, hard-to-understand business models → **fails** (Outside circle).
 - Don't invest without a moat → **fails** (no moat).
 - Don't chase at high valuations → **fails** (it was a story stock; it's still priced at cash
@@ -170,18 +172,18 @@ an investor must internalize:
 
 ## 4. Quality Standards Checklist
 
-| Criterion | Verdict | Evidence / reason |
-|---|---|---|
-| Durable competitive advantage | **None** | No product, no revenue, no approved drugs [1][2] |
-| Brand power | **None** | No marketed product |
-| Patents / hard-to-replicate technology | **Unproven** | NBD1 stabilization is novel but just failed Phase 2a; patent estate ≠ clinical value [1] |
-| Network effects | **None** | Not applicable to a small-molecule drug |
-| Scale advantages | **None** | ~59 employees vs. 6,400 at Vertex [5][8] |
-| Switching costs | **None** | Patients/doctors already on Trikafta; switching requires *better* data, which Sionna has not produced |
-| Pricing power | **None** | No product; would face a payer/incumbent that sets the benchmark |
-| Simple, transparent business | **Yes (financially)** | Balance sheet is clean: no debt, cash-dominated; simplicity is real but worthless without a product [2] |
-| Excellent, honest management | **Mixed** | Candid about the miss ("disappointed in the unexpected results") but incentive-biased toward the confounder story; no track record of value creation [1] |
-| High ROIC, low capital needs | **Fails** | No revenue → no ROIC; capital-intensive clinical burn with zero return on invested capital to date [2] |
+| Criterion                              | Verdict               | Evidence / reason                                                                                                                                        |
+| -------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Durable competitive advantage          | **None**              | No product, no revenue, no approved drugs [1][2]                                                                                                         |
+| Brand power                            | **None**              | No marketed product                                                                                                                                      |
+| Patents / hard-to-replicate technology | **Unproven**          | NBD1 stabilization is novel but just failed Phase 2a; patent estate ≠ clinical value [1]                                                                 |
+| Network effects                        | **None**              | Not applicable to a small-molecule drug                                                                                                                  |
+| Scale advantages                       | **None**              | ~59 employees vs. 6,400 at Vertex [5][8]                                                                                                                 |
+| Switching costs                        | **None**              | Patients/doctors already on Trikafta; switching requires _better_ data, which Sionna has not produced                                                    |
+| Pricing power                          | **None**              | No product; would face a payer/incumbent that sets the benchmark                                                                                         |
+| Simple, transparent business           | **Yes (financially)** | Balance sheet is clean: no debt, cash-dominated; simplicity is real but worthless without a product [2]                                                  |
+| Excellent, honest management           | **Mixed**             | Candid about the miss ("disappointed in the unexpected results") but incentive-biased toward the confounder story; no track record of value creation [1] |
+| High ROIC, low capital needs           | **Fails**             | No revenue → no ROIC; capital-intensive clinical burn with zero return on invested capital to date [2]                                                   |
 
 **Moat rating: NO MOAT.** There is nothing here to defend.
 
@@ -192,17 +194,17 @@ an investor must internalize:
 For a pre-revenue biotech most classic earnings-quality tests are **not applicable** — and that
 is legitimate, not manufactured certainty. Where a test does apply, it is concerning:
 
-| Test | Result | Note |
-|---|---|---|
-| Operating cash flow vs. net income (>1.2x) | **N/A** | Pre-revenue; net loss is the honest figure |
-| Receivables vs. revenue growth | **N/A** | No revenue [2] |
-| CapEx reasonableness | **N/A** | Negligible capital assets; the spend is R&D opex [2] |
-| Goodwill / impairments | **N/A** | No acquisitions; balance sheet is cash + small assets [2] |
-| Aggressive revenue recognition | **N/A** | No revenue to recognize |
-| **Stock-based compensation** | **APPLIES — watch** | Management explicitly flags SBC growth inside R&D and G&A; with a collapsed share price, SBC grants become more dilutive per dollar and press per-share metrics [2] |
-| **Cash burn as the "true" earnings** | **APPLIES** | H1-26 burn ~$42M ($310.3M → $268.3M); the real earnings statement is the balance-sheet drain [2] |
-| Debt / leverage (<50% D/E) | **Passes, but moot** | No debt; total equity $265.8M [2]. No debt is good, but it only funds the burn |
-| Going-concern runway | **~3 years at current burn** | $268.3M ÷ ~$85M/yr run-rate ≈ 3.2 yrs; "into 2028" was the pre-miss guide [2]; capital-preservation actions will slow the clock but also slow the pipeline |
+| Test                                       | Result                       | Note                                                                                                                                                                |
+| ------------------------------------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Operating cash flow vs. net income (>1.2x) | **N/A**                      | Pre-revenue; net loss is the honest figure                                                                                                                          |
+| Receivables vs. revenue growth             | **N/A**                      | No revenue [2]                                                                                                                                                      |
+| CapEx reasonableness                       | **N/A**                      | Negligible capital assets; the spend is R&D opex [2]                                                                                                                |
+| Goodwill / impairments                     | **N/A**                      | No acquisitions; balance sheet is cash + small assets [2]                                                                                                           |
+| Aggressive revenue recognition             | **N/A**                      | No revenue to recognize                                                                                                                                             |
+| **Stock-based compensation**               | **APPLIES — watch**          | Management explicitly flags SBC growth inside R&D and G&A; with a collapsed share price, SBC grants become more dilutive per dollar and press per-share metrics [2] |
+| **Cash burn as the "true" earnings**       | **APPLIES**                  | H1-26 burn ~$42M ($310.3M → $268.3M); the real earnings statement is the balance-sheet drain [2]                                                                    |
+| Debt / leverage (<50% D/E)                 | **Passes, but moot**         | No debt; total equity $265.8M [2]. No debt is good, but it only funds the burn                                                                                      |
+| Going-concern runway                       | **~3 years at current burn** | $268.3M ÷ ~$85M/yr run-rate ≈ 3.2 yrs; "into 2028" was the pre-miss guide [2]; capital-preservation actions will slow the clock but also slow the pipeline          |
 
 **Owner earnings** = Net income − net cash burn ≈ **negative ~$42M/H1** — i.e., cash is being
 consumed, not generated. There is no owner earnings; there is only a drawdown.
@@ -220,7 +222,7 @@ biotech-appropriate rate.
   developer; **WACC + 3% = 15–17%** used for any pipeline value (conservative).
 - **Terminal growth:** **≤ 2%** in all cases.
 - **Cash floor (the only number I trust):** $268.3M cash + securities, no debt → **$5.93/share**
-  [2]. Note the market price ($5.91) is *at* this floor — the market already gives Sionna
+  [2]. Note the market price ($5.91) is _at_ this floor — the market already gives Sionna
   **zero** credit for its pipeline. I am not getting a discount; I am paying full cash and
   receiving an option for free — which in options-land usually means the option is priced at
   ~zero for a reason.
@@ -228,7 +230,7 @@ biotech-appropriate rate.
   - SION-451 + SION-2222 dual combo (preferred combo, Phase 1 only, no patient efficacy data) [1].
   - If it somehow won meaningful share of the F508del market against Trikafta: peak sales
     $1.0–2.0B (estimate), ~30% net margin → peak earnings $300–600M (estimate).
-  - Probability of Phase 1 → approval *with* commercial success against an entrenched,
+  - Probability of Phase 1 → approval _with_ commercial success against an entrenched,
     highly effective incumbent: ~3–5% (estimate; industry Phase-1→approval base rates are
     low, and the competitive headwind is severe — the add-on version of the same thesis just
     failed).
@@ -241,31 +243,31 @@ biotech-appropriate rate.
 
 **Intrinsic value range (bear / base / bull):**
 
-| | Value/share | Basis |
-|---|---|---|
-| Bear | **$4.00** | Thesis fully dead; capital preserved then wind-down below net cash (near 52-wk low $4.01) as burn/litigation drain the balance sheet |
-| Base | **$5.93** | Net cash, zero pipeline credit — market's current price is already here |
-| Bull | **$12.00** | SION-451 dual combo revalidates the thesis with credible Phase 2 data or a partnership; market pays cash + pipeline |
+|      | Value/share | Basis                                                                                                                                |
+| ---- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Bear | **$4.00**   | Thesis fully dead; capital preserved then wind-down below net cash (near 52-wk low $4.01) as burn/litigation drain the balance sheet |
+| Base | **$5.93**   | Net cash, zero pipeline credit — market's current price is already here                                                              |
+| Bull | **$12.00**  | SION-451 dual combo revalidates the thesis with credible Phase 2 data or a partnership; market pays cash + pipeline                  |
 
 ---
 
 ## 7. Scenario Analysis & Expected Return
 
-| Scenario | Prob. | Value/share | 1-yr return | Reasoning |
-|---|---|---|---|---|
-| **Worst** — pipeline dead / wind-down | 40% | $4.00 | **−32%** | Dual combo fails or stalls; stock grinds below net cash toward wind-down (~$4.00) as cash decays |
-| **Base** — net cash, no pipeline credit | 45% | $5.93 | **+0.3%** | Capital preservation extends runway; market holds it at cash, no credit for the unproven combo |
-| **Bull** — thesis revalidated / deal | 13% | $12.00 | **+103%** | Encouraging Phase 2 data or partnership on SION-451 combo; cash + pipeline premium |
-| **Extreme bull** — success / buyout | 2% | $22.50 | **+281%** | Development success path or acquisition at premium to cash |
+| Scenario                                | Prob. | Value/share | 1-yr return | Reasoning                                                                                        |
+| --------------------------------------- | ----- | ----------- | ----------- | ------------------------------------------------------------------------------------------------ |
+| **Worst** — pipeline dead / wind-down   | 40%   | $4.00       | **−32%**    | Dual combo fails or stalls; stock grinds below net cash toward wind-down (~$4.00) as cash decays |
+| **Base** — net cash, no pipeline credit | 45%   | $5.93       | **+0.3%**   | Capital preservation extends runway; market holds it at cash, no credit for the unproven combo   |
+| **Bull** — thesis revalidated / deal    | 13%   | $12.00      | **+103%**   | Encouraging Phase 2 data or partnership on SION-451 combo; cash + pipeline premium               |
+| **Extreme bull** — success / buyout     | 2%    | $22.50      | **+281%**   | Development success path or acquisition at premium to cash                                       |
 
 **Expected return** = 0.40(−0.32) + 0.45(+0.003) + 0.13(+1.03) + 0.02(+2.81)
 = **≈ +6%** (probability-weighted), weighted IV ≈ **$6.28/share**.
 
-This is the crux of the Munger verdict: a *positive* but **trivial** expected return, delivered
+This is the crux of the Munger verdict: a _positive_ but **trivial** expected return, delivered
 with a **40% chance of a −32% outcome**, an **85% chance of doing nothing or worse**, and only a
 **15% combined shot at a ≥2x**. There is **no margin of safety** (weighted IV $6.28 is ~6%
-above price; Munger requires 30–40% for an asset with *this* uncertainty). A rational investor
-would require a *deep* discount to net cash to compensate for the uncertainty — which is why the
+above price; Munger requires 30–40% for an asset with _this_ uncertainty). A rational investor
+would require a _deep_ discount to net cash to compensate for the uncertainty — which is why the
 buy zone sits well below book value — and even then it is a speculation, not an investment.
 
 ---
@@ -273,6 +275,7 @@ buy zone sits well below book value — and even then it is a speculation, not a
 ## 8. Risks
 
 **Industry risks**
+
 - **Incumbent dominance / technology risk:** Vertex is the entrenched standard of care
   (Trikafta/Kaftrio; ~$12.6B TTM revenue, CF the core); it has repelled every challenger for a
   decade, and its investors explicitly gained from Sionna's failure [7][8].
@@ -280,6 +283,7 @@ buy zone sits well below book value — and even then it is a speculation, not a
   remaining program; FDA/EMA bar for replacing or augmenting Trikafta is high.
 
 **Company-specific risks**
+
 - **Single-program dependency:** the entire enterprise now rests on one Phase 1 dual combo with
   no patient efficacy data [1].
 - **The confounder narrative is unproven:** if the Phase 2a miss was drug-related rather than
@@ -292,7 +296,8 @@ buy zone sits well below book value — and even then it is a speculation, not a
   center [6].
 
 **Valuation risk**
-- The stock is *not* "cheap on a long-shot basis": at net cash with ~zero pipeline credit, you
+
+- The stock is _not_ "cheap on a long-shot basis": at net cash with ~zero pipeline credit, you
   are already paying full price for the only solid asset, and even a modest negative surprise
   (e.g., cash-preservation announcement read as wind-down) can push it toward $4.00.
 
@@ -301,11 +306,12 @@ buy zone sits well below book value — and even then it is a speculation, not a
 ## 9. Investment Decision Framework
 
 **Buy conditions (must ALL be met) — not met:**
+
 - Within circle of competence → ✗ (Outside)
 - Wide durable moat → ✗ (none)
 - Honest rational shareholder-oriented management → ~ (candid, but incentive-biased; no record)
 - ROIC >15%, low capital needs → ✗ (no revenue, cash-burning)
-- Financial health & cash flow → ~ (strong cash, but cash is the *entire* value and it is
+- Financial health & cash flow → ~ (strong cash, but cash is the _entire_ value and it is
   burning)
 - Pricing power → ✗ (none)
 - Fair valuation with 30–40% margin of safety → ✗ (weighted IV ~6% above price)
@@ -317,10 +323,10 @@ should not hold a position they are unwilling to re-underwrite as a speculation.
 
 **Final Rating: D — AVOID.**
 
-Munger's line applies with unusual force here: *"It's far better to buy a wonderful company at
-a fair price than a fair company at a wonderful price."* This is not even a fair company at a
+Munger's line applies with unusual force here: _"It's far better to buy a wonderful company at
+a fair price than a fair company at a wonderful price."_ This is not even a fair company at a
 wonderful price — it is an un-knowable company at its net cash, with a falsified core thesis,
-a long-shot second act, and no margin of safety. The 92% decline makes the stock *interesting*,
+a long-shot second act, and no margin of safety. The 92% decline makes the stock _interesting_,
 but interesting is not an edge. This is outside my circle of competence and fails Munger's
 quality standards outright; the correct action is to **do nothing**.
 
@@ -328,13 +334,13 @@ quality standards outright; the correct action is to **do nothing**.
 
 ## Sources
 
-- **[1]** Sionna Therapeutics press release, Aug 10, 2026 — *"Sionna Therapeutics Reports Topline
-  Data from Two Development Programs in Cystic Fibrosis and Provides Corporate Update"* (PreciSION
+- **[1]** Sionna Therapeutics press release, Aug 10, 2026 — _"Sionna Therapeutics Reports Topline
+  Data from Two Development Programs in Cystic Fibrosis and Provides Corporate Update"_ (PreciSION
   CF Phase 2a miss −1.0 mmol/L, p=0.7; confounders; SION-719 not advancing; Phase 1 dual-combo
   safety/PK met, SION-451+SION-2222 preferred; $268.3M cash; preserve capital).
   https://investors.sionnatx.com/news-releases/news-release-details/sionna-therapeutics-reports-topline-data-two-development
-- **[2]** Sionna Therapeutics press release, Aug 6, 2026 — *"Sionna Therapeutics Reports Second
-  Quarter 2026 Financial Results"* (R&D $21.9M, G&A $10.6M, net loss Q2 $29.9M / H1 $56.7M,
+- **[2]** Sionna Therapeutics press release, Aug 6, 2026 — _"Sionna Therapeutics Reports Second
+  Quarter 2026 Financial Results"_ (R&D $21.9M, G&A $10.6M, net loss Q2 $29.9M / H1 $56.7M,
   cash $268.3M vs $310.3M, equity $265.8M, runway into 2028, SBC in opex).
   https://investors.sionnatx.com/news-releases/news-release-details/sionna-therapeutics-reports-second-quarter-2026-financial
 - **[3]** SEC EDGAR, Form 8-K filed Aug 10, 2026 (acc. 0001193125-26-341230; items 8.01/9.01,
@@ -350,8 +356,8 @@ quality standards outright; the correct action is to **do nothing**.
   downgrades: Guggenheim Neutral, BTIG Neutral, Wedbush Neutral $5, LifeSci $6, Citizens, Raymond
   James, RBC $5, Freedom Broker $5; shareholder-investigation notices).
   https://stockanalysis.com/stocks/sion/
-- **[7]** TipRanks, Aug 10, 2026 — *"Vertex Stock (VRTX) Soars 7% as Rival Sionna (SION) Crashes
-  92% on Failed Drug Trial"* (~1 mmol/L vs ~10 mmol/L expected; SION −92% to ~$4; Stifel PT $55→$7;
+- **[7]** TipRanks, Aug 10, 2026 — _"Vertex Stock (VRTX) Soars 7% as Rival Sionna (SION) Crashes
+  92% on Failed Drug Trial"_ (~1 mmol/L vs ~10 mmol/L expected; SION −92% to ~$4; Stifel PT $55→$7;
   Trikafta reinforced as SOC; Vertex +7% to ~$531).
   https://www.tipranks.com/news/vertex-stock-vrtx-soars-7-as-rival-sionna-sion-crashes-92-on-failed-drug-trial
 - **[8]** StockAnalysis.com, VRTX overview (Vertex TTM revenue $12.59B, Q2-26 rev $3.3B led by CF;
@@ -364,6 +370,7 @@ quality standards outright; the correct action is to **do nothing**.
 ---
 
 ## Position Summary
+
 - Rating: **D — Avoid** — pre-revenue biotech outside Munger's circle of competence with a
   falsified lead thesis, no moat, and no margin of safety (weighted IV ~6% above price).
 - Intrinsic value: bear=$4.00 base=$5.93 bull=$12.00 | weighted=**~$6.28** (40/45/13/2).
@@ -377,4 +384,4 @@ quality standards outright; the correct action is to **do nothing**.
   future dilution; head-to-head vs. Vertex/Trikafta (dominant incumbent); shareholder
   litigation overhang.
 
-*This is an estimate of estimates for research purposes, not investment advice.*
+_This is an estimate of estimates for research purposes, not investment advice._

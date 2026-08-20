@@ -14,24 +14,24 @@
 
 To keep the debate honest, the five analyses were first reconciled against a common fact base. No participant disputes these figures:
 
-| Fact | Value | Source in analyses |
-| --- | --- | --- |
-| Reference price | **$14.50** (Aug 17, 2026 close; −21.75% over 52 weeks) | all five / fact pack |
-| Diluted shares | **2.83B** (2025 recap full economic ownership, NOT dilution) | all five |
-| Market capitalization | **$41.06B** | all five |
-| TTM revenue | **$10,243M** (FY25 $7,071M; +98.8% YoY, acquisition-inflated) | Buffett / Munger / Damodaran |
-| TTM net income / net margin | **$471M / 4.6%** | all five |
-| Q2'26 adjusted metrics | **adj revenue $2,760M · adj NI $441M · adj EBITDA 28% · adj EPS $0.16** | all five |
-| Market share (Q2'26) | **Purchase 6.2%** (from 5.5% Q4'25) · **Refi 14.3%** (from 12.2%) | all five |
-| Servicing book | **$2T UPB**; ~**$1B/qtr** steady servicing cash flow; 57% of refi closes from serviced clients | all five |
-| Refi option | **$320B** (>6% note rate, 26% of owned MSR) + $300B origination capacity | all five |
-| Cash / total debt | **Cash+ST inv $3,448M** / **total debt $33,179M** (dominated by matched warehouse/MSR/Ginnie financing) | all five |
-| SBC vs net income | **SBC $430M TTM ≈ 91% of GAAP NI $471M** | all five |
-| Economic leverage | **Net corporate leverage 0.9× EBITDA**; **$11.2B liquidity** (+$1.8B QoQ); only IG-rated public US mortgage company | all five |
-| Tangible book | **−$8.0B** (goodwill $10.6B + intangibles $20.9B vs equity $23.5B) | all five |
-| Q3'26 guide | **adj revenue $2.5–2.7B** (down QoQ; market smaller than Q2, first since 2022) | all five |
-| Rates | **30-yr fixed ~6.8%** (near 1-yr high, +50bps vs H1 avg); existing home sales ~4M annualized | all five |
-| Analyst consensus | **17 analysts, Buy, PT $17.70** (+22%) | all five |
+| Fact                        | Value                                                                                                               | Source in analyses           |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| Reference price             | **$14.50** (Aug 17, 2026 close; −21.75% over 52 weeks)                                                              | all five / fact pack         |
+| Diluted shares              | **2.83B** (2025 recap full economic ownership, NOT dilution)                                                        | all five                     |
+| Market capitalization       | **$41.06B**                                                                                                         | all five                     |
+| TTM revenue                 | **$10,243M** (FY25 $7,071M; +98.8% YoY, acquisition-inflated)                                                       | Buffett / Munger / Damodaran |
+| TTM net income / net margin | **$471M / 4.6%**                                                                                                    | all five                     |
+| Q2'26 adjusted metrics      | **adj revenue $2,760M · adj NI $441M · adj EBITDA 28% · adj EPS $0.16**                                             | all five                     |
+| Market share (Q2'26)        | **Purchase 6.2%** (from 5.5% Q4'25) · **Refi 14.3%** (from 12.2%)                                                   | all five                     |
+| Servicing book              | **$2T UPB**; ~**$1B/qtr** steady servicing cash flow; 57% of refi closes from serviced clients                      | all five                     |
+| Refi option                 | **$320B** (>6% note rate, 26% of owned MSR) + $300B origination capacity                                            | all five                     |
+| Cash / total debt           | **Cash+ST inv $3,448M** / **total debt $33,179M** (dominated by matched warehouse/MSR/Ginnie financing)             | all five                     |
+| SBC vs net income           | **SBC $430M TTM ≈ 91% of GAAP NI $471M**                                                                            | all five                     |
+| Economic leverage           | **Net corporate leverage 0.9× EBITDA**; **$11.2B liquidity** (+$1.8B QoQ); only IG-rated public US mortgage company | all five                     |
+| Tangible book               | **−$8.0B** (goodwill $10.6B + intangibles $20.9B vs equity $23.5B)                                                  | all five                     |
+| Q3'26 guide                 | **adj revenue $2.5–2.7B** (down QoQ; market smaller than Q2, first since 2022)                                      | all five                     |
+| Rates                       | **30-yr fixed ~6.8%** (near 1-yr high, +50bps vs H1 avg); existing home sales ~4M annualized                        | all five                     |
+| Analyst consensus           | **17 analysts, Buy, PT $17.70** (+22%)                                                                              | all five                     |
 
 **Consensus reading of the facts:** Rocket is no longer merely a cyclical mortgage originator — it is the dominant US homeownership platform (largest lender **and** largest servicer) with ~70% recurring or less rate-sensitive revenue, a genuine servicing cash floor, and the largest embedded refi option in the industry. But its GAAP economics (net margin 4.6%, SBC ≈ net income, negative TTM FCF, negative tangible book) are dramatically weaker than its adjusted numbers — and that gap is the crux of the entire valuation debate.
 
@@ -47,7 +47,7 @@ To keep the debate honest, the five analyses were first reconciled against a com
 
 ### Munger's position
 
-> "A genuinely understandable, well-positioned franchise — and a fair-company-at-a-wonderful-price trap. At **$14.50** you are paying ~20× forward *adjusted* earnings for a business whose GAAP return on capital is ~2.75%, whose SBC (~$430M) consumes ~91% of net income, whose tangible book is **−$8.0B**, and whose founder controls ~62% of the vote. My conservative DCF (13.3% discount, 2% terminal growth) puts base value at **$5.50** — an expected return of about **−60%**. Rating: **C — Watch**. First interest only below **~$8**."
+> "A genuinely understandable, well-positioned franchise — and a fair-company-at-a-wonderful-price trap. At **$14.50** you are paying ~20× forward _adjusted_ earnings for a business whose GAAP return on capital is ~2.75%, whose SBC (~$430M) consumes ~91% of net income, whose tangible book is **−$8.0B**, and whose founder controls ~62% of the vote. My conservative DCF (13.3% discount, 2% terminal growth) puts base value at **$5.50** — an expected return of about **−60%**. Rating: **C — Watch**. First interest only below **~$8**."
 
 ### Damodaran's position
 
@@ -85,20 +85,20 @@ All five participants independently converged on the following. Items marked ✅
 ### Contention 1 — Reference price: intrinsic value vs 12-month price
 
 - **Buffett / Munger / Damodaran** frame their scenario values as **intrinsic value today** — what the equity is worth on normalized economics. **Druckenmiller / Soros** frame theirs as **12–18-month price expectations** — where the stock trades as macro, positioning, and expectations evolve (Druckenmiller weighted ~$15–15.50; Soros ~$16.73).
-- **Cross-examination:** These are different objects. Consensus base intrinsic value (~$8) sits far *below* the $14.50 price, while both 12-month price expectations cluster at/above $14.50 — so a reader could be confused into thinking the "value" is higher than it is. All five anchor on the same $14.50 reference price, so the rating is insensitive to the framing — but the columns are not interchangeable.
+- **Cross-examination:** These are different objects. Consensus base intrinsic value (~$8) sits far _below_ the $14.50 price, while both 12-month price expectations cluster at/above $14.50 — so a reader could be confused into thinking the "value" is higher than it is. All five anchor on the same $14.50 reference price, so the rating is insensitive to the framing — but the columns are not interchangeable.
 - **Named concession:** **Druckenmiller** concedes, "my base is a price forecast under a stationary macro, not an intrinsic value — I am pricing the option, not the asset." **Soros** concedes his "B" is a reflexivity trade on expectations and positioning, not a claim that Rocket is fundamentally worth more than $14.50.
 - **Resolution:** The three intrinsic-value models (Buffett, Munger, Damodaran) set the **consensus IV**. Druckenmiller and Soros inform the near-term price ladder and triggers only, and are labeled † (12-month price expectations) in the matrix.
 
 ### Contention 2 — Where does base-case intrinsic value actually sit?
 
-| Profile | Base value/share | Key driver of difference |
-| --- | ---: | --- |
-| Munger | **$5.50** | 13.3% discount (WACC + 3%), 2% terminal growth, strictest SBC treatment |
-| Damodaran | **$8.24** | 9% WACC, 3% terminal growth, economic margins 17→20%, ~$2.3B net debt (verified workbook) |
-| Buffett | **~$9.00** | Normalized owner earnings $1.1–2.4B at 10–12% discount, 15–18× cross-check |
+| Profile   | Base value/share | Key driver of difference                                                                  |
+| --------- | ---------------: | ----------------------------------------------------------------------------------------- |
+| Munger    |        **$5.50** | 13.3% discount (WACC + 3%), 2% terminal growth, strictest SBC treatment                   |
+| Damodaran |        **$8.24** | 9% WACC, 3% terminal growth, economic margins 17→20%, ~$2.3B net debt (verified workbook) |
+| Buffett   |       **~$9.00** | Normalized owner earnings $1.1–2.4B at 10–12% discount, 15–18× cross-check                |
 
 - **Munger's challenge to Buffett/Damodaran:** "You are capitalizing adjusted, pre-SBC earnings. $430M of stock comp ≈ 91% of net income — it is a real cost to existing shareholders."
-- **Buffett's concession:** "Correct — my ~$9 assumes the *demonstrated* normalized owner earnings ($1.1–2.4B), which is the reward for proof, not the value of hope."
+- **Buffett's concession:** "Correct — my ~$9 assumes the _demonstrated_ normalized owner earnings ($1.1–2.4B), which is the reward for proof, not the value of hope."
 - **Damodaran's challenge to Munger:** "A WACC+3% discount plus 2% terminal growth double-punishes risk. My 9%/3% already treats SBC and intangibles amortization as real costs inside the margin."
 - **Munger's concession:** "Accepted — at a normal 9–10% discount my base rises toward $6–8.50. I publish $5.50 to demand the margin of safety, not to claim the economics are that poor."
 - **Resolution:** The defensible central estimate today is **~$8/share** — the intersection of Buffett and Damodaran, with Munger as the conservative floor. Consensus base ≈ **~$8**, ~45% below the $14.50 price.
@@ -106,27 +106,27 @@ All five participants independently converged on the following. Items marked ✅
 ### Contention 3 — How much credit for the right tail (the refi wave)?
 
 - **Damodaran:** extreme bull **$73.62** @ 10% (workbook); bull $19.46 @ 15%. **Munger:** extreme bull **$12.50** @ 5% — refuses to pay for the option. **Buffett:** bull **$17**, refuses to weight it heavily. **Druckenmiller:** extreme bull **$21–24** @ 10% (a 2027 call). **Soros:** extreme bull **$26** @ 8% (largest levered call on rate relief priced at $0).
-- **Cross-examination:** All agree the tail is *real* — $320B of >6% MSR, 14.3% refi share, 57% recapture of serviced clients, $300B capacity — and *fat*, but not *likely* (rates are at a 1-yr high, not falling). Critically, the probability-weighted consensus value (~$14.86) is lifted almost entirely by the tail: the extreme-bull cell alone contributes ~$7.36 of the $14.86.
+- **Cross-examination:** All agree the tail is _real_ — $320B of >6% MSR, 14.3% refi share, 57% recapture of serviced clients, $300B capacity — and _fat_, but not _likely_ (rates are at a 1-yr high, not falling). Critically, the probability-weighted consensus value (~$14.86) is lifted almost entirely by the tail: the extreme-bull cell alone contributes ~$7.36 of the $14.86.
 - **Named concession:** **Munger** concedes, "this is the most credible optionality in the industry — the counter-cyclical asset becomes hugely valuable exactly when the macro turns. I simply refuse to pay for it in advance."
-- **Resolution:** Consensus bull ≈ **~$18**, extreme bull ≈ **~$73.62** (adopted from the workbook as the option proxy), combined probability ~25%. The right tail justifies *watching the story closely*; it does not justify paying for it at $14.50.
+- **Resolution:** Consensus bull ≈ **~$18**, extreme bull ≈ **~$73.62** (adopted from the workbook as the option proxy), combined probability ~25%. The right tail justifies _watching the story closely_; it does not justify paying for it at $14.50.
 
 ### Contention 4 — What price compensates for the uncertainty?
 
 This is where the five diverged most sharply.
 
-| Profile | Buy zone begins | High-conviction zone |
-| --- | --- | --- |
-| Druckenmiller | **$11.50–13.50** (starter ≤1–2%, stop <$11.50) | — |
-| Soros | **<$14.50** (scale-in; washout $12.5–13) | — |
-| Buffett | **≤ $10** | < $6 |
-| Damodaran | **< $10** (add <$8) | < $8 |
-| Munger | **< $8** | < $4 |
+| Profile       | Buy zone begins                                | High-conviction zone |
+| ------------- | ---------------------------------------------- | -------------------- |
+| Druckenmiller | **$11.50–13.50** (starter ≤1–2%, stop <$11.50) | —                    |
+| Soros         | **<$14.50** (scale-in; washout $12.5–13)       | —                    |
+| Buffett       | **≤ $10**                                      | < $6                 |
+| Damodaran     | **< $10** (add <$8)                            | < $8                 |
+| Munger        | **< $8**                                       | < $4                 |
 
 - **Damodaran's argument:** "At $8–10 the expected return finally compensates for the uncertainty I measure; demanding below $8 implies the bear case is the base case."
 - **Munger's rebuttal:** "I demand a 30–40% margin of safety on a business whose GAAP economics nobody can yet predict. $8 is the top of the value zone, not a bargain."
 - **Druckenmiller's point:** "The correct frame is not the same for everyone — a trader with a stop can own the 2027 option at $12–13.50; a buy-and-hold investor must wait for $8–10. The dispute is about sizing and horizon, not about the company."
 - **Named concession:** **Soros** concedes, "my <$14.50 scale-in is a trade on expectations, positioning, and short interest — it is not a value argument; the value lenses are right that the fundamental anchor is far lower."
-- **Resolution (unanimous):** Adopt the composite ladder in Part II — **do not initiate ≥ $14.50**; risk-tolerant starter **$11.50–14.50**; begin accumulating **$8–10**; build **$6–8**; high conviction **<$6**. The dispute over entry price is a dispute about *sizing and temperament*, not about the stock.
+- **Resolution (unanimous):** Adopt the composite ladder in Part II — **do not initiate ≥ $14.50**; risk-tolerant starter **$11.50–14.50**; begin accumulating **$8–10**; build **$6–8**; high conviction **<$6**. The dispute over entry price is a dispute about _sizing and temperament_, not about the stock.
 
 ### Contention 5 — Management and governance quality (Dan Gilbert ~62%, SBC, acquisitions)
 
@@ -142,7 +142,7 @@ This is where the five diverged most sharply.
 
 - **Damodaran:** ~**$2.3B** economic net corporate debt (0.9× EBITDA; $5,748M less $3,448M cash; excludes matched warehouse/MSR/advance and Ginnie buyout financing) — calls it "the single most important judgment in this valuation," noting a pure-GAAP corporate view (~$7.5B of senior notes net of corporate cash) would cut value by ~$1.8–2.0/share (~25%).
 - **Buffett:** ~$2.7B at 0.9× EBITDA. **Munger:** ~$2.3B. **Druckenmiller / Soros:** cite 0.9× / $11.2B liquidity as the operating frame.
-- **Cross-examination:** GAAP total debt $33.2B and "net cash" −$29.7B are meaningless for a matched-balance-sheet mortgage platform — warehouse lines fund loans in transit dollar-for-dollar. All five agree on the *economic* convention; the dispute is only over the exact number, which swings value ~25%.
+- **Cross-examination:** GAAP total debt $33.2B and "net cash" −$29.7B are meaningless for a matched-balance-sheet mortgage platform — warehouse lines fund loans in transit dollar-for-dollar. All five agree on the _economic_ convention; the dispute is only over the exact number, which swings value ~25%.
 - **Named concession:** **Soros** concedes "the economic frame is right for a going concern — but a credit event could make the 'matched' debt less matched, and that tail is what negative tangible book leaves uninsured."
 - **Resolution:** Consensus adopts the **economic net-debt convention (~$2.3B corporate net debt at 0.9× EBITDA), disclosed in every model**. A pure-GAAP corporate view would lower consensus base IV from ~$8 to ~$6–6.50 without changing the C rating.
 
@@ -150,11 +150,11 @@ This is where the five diverged most sharply.
 
 ## Round 4: Final Rebuttals and Concessions (The Last Word)
 
-- **Damodaran concedes** his $15.07 weighted value overstates the *investable* case — the premium over the $8.24 base is entirely right-tail, and the base case is ~43% below the price — and **accepts** the composite entry ladder.
+- **Damodaran concedes** his $15.07 weighted value overstates the _investable_ case — the premium over the $8.24 base is entirely right-tail, and the base case is ~43% below the price — and **accepts** the composite entry ladder.
 - **Munger concedes** the refi option is the most credible optionality in the industry (counter-cyclical, captive, 57% recapture) and **accepts** that a small, risk-tolerant starter at $11.50–14.50 is defensible for investors who explicitly buy the option rather than the value.
 - **Buffett concedes** that rejecting the franchise outright would ignore a genuinely dominant, well-run business — and **accepts** that this is a quality-with-wrong-price story, not a quality problem.
 - **Druckenmiller concedes** the near-term macro is genuinely adverse and **accepts** that the value lenses' $8–10 accumulation zone is the right price for investors who cannot trade the 2027 option.
-- **Soros concedes** that even his asymmetric case is "early" and macro-dependent — and **accepts** that the consensus C rating (not his speculative B) is the right *governance* of capital for most investors.
+- **Soros concedes** that even his asymmetric case is "early" and macro-dependent — and **accepts** that the consensus C rating (not his speculative B) is the right _governance_ of capital for most investors.
 
 **Debate conclusion: consensus rating C — HOLD/WATCH at $14.50.** The three intrinsic-value lenses are **unanimous C**; Druckenmiller is **C+ (Monitor)**; Soros is **B (asymmetric, speculative, scale-in)**. No profile would buy at $14.50 at full size, and no profile recommends a short. Conditions attached to the rating: (1) do not initiate at or above $14.50; (2) risk-tolerant starter only in $11.50–14.50; (3) begin accumulating at $8–10; (4) upgrades require demonstrated economic margin/ROIC, a closing GAAP/adjusted gap, and a rate-cycle inflection (30-yr <~6.25%).
 
@@ -190,13 +190,13 @@ Strong, candid, operationally excellent execution (record share, 28% adjusted-EB
 
 Reconciled scenario matrix. The **Damodaran column is the verified workbook** (verbatim, two decimals). **Druckenmiller and Soros columns are 12-month PRICE expectations (†), not intrinsic value** — they inform the near-term ladder and triggers, not the consensus IV. Consensus probabilities adopt Damodaran's five-scenario set (10/20/45/15/10), which the other profiles broadly share.
 
-| Scenario | Prob. | Damodaran (workbook) | Buffett | Munger | Druckenmiller† | Soros† | **Consensus IV** |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Severe bear | 10% | **$2.04** | $4.50 * | $2.00 | $8–9.50 (−45%)† | $11.00 (−24%)† | **~$3** |
-| Bear | 20% | **$4.39** | $4.50 * | $2.00 | $11.50–12.75 (−21%)† | $12.50 (−14%)† | **~$4.50** |
-| **Base** | 45% | **$8.24** | $9.00 | $5.50 | $13.75–15.50 (−5–+7%)† | $16.25 (+12%)† | **~$8** |
-| Bull | 15% | **$19.46** | $17.00 | $10.00 | $17–19 (+17–31%)† | $19.50 (+34%)† | **~$18** |
-| Extreme bull | 10% | **$73.62** | $17.00 * | $12.50 | $21–24 (+45–66%)† | $26.00 (+79%)† | **~$73.62** |
+| Scenario     | Prob. | Damodaran (workbook) |   Buffett | Munger |         Druckenmiller† |         Soros† | **Consensus IV** |
+| ------------ | ----: | -------------------: | --------: | -----: | ---------------------: | -------------: | ---------------: |
+| Severe bear  |   10% |            **$2.04** |  $4.50 \* |  $2.00 |        $8–9.50 (−45%)† | $11.00 (−24%)† |          **~$3** |
+| Bear         |   20% |            **$4.39** |  $4.50 \* |  $2.00 |   $11.50–12.75 (−21%)† | $12.50 (−14%)† |       **~$4.50** |
+| **Base**     |   45% |            **$8.24** |     $9.00 |  $5.50 | $13.75–15.50 (−5–+7%)† | $16.25 (+12%)† |          **~$8** |
+| Bull         |   15% |           **$19.46** |    $17.00 | $10.00 |      $17–19 (+17–31%)† | $19.50 (+34%)† |         **~$18** |
+| Extreme bull |   10% |           **$73.62** | $17.00 \* | $12.50 |      $21–24 (+45–66%)† | $26.00 (+79%)† |      **~$73.62** |
 
 \* Buffett publishes a three-scenario range (bear $4.50 / base $9.00 / bull $17.00); his tail cells reuse the nearest published value.
 † Druckenmiller/Soros cells are 12-month **price expectations, not intrinsic value** — they inform the near-term ladder and triggers, not the consensus IV.
@@ -207,7 +207,7 @@ $$ \text{EV} = 0.10(\sim3) + 0.20(\sim4.50) + 0.45(\sim8) + 0.15(\sim18) + 0.10(
 
 At $14.50: **~+2.5% expected upside (~+0.5% 5-year annualized) — essentially the current price.** Confidence: **Low/Medium**. The weighted value converges almost exactly on Damodaran's workbook ($15.07) — and it clears the price **only** because of the fat right tail (the extreme-bull cell alone contributes ~$7.36 of the $14.86). Downside tail (severe bear): −79% from $14.50; upside tail (extreme bull): +408%.
 
-**Reverse-DCF check (Damodaran, uncontested):** at $14.50 the market is implicitly assuming RKT roughly **doubles revenue to ~$20B at ~20% EBIT margins** — the Bull plus part of the Extreme-Bull scenario, i.e., a return of the refinance cycle plus sustained share gains on a base that is currently *shrinking* quarter-over-quarter. **Aggressive but not impossible — and no bargain: the market is paying for the right tail.**
+**Reverse-DCF check (Damodaran, uncontested):** at $14.50 the market is implicitly assuming RKT roughly **doubles revenue to ~$20B at ~20% EBIT margins** — the Bull plus part of the Extreme-Bull scenario, i.e., a return of the refinance cycle plus sustained share gains on a base that is currently _shrinking_ quarter-over-quarter. **Aggressive but not impossible — and no bargain: the market is paying for the right tail.**
 
 ## 5. Consensus Pros and Cons (at $14.50)
 
@@ -237,15 +237,15 @@ At $14.50: **~+2.5% expected upside (~+0.5% 5-year annualized) — essentially t
 
 ### Consensus price ladder
 
-| Price band | Consensus action |
-| --- | --- |
-| > $20 | **Reduce / avoid** — excessive success priced in; Soros's sell zone |
-| $17.50–20 | **Trim / hold existing** — approaching consensus PT $17.70; Damodaran sell >$18, Druckenmiller sell >$17.50 |
-| **$14.50–17.50** | **Do-not-initiate band** — no margin of safety; all five refuse ($14.50 sits here) |
-| $11.50–14.50 | **Watch — risk-tolerant starter only** (Druckenmiller ≤1–2% <$13.50, stop <$11.50; Soros scale-in) |
-| **$8–10** | **Begin accumulating** — Buffett first interest ≤$10; Damodaran buy zone <$10; Munger "interesting" ~$8 |
-| **$6–8** | **Accumulate (attractive)** — Buffett accumulate $6–9; Damodaran add <$8 |
-| **< $6** | **High-conviction buy zone** — Munger accumulate $5–6, conviction <$4; Buffett conviction <$6 (thesis intact) |
+| Price band       | Consensus action                                                                                              |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| > $20            | **Reduce / avoid** — excessive success priced in; Soros's sell zone                                           |
+| $17.50–20        | **Trim / hold existing** — approaching consensus PT $17.70; Damodaran sell >$18, Druckenmiller sell >$17.50   |
+| **$14.50–17.50** | **Do-not-initiate band** — no margin of safety; all five refuse ($14.50 sits here)                            |
+| $11.50–14.50     | **Watch — risk-tolerant starter only** (Druckenmiller ≤1–2% <$13.50, stop <$11.50; Soros scale-in)            |
+| **$8–10**        | **Begin accumulating** — Buffett first interest ≤$10; Damodaran buy zone <$10; Munger "interesting" ~$8       |
+| **$6–8**         | **Accumulate (attractive)** — Buffett accumulate $6–9; Damodaran add <$8                                      |
+| **< $6**         | **High-conviction buy zone** — Munger accumulate $5–6, conviction <$4; Buffett conviction <$6 (thesis intact) |
 
 ### What would upgrade the rating (C → B/A)
 
@@ -265,15 +265,15 @@ At $14.50: **~+2.5% expected upside (~+0.5% 5-year annualized) — essentially t
 
 ## 7. Technical Analysis (fact-pack values, 2026-08-17)
 
-| Indicator | Value | Position |
-| --- | --- | --- |
-| Price vs 200-day SMA | $16.35 | -11.3% below |
-| Price vs 100-day SMA | $14.30 | +1.4% above |
-| Price vs 50-day SMA | $14.03 | +3.4% above |
-| 14-day RSI | 53.96 | Neutral (mid-range) |
-| 14-week RSI | 48.18 | Neutral |
-| 50-week RSI | 46.50 | Neutral-weak |
-| 52-week high / low | $24.36 / $12.17 | -40.5% from high · +19.1% from low |
+| Indicator            | Value           | Position                           |
+| -------------------- | --------------- | ---------------------------------- |
+| Price vs 200-day SMA | $16.35          | -11.3% below                       |
+| Price vs 100-day SMA | $14.30          | +1.4% above                        |
+| Price vs 50-day SMA  | $14.03          | +3.4% above                        |
+| 14-day RSI           | 53.96           | Neutral (mid-range)                |
+| 14-week RSI          | 48.18           | Neutral                            |
+| 50-week RSI          | 46.50           | Neutral-weak                       |
+| 52-week high / low   | $24.36 / $12.17 | -40.5% from high · +19.1% from low |
 
 **Read:** Price $14.50 sits below the falling 200-day ($16.35) but above the 50/100-day MAs, with neutral short-term momentum and weak-to-neutral intermediate momentum — a basing, early-Stage-1 pattern after a year-long decline. A decisive close above the 200-day ($16.35) would be the first technical confirmation; the 52-week range shows the stock −40.5% from its high but +19.1% from its low.
 

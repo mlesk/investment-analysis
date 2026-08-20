@@ -6,35 +6,35 @@
 
 ## Executive Summary
 
-| Dimension | Assessment | Score |
-|---|---|---|
-| Circle of competence | Outside — binary biotech clinical risk, no earnings to underwrite | 1/10 |
-| Economic moat | No moat — no product, no market position, no revenue; early science only | 1/10 |
-| Management | Honest disclosure, experienced team; capital allocation unproven; incentives aligned via equity | 5/10 |
-| Financial health | Strong balance sheet (net cash, no debt) but cash-burning with no path to revenue | 4/10 |
-| Earnings quality | N/A — no earnings; losses widening (H1-26 −$56.7M) | 1/10 |
-| Growth prospects | Entirely contingent on unproven SION-451 program vs dominant incumbent (Vertex) | 2/10 |
-| Margin of safety at $5.91 | None — price ≈ net cash; no discount for risk | 1/10 |
-| **Overall** | **D — Avoid** | **2/10** |
+| Dimension                 | Assessment                                                                                      | Score    |
+| ------------------------- | ----------------------------------------------------------------------------------------------- | -------- |
+| Circle of competence      | Outside — binary biotech clinical risk, no earnings to underwrite                               | 1/10     |
+| Economic moat             | No moat — no product, no market position, no revenue; early science only                        | 1/10     |
+| Management                | Honest disclosure, experienced team; capital allocation unproven; incentives aligned via equity | 5/10     |
+| Financial health          | Strong balance sheet (net cash, no debt) but cash-burning with no path to revenue               | 4/10     |
+| Earnings quality          | N/A — no earnings; losses widening (H1-26 −$56.7M)                                              | 1/10     |
+| Growth prospects          | Entirely contingent on unproven SION-451 program vs dominant incumbent (Vertex)                 | 2/10     |
+| Margin of safety at $5.91 | None — price ≈ net cash; no discount for risk                                                   | 1/10     |
+| **Overall**               | **D — Avoid**                                                                                   | **2/10** |
 
 ## 1. Business Understanding & Circle of Competence
 
 **Business model:** Sionna develops small-molecule drugs that stabilize the nucleotide-binding domain 1 (NBD1) of the CFTR protein to treat cystic fibrosis (CF). Its thesis is that directly stabilizing NBD1 can restore CFTR function to near-normal and beat current standard-of-care modulators. The company has **no approved products and no revenue**; it is entirely a research bet. [SIONNA][5]
 
-**Simplicity & understandability:** The *business* (selling CF drugs) is understandable; the *investment* is not. Valuing a clinical-stage biotech requires adjudicating trial probabilities, regulatory paths, and competitive responses against a dominant incumbent — an expertise edge I do not claim. When the "experts" with price targets of $38–55 were ~90% wrong within days [SIONNA][2][YAHOO][4], the honest conclusion is that this is outside my circle of competence.
+**Simplicity & understandability:** The _business_ (selling CF drugs) is understandable; the _investment_ is not. Valuing a clinical-stage biotech requires adjudicating trial probabilities, regulatory paths, and competitive responses against a dominant incumbent — an expertise edge I do not claim. When the "experts" with price targets of $38–55 were ~90% wrong within days [SIONNA][2][YAHOO][4], the honest conclusion is that this is outside my circle of competence.
 
-**Still needed in 10 years?** CF treatments will still be needed (CF is a lifelong genetic disease), but whether *Sionna* will be the one selling them is unknowable today. The product need is real; the company's claim to it is not established.
+**Still needed in 10 years?** CF treatments will still be needed (CF is a lifelong genetic disease), but whether _Sionna_ will be the one selling them is unknowable today. The product need is real; the company's claim to it is not established.
 
 **Will the industry's essence change?** CF modulator therapy already advanced dramatically via Vertex's Trikafta. A new entrant must demonstrate meaningful incremental benefit over an entrenched, well-tolerated standard of care — a high and rising bar, not a tailwind.
 
 ## 2. Economic Moat Analysis
 
-| Moat type | Assessment |
-|---|---|
-| Intangible assets (brand, patents, regulatory) | Patent-protected science exists, but a patent is not a moat; the *regulatory barrier* is real (drug approval is hard) and works both ways — Sionna faces it, Vertex already cleared it. No brand, no revenue, no customer franchise. |
-| Switching costs | N/A — no product, no customers. For patients/physicians, switching from a working Trikafta to an unproven new modulator would carry *risk*, not a reason to switch. |
-| Network effects | None — not applicable to therapeutics. |
-| Cost advantages | None observable; a ~59-employee biotech has no scale advantage against Vertex's CF franchise (~$10B+/yr, estimate). [SIONNA][1][4] |
+| Moat type                                      | Assessment                                                                                                                                                                                                                           |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Intangible assets (brand, patents, regulatory) | Patent-protected science exists, but a patent is not a moat; the _regulatory barrier_ is real (drug approval is hard) and works both ways — Sionna faces it, Vertex already cleared it. No brand, no revenue, no customer franchise. |
+| Switching costs                                | N/A — no product, no customers. For patients/physicians, switching from a working Trikafta to an unproven new modulator would carry _risk_, not a reason to switch.                                                                  |
+| Network effects                                | None — not applicable to therapeutics.                                                                                                                                                                                               |
+| Cost advantages                                | None observable; a ~59-employee biotech has no scale advantage against Vertex's CF franchise (~$10B+/yr, estimate). [SIONNA][1][4]                                                                                                   |
 
 **Moat rating: No moat.** The company has intellectual property but no demonstrated economic moat — no product, no pricing power, no installed base, no cost advantage. The only "moat-adjacent" asset is the scientific platform, which just suffered a major credibility setback.
 
@@ -58,7 +58,7 @@
 
 **Accounting prudence:** No concerns identified; standard clinical-stage biotech accounting.
 
-**Financial safety:** Very safe *today* (zero debt, no refinancing risk) but structurally unsafe as a going concern — the cash is finite and the burn continues.
+**Financial safety:** Very safe _today_ (zero debt, no refinancing risk) but structurally unsafe as a going concern — the cash is finite and the burn continues.
 
 ## 5. Long-Term Growth Prospects
 
@@ -72,13 +72,13 @@
 
 For a pre-revenue company there are **no owner earnings to capitalize** (H1-26 FCF is deeply negative; the company consumes ~$42M per half-year). Buffett's owner-earnings DCF does not apply; the only disciplined valuation anchors are the balance sheet and, speculatively, the pipeline option:
 
-| Scenario | Assumption | Value/share |
-|---|---|---|
-| **Conservative** | SION-451 fails too; company winds down / is sold for net cash minus continued burn and dilution | **~$4.00** |
-| **Neutral (base)** | Pipeline priced at ~zero; value = net cash today | **~$5.93** |
-| **Optimistic** | SION-451 combo succeeds commercially (low probability) | **~$12–15** (speculative) |
+| Scenario           | Assumption                                                                                      | Value/share               |
+| ------------------ | ----------------------------------------------------------------------------------------------- | ------------------------- |
+| **Conservative**   | SION-451 fails too; company winds down / is sold for net cash minus continued burn and dilution | **~$4.00**                |
+| **Neutral (base)** | Pipeline priced at ~zero; value = net cash today                                                | **~$5.93**                |
+| **Optimistic**     | SION-451 combo succeeds commercially (low probability)                                          | **~$12–15** (speculative) |
 
-**Relative valuation:** Price/Book ≈ 1.0× (market cap ~$267M vs equity $265.8M) — the market pays book value with zero credit for the pipeline. There is no P/E, EV/EBITDA, or PEG because there is no E. Trading *at* book for a cash-burning, product-less company is not cheap; it is fair-to-full for what is demonstrably there. [YAHOO][4]
+**Relative valuation:** Price/Book ≈ 1.0× (market cap ~$267M vs equity $265.8M) — the market pays book value with zero credit for the pipeline. There is no P/E, EV/EBITDA, or PEG because there is no E. Trading _at_ book for a cash-burning, product-less company is not cheap; it is fair-to-full for what is demonstrably there. [YAHOO][4]
 
 **Margin of safety at $5.91: none.** The stock trades essentially at its net-cash value (~$5.93), meaning you pay full price for the cash on hand while receiving a speculative, low-probability pipeline option "free." That is not a margin of safety — a true margin of safety would require buying meaningfully below net cash to compensate for the ongoing burn, potential dilution, and the high probability that the remaining program also fails.
 
@@ -93,6 +93,7 @@ For a pre-revenue company there are **no owner earnings to capitalize** (H1-26 F
 ## 8. Investment Decision Framework
 
 **Buy conditions — all unmet:**
+
 - Business simple and understandable, within circle of competence: ❌ (binary clinical bet)
 - Wide and sustainable moat: ❌ (no product, no moat)
 - Management integrity and strong capital allocation: ⚠️ (honest, but unproven)
@@ -108,9 +109,10 @@ For a pre-revenue company there are **no owner earnings to capitalize** (H1-26 F
 - [4] Yahoo Finance SION quote/statistics (2026-08-17) — https://finance.yahoo.com/quote/SION
 - [5] Sionna corporate site — https://www.sionnatx.com/
 
-*Note: Vertex CF franchise size (~$10B+/yr) is an estimate from market context; F508del prevalence (~90% of CF patients) is standard CF epidemiology and labeled an estimate in the consensus.*
+_Note: Vertex CF franchise size (~$10B+/yr) is an estimate from market context; F508del prevalence (~90% of CF patients) is standard CF epidemiology and labeled an estimate in the consensus._
 
 ## Position Summary
+
 - Rating: **D — Avoid** (outside circle of competence; no margin of safety at ~$5.91)
 - Intrinsic value: bear=~$4.00 base=~$5.93 bull=~$12–15 | weighted=~$5.95
 - Buy zone: None — avoid; only a large discount to net cash plus a credible SION-451 path would warrant a speculative revisit | Sell/reduce zone: not applicable (no position)

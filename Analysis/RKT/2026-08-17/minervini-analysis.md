@@ -15,20 +15,20 @@ RKT is the rare case of a **fundamentally inflecting story** — record 6.2% pur
 
 ## Executive Summary
 
-| Indicator | Reading | Trend status / risk-reward |
-|---|---|---|
-| Price (Aug 17, 2026) | $14.50 (−1.76% d, −21.75% 52-wk) [1][2] | Below 200-day; mid-base |
-| 50-day SMA | $14.03 (+3.4% above) [2] | Price above, 50d rising (+0.04/10d) — short-term constructive |
-| 100-day SMA | $14.30 (+1.4% above) [fact pack] | Marginal hold |
-| 150-day SMA | $15.61 (computed from Yahoo daily; price −7.1% below) [4] | **Below — trend criterion fails** |
-| 200-day SMA | $16.35 (−11.3% below) [2] | **Below, 200d falling (−0.16/10d); 0/20 sessions above** [4] |
-| RSI 14-day / 14-wk / 50-wk | 53.96 / 48.18 / 46.50 [fact pack] | Neutral; intermediate momentum still <50 (no uptrend) |
-| 52-wk high / low | $24.36 (−40.5%) / $12.17 (+19.1%) [2] | Fails "≥30% above low **and** within 25% of high" |
-| Beta / avg vol 20d | 2.21 / ~27.7M [1][fact pack] | High beta — gap risk at earnings |
-| Short interest | 98.68M sh (5.21% float, 3.23 DTC), down from 104.02M [2] | Mild squeeze fuel; not a catalyst by itself |
-| Relative strength | RKT −21.75% vs SPY +22.3% (1Y) [2][5] | **Major laggard; RS rank ≪70** |
-| Analysts | 17, Buy, PT $17.70 (low $14 / median $18 / high $21) [3] | ~+22% consensus upside, but JPM cut PT to $14 post-Q2 |
-| **Risk/reward @ $14.50** | Risk to $12.17 (−16%) vs reward to $16.40 (+13%) ≈ **0.8:1** | **Poor from here — wait for pivot** |
+| Indicator                  | Reading                                                      | Trend status / risk-reward                                    |
+| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
+| Price (Aug 17, 2026)       | $14.50 (−1.76% d, −21.75% 52-wk) [1][2]                      | Below 200-day; mid-base                                       |
+| 50-day SMA                 | $14.03 (+3.4% above) [2]                                     | Price above, 50d rising (+0.04/10d) — short-term constructive |
+| 100-day SMA                | $14.30 (+1.4% above) [fact pack]                             | Marginal hold                                                 |
+| 150-day SMA                | $15.61 (computed from Yahoo daily; price −7.1% below) [4]    | **Below — trend criterion fails**                             |
+| 200-day SMA                | $16.35 (−11.3% below) [2]                                    | **Below, 200d falling (−0.16/10d); 0/20 sessions above** [4]  |
+| RSI 14-day / 14-wk / 50-wk | 53.96 / 48.18 / 46.50 [fact pack]                            | Neutral; intermediate momentum still <50 (no uptrend)         |
+| 52-wk high / low           | $24.36 (−40.5%) / $12.17 (+19.1%) [2]                        | Fails "≥30% above low **and** within 25% of high"             |
+| Beta / avg vol 20d         | 2.21 / ~27.7M [1][fact pack]                                 | High beta — gap risk at earnings                              |
+| Short interest             | 98.68M sh (5.21% float, 3.23 DTC), down from 104.02M [2]     | Mild squeeze fuel; not a catalyst by itself                   |
+| Relative strength          | RKT −21.75% vs SPY +22.3% (1Y) [2][5]                        | **Major laggard; RS rank ≪70**                                |
+| Analysts                   | 17, Buy, PT $17.70 (low $14 / median $18 / high $21) [3]     | ~+22% consensus upside, but JPM cut PT to $14 post-Q2         |
+| **Risk/reward @ $14.50**   | Risk to $12.17 (−16%) vs reward to $16.40 (+13%) ≈ **0.8:1** | **Poor from here — wait for pivot**                           |
 
 ---
 
@@ -36,17 +36,17 @@ RKT is the rare case of a **fundamentally inflecting story** — record 6.2% pur
 
 **Minervini Trend Template — score: 1/8 (not a valid setup).**
 
-| # | Criterion | Reading | Result |
-|---|---|---|---|
-| 1 | Price above 50-day | $14.50 > $14.03 (+3.4%) [2] | ✅ PASS |
-| 2 | Price above 150-day | $14.50 < $15.61 (−7.1%) [4] | ❌ FAIL |
-| 3 | Price above 200-day | $14.50 < $16.35 (−11.3%) [2] | ❌ FAIL |
-| 4 | 50-day above 150-day | $14.03 < $15.61 [2][4] | ❌ FAIL |
-| 5 | 50-day above 200-day | $14.03 < $16.35 [2] | ❌ FAIL |
-| 6 | 150-day above 200-day | $15.61 < $16.35 [4][2] | ❌ FAIL |
-| 7 | 200-day rising | Falling (−0.16 over 10 sessions) [4] | ❌ FAIL |
-| 8 | ≥30% above low AND within 25% of high | +19.1% above low; −40.5% from high [2] | ❌ FAIL |
-| RS | Relative strength ≥70 | −21.75% 52-wk vs SPY +22.3% [2][5] | ❌ FAIL |
+| #   | Criterion                             | Reading                                | Result  |
+| --- | ------------------------------------- | -------------------------------------- | ------- |
+| 1   | Price above 50-day                    | $14.50 > $14.03 (+3.4%) [2]            | ✅ PASS |
+| 2   | Price above 150-day                   | $14.50 < $15.61 (−7.1%) [4]            | ❌ FAIL |
+| 3   | Price above 200-day                   | $14.50 < $16.35 (−11.3%) [2]           | ❌ FAIL |
+| 4   | 50-day above 150-day                  | $14.03 < $15.61 [2][4]                 | ❌ FAIL |
+| 5   | 50-day above 200-day                  | $14.03 < $16.35 [2]                    | ❌ FAIL |
+| 6   | 150-day above 200-day                 | $15.61 < $16.35 [4][2]                 | ❌ FAIL |
+| 7   | 200-day rising                        | Falling (−0.16 over 10 sessions) [4]   | ❌ FAIL |
+| 8   | ≥30% above low AND within 25% of high | +19.1% above low; −40.5% from high [2] | ❌ FAIL |
+| RS  | Relative strength ≥70                 | −21.75% 52-wk vs SPY +22.3% [2][5]     | ❌ FAIL |
 
 **Momentum:** 14-day RSI 53.96 is neutral; 14-week RSI 48.18 and 50-week RSI 46.50 are both **below 50**, i.e., intermediate-term momentum is still bearish-to-flat. Short-term momentum has ticked up (price reclaimed the 50- and 100-day MAs), but the higher-timeframe momentum has not turned. A 1/8 Trend Template means the long-term uptrend is **not** established regardless of how good the fundamentals read [1][2][4].
 
@@ -56,12 +56,12 @@ RKT is the rare case of a **fundamentally inflecting story** — record 6.2% pur
 
 ## 2. 50 / 100 / 150 / 200-Day MA Structure
 
-| MA | Level | Price relation | Slope (10-sess) | Read |
-|---|---|---|---|---|
-| 50-day | $14.03 | +3.4% above [2] | +$0.04 rising [4] | Short-term bid; first support |
-| 100-day | $14.30 | +1.4% above [fact pack] | — | Marginal; easily lost |
-| 150-day | $15.61 | −7.1% below [4] | — | **Overhead; a proper rally must reclaim this** |
-| 200-day | $16.35 | −11.3% below [2] | −$0.16 falling [4] | **Overhead resistance; 0/20 sessions above** |
+| MA      | Level  | Price relation          | Slope (10-sess)    | Read                                           |
+| ------- | ------ | ----------------------- | ------------------ | ---------------------------------------------- |
+| 50-day  | $14.03 | +3.4% above [2]         | +$0.04 rising [4]  | Short-term bid; first support                  |
+| 100-day | $14.30 | +1.4% above [fact pack] | —                  | Marginal; easily lost                          |
+| 150-day | $15.61 | −7.1% below [4]         | —                  | **Overhead; a proper rally must reclaim this** |
+| 200-day | $16.35 | −11.3% below [2]        | −$0.16 falling [4] | **Overhead resistance; 0/20 sessions above**   |
 
 The MA stack is the classic **early Stage 1** configuration: the short MAs are curling up beneath a still-falling long-term MA. For a Stage 2 confirmation we would need (a) price back above the 150-day and 200-day, (b) the 50-day above the 150-day, and (c) the 200-day to flatten/rise. None of those conditions hold today [2][4].
 
@@ -78,12 +78,14 @@ The MA stack is the classic **early Stage 1** configuration: the short MAs are c
 ## 4. Support / Resistance Levels
 
 **Support (top-down):**
+
 - **$14.03** — 50-day SMA (first near-term support) [2]
 - **$13.02–13.22** — Aug 6 earnings-day intraday low / close [4]
 - **$12.57–12.78** — Jul 23 swing low [4]
 - **$12.17** — Jun 8 major low / 52-week low — **the base floor and hard invalidation level** [2][4]
 
 **Resistance (bottom-up):**
+
 - **$15.18–15.34** — Aug 13 / Jul 16 swing highs [4]
 - **$15.86** — May 8 swing high [4]
 - **$16.25–16.39** — Jun 15 / Jul 1 base-top highs [4]
@@ -105,7 +107,7 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 - **Short interest** declining: 98.68M vs 104.02M prior month (3.23 days to cover) [2]; institutions own ~34.2% [fact pack].
 - **Post-earnings analyst actions were mixed-to-negative:** J.P. Morgan cut PT $16→$14 (Aug 11); RBC $15→$16 (Aug 12); KBW $20→$19 (Aug 10); Morgan Stanley held $19 (Aug 7) [3].
 
-**Verdict:** There is *emerging* accumulation at the base lows (the Aug 13 volume-advance; shrinking pullback volume), but **no confirmed institutional breakout** — the 200-day has not been reclaimed, and one strong day does not make a Stage 2. Price↑+Volume↑ is only just beginning to appear; we have not yet seen the sustained institutional demand Minervini requires [4].
+**Verdict:** There is _emerging_ accumulation at the base lows (the Aug 13 volume-advance; shrinking pullback volume), but **no confirmed institutional breakout** — the 200-day has not been reclaimed, and one strong day does not make a Stage 2. Price↑+Volume↑ is only just beginning to appear; we have not yet seen the sustained institutional demand Minervini requires [4].
 
 ---
 
@@ -122,9 +124,11 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 ## 7. Risk / Reward Bands
 
 **Buying here ($14.50) is wrong risk/reward:**
+
 - Risk to the base floor $12.17 ≈ **−16%**; reward to the pivot $16.40 ≈ **+13%** → **~0.8:1**. Buying mid-base with overhead supply and a falling 200-day violates Minervini's "buy at the pivot, not in the middle of the base" rule [profile].
 
 **The setup to wait for (breakout trade):**
+
 - **Current price:** $14.50 [1]
 - **Pivot:** $16.40 (200-day + base top) [2][4]
 - **Ideal buy zone:** $16.40–16.75 (buy on/just above the pivot; do not chase) [profile]
@@ -134,6 +138,7 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 - **Stretch target:** $20–21 (analyst high-PT zone) → reward ≈ $3.60–4.60 → **~3.3–4.2:1**
 
 **Position sizing (when the setup triggers):**
+
 - Recommended **0.5–1.0% account risk** per trade [profile]. Example: $100k account, 1% risk = $1,000; risk/share $1.10 → **~900 shares (~$14.9k ≈ 15% of account)**. Size by risk first, conviction second; never larger for a Stage-1 breakout than for a Stage-2 leader [profile].
 - If the breakout fails and price closes back below $16.40, or tags the $15.30 stop, **exit immediately** — do not widen the stop, do not average down [profile].
 
@@ -142,7 +147,8 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 ## 8. Catalysts
 
 **Real but unconfirmed (the "why now" is speculative):**
-1. **Fed pivot → refi wave.** 30-yr fixed is 6.67% (Aug 13, 2026, Freddie Mac) [6]; the Q2 transcript flags "the toughest spring housing markets in years," existing-home sales ~4M annualized, and a Q3 market expected *smaller* than Q2 (first since 2022) [7]. Rocket's ammunition: **$2T servicing UPB, 26% of MSR above 6% note rate, 57% of serviced clients refi-prime, 14.3% refi share (record)** [7]. If the Fed cuts and rates fall toward 6%, a large refi wave is the highest-leverage catalyst in the story — but it is **upcoming/speculative, not newly confirmed**. Mortgage rates are near one-year highs, not falling [6].
+
+1. **Fed pivot → refi wave.** 30-yr fixed is 6.67% (Aug 13, 2026, Freddie Mac) [6]; the Q2 transcript flags "the toughest spring housing markets in years," existing-home sales ~4M annualized, and a Q3 market expected _smaller_ than Q2 (first since 2022) [7]. Rocket's ammunition: **$2T servicing UPB, 26% of MSR above 6% note rate, 57% of serviced clients refi-prime, 14.3% refi share (record)** [7]. If the Fed cuts and rates fall toward 6%, a large refi wave is the highest-leverage catalyst in the story — but it is **upcoming/speculative, not newly confirmed**. Mortgage rates are near one-year highs, not falling [6].
 2. **Market-share compounding.** Record purchase share 6.2% (from 5.5% Q4'25), 45% YoY growth in D2C purchase volume, Redfin attach rate 0.47 → 0.50 target, Mr. Cooper synergies $400M+ [7]. This is a real, measurable, ongoing driver.
 3. **Earnings acceleration (analyst view).** Consensus FY26 EPS $0.62 (+120.95%) and FY27 $0.87 (+40.5%); FY26 revenue $10.95B (+54.9%) [3].
 
@@ -152,17 +158,17 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 
 ## 9. Scenario Analysis + Expected Return Distribution (12-month, trading lens, from $14.50)
 
-| Scenario | Prob.* | Price target | 12-mo return |
-|---|---|---|---|
-| **Bear** — no breakout; rates stay ~6.5–7%; market shrinks; Q3/Q4 revenue disappoint; breaks base floor | 25% | $11.50–12.20 | **≈ −20%** |
-| **Base/grind** — holds $12.5–16.5, no trend; builds the base longer | 35% | $13.00–16.50 | **≈ +4%** |
-| **Bull** — volume breakout above $16.40; Fed pivot begins; refi wave starts; analyst PTs $17.70–19 hit | 30% | $17.70–19.50 | **≈ +28%** |
-| **Strong bull** — rapid rate relief; full refi wave (26% MSR book >6%); high-PT $21+ zone | 10% | $21.00–24.00 | **≈ +55%** |
+| Scenario                                                                                                | Prob.\* | Price target | 12-mo return |
+| ------------------------------------------------------------------------------------------------------- | ------- | ------------ | ------------ |
+| **Bear** — no breakout; rates stay ~6.5–7%; market shrinks; Q3/Q4 revenue disappoint; breaks base floor | 25%     | $11.50–12.20 | **≈ −20%**   |
+| **Base/grind** — holds $12.5–16.5, no trend; builds the base longer                                     | 35%     | $13.00–16.50 | **≈ +4%**    |
+| **Bull** — volume breakout above $16.40; Fed pivot begins; refi wave starts; analyst PTs $17.70–19 hit  | 30%     | $17.70–19.50 | **≈ +28%**   |
+| **Strong bull** — rapid rate relief; full refi wave (26% MSR book >6%); high-PT $21+ zone               | 10%     | $21.00–24.00 | **≈ +55%**   |
 
-*Probabilities are the analyst's estimates, not from any source.
+\*Probabilities are the analyst's estimates, not from any source.
 
 - **Probability-weighted expected return ≈ +10% over 12 months**, but the distribution is **fat-tailed and high-beta (β 2.21)** [1] — the left tail (−20%) is as wide as the right tail (+55%).
-- **Key Minervini insight:** the expected return *from a random entry today* (+10% with 0.8:1 risk/reward) is materially worse than the expected return *from the pivot* ($16.40 entry, ~6.7% defined risk, 1.9–4.2:1 reward) — which is precisely why the correct action is **wait for the setup**, not buy the story [profile].
+- **Key Minervini insight:** the expected return _from a random entry today_ (+10% with 0.8:1 risk/reward) is materially worse than the expected return _from the pivot_ ($16.40 entry, ~6.7% defined risk, 1.9–4.2:1 reward) — which is precisely why the correct action is **wait for the setup**, not buy the story [profile].
 
 ---
 
@@ -170,32 +176,33 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 
 **Trade Quality Scorecard** (16 dimensions, per the SEPA framework):
 
-| Dimension | Score | Assessment |
-|---|---|---|
-| Earnings Growth | 8/10 | Q2'26 most profitable in 4 yrs; FY26 EPS +121% [3][7] |
-| Earnings Acceleration | 7/10 | Adj EPS $0.15 → $0.16 QoQ; margin 26%→28% [7] |
-| Revenue Growth | 7/10 | +98.8% TTM — but heavily M&A-driven (Redfin/Cooper) [1] |
-| Margin Expansion | 8/10 | Adj EBITDA margin 28% [7] |
-| Trend Template | **1/10** | 1/8 criteria — **critical failure** [2][4] |
-| Stage 2 Structure | **1/10** | Stage 1 basing below falling 200-day [4] |
-| Relative Strength | **1/10** | −21.75% vs SPY +22.3% — laggard [2][5] |
-| Industry Leadership | 3/10 | #1 lender/servicer, but mortgage industry is a weak group [1][7] |
-| VCP Quality | 2/10 | No completed VCP; loose base [4] |
-| Volume / Accumulation | 5/10 | Accumulation at lows + drying pullback vol; no breakout [4] |
-| Institutional Sponsorship | 4/10 | 34% inst.; short interest declining; JPM PT cut [2][3] |
-| Catalyst | 7/10 | Refi wave real but unconfirmed; share gains real [6][7] |
-| Market Environment | 6/10 | S&P confirmed uptrend, but RKT's sector weak & stock lagging [5] |
-| Entry-Point Quality | **1/10** | No valid entry; mid-base [4] |
-| Risk/Reward | 3/10 | 0.8:1 from here; acceptable only at the pivot |
-| Price Extension | 2/10 | −40.5% from high — extended *down*, not a leader's profile |
+| Dimension                 | Score    | Assessment                                                       |
+| ------------------------- | -------- | ---------------------------------------------------------------- |
+| Earnings Growth           | 8/10     | Q2'26 most profitable in 4 yrs; FY26 EPS +121% [3][7]            |
+| Earnings Acceleration     | 7/10     | Adj EPS $0.15 → $0.16 QoQ; margin 26%→28% [7]                    |
+| Revenue Growth            | 7/10     | +98.8% TTM — but heavily M&A-driven (Redfin/Cooper) [1]          |
+| Margin Expansion          | 8/10     | Adj EBITDA margin 28% [7]                                        |
+| Trend Template            | **1/10** | 1/8 criteria — **critical failure** [2][4]                       |
+| Stage 2 Structure         | **1/10** | Stage 1 basing below falling 200-day [4]                         |
+| Relative Strength         | **1/10** | −21.75% vs SPY +22.3% — laggard [2][5]                           |
+| Industry Leadership       | 3/10     | #1 lender/servicer, but mortgage industry is a weak group [1][7] |
+| VCP Quality               | 2/10     | No completed VCP; loose base [4]                                 |
+| Volume / Accumulation     | 5/10     | Accumulation at lows + drying pullback vol; no breakout [4]      |
+| Institutional Sponsorship | 4/10     | 34% inst.; short interest declining; JPM PT cut [2][3]           |
+| Catalyst                  | 7/10     | Refi wave real but unconfirmed; share gains real [6][7]          |
+| Market Environment        | 6/10     | S&P confirmed uptrend, but RKT's sector weak & stock lagging [5] |
+| Entry-Point Quality       | **1/10** | No valid entry; mid-base [4]                                     |
+| Risk/Reward               | 3/10     | 0.8:1 from here; acceptable only at the pivot                    |
+| Price Extension           | 2/10     | −40.5% from high — extended _down_, not a leader's profile       |
 
 **Minervini Setup Score: ~41/100 (66/160).** Per the profile, the **critical failures override the score**: a stock that fails the Trend Template, sits in Stage 1, and is a relative-strength laggard cannot receive a Buy recommendation merely because fundamentals score highly [profile].
 
-**Final classification: C — Watchlist (not currently actionable).** On pure technicals this is D-level (fails major criteria); it is lifted to **C** by the genuine earnings inflection, real market-share catalyst, and the *emerging* (not completed) base. It is **not** an A/B setup and it is **not** a "great trade" today.
+**Final classification: C — Watchlist (not currently actionable).** On pure technicals this is D-level (fails major criteria); it is lifted to **C** by the genuine earnings inflection, real market-share catalyst, and the _emerging_ (not completed) base. It is **not** an A/B setup and it is **not** a "great trade" today.
 
 **Action: "No setup — watch only."** Buy only on: (a) a **volume breakout above $16.40** closing strong (≥~42M shares), or (b) a **tighter VCP** forming with a defined pivot above $15.18. Add to watchlist; do not buy mid-base.
 
 **Failure analysis — how this trade could go wrong (earliest warnings):**
+
 - **Break below $12.17** on volume → base fails; the setup is dead; avoid entirely [4].
 - **Failed breakout at $16.40** (rejection on heavy volume) → base is distribution; stand aside [profile].
 - **Q3 (late Oct 2026) revenue miss / another earnings gap down** — beta 2.21 and a seller's tape mean the earnings event itself is a binary risk [1][7].
@@ -217,7 +224,7 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 9. **SEC EDGAR filings (CIK 0001805284)** — https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001805284&type=10-K — FY2025 10-K / Q2'26 10-Q (from shared fact pack).
 10. **Macrotrends — RKT shares outstanding** — https://www.macrotrends.net/stocks/charts/RKT/rocket/shares-outstanding — share-count history; 2.844B at Q2'26 (2025 recap artifact) (from shared fact pack).
 
-*Derived technicals (150-day SMA, MA slopes, session counts above the 200-day, scenario probabilities) are computed from source [4] or are labeled estimates. Not investment advice.*
+_Derived technicals (150-day SMA, MA slopes, session counts above the 200-day, scenario probabilities) are computed from source [4] or are labeled estimates. Not investment advice._
 
 ---
 
@@ -229,4 +236,4 @@ Note the **descending base tops**: $17.65 (Mar) → $17.36 (Apr) → $15.86 (May
 - **Buy (entry) zone:** **$16.40–$16.75** — volume breakout above the pivot (200-day $16.35 + base top $16.39) on ≥~1.5× avg volume (~42M+); maximum chase ~$17.00. Alternative: a tighter VCP pivot above $15.18. **Do not buy mid-base at $14.50.**
 - **Sell (exit) zone:** Initial stop **$15.30** (below 200-day; ~6.7% risk). If long after breakout: exit on a close back below $16.40 or break of the 50-day $14.03; scale out at $18.50 (first target) and $20–21 (stretch).
 - **Key levels:** Support **$14.03** (50d) / **$13.02** (earnings low) / **$12.57** (Jul 23) / **$12.17** (base floor — invalidation). Resistance **$15.18–15.34** / **$16.35–16.40** (200-day + pivot) / **$17.36** / **$18.49** / **~$20–21**.
-- **Top risks:** (1) Rates stay high / Fed no pivot → mortgage market keeps shrinking (Q3 guide already down QoQ), revenue disappoints; (2) earnings-gap risk — β 2.21 and a seller's tape (stock fell −4.6% on *record* Q2); (3) failed breakout at $16.40 → base rolls over to a $12.17 retest or new lows; (4) revenue quality/consolidation risk from M&A-driven growth (Redfin, Mr. Cooper) and negative GAAP FCF; (5) leverage optics (−$29.7B GAAP net debt, though mgmt frames 0.9x net corporate leverage) if risk appetite turns.
+- **Top risks:** (1) Rates stay high / Fed no pivot → mortgage market keeps shrinking (Q3 guide already down QoQ), revenue disappoints; (2) earnings-gap risk — β 2.21 and a seller's tape (stock fell −4.6% on _record_ Q2); (3) failed breakout at $16.40 → base rolls over to a $12.17 retest or new lows; (4) revenue quality/consolidation risk from M&A-driven growth (Redfin, Mr. Cooper) and negative GAAP FCF; (5) leverage optics (−$29.7B GAAP net debt, though mgmt frames 0.9x net corporate leverage) if risk appetite turns.

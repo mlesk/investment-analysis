@@ -1,4 +1,5 @@
 # RKT (NYSE: RKT) — Buffett-Style Value Investment Analysis
+
 ### Rocket Companies, Inc. · 2026-08-17 · Reference price $14.50
 
 **Bottom line first:** Rocket Companies is a genuine, well-run franchise with real structural advantages — it is simultaneously the largest US mortgage **lender** and the largest **servicer**, owns the Redfin purchase funnel, and derives ~70% of revenue from recurring or less rate-sensitive businesses, with record market-share gains and a 28% adjusted-EBITDA margin delivered even in one of the toughest spring housing markets in years. But it is **not a Buffett "buy" at $14.50.** This is a rate-cyclical, balance-sheet-heavy financial whose GAAP economics are thin (net margin ~4.6% TTM; negative TTM free cash flow; tangible book value −$7.97B), whose stock-based compensation (~$430M TTM) is roughly equal to reported net income ($471M), and which now carries ~$10.6B goodwill and ~$20.9B intangibles from the 2025 Mr. Cooper/Redfin acquisitions. My through-cycle owner-earnings DCF and normalized-earnings cross-check put base intrinsic value near **$9/share** (bear ~$4.50, bull ~$17, weighted ~$10) — meaning the market's ~20x forward P/E on cyclical earnings provides **no margin of safety** today.
@@ -11,25 +12,25 @@
 
 # 1. Executive Summary
 
-| Dimension | Score | Assessment |
-| --- | ---: | --- |
-| Business simplicity | **6/10** | Conceptually simple (lend, service, sell homes); balance sheet/accounting complex |
-| Circle of competence | **7/10** | Understandable, but a financial with matched-asset debt and MSR marks |
-| Intangible moat (brand/licensing) | **5/10** | Strong consumer brand awareness, but mortgages are a price/rate game |
-| Switching costs | **7/10** | Servicing recapture (57% of refi closings) at ~zero CAC is real but not lock-in |
-| Network effects | **5/10** | Redfin two-sided funnel + cross-sell ecosystem; moderate, not Visa-like |
-| Cost advantage | **8/10** | Scale + AI-driven productivity + IG balance sheet = the real moat |
-| **Overall moat** | **Moderate (7/10)** | Real, widening, but rate-cyclical; not a wide "toll bridge" |
-| Management integrity | **8/10** | Candid, disciplined capital; only IG-rated mortgage company; founder control caveat |
-| Capital allocation | **6/10** | $14B+ M&A is a big, leveraged bet; small buybacks; no recurring dividend |
-| Operational capability | **8/10** | Record share gains, 28% adj-EBITDA margin, synergies ahead of plan |
-| Financial strength | **6/10** | $11.2B liquidity, 0.9x net leverage — but negative TTM FCF, TBV −$7.97B |
-| Earnings quality | **4/10** | SBC ≈ net income; huge amortization; GAAP margins flattered by adjustments |
-| Growth prospects | **8/10** | Share gains + synergies + Redfin + home equity + refi optionality |
-| Valuation | **4/10** | ~20x forward on cyclical earnings; price ~45–60% above base IV |
-| Margin of safety | **3/10** | None at $14.50; price above base intrinsic value |
-| Buffett fit | **5/10** | Good franchise, wrong price; cyclical economics underperform required return |
-| **Overall** | **C** | **Watch — do not initiate at $14.50; buy zone ≤ ~$10** |
+| Dimension                         |               Score | Assessment                                                                          |
+| --------------------------------- | ------------------: | ----------------------------------------------------------------------------------- |
+| Business simplicity               |            **6/10** | Conceptually simple (lend, service, sell homes); balance sheet/accounting complex   |
+| Circle of competence              |            **7/10** | Understandable, but a financial with matched-asset debt and MSR marks               |
+| Intangible moat (brand/licensing) |            **5/10** | Strong consumer brand awareness, but mortgages are a price/rate game                |
+| Switching costs                   |            **7/10** | Servicing recapture (57% of refi closings) at ~zero CAC is real but not lock-in     |
+| Network effects                   |            **5/10** | Redfin two-sided funnel + cross-sell ecosystem; moderate, not Visa-like             |
+| Cost advantage                    |            **8/10** | Scale + AI-driven productivity + IG balance sheet = the real moat                   |
+| **Overall moat**                  | **Moderate (7/10)** | Real, widening, but rate-cyclical; not a wide "toll bridge"                         |
+| Management integrity              |            **8/10** | Candid, disciplined capital; only IG-rated mortgage company; founder control caveat |
+| Capital allocation                |            **6/10** | $14B+ M&A is a big, leveraged bet; small buybacks; no recurring dividend            |
+| Operational capability            |            **8/10** | Record share gains, 28% adj-EBITDA margin, synergies ahead of plan                  |
+| Financial strength                |            **6/10** | $11.2B liquidity, 0.9x net leverage — but negative TTM FCF, TBV −$7.97B             |
+| Earnings quality                  |            **4/10** | SBC ≈ net income; huge amortization; GAAP margins flattered by adjustments          |
+| Growth prospects                  |            **8/10** | Share gains + synergies + Redfin + home equity + refi optionality                   |
+| Valuation                         |            **4/10** | ~20x forward on cyclical earnings; price ~45–60% above base IV                      |
+| Margin of safety                  |            **3/10** | None at $14.50; price above base intrinsic value                                    |
+| Buffett fit                       |            **5/10** | Good franchise, wrong price; cyclical economics underperform required return        |
+| **Overall**                       |               **C** | **Watch — do not initiate at $14.50; buy zone ≤ ~$10**                              |
 
 ---
 
@@ -46,11 +47,11 @@ It makes money four ways ([SA][4], [SA][6]):
 3. **Real estate** — Redfin brokerage/lead generation (50M monthly active users) feeding the funnel.
 4. **Adjacent fintech** — Rocket Home Equity (largest home-equity lender; 250k borrowers, $24B accessed), Rocket Loans (volume nearly doubled YoY in H1'26), Rocket Money subscriptions.
 
-Two things are unusual about the *economics* vs. a typical Buffett holding. First, **~70% of revenue is recurring or less rate-sensitive** (servicing, purchase, cash-out refi, home equity, Redfin), with only ~30% exposed to rate-and-term refi ([SA][6]). Second, the **GAAP statements are misleading** — revenue/net income are distorted by loan-sale timing, MSR marks, warehouse financing, acquisition amortization, and $430M TTM of SBC. A Buffett analyst must look through the cycle and the accounting to find owner earnings (Sections 7 and 11).
+Two things are unusual about the _economics_ vs. a typical Buffett holding. First, **~70% of revenue is recurring or less rate-sensitive** (servicing, purchase, cash-out refi, home equity, Redfin), with only ~30% exposed to rate-and-term refi ([SA][6]). Second, the **GAAP statements are misleading** — revenue/net income are distorted by loan-sale timing, MSR marks, warehouse financing, acquisition amortization, and $430M TTM of SBC. A Buffett analyst must look through the cycle and the accounting to find owner earnings (Sections 7 and 11).
 
-**Will this business still be needed in 10 years?** Yes. People will still buy homes, need mortgages, and carry servicing relationships a decade from now; homeownership demand is durable. The commercial essence of mortgage origination/servicing will be *disrupted in process* (AI, digital closing, VantageScore, trigger-lead bans) but not in *substance* — and Rocket is positioned as a low-cost, technology-enabled scale leader, likely a consolidator rather than a victim. ([SEC][1], [SA][6])
+**Will this business still be needed in 10 years?** Yes. People will still buy homes, need mortgages, and carry servicing relationships a decade from now; homeownership demand is durable. The commercial essence of mortgage origination/servicing will be _disrupted in process_ (AI, digital closing, VantageScore, trigger-lead bans) but not in _substance_ — and Rocket is positioned as a low-cost, technology-enabled scale leader, likely a consolidator rather than a victim. ([SEC][1], [SA][6])
 
-**Circle of competence: 7/10.** The business is understandable to ordinary people. The challenge is not comprehension but *predictability* — interest-rate cycles, MSR valuation swings, and acquisition accounting make the earnings path genuinely hard to forecast, which is precisely why I demand a wide margin of safety.
+**Circle of competence: 7/10.** The business is understandable to ordinary people. The challenge is not comprehension but _predictability_ — interest-rate cycles, MSR valuation swings, and acquisition accounting make the earnings path genuinely hard to forecast, which is precisely why I demand a wide margin of safety.
 
 ---
 
@@ -70,7 +71,7 @@ This is not a technology-threat story; if anything it is a **technology-as-moat-
 
 ## 4.1 Intangible Assets (brand, licensing) — 5/10
 
-- **Brand:** Rocket is one of the most recognized consumer mortgage brands in America (heavy advertising, arena sponsorships, high-trust positioning). Brand *helps* conversion and lowers acquisition cost, but **consumers do not pay a price premium for a mortgage** — it is a rate-and-service game. Rocket's brand is an efficiency asset, not pricing power. Redfin adds a strong consumer search brand. ([SEC][1], [SA][6])
+- **Brand:** Rocket is one of the most recognized consumer mortgage brands in America (heavy advertising, arena sponsorships, high-trust positioning). Brand _helps_ conversion and lowers acquisition cost, but **consumers do not pay a price premium for a mortgage** — it is a rate-and-service game. Rocket's brand is an efficiency asset, not pricing power. Redfin adds a strong consumer search brand. ([SEC][1], [SA][6])
 - **Regulatory/licensing:** Mortgage lending/servicing is licensed state-by-state with capital requirements — a real but surmountable barrier (UWMC, PFSI, etc. all operate). The only investment-grade-rated US mortgage company enjoys a funding/hedging-cost advantage, an intangible with real dollar value. ([SA][6])
 
 **Intangible moat: moderate.** Helpful brand and licensing; no Coke-like pricing power.
@@ -83,7 +84,7 @@ This is Rocket's second-best source of moat. Servicing creates a multi-decade cl
 - **Recapture rates on the Mr. Cooper portfolio reached another record**; Rocket claims the best recapture in the industry on both originated and correspondent/bulk-acquired loans ([SA][6]).
 - $320B of the owned MSR portfolio (26%) carries a note rate **above 6%** — a large pool "first in line to refinance" when rates fall, and "ours to recapture" ([SA][6]).
 
-Caveat: these are *behavioral/data-driven* advantages, not contractual lock-in. Borrowers can refinance with anyone. The switching cost is really **Rocket's low cost of re-acquisition**, not a penalty the customer pays to leave. Still, the data advantage (knowing the client, rate, and life event timing) is genuinely hard to replicate.
+Caveat: these are _behavioral/data-driven_ advantages, not contractual lock-in. Borrowers can refinance with anyone. The switching cost is really **Rocket's low cost of re-acquisition**, not a penalty the customer pays to leave. Still, the data advantage (knowing the client, rate, and life event timing) is genuinely hard to replicate.
 
 ## 4.3 Network Effects — 5/10
 
@@ -91,7 +92,7 @@ Partly present, partly absent.
 
 - **Redfin** is a two-sided market (buyers ↔ agents) with 50M MAU and ~25k exclusive listings via the Compass partnership — more inventory attracts more serious buyers, who produce more mortgage leads ([SA][6]).
 - The **ecosystem flywheel** (servicing → recapture → home equity → Rocket Loans; >50% of Rocket Loans volume comes from existing servicing clients) makes every product more valuable as the installed base grows ([SA][6]).
-- But this is **not a classic network effect** — mortgage economics don't improve for one client just because another joins. It's more accurately an *eco-system cross-sell* advantage. Moderately defensible, not Visa-like.
+- But this is **not a classic network effect** — mortgage economics don't improve for one client just because another joins. It's more accurately an _eco-system cross-sell_ advantage. Moderately defensible, not Visa-like.
 
 ## 4.4 Cost Advantages — 8/10 (the core moat)
 
@@ -120,12 +121,12 @@ Rocket's strongest and most durable edge:
 
 The 2025 capital program is the crux:
 
-- **~$14B+ in M&A** (Mr. Cooper — the largest servicer — and Redfin) was a bold, high-stakes bet to become the integrated homeownership platform. It is being *executed well so far* (three straight quarters of share gains + margin expansion across rising and falling rates; $400M+ synergies on track, plus ~$100M extra). ([SA][6])
+- **~$14B+ in M&A** (Mr. Cooper — the largest servicer — and Redfin) was a bold, high-stakes bet to become the integrated homeownership platform. It is being _executed well so far_ (three straight quarters of share gains + margin expansion across rising and falling rates; $400M+ synergies on track, plus ~$100M extra). ([SA][6])
 - **But the accounting cost is heavy:** ~$10.6B goodwill + ~$20.9B intangibles; tangible book value is **−$7.97B**. If the integration thesis stalls, impairment risk is real. Goodwill is ~26% of total assets. ([SA][5])
 - **Shareholder returns are minimal:** buybacks were small (−$177M TTM, −$105M FY25) and there is **no recurring dividend** (only the 2025 one-time $0.80 special to Class A). Net dilution is driven by SBC. ([SA][5], fact pack)
 - **Balance sheet use is smart:** the $1.5B senior-note offering refinanced debt at IG pricing and funded liquidity (+$1.8B QoQ to $11.2B). Investing through the cycle while competitors pull back is exactly the counter-cyclical behavior Buffett admires — provided the M&A returns ultimately clear the cost of capital. ([SA][6])
 
-Net: bold, capable, but *leveraged to a single strategic thesis*. Score 6/10.
+Net: bold, capable, but _leveraged to a single strategic thesis_. Score 6/10.
 
 ## 5.3 Operational Capability — 8/10
 
@@ -154,7 +155,7 @@ Net: bold, capable, but *leveraged to a single strategic thesis*. Score 6/10.
 
 ## 6.3 Financial Safety
 
-- **GAAP leverage looks scary; economic leverage is fine.** Total debt $33.2B vs. cash+securities $3.4B → net debt −$29.7B; D/E 1.41; debt/EBITDA 12.9x; interest coverage 1.61x; Altman Z 1.26. **But** the debt is dominated by warehouse lines and MSR/securitization financing *matched to loan and MSR assets*. Management's economic frame: **net corporate leverage 0.9x EBITDA**, $11.2B liquidity, and an IG rating — the only public mortgage company under 1x leverage. ([SA][5], [SA][6])
+- **GAAP leverage looks scary; economic leverage is fine.** Total debt $33.2B vs. cash+securities $3.4B → net debt −$29.7B; D/E 1.41; debt/EBITDA 12.9x; interest coverage 1.61x; Altman Z 1.26. **But** the debt is dominated by warehouse lines and MSR/securitization financing _matched to loan and MSR assets_. Management's economic frame: **net corporate leverage 0.9x EBITDA**, $11.2B liquidity, and an IG rating — the only public mortgage company under 1x leverage. ([SA][5], [SA][6])
 - **Hidden/off-balance-sheet considerations:** the $2T servicing portfolio (much subserviced/partner-owned), MSR hedging via TBAs/futures, and acquisition earn-outs are the main contingencies. Goodwill $10.6B + intangibles $20.9B vs. equity $23.5B means tangible book is **−$7.97B** — an impairment to intangibles would hit book directly. ([SA][5])
 
 ## 6.4 Accounting Prudence
@@ -190,13 +191,13 @@ RKT cannot be valued on trailing GAAP (NI $471M; FCF −$772M — both distorted
 
 Three scenarios on a 10-year owner-earnings DCF (discount 10–12% per profile; terminal growth 2–3%, ≤ GDP; **economic net-debt convention: ~$2.7B corporate net debt at 0.9x EBITDA — disclosed, warehouse/MSR financing excluded as asset-matched**):
 
-| Scenario | Normalized OE₀ | Growth (yrs 1–10) | Discount rate | Terminal g | Equity value | **Value/share** |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| **Bear (conservative)** | $1.1B | 3% | 12% | 2% | ~$9.3B | **~$3.30** |
-| **Base (neutral)** | $1.5B | 5% | 10% | 2.5% | ~$23.5B | **~$8.30** |
-| **Bull (optimistic)** | $2.4B | 7% | 10% | 3% | ~$44.5B | **~$15.70** |
+| Scenario                | Normalized OE₀ | Growth (yrs 1–10) | Discount rate | Terminal g | Equity value | **Value/share** |
+| ----------------------- | -------------: | ----------------: | ------------: | ---------: | -----------: | --------------: |
+| **Bear (conservative)** |          $1.1B |                3% |           12% |         2% |       ~$9.3B |      **~$3.30** |
+| **Base (neutral)**      |          $1.5B |                5% |           10% |       2.5% |      ~$23.5B |      **~$8.30** |
+| **Bull (optimistic)**   |          $2.4B |                7% |           10% |         3% |      ~$44.5B |     **~$15.70** |
 
-*(All values are estimates from the stated inputs; shares = 2.83B; corporate net debt ~$2.7B is an estimate. Discount rates 10–12% are at the Buffett-appropriate end; a lower WACC would raise values proportionally.)*
+_(All values are estimates from the stated inputs; shares = 2.83B; corporate net debt ~$2.7B is an estimate. Discount rates 10–12% are at the Buffett-appropriate end; a lower WACC would raise values proportionally.)_
 
 **Cross-check — normalized-earnings multiple:** On ~$1.8B through-cycle adjusted earnings at a fair 15–18x multiple for a high-quality cyclical with 70% recurring revenue, equity value is ~$27–32B → **~$9.5–11.5/share**. On ~$2.0B recovery earnings at 15x → ~$10.6/share. This broadly **corroborates the base DCF (~$8–11)** and is far below the market's 20x forward pricing.
 
@@ -206,17 +207,17 @@ Three scenarios on a 10-year owner-earnings DCF (discount 10–12% per profile; 
 
 # 9. Relative Valuation
 
-| Metric | RKT | UWMC | PFSI | COOP (Mr. Cooper) | RDFN (Redfin) |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Market cap | $41.06B | $2.39B | $3.96B | $13.49B (acq.) | $1.43B (acq.) |
-| P/E (trailing) | 81.9x | n/m | 10.5x | 24.1x | n/m |
-| Forward P/E | 20.2x | 6.1x | 8.8x | 15.2x | n/m |
-| P/S | 4.01x | 0.82x | 1.19x | 6.0x | 1.33x |
-| P/B | 1.74x | 3.81x | 0.91x | 2.65x | n/m |
-| EV/EBITDA | 27.4x | 33.6x | n/a | 12.9x | n/a |
-| ROE | 3.03% | −7.68% | 9.38% | 11.76% | n/a |
+| Metric         |     RKT |   UWMC |   PFSI | COOP (Mr. Cooper) | RDFN (Redfin) |
+| -------------- | ------: | -----: | -----: | ----------------: | ------------: |
+| Market cap     | $41.06B | $2.39B | $3.96B |    $13.49B (acq.) | $1.43B (acq.) |
+| P/E (trailing) |   81.9x |    n/m |  10.5x |             24.1x |           n/m |
+| Forward P/E    |   20.2x |   6.1x |   8.8x |             15.2x |           n/m |
+| P/S            |   4.01x |  0.82x |  1.19x |              6.0x |         1.33x |
+| P/B            |   1.74x |  3.81x |  0.91x |             2.65x |           n/m |
+| EV/EBITDA      |   27.4x |  33.6x |    n/a |             12.9x |           n/a |
+| ROE            |   3.03% | −7.68% |  9.38% |            11.76% |           n/a |
 
-*Sources: RKT [SA][4][5]; UWMC [SA][7]; PFSI [SA][8]; COOP [SA][9]; RDFN [SA][10].*
+_Sources: RKT [SA][4][5]; UWMC [SA][7]; PFSI [SA][8]; COOP [SA][9]; RDFN [SA][10]._
 
 - Versus the two independent public originator/servicers, RKT trades at **2–3x the forward P/E** (20x vs. UWMC 6x, PFSI 8.8x) — a premium the market justifies on quality (IG balance sheet, scale, recurring revenue mix, Redfin funnel) but which **eliminates any valuation cushion**.
 - RKT's own **P/B 1.74x against ROE ~3%** is expensive relative to book (though book is inflated by goodwill/intangibles and understates the $2T servicing franchise).
@@ -230,7 +231,7 @@ Three scenarios on a 10-year owner-earnings DCF (discount 10–12% per profile; 
 # 10. Margin of Safety
 
 - **Base IV ≈ $9; weighted ≈ $10.** At $14.50, the stock trades **~45–60% above** base intrinsic value and **~45% above** the probability-weighted value. **There is no margin of safety; there is negative margin of safety.**
-- Even the **bull case (~$15.70)** is only marginally above the current price — meaning the market is *already pricing* a largely successful integration, sustained share gains, and rate-recovery earnings, with nothing left for error.
+- Even the **bull case (~$15.70)** is only marginally above the current price — meaning the market is _already pricing_ a largely successful integration, sustained share gains, and rate-recovery earnings, with nothing left for error.
 - For a rate-cyclical financial with thin GAAP margins, negative TBV, SBC ≈ NI, and unproven normalized FCF, I require **at least 30–50% below base IV** — i.e., a buy zone around **$6–9**, with meaningful accumulation only materially lower.
 - Price ladder (my Buffett frame): **>$15–17** too much priced in (reduce/trim); **$11–15** hold/do-not-initiate (current zone); **$9–10** first serious interest; **$6–9** accumulate; **<$6** high-conviction.
 
@@ -249,24 +250,24 @@ Three scenarios on a 10-year owner-earnings DCF (discount 10–12% per profile; 
 
 # 12. Rating & Investment Decision
 
-| Buffett criterion | Score | Verdict |
-| --- | ---: | --- |
-| Understandable business | **6/10** | Simple concept, complex accounting |
-| Durable demand (10-yr) | **8/10** | Homeownership demand is durable |
-| Competitive moat | **7/10** | Moderate, widening (scale × servicing × Redfin × AI) |
-| Brand | **5/10** | Strong awareness, no pricing power |
-| Switching costs | **7/10** | Real recapture advantage, not lock-in |
-| Network effects | **5/10** | Ecosystem cross-sell, not true network |
-| Cost advantage | **8/10** | Best-in-class scale + AI + IG balance sheet |
-| Management integrity | **8/10** | Candid, disciplined |
-| Management execution | **8/10** | Record share, margin expansion, synergies ahead |
-| Capital allocation | **6/10** | Bold M&A, heavy goodwill, minimal buybacks/dividend |
-| Balance sheet | **6/10** | Fortress (liquidity/leverage) but negative TBV |
-| Earnings quality | **4/10** | SBC≈NI, adjustments flatter, FCF negative |
-| Growth | **8/10** | Share gains + rate-recovery optionality |
-| Valuation | **4/10** | ~20x fwd on cyclical earnings |
-| Margin of safety | **3/10** | Negative at $14.50 |
-| **Overall** | **C** | **Watch — do not initiate at $14.50** |
+| Buffett criterion       |    Score | Verdict                                              |
+| ----------------------- | -------: | ---------------------------------------------------- |
+| Understandable business | **6/10** | Simple concept, complex accounting                   |
+| Durable demand (10-yr)  | **8/10** | Homeownership demand is durable                      |
+| Competitive moat        | **7/10** | Moderate, widening (scale × servicing × Redfin × AI) |
+| Brand                   | **5/10** | Strong awareness, no pricing power                   |
+| Switching costs         | **7/10** | Real recapture advantage, not lock-in                |
+| Network effects         | **5/10** | Ecosystem cross-sell, not true network               |
+| Cost advantage          | **8/10** | Best-in-class scale + AI + IG balance sheet          |
+| Management integrity    | **8/10** | Candid, disciplined                                  |
+| Management execution    | **8/10** | Record share, margin expansion, synergies ahead      |
+| Capital allocation      | **6/10** | Bold M&A, heavy goodwill, minimal buybacks/dividend  |
+| Balance sheet           | **6/10** | Fortress (liquidity/leverage) but negative TBV       |
+| Earnings quality        | **4/10** | SBC≈NI, adjustments flatter, FCF negative            |
+| Growth                  | **8/10** | Share gains + rate-recovery optionality              |
+| Valuation               | **4/10** | ~20x fwd on cyclical earnings                        |
+| Margin of safety        | **3/10** | Negative at $14.50                                   |
+| **Overall**             |    **C** | **Watch — do not initiate at $14.50**                |
 
 **Buy conditions (all must hold):** simple business ✓ · wide moat ✗ (moderate) · management integrity ✓ · financial soundness ~ (strong liquidity but weak earnings quality) · clear growth ✓ · **≥30% margin of safety ✗ (price is above IV)** · controllable risks ~ (goodwill/cycle are material). Two of seven are missing or marginal — the deal-breaker is **price**.
 
@@ -297,11 +298,12 @@ Three scenarios on a 10-year owner-earnings DCF (discount 10–12% per profile; 
 
 ---
 
-*Disclaimer: This is an estimate of estimates — a single-lens, price-based judgment using normalized owner earnings, not investment advice. DCF and multiple inputs are estimates and are highly sensitive to the rate cycle, integration outcomes, and the SBC/amortization haircuts applied.*
+_Disclaimer: This is an estimate of estimates — a single-lens, price-based judgment using normalized owner earnings, not investment advice. DCF and multiple inputs are estimates and are highly sensitive to the rate cycle, integration outcomes, and the SBC/amortization haircuts applied._
 
 ---
 
 ## Position Summary
+
 - Rating: **C — Watch** (not a buy at $14.50; no margin of safety — price ~45–60% above base IV)
 - Intrinsic value: bear=$4.50 base=$9.00 bull=$17.00 | weighted=$10.00 (DCF bear $3.30/base $8.30/bull $15.70 blended with 15–18x normalized-earnings cross-check; 25/50/25 probs)
 - Buy zone: **$6–10** (first interest ≤ ~$10, accumulate $6–9, conviction <$6) | Sell/reduce zone: **>$15–17**
