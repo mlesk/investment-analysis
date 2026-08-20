@@ -1,0 +1,84 @@
+{
+  "company": "Lennar Corporation",
+  "ticker": "LEN",
+  "date": "2026-08-17",
+  "inputs": {
+    "price": 86.54,
+    "shares_mm": 240.9,
+    "cash_mm": 1816.0,
+    "debt_mm": 6199.0,
+    "revenue_run_rate_mm": 32737.0,
+    "growth_y1": 0.04,
+    "growth_decay": 0.01,
+    "margin_y1": 0.065,
+    "margin_terminal": 0.095,
+    "tax_rate": 0.25,
+    "wacc": 0.09,
+    "terminal_growth": 0.0225,
+    "roic_terminal": 0.13,
+    "roic_initial": 0.1,
+    "margin_ramp": 0.004,
+    "min_growth": 0.02,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.1,
+      "growth_adj": -0.1,
+      "margin_adj": -0.035,
+      "wacc_adj": 0.02,
+      "tg_adj": -0.0075,
+      "roic_adj": -0.05,
+      "description": "Recession; rates >=7% into 2028; margins stall ~6%; land deposits impaired"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "growth_adj": -0.05,
+      "margin_adj": -0.02,
+      "wacc_adj": 0.01,
+      "tg_adj": -0.005,
+      "roic_adj": -0.02,
+      "description": "Rates stay ~6.7-7%; margin recovery stalls ~7.5%; 2% growth"
+    },
+    {
+      "name": "Base",
+      "probability": 0.35,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Rates ~6%; incentives decline; margins normalize to 9.5% by 2030"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "growth_adj": 0.04,
+      "margin_adj": 0.015,
+      "wacc_adj": -0.01,
+      "tg_adj": 0.0025,
+      "roic_adj": 0.03,
+      "description": "Rates ~5.5-6% in 2027; margins to 11%; 8% Y1 growth"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.1,
+      "growth_adj": 0.09,
+      "margin_adj": 0.03,
+      "wacc_adj": -0.015,
+      "tg_adj": 0.005,
+      "roic_adj": 0.05,
+      "description": "Affordability normalizes; land-light model re-rated; 12.5% margins"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 25,
+    "rev_end": 45,
+    "rev_step": 5,
+    "margin_start": 0.06,
+    "margin_end": 0.12,
+    "margin_step": 0.01
+  }
+}

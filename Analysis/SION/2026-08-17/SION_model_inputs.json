@@ -1,0 +1,89 @@
+{
+  "company": "Sionna Therapeutics, Inc.",
+  "ticker": "SION",
+  "date": "2026-08-17",
+  "inputs": {
+    "price": 5.91,
+    "shares_mm": 45.2,
+    "cash_mm": 268.3,
+    "debt_mm": 0.0,
+    "revenue_run_rate_mm": 150.0,
+    "growth_y1": 0.50,
+    "growth_decay": 0.15,
+    "margin_y1": -0.10,
+    "margin_terminal": 0.40,
+    "tax_rate": 0.21,
+    "wacc": 0.14,
+    "terminal_growth": 0.03,
+    "roic_terminal": 0.25,
+    "roic_initial": 0.30,
+    "margin_ramp": 0.05,
+    "min_growth": 0.03,
+    "horizon_years": 7
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.30,
+      "growth_adj": -0.42,
+      "margin_adj": -0.18,
+      "wacc_adj": 0.03,
+      "tg_adj": -0.025,
+      "roic_adj": -0.10,
+      "description": "SION-451 fails or launches as negligible niche; franchise effectively dead; capital mostly gone"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "growth_adj": -0.25,
+      "margin_adj": -0.10,
+      "wacc_adj": 0.015,
+      "tg_adj": -0.01,
+      "roic_adj": -0.05,
+      "description": "Delayed approval, narrow indication, weak adoption vs Vertex; niche franchise"
+    },
+    {
+      "name": "Base",
+      "probability": 0.25,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Modest second-gen franchise ~5% of CF market; SION-451 combo approved for F508del"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.12,
+      "growth_adj": 0.30,
+      "margin_adj": 0.05,
+      "wacc_adj": -0.015,
+      "tg_adj": 0.005,
+      "roic_adj": 0.05,
+      "description": "Strong franchise; genuine Trikafta alternative; ~12-15% CF market share"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.08,
+      "growth_adj": 0.55,
+      "margin_adj": 0.10,
+      "wacc_adj": -0.02,
+      "tg_adj": 0.01,
+      "roic_adj": 0.08,
+      "description": "CF franchise leader; major Vertex displacement; ~40%+ F508del share"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 1,
+    "rev_end": 6,
+    "margin_start": 0.10,
+    "margin_end": 0.50,
+    "margin_step": 0.05
+  },
+  "sensitivity": {
+    "g_values": [0.01, 0.02, 0.03, 0.04, 0.05],
+    "wacc_values": [0.10, 0.12, 0.14, 0.16, 0.18],
+    "rev_values": [1, 2, 3, 4, 5, 6],
+    "margin_values": [0.10, 0.20, 0.30, 0.40, 0.50]
+  }
+}

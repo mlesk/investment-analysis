@@ -1,0 +1,101 @@
+{
+  "company": "Nike",
+  "ticker": "NKE",
+  "date": "2026-08-17",
+  "market_data": {
+    "current_price": 39.09,
+    "shares_outstanding_mm": 1483,
+    "market_cap_mm": 57990,
+    "enterprise_value_mm": 62440,
+    "previous_close": 40.73,
+    "52_week_high": 80.17,
+    "52_week_low": 38.86
+  },
+  "financials_ttm": {
+    "revenue_mm": 46400,
+    "gross_profit_margin": 0.4325,
+    "net_income_mm": 3110,
+    "net_margin": 0.067,
+    "eps_ttm": 2.10,
+    "operating_income_margin": 0.0901,
+    "cash_mm": 9030,
+    "total_debt_mm": 11040,
+    "fcf_mm": 1890,
+    "roe_ttm": 0.2214,
+    "roa": 0.0809
+  },
+  "valuation": {
+    "pe_ttm": 18.61,
+    "pe_forward": 23.77,
+    "price_to_sales": 1.30,
+    "price_to_book": 4.06,
+    "ev_revenue": 1.35,
+    "ev_ebitda": 12.67
+  },
+  "growth": {
+    "revenue_yoy": 0.0019,
+    "revenue_3yr_cagr": -0.0324,
+    "eps_yoy": -0.0278,
+    "eps_3yr_cagr": -0.1337,
+    "fcf_yoy": -0.4928
+  },
+  "technicals": {
+    "price": 39.09,
+    "sma_200d": 53.09,
+    "sma_100d": 43.88,
+    "sma_50d": 42.75,
+    "price_vs_200sma_pct": -0.2637,
+    "price_vs_100sma_pct": -0.1092,
+    "price_vs_50sma_pct": -0.0856,
+    "rsi_14d": 35.68,
+    "rsi_14w": 33.23,
+    "rsi_50w": 39.96,
+    "w52_high": 80.17,
+    "w52_low": 38.86,
+    "price_vs_52wk_high_pct": -0.5124,
+    "price_vs_52wk_low_pct": 0.0059,
+    "beta_5y": 1.12,
+    "short_interest_pct": 4.77
+  },
+  "dividend": {
+    "annual_yield_fwd": 0.0403,
+    "payout_fwd": 1.64,
+    "payout_ratio": 1.0382,
+    "last_announced": 0.41,
+    "ex_dividend_date": "2026-09-01"
+  },
+  "performance": {
+    "ytd_return": -0.3768,
+    "1y_return": -0.4782,
+    "3y_return": -0.6039,
+    "5y_return": -0.7512
+  },
+  "business": {
+    "headquarters": "Beaverton, Oregon",
+    "founded": 1964,
+    "employees": 73000,
+    "fiscal_year_end": "May 31",
+    "segments": ["North America", "EMEA", "Greater China", "APLA", "Global Brand Divisions", "Converse"]
+  },
+  "recent_news": {
+    "highlights": [
+      "Nike stock at 12-year low on turnaround skepticism",
+      "JP Morgan downgrade to Underweight 8/4/2026, PT $40 (was $47)",
+      "Q4 FY26: Revenue $10.97B flat YoY; Wholesale +6%, Direct -6%, Greater China -11%",
+      "Elliott Hill as new CEO focusing turnaround",
+      "Analyst PT range: $23-$94, average $50.66 (vs current $39.09)"
+    ],
+    "key_issues": [
+      "China weakness and reduced wholesale exposure",
+      "Direct-to-consumer channel pressure",
+      "Margin compression concerns",
+      "Execution risk on turnaround"
+    ]
+  },
+  "sources": {
+    "yahoo_finance": "https://finance.yahoo.com/quote/NKE",
+    "seeking_alpha": "https://seekingalpha.com/symbol/NKE",
+    "trading_view": "https://www.tradingview.com/symbols/NYSE-NKE/",
+    "nike_ir": "https://www.nike.com/corporate/investors"
+  }
+}

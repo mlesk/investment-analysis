@@ -1,0 +1,83 @@
+{
+  "company": "Nike",
+  "ticker": "NKE",
+  "date": "2026-08-17",
+  "inputs": {
+    "price": 39.09,
+    "shares_mm": 1483,
+    "cash_mm": 9030,
+    "debt_mm": 11040,
+    "revenue_run_rate_mm": 46400,
+    "growth_y1": 0.02,
+    "growth_decay": 0.06,
+    "margin_y1": 0.13,
+    "margin_terminal": 0.135,
+    "tax_rate": 0.16,
+    "wacc": 0.081,
+    "terminal_growth": 0.025,
+    "roic_terminal": 0.16,
+    "roic_initial": 0.14,
+    "margin_ramp": 0.015,
+    "min_growth": 0.025,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.10,
+      "growth_adj": -0.025,
+      "margin_adj": -0.12,
+      "wacc_adj": 0.025,
+      "tg_adj": -0.005,
+      "roic_adj": -0.05,
+      "description": "China structural decline; wholesale collapse; competitive pressure from Anta/Li-Ning"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.20,
+      "growth_adj": -0.015,
+      "margin_adj": -0.08,
+      "wacc_adj": 0.015,
+      "tg_adj": -0.0025,
+      "roic_adj": -0.03,
+      "description": "China weakness persists 3+ years; wholesale softness; DTC growth moderates"
+    },
+    {
+      "name": "Base",
+      "probability": 0.35,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Execution on turnaround; China stabilizes and returns to +1-2% growth; margin recovery to normalized 45.5%; DTC to 30%"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "growth_adj": 0.015,
+      "margin_adj": 0.05,
+      "wacc_adj": -0.01,
+      "tg_adj": 0.0025,
+      "roic_adj": 0.03,
+      "description": "China recovers faster (+5% CAGR); DTC penetration accelerates to 35%; pricing power maintained; gross margin 46.5%"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.10,
+      "growth_adj": 0.035,
+      "margin_adj": 0.10,
+      "wacc_adj": -0.015,
+      "tg_adj": 0.01,
+      "roic_adj": 0.05,
+      "description": "China growth strong (+8% CAGR); DTC 40%+ mix; product innovation exceeds expectations; international expansion (India, Vietnam) acceleration"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 5,
+    "rev_end": 15,
+    "margin_start": 0.11,
+    "margin_end": 0.14,
+    "wacc_range": [0.071, 0.11]
+  }
+}

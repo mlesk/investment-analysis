@@ -1,0 +1,90 @@
+{
+  "company": "Rocket Companies, Inc.",
+  "ticker": "RKT",
+  "date": "2026-08-17",
+  "inputs": {
+    "price": 14.5,
+    "shares_mm": 2830.0,
+    "cash_mm": 3448.0,
+    "debt_mm": 5748.0,
+    "revenue_run_rate_mm": 10243.0,
+    "growth_y1": 0.1,
+    "growth_decay": 0.02,
+    "margin_y1": 0.17,
+    "margin_terminal": 0.2,
+    "tax_rate": 0.26,
+    "wacc": 0.09,
+    "terminal_growth": 0.03,
+    "roic_terminal": 0.25,
+    "roic_initial": 0.3,
+    "margin_ramp": 0.005,
+    "min_growth": 0.035,
+    "horizon_years": 5
+  },
+  "scenarios": [
+    {
+      "name": "Severe Bear",
+      "probability": 0.1,
+      "growth_adj": -0.13,
+      "margin_adj": -0.08,
+      "wacc_adj": 0.03,
+      "tg_adj": -0.02,
+      "roic_adj": -0.07,
+      "description": "Prolonged high-rate cycle + housing recession + MSR compression + integration failure; WACC to 12%, margins to 9%"
+    },
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "growth_adj": -0.05,
+      "margin_adj": -0.03,
+      "wacc_adj": 0.015,
+      "tg_adj": -0.01,
+      "roic_adj": -0.03,
+      "description": "Extended high-rate cycle, muted volumes, modest share gains, margin pressure"
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "growth_adj": 0.0,
+      "margin_adj": 0.0,
+      "wacc_adj": 0.0,
+      "tg_adj": 0.0,
+      "roic_adj": 0.0,
+      "description": "Share gains offset shrinking market; 17->20% economic EBIT margins; 9% WACC; 3% terminal growth"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.15,
+      "growth_adj": 0.08,
+      "margin_adj": 0.04,
+      "wacc_adj": -0.01,
+      "tg_adj": 0.005,
+      "roic_adj": 0.05,
+      "description": "Rates ease, share gains accelerate, Redfin/home-equity scale, Cooper synergies exceed $400M target"
+    },
+    {
+      "name": "Extreme Bull",
+      "probability": 0.1,
+      "growth_adj": 0.2,
+      "margin_adj": 0.09,
+      "wacc_adj": -0.015,
+      "tg_adj": 0.01,
+      "roic_adj": 0.1,
+      "description": "Refinance wave (2021-like) on a dominant #1-lender/#1-servicer platform; high margins for years"
+    }
+  ],
+  "reverse_dcf": {
+    "rev_start": 10,
+    "rev_end": 30,
+    "rev_step": 5,
+    "margin_start": 0.15,
+    "margin_end": 0.3,
+    "margin_step": 0.05
+  },
+  "sensitivity": {
+    "g_values": [0.02, 0.025, 0.03, 0.035, 0.04],
+    "wacc_values": [0.08, 0.085, 0.09, 0.095, 0.1],
+    "rev_values": [12, 15, 18, 21, 24],
+    "margin_values": [0.15, 0.18, 0.2, 0.22, 0.25]
+  }
+}

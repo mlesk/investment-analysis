@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lennar Corporation — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">Synthesized Consensus · Six-Lens Deliberative Debate</div>
+        <h1>Lennar Corporation — Consensus Investment Report</h1>
+        <div class="sub">A structured debate between six independent frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, Soros reflexivity, and Minervini SEPA trend/momentum — reconciled into a single synthesized analysis and recommendation.</div>
+        <div class="meta-row">
+          <span class="chip">NYSE: LEN</span>
+          <span class="chip">Report date: 2026-08-17</span>
+          <span class="chip">Reference price: $86.54</span>
+          <span class="rating-badge"><span class="dot"></span> B- — HOLD / BUY ON WEAKNESS</span>
+        </div>
+      </div>
+    </header>
+
+
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">Lennar is the largest U.S. homebuilder and the industry's most asset-light balance sheet — a narrow-moat, best-in-class-managed cyclical whose earnings are depressed by ~700bps of incentives (12.9% vs 4–6% normal) rather than by franchise decay. Six independent frameworks converged on one operative verdict at <b>$86.54</b>: <b>B- — HOLD / BUY ON WEAKNESS</b> — no lens initiates at the spot price, none recommends a short, and four of six have explicit buy zones at or below ~$80–82. The dispute is not the business; it is the speed and durability of margin normalization, and the price that compensates for a binary rate path.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$95</div>
+            <div class="note">Damodaran workbook $94.95 (+10% vs price); Buffett's $115 is the proven-execution target, Munger's $63 the no-normalization floor</div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$102</div>
+            <div class="note">0.10×$45 + 0.20×$60 + 0.35×$95 + 0.25×$130 + 0.10×$195 ≈ $102 — below Damodaran's workbook $118.96, above the price</div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$45 – $195</div>
+            <div class="note">Severe bear ~$45, bull ~$130, extreme tail ~$195 at 10% probability — spread driven by the normalization-vs-WACC judgment</div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Medium</div>
+            <div class="note">Binary rate path (10Y 4.68%); the margin trajectory is the tell</div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$78–82 → &lt;$55</div>
+            <div class="note">Starter $78–82; accumulate $72–78; aggressive $64–72; Munger zone $55–63; conviction &lt;$55</div>
+          </div>
+          <div class="card">
+            <div class="label">Management quality</div>
+            <div class="value">8/10</div>
+            <div class="note">Integrity 9/10, allocation 7/10 — best-in-class comp structure; buyback-timing ding</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">02</span>The Six Positions at the Table</h2>
+        <p class="lead">Five investment frameworks debated the stock directly; Minervini's SEPA trend system contributed a standalone trading view, kept outside the investment consensus.</p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B — Buy (price-contingent)</span><span class="small">at $86.54</span>
+              </div>
+              <p>Three-scenario owner-earnings DCF: bear <b>$78</b>, base <b>$115</b>, bull <b>$148</b> — weighted <b>~$116</b>. A wonderful-ish business at a fair-ish price: 0.96x book, ~6.2x mid-cycle earnings power, fortress balance sheet. Buy with both hands below <b>$80</b>; at $86.54, hold rather than chase; trim above $120.</p>
+              <div class="tags">
+                <span class="tag">Bear $78 / Base $115</span><span class="tag">Weighted ~$116</span><span class="tag">Buy &lt;$80</span><span class="tag">Moat: Narrow</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span><span class="small">at $86.54</span>
+              </div>
+              <p>Conservative DCF (13.5% discount, terminal growth ≤2%): bear <b>$47</b>, base <b>$63</b>, bull <b>$81</b> — weighted <b>~$61</b>, about 30% below the quote. A good cyclical business at a price that already assumes the recovery arrives. Buy <b>$55–63</b>, conviction below <b>$50</b>, reduce at or above $90.</p>
+              <div class="tags">
+                <span class="tag">Base $63</span><span class="tag">Weighted ~$61</span><span class="tag">Buy $55–63</span><span class="tag">Conviction &lt;$50</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B+ — Modestly undervalued</span><span class="small">at $86.54</span>
+              </div>
+              <p>FCFF DCF (9.0% WACC, 2.25% terminal growth, 25% tax): base <b>$94.95</b>; probability-weighted <b>$118.96</b> across five scenarios (+37%, ≈ +6.6%/yr). Reverse DCF: the market already prices full margin normalization — cheap, not stupid-cheap. Buy below ~$82; trim above ~$125.</p>
+              <div class="tags">
+                <span class="tag">Base $94.95</span><span class="tag">Weighted $118.96</span><span class="tag">Buy &lt;$82</span><span class="tag">WACC 9.0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro, Liquidity &amp; Expectations Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C+ — Monitor</span><span class="small">at $86.54 · 78/150</span>
+              </div>
+              <p>No Druckenmiller-quality opportunity at spot: 12-month price paths $55/$66/$85/$110/$130 → weighted <b>~$84.5</b> (−2.4%), asymmetry ~1:1. The setup is conditional: buy <b>$72–78</b> (asymmetry ~3.5:1) or on a confirmed 10Y break below <b>4.3%</b>. Sell above $100 unless the 10Y cooperates.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$84.5</span><span class="tag">Buy $72–78</span><span class="tag">10Y &lt;4.3% gate</span><span class="tag">Monitor</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity &amp; Disequilibrium Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B — Attractive reflexive setup</span><span class="small">at $86.54</span>
+              </div>
+              <p>A reflexive undershoot near a favorable inflection: below book, 7.73% float short, hike odds collapsed 82%→25%, incentives already falling. 12-month paths $72/$95/$125 → weighted <b>~$100</b> (+16% + 2.3% dividend), asymmetry ~3.8:1. Buy below <b>$82</b>; scale out above $120.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$100</span><span class="tag">Asymmetry 3.8:1</span><span class="tag">Buy &lt;$82</span><span class="tag">Reflexive undershoot</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Mark Minervini</div>
+              <div class="role">Trend &amp; Momentum Trading Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">D — Avoid (trading view)</span><span class="small">at $86.54 · 47/100</span>
+              </div>
+              <p>SEPA verdict: late-Stage-4 with a nascent, unconfirmed Stage 1 base — <b>0/8 Trend Template</b>, below all major averages, severe relative-strength laggard. Watchlist only: conditional entry <b>$88.50–90.50</b> on a breakout above <b>$88.42</b> with volume ≥1.5× average; stop <b>$82.90</b>.</p>
+              <div class="tags">
+                <span class="tag">0/8 Trend Template</span><span class="tag">Pivot $88.42</span><span class="tag">Stop $82.90</span><span class="tag">Watchlist only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">03</span>The Debate: Agreement, Contention, Resolution</h2>
+        <p class="lead">Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions and the composite verdict.</p>
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Simple, permanent business</b> — largest U.S. homebuilder (82,583 FY25 deliveries, $34.2B revenue), unchanged in essence since 1954, with a mortgage arm capturing 83% of buyers.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Narrow moat, not wide</b> — real cost/capital-velocity advantages (121-day cycle, $81/sq ft, 98% of lots optioned); zero pricing power; proof not yet in margins (4.9% net vs DHI 9.1%, PHM 11.6%, NVR 11.8%).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Fortress balance sheet</b> — homebuilding debt/capital 15.8% (net 9.4%), $4.9B liquidity, 0.1 years owned land supply; the classic builder killer is gone.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Best-in-class management</b> — salary frozen since 2003, 0.20% profit-share after a 7.3% capital charge, $139M TTM SBC, unusually candid guidance.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Trough earnings are incentive math</b> — 12.9% incentives vs 4–6% normal, declining three quarters running; each point ≈ $300M pre-tax.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The hidden costs are real</b> — ~$18.5B land-bank capital at ~11% cost; $7.06B capitalized option deposits; normalized margins land below the pre-2022 era unless rates fall.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>One macro gate</b> — the 10-year (4.68%) with the Fed on hold at 3.50–3.75%; beta 1.40 makes LEN a leveraged expression of the mortgage rate.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Valuation is the binding constraint</b> — 13.45x trough EPS is the top of LEN's own five-year band on the bottom of its cycle; 15.34x forward prices continued declines.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>No short, no chase</b> — every lens refuses to initiate at $86.54 (even the B-ratings are price-contingent); none recommends a short.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>One valuation-critical variable: incentive/margin normalization (12.9% → 4–6%) driven by mortgage rates vs ~9% WACC</b> — every framework, in its own vocabulary, lands on the same hinge.</div>
+          </div>
+        </div>
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Reference price framing: intrinsic value vs 12-month price paths.</b> Buffett/Munger/Damodaran publish intrinsic values; Druckenmiller/Soros/Minervini publish 12-month price paths or targets. Under cross-examination Druckenmiller concedes his $85 base path is a market expectation, not a valuation; Soros concedes his ~$100 weighted path is what the mispricing should trade at, not what the business is worth; Minervini concedes his numbers are chart targets with no value opinion. <b>Resolved:</b> consensus IV is set by the three fundamental models; the price-path lenses (marked †) inform only the ladder, timing, and triggers.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Where does base-case intrinsic value sit?</b> Buffett $115 (10% discount, mid-cycle ~$10.5/share owner earnings), Munger $63 (13.5% discount, normalization by 2029), Damodaran $94.95 (9.0% WACC, margins 6.5%→9.5% — workbook-verified). Buffett concedes $115 is proven-execution value, the reward not the entry; Munger concedes his 13.5% discount double-punishes trough earnings and $63 is a floor, not a central estimate. <b>Resolved:</b> consensus base ~$95 — the workbook anchor $94.95 with Soros's $95 corroborating; Buffett's $115 becomes the upgrade target, Munger's $63 the stress floor.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>How much credit for the right tail?</b> Damodaran's Extreme Bull is $307.69 at 10% — a land-light re-rating to compounder economics; Munger caps at $81, Druckenmiller at $130, Soros at $125, Buffett at $148. Damodaran concedes the $307.69 requires the market to re-rate a cyclical as a compounder — plausible, not base-rate; Munger concedes the option value exists but is not for sale at a discount. <b>Resolved:</b> consensus extreme bull ~$195 (the room's outer tails averaged) at 10%, explicitly low-confidence — the tail justifies watching, not paying.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>What price compensates for the uncertainty?</b> Buy zones span Munger $55–63, Druckenmiller $72–78, Buffett &lt;$80, Damodaran &lt;$82, Soros &lt;$82. Druckenmiller concedes his zone is conditional on a 10Y &lt;4.3% or a margin inflection, not a value floor; Munger concedes $55–63 is the price at which the base case finally pays him. <b>Resolved:</b> composite ladder — starter $78–82, accumulate $72–78, aggressive $64–72, Munger zone $55–63, conviction &lt;$55. A dispute about temperament and horizon, not about the thesis.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Management: 8/10 vs 8/10 vs Good — and the buyback-timing ding.</b> Buffett and Munger grade 8/10 and both concede the buyback record is marred by timing ($89–123 averages into falling margins; $700M of 5.20% notes issued with $1.8B cash on hand). Damodaran concedes buybacks below ~$95 are value-accretive against his $94.95 base. Soros adds the Berkshire cross-check: the most demanding long-horizon buyer is accumulating the sector. <b>Resolved:</b> consensus 8/10 — integrity 9/10, allocation 7/10; repurchase price discipline becomes monitoring metric #5.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Minervini's D versus Soros's B on the same chart.</b> Minervini: 0/8 Trend Template, below all averages, Stage 4 into a nascent Stage 1 — buying because it looks cheap is the error his method exists to prevent. Soros: bearishness fully expressed (7.73% short, avg PT below spot, −40% from high) while incentives, backlog, and hike odds have turned. Minervini concedes the post-$79.83 contraction is constructive but too young and too far below the 200-day to trade; Soros concedes cheap can get cheaper and no trend entry exists. <b>Resolved:</b> both coexist — no trend entry, which is exactly why the fundamental lenses set the ladder below the market while the event path (Jackson Hole, FOMC, 2026-09-17) decides timing.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">Reconciled scenario matrix from the six lenses. The Damodaran column is the verified workbook (ALL_MATCH; WACC 9.0%, terminal growth 2.25%, tax 25%).</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+<th class="">Scenario</th><th class="right">Prob.</th><th class="right">Damodaran (workbook)</th><th class="right">Buffett</th><th class="right">Munger</th><th class="right">Druckenmiller†</th><th class="right">Soros†</th><th class="right">Minervini†</th><th class="right">Consensus IV</th>              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<td>Severe bear</td><td class="right">10%</td><td class="right">$26.70</td><td class="right">~$65–75 *</td><td class="right">$40</td><td class="right">$55†</td><td class="right">—</td><td class="right">—</td><td class="right"><b>~$45</b></td>
+              </tr>
+              <tr>
+<td>Bear</td><td class="right">20%</td><td class="right">$52.86</td><td class="right">$78</td><td class="right">$47</td><td class="right">$66†</td><td class="right">$72†</td><td class="right">$72†</td><td class="right"><b>~$60</b></td>
+              </tr>
+              <tr class="hl">
+<td>Base</td><td class="right">35%</td><td class="right">$94.95</td><td class="right">$115</td><td class="right">$63</td><td class="right">$85†</td><td class="right">$95†</td><td class="right">$84†</td><td class="right"><b>~$95</b></td>
+              </tr>
+              <tr>
+<td>Bull</td><td class="right">25%</td><td class="right">$166.86</td><td class="right">$148</td><td class="right">$81</td><td class="right">$110†</td><td class="right">$125†</td><td class="right">$102†</td><td class="right"><b>~$130</b></td>
+              </tr>
+              <tr>
+<td>Extreme bull</td><td class="right">10%</td><td class="right">$307.69</td><td class="right">—</td><td class="right">—</td><td class="right">$130†</td><td class="right">—</td><td class="right">—</td><td class="right"><b>~$195</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">* Buffett's severe-bear ~$65–75 is his multiple-compression scenario (0.70–0.85× book); his published three-scenario set is $78/$115/$148. † Druckenmiller/Soros/Minervini cells are 12-month price paths or targets, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV. Consensus values reconcile the three intrinsic-value models (Buffett, Munger, Damodaran), anchored on the workbook where the macro/trading paths corroborate.</p>
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 24px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">~$45</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 34px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">~$60</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 52px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">~$95</div>
+            <div class="prob">35%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 78px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">~$130</div>
+            <div class="prob">25%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 100px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">~$195</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus intrinsic value per share</span><span>~$195</span>
+        </div>
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>EV = 0.10×$45 + 0.20×$60 + 0.35×$95 + 0.25×$130 + 0.10×$195 = 4.5 + 12.0 + 33.25 + 32.5 + 19.5 ≈ $102/share</h3>
+          <p class="big">At $86.54 that is roughly <b>+18% expected upside</b> and <b>≈ +3.3% 5-year annualized</b> — positive but modest, and deliberately below Damodaran's workbook value ($118.96) because Munger's conservatism and the macro lenses' muted 12-month paths pull the consensus down. The expected value is tail-driven (35% probability above the $94.95 base) and the median ≈ base ~$95 (+10%): a reason to <b>buy on weakness, not to chase</b>. Downside tail (severe bear): −48% from $86.54; upside tail (extreme bull): +125%. Confidence: <b>Medium</b>. Reverse-DCF check (uncontested, from Damodaran): the $86.54 price embeds ~2% perpetual growth, ~9.3–9.5% normalized operating margins, and a ~9.0–9.4% WACC — the market already assumes full margin normalization. The market is not assuming an impossible business; it is assuming a successful one, and charging full price for it.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">Where the six frameworks meet — the composite accumulation plan. Do not initiate at or above ~$90; the current $86.54 sits in the hold/watch band.</p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $125</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / avoid — Damodaran's trim (&gt;$125), Soros's sell (&gt;$120), Buffett's reduce (&gt;$120)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$100–125</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 70%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Hold, do not add — Druckenmiller's reduce zone &gt;$100 opens (unless 10Y &lt;4.3%)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$90–100</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 45%"></div>
+            </div>
+            <span class="action">Do not initiate — at or above consensus base ~$95; zero margin of safety</span>
+          </div>
+          <div class="rung">
+            <span class="price">$82–90</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 40%"></div>
+            </div>
+            <span class="action">Hold / watch — the current $86.54 sits here; wait for the zones below</span>
+          </div>
+          <div class="rung">
+            <span class="price">$78–82</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 55%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Begin accumulating (starter) — Damodaran &lt;$82, Soros &lt;$82, Buffett &lt;$80 all open here</span>
+          </div>
+          <div class="rung">
+            <span class="price">$72–78</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Accumulate — Druckenmiller's tactical starter $72–78 (asymmetry ~3.5:1)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$64–72</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 70%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Aggressive accumulation — Druckenmiller $64–72; Buffett's conviction zone &lt;$70 opens</span>
+          </div>
+          <div class="rung">
+            <span class="price">$55–63</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 82%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31">Munger's fundamental zone — starter at $63, accumulate at $55</span>
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $55</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31"><b>High-conviction buy zone — Munger's conviction &lt;$50; exceptional risk/reward if the thesis stays intact</b></span>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">06</span>Pros &amp; Cons — At $86.54</h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>Fortress balance sheet — 15.8% homebuilding debt/capital (net 9.4%), $4.9B liquidity, 0.1 years owned land supply</li>
+              <li>Land-light model — 98% of 495,466 homesites optioned; the classic builder killer (land-heavy downturn exposure) is structurally reduced</li>
+              <li>Best-in-class management — comp built for owners (profit-share after a 7.3% capital charge), candid guidance, $139M TTM SBC</li>
+              <li>Trough pricing on book — 13.45x trough EPS, 0.96x book, 2.31% dividend + ~6.3% buyback yield; ~$5B returned in 2.5 years</li>
+              <li>Normalization leverage — 12.9% incentives vs 4–6% normal; each point ≈ $300M pre-tax; Q3 gross margin guided up</li>
+              <li>Positioning tailwind — 7.73% of float short, avg PT $86.23 below spot, −40% from the high; hike odds collapsed 82%→25%; Berkshire accumulating builders</li>
+              <li>Reflexive support — buybacks below book and the Millrose land structure work harder as the stock de-rates</li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>No margin of safety at spot — price ≈ consensus base ~$95 (+10% only); the reverse DCF shows normalization is already priced</li>
+              <li>Munger's math is decisively negative — weighted $61 (−29% expected); ROIC 6.2% vs his ~10.5% hurdle</li>
+              <li>The rate path is binary and hostile — 10Y 4.68%, Fed on hold; a September hike (25–30% odds) re-breaks the thesis</li>
+              <li>Hidden land-bank rent — ~$18.5B at ~11% cost, ~$270M/quarter of implied fees capitalized into ACOR; current margins are flattered</li>
+              <li>Earnings still falling — Q2 EPS $1.24 vs $1.81; FY26 deliveries cut to 82–83k; 15.34x forward on declining EPS</li>
+              <li>Allocation autopilot — buybacks at $89–123 into falling margins; $700M of 5.20% notes issued with $1.8B cash on hand</li>
+              <li>Broken trend — below all SMAs, 0/8 Trend Template, Stage 4 into a nascent Stage 1; severe RS laggard vs SPY/XHB</li>
+              <li>Governance / key-person — dual-class (Miller ~42% votes on ~8% economics); 68-year-old CEO; no named successor</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade B- → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Q3 FY2026 (2026-09-17) prints home gross margin ≥16% AND incentives down again (12.9% → below ~12%) — the margin trough is confirmed behind</li>
+              <li>The 10Y breaks and holds below ~4.3% (Druckenmiller's gate) or the 30-yr fixed falls below ~6% — normalization de-risked</li>
+              <li>Normalized ROIC clears ~9% WACC for two consecutive quarters (currently 6.2%) — the moat starts showing in returns</li>
+              <li>Incentives return to the ~6% band — ~$300M+/quarter of pre-tax proof; the base case rises toward Buffett's $115</li>
+              <li>Fed cuts resume / CPI below 3% with the energy shock faded — the binary macro gate opens</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade B- → C/D if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Incentives re-accelerate above ~14% or home gross margin stalls ≤15% for two quarters — normalization proves a mirage (Munger's bear becomes base)</li>
+              <li>The 10Y exceeds 5% or the Fed actually hikes — Soros's falsifiable pillar breaks the wrong way</li>
+              <li>National home prices decline — the $7.06B option deposits and $10.9B owned inventory take marks</li>
+              <li>Buybacks continue above ~$95 with ROE still below 8%, or debt issuance grows — the allocation autopilot is confirmed</li>
+              <li>The stock breaks $79.83 (52-week low) — Stage 4 resumes with a ~$71–72 measured move</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Home GM + incentives</b></td>
+                <td>The entire thesis: 12.9% → 4–6% normal</td>
+                <td class="right">GM ≥16% in Q3; incentives down again</td>
+              </tr>
+              <tr>
+                <td><b>30-yr mortgage / 10Y</b></td>
+                <td>The macro gate for normalization</td>
+                <td class="right">10Y &lt;4.3%; 30-yr &lt;6%</td>
+              </tr>
+              <tr>
+                <td><b>Normalized ROIC vs WACC</b></td>
+                <td>Proof the moat earns (6.2% today vs ~9%)</td>
+                <td class="right">ROIC &gt;9% for 2+ quarters</td>
+              </tr>
+              <tr>
+                <td><b>Orders &amp; backlog</b></td>
+                <td>Demand through the rate storm</td>
+                <td class="right">Orders flat-to-up; backlog growing</td>
+              </tr>
+              <tr>
+                <td><b>Buyback price discipline</b></td>
+                <td>Allocation quality — buy below book only</td>
+                <td class="right">Repurchases at or below ~$90–95</td>
+              </tr>
+              <tr>
+                <td><b>Fed path / CPI</b></td>
+                <td>The binary macro variable</td>
+                <td class="right">Holds, not hikes; CPI &lt;3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">08</span>Technical Analysis</h2>
+        <p class="lead">Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th class="right">Value</th>
+                <th class="right">Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Price vs 50-day SMA</b></td>
+                <td class="right">$87.09</td>
+                <td class="right">-0.6% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 100-day SMA</b></td>
+                <td class="right">$88.02</td>
+                <td class="right">-1.7% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 200-day SMA</b></td>
+                <td class="right">$100.91</td>
+                <td class="right">-14.2% below</td>
+              </tr>
+              <tr>
+                <td><b>14-day RSI</b></td>
+                <td class="right">51.0</td>
+                <td class="right">Neutral (mid-range)</td>
+              </tr>
+              <tr>
+                <td><b>14-week RSI</b></td>
+                <td class="right">42.3</td>
+                <td class="right">Bearish</td>
+              </tr>
+              <tr>
+                <td><b>50-week RSI</b></td>
+                <td class="right">44.3</td>
+                <td class="right">Bearish</td>
+              </tr>
+              <tr>
+                <td><b>52-week range</b></td>
+                <td class="right">$79.83 - $144.24</td>
+                <td class="right">-40.0% from high, +8.4% from low</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">Snapshot computed from Yahoo Finance daily/weekly OHLC as of the 2026-08-17 close; cross-checked against stockanalysis.com. RSI above 70 is overbought, below 30 oversold; SMA deltas are the price's percentage deviation from each average. Reading: price sits below all three major averages inside a post-July contraction — consistent with Minervini's nascent Stage 1 and Soros's reflexive-undershoot read of the same chart.</p>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">09</span>The Five Consensus Conclusions</h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Business.</b> Lennar is the largest U.S. homebuilder with the leanest balance sheet in the industry — a narrow-moat, owner-managed cyclical whose 98%-optioned land model reduces structural risk but whose 4.9% net margin (worst of the big four) has not yet demonstrated the moat in returns.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Economics.</b> The sole valuation-critical variable is incentive/margin normalization (12.9% → 4–6%) driven by mortgage rates vs the ~9% WACC — each incentive point is ~$300M pre-tax, and normalized ROIC ≈ WACC, so the thesis is recovery, not compounding.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Market's Expectations.</b> At $86.54 the reverse DCF implies ~2% perpetual growth with ~9.3–9.5% normalized margins at a ~9.0% WACC — the market already assumes full margin normalization. The stock is cheap only relative to a faster recovery.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Valuation.</b> Consensus base intrinsic value ~$95/share (workbook anchor $94.95); probability-weighted ~$102/share (+18%, ≈ +3.3% annualized); bear ~$60, severe bear ~$45, bull ~$130, extreme tail ~$195 at low confidence. Damodaran workbook: $26.70 / $52.86 / $94.95 / $166.86 / $307.69, weighted $118.96. Confidence: Medium.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Investment Decision.</b> B- — HOLD / BUY ON WEAKNESS at $86.54; do not initiate ≥$90. Starter $78–82, accumulate $72–78, aggressive $64–72, Munger zone $55–63, conviction &lt;$55; reduce &gt;$125. The margin data (2026-09-17), the rate path (Jackson Hole, FOMC), and the 10-year — not the stock price — will deliver the verdict.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">10</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>At a price of <b>$86.54</b>, the market is effectively assuming that Lennar's margin normalization will arrive on schedule — the reverse DCF embeds ~9.3–9.5% normalized operating margins, ~2% growth, and a ~9% cost of capital, a successful outcome already charged at full price. Six independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity expectations, reflexivity, and SEPA trend analysis — agree on the business (simple, permanent, best-in-class-managed), agree on the balance sheet (fortress), and agree on the hinge: incentive/margin normalization driven by the path of mortgage rates. They disagree only on the discount rate a cyclical at trough earnings deserves — and therefore on the price that compensates for a binary rate path: Munger waits at $55–63, Druckenmiller strikes at $72–78 on confirmation, and Buffett/Damodaran/Soros buy below ~$80–82, while Minervini declines to trade the chart at all. The consensus reconciles this into <b>B- — HOLD / BUY ON WEAKNESS</b>: hold at $86.54, initiate nothing above ~$90, begin at $78–82, build through $72–78 and $64–72, meet Munger at $55–63, and buy with conviction below $55 — provided the monitoring hierarchy (home gross margin and incentives, mortgage rates, normalized ROIC vs ~9% WACC, orders and backlog, buyback price discipline) stays intact. The most dangerous risks are a permanent margin reset if rates persist into 2027, a September hike that re-fuels the negative loop, the land banks' ~11% hidden rent, and an allocation machine that keeps buying its own stock too high. Therefore, at today's price the consensus is to <b>wait for weakness and let the incentive data — not the narrative — decide when the recovery is real.</b></p>
+        </div>
+      </section>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes six analyses — buffet-analysis.md, munger-analysis.md, damodaran-analysis.md, druckenmiller-analysis.md, soros-analysis.md, and minervini-analysis.md (dated August 17, 2026) — which themselves reference Lennar's SEC filings (Q2 FY2026 10-Q and 8-K, 2026 DEF 14A proxy), the Q2 FY2026 earnings-call transcript, StockAnalysis, MarketBeat, HousingWire, Reuters/WSJ/CNBC/Barron's coverage, Damodaran's NYU datasets, and Yahoo Finance OHLC technicals, as of August 2026. Damodaran's scenario values are the verified LEN_Damodaran_Financial_Model.xlsx workbook outputs (verifier: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is <b>not investment advice</b>, and no valuation herein should be treated as a price prediction or a recommendation to trade. Lennar's outcome distribution is wide; treat every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

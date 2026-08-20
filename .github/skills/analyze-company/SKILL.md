@@ -20,6 +20,7 @@ Analysis/{TICKER}/{YYYY-MM-DD}/
 ├── damodaran-analysis.md              # Aswath Damodaran lens
 ├── druckenmiller-analysis.md          # Stanley Druckenmiller lens
 ├── soros-analysis.md                  # George Soros lens
+├── minervini-analysis.md              # Mark Minervini lens (trading view)
 ├── {TICKER}_Damodaran_Financial_Model.xlsx   # 5-scenario FCFF DCF workbook
 ├── consensus-analysis.md              # deliberative debate + consensus
 └── {ticker}-consensus-investment-report.html # polished single-file report
@@ -67,6 +68,7 @@ Launch **five subagents in parallel**, one per lens. Each subagent:
   - Damodaran → `profiles/damodaran.md`
   - Druckenmiller → `profiles/druckenmiller.md`
   - Soros → `profiles/soros.md`
+  - Minervini → `profiles/minervini.md` (addition to the the five-lens consensus, this is a separate stand alone trading view)
 - Reads `reference/format-spec.md` (compact) for output format
 - Researches the company with web tools, seeded by the shared fact pack. Minimum sources, all with URLs:
   - company investor-relations site (latest 10-K/10-Q, earnings releases, investor decks)
@@ -87,13 +89,14 @@ Depth gate — applies to all five analyses, checked in Phase 5:
 
 Mandatory per-lens output requirements (checked in Phase 5):
 
-All five analyses open with the **bottom line first**: the final rating and a one-paragraph verdict, then an executive summary table (scores per dimension / value estimates) before any detailed section. This mirrors the IREN example and makes the five analyses cross-comparable.
+All six analyses open with the **bottom line first**: the final rating and a one-paragraph verdict, then an executive summary table (scores per dimension / value estimates) before any detailed section. This mirrors the IREN example and makes the six analyses cross-comparable.
 
 - **Buffett** (`buffet-analysis.md`): bottom-line rating first; executive summary score table across the profile's dimensions; moat rating; management assessment; owner-earnings analysis; DCF with conservative/neutral/optimistic scenarios; margin-of-safety verdict; final A/B/C/D rating. Cite sources as `[SEC][1]`-style link references.
 - **Munger** (`munger-analysis.md`): circle-of-competence rating; 3–5 mental models applied; inversion section (how the investment fails); quality standards checklist; earnings-quality tests; conservative DCF (WACC+3% discount, terminal growth ≤2%); scenario table with probabilities and expected return; final A/B/C/D rating.
 - **Damodaran** (`damodaran-analysis.md`): the full profile arc — fundamental story, historical fundamentals, competitive advantage, accounting normalization, growth, risk, WACC, FCFF DCF, terminal value, relative valuation, reverse DCF, five-scenario valuation, sensitivity, market-expectations comparison, probability-weighted case, A–E rating, five conclusions, Damodaran-style final judgment. **Additionally** the Damodaran subagent must return a `model_inputs` JSON block (schema below) populated with the company's numbers, so Phase 2 can build the workbook without re-deriving inputs. **The JSON must be machine-valid:** every fraction field a decimal float (e.g. `margin_ramp: 0.005`, never `5.0`), probabilities summing to 1.0, and it must pass `python3 -m json.tool`. Ship the numbers that actually drove the narrative — the workbook built from them is authoritative in Phase 2.
 - **Druckenmiller** (`druckenmiller-analysis.md`): macroeconomic context, interest-rate and inflation sensitivity, liquidity and credit risk, market sentiment, relative valuation, scenario analysis, expected return distribution, final A–E rating.
 - **Soros** (`soros-analysis.md`): reflexivity analysis, feedback loops, market psychology, trend and momentum analysis, scenario analysis, expected return distribution, final A–E rating.
+- **Minervini** (`minervini-analysis.md`): technical analysis, trend and momentum indicators, support/resistance levels, risk/reward bands, scenario analysis, expected return distribution, final A–E rating.
 
 ```json
 {
@@ -239,6 +242,7 @@ Launch **one subagent** to produce `consensus-analysis.md` **and** `report_input
 3. Write **Part II — The Consensus Synthesis**: the business (what you own); the economics (the one valuation-critical variable, e.g. incremental ROIC vs WACC, with a monitoring hierarchy); management score; consensus valuation matrix (each scenario × each profile's value → consensus value + consensus probability); probability-weighted consensus value with confidence level; reverse-DCF check of what the market price assumes; pros and cons (for/against at the current price); **consensus investment recommendation** (rating A–E, do-not-initiate band, a **price ladder** table of bands → actions, what upgrades the rating, what downgrades it); the five consensus conclusions; and a final consensus judgment paragraph.
 4. Rules: introduce **no new valuation math** — synthesize, challenge, and merge what the five profiles concluded. Flag any place the five disagree and why. End with a disclaimer that this is an estimate of estimates, not investment advice.
 5. Add a **Technical analysis** section to `consensus-analysis.md` (before the disclaimer) **and** mirror it into `report_inputs.json` under `technical` (schema: `scripts/report_inputs.example.json`). Seven indicators, each with a value and its position: price vs **200-day SMA** (% above/below), vs **100-day SMA** (%), vs **50-day SMA** (%), **14-day RSI**, **14-week RSI**, **50-week RSI**, and price vs the **52-week high/low**. Use the technicals from the shared fact pack (fetched once in Phase 1) — never invent them — and keep the exact same numbers in both files (`verify_run.py` checks them).
+6. Add a **Mark Minervini trading view** section to `consensus-analysis.md` (after the Technical analysis) — a brief summary of the trend, momentum, and risk/reward bands, with a final A–E rating. It is **not** part of the consensus synthesis; it is a separate trading view for reference only. The Minervini subagent's analysis is in `minervini-analysis.md` and its rating is included in the consensus debate, but the final consensus recommendation does not depend on it.
 
 Output format must mirror the IREN `consensus-analysis.md` structure (method note → shared fact base → debate rounds → Part II synthesis).
 
@@ -273,7 +277,7 @@ UV_CACHE_DIR="$PWD/.uv-cache" uv run --no-project --python 3.13 --with openpyxl 
 
 It performs every check below and prints a PASS/FAIL checklist; the run must end `ALL_PASS` (exit 0) before reporting done. If `formulas` is unavailable it falls back to independent recompute-only and states so. The manual checklist (documentation of what the gate enforces):
 
-- [ ] `buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, `soros-analysis.md` exist, each following its profile's framework with final rating + source links + a `## Position Summary` block, and each passing the depth gate (source floor, coverage floor)
+- [ ] `buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, `soros-analysis.md`, `minervini-analysis.md` exist, each following its profile's framework with final rating + source links + a `## Position Summary` block, and each passing the depth gate (source floor, coverage floor)
 - [ ] `{TICKER}_Damodaran_Financial_Model.xlsx` exists and verifier printed `ALL_MATCH`
 - [ ] `consensus-analysis.md` contains the full debate (fact base, openings, agreements, contentions with resolutions, rebuttals, Part II synthesis, rating, price ladder)
 - [ ] `consensus-analysis.md` and the HTML each contain the **Technical analysis** section (≥7 indicators: 200/100/50-day SMA, 14-day/14-week/50-week RSI, 52-week high/low) with identical figures in both — enforced by `verify_run.py`

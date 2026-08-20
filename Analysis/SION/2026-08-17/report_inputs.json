@@ -1,0 +1,257 @@
+{
+  "company": "Sionna Therapeutics, Inc.",
+  "ticker": "SION",
+  "exchange": "Nasdaq",
+  "date": "2026-08-17",
+  "reference_price": "$5.91",
+  "kicker": "Synthesized Consensus · Six-Lens Deliberative Debate",
+  "title": "Sionna Therapeutics, Inc. — Consensus Investment Report",
+  "subtitle": "A structured debate between six independent frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, Soros reflexivity, and Minervini trend/momentum (standalone trading view) — reconciled into a single synthesized analysis and recommendation.",
+  "rating": "C− — HOLD / WATCH",
+  "exec_summary": {
+    "lead": "Sionna is a single-thesis, pre-revenue CF biotech trading **at** its ~$5.93/share net cash (~$268.3M, no debt) after its lead NBD1-stabilizer program (SION-719) missed its Phase 2a endpoint (p=0.7) on Aug 10, 2026 and was dropped as an add-on to standard of care. The market now prices the entire remaining pipeline (SION-451 dual combo) at **$0**. Six independent analyses — using six different frameworks — converged on the same rating: **C− — Hold/Watch**. The balance sheet is not in dispute (net cash, no debt, runway into 2028); the pipeline's probability-weighted value — and whether the ~+19–26% expected upside on a true expected value of ~$7.0–7.4 compensates for the binary risk — is.",
+    "cards": [
+      {
+        "label": "Consensus base value",
+        "value": "~$5.93",
+        "note": "Net cash — the modal outcome (pipeline credited at ~$0); Buffett/Munger/Soros base ≈ net cash"
+      },
+      {
+        "label": "Probability-weighted value",
+        "value": "~$7.2",
+        "note": "TRUE expected value (range ~$7.0–7.4) — net cash + ~8% P(success) × franchise option, less dilution; NOT the success-conditional $24.63"
+      },
+      {
+        "label": "Bear / Bull range",
+        "value": "$4.00 – $45.32",
+        "note": "Fundamental bear floor ~$4.00 (wind-down) to success-conditional bull $45.32; extreme bull $144.74"
+      },
+      {
+        "label": "Confidence",
+        "value": "Low",
+        "note": "A single binary clinical outcome dominates; P(success) 5–15% spans the whole value range ($6.6–8.7)"
+      },
+      {
+        "label": "Consensus entry plan",
+        "value": "≤$4.50",
+        "note": "Speculative starter $4.50–5.50; accumulate ≤$4.50 (≥24% discount to net cash); conviction <$3.50; do-not-initiate above ~$7.40 (full EV)"
+      },
+      {
+        "label": "Valuation-critical metric",
+        "value": "P(success) × franchise value",
+        "value_style": "font-size: 22px",
+        "note": "Probability-weighted value of the SION-451 franchise vs the ~$5.93 net-cash floor — the abandonment option"
+      }
+    ]
+  },
+  "profiles_title": "The Six Positions at the Table",
+  "profiles_lead": "Each participant analyzed Sionna independently. Their positions were then cross-examined in the debate. Minervini's trend/momentum view is included for completeness as a standalone trading view — it does not inform the fundamental consensus rating.",
+  "profiles": [
+    {
+      "name": "Warren Buffett",
+      "role": "Owner-Earnings Value Lens",
+      "verdict": "D — Avoid",
+      "at": "at ~$5.91",
+      "paragraph": "Pre-revenue, clinical-stage biotech with no earnings, no product, no moat — only a $268.3M cash pile and a remaining SION-451 program whose probability of beating Vertex's Trikafta is speculative. Trades at ~$5.91, essentially its ~$5.93/share net cash: a double fail (outside the circle of competence, no margin of safety — paying full price for cash being consumed while hoping a lottery ticket pays out). Scenario values bear ~$4.00, base ~$5.93, bull ~$12–15, weighted ~$5.95. \"This is an avoid, not a value investment — revisit only at a large discount to net cash and a credible SION-451 path.\"",
+      "tags": ["Base ~$5.93*", "No moat", "Buy zone: none", "Avoid"]
+    },
+    {
+      "name": "Charlie Munger",
+      "role": "Multidisciplinary Quality Lens",
+      "verdict": "D — Avoid",
+      "at": "at ~$5.91",
+      "paragraph": "The central scientific thesis was falsified in its first patient test (SION-719, p=0.7). What remains trades at essentially its $5.93/share net cash holding one very-long-shot dual combo (SION-451 + SION-2222) that must beat the dominant incumbent. Conservative net-cash + rNPV value: bear $4.00, base $5.93, bull $12.00, weighted ~$6.28 (+6%) — nowhere near the 30–40% margin of safety this uncertainty demands. \"I do not buy lottery tickets priced at their cash. Speculative only at $3.50–4.00; conviction below $3.00.\"",
+      "tags": ["Base $5.93", "Weighted ~$6.28", "Spec zone $3.50–4.00", "Conviction <$3.00"]
+    },
+    {
+      "name": "Aswath Damodaran",
+      "role": "Fundamental Valuation Lens",
+      "verdict": "C — Hold / Watch",
+      "at": "at ~$5.91",
+      "paragraph": "At $5.91 the stock trades at (marginally below) its ~$5.93/share net cash — the market prices the pipeline at $0. Success-conditional workbook values: $5.56 / $8.05 / $15.73 / $45.32 / $144.74, weighted $24.63 (+317% upside, +22.6% 7-yr annualized — only if SION-451 commercializes). Gated by an ~8% probability of commercial success (range 5–15%) plus a dilution haircut, the stock's TRUE expected value is ~$7.0–7.4/share — only ~19–26% above price with an expected annualized return (~3%) below the risk-free rate. Buy only ≤ ~$4.50 or on positive SION-451 patient data.",
+      "tags": ["Full EV ~$7.0–7.4", "Workbook $24.63*", "Buy ≤$4.50", "P(success) ~8%"]
+    },
+    {
+      "name": "Stanley Druckenmiller",
+      "role": "Macro, Liquidity & Expectations Lens",
+      "verdict": "C− — Monitor",
+      "at": "at ~$5.91 · 65/150",
+      "paragraph": "The rare 'expectations fully washed out' moment: the entire pipeline is priced at ~$0 on top of net cash (EV ≈ −$1M). Structurally attractive asymmetry (cash-floor downside, free call on SION-451 and any strategic transaction) but **no dated, high-probability catalyst, no price confirmation** (below all MAs, RSI-14d 21.5), and the translational thesis itself was damaged. 12-mo price paths: bear $5.20, base $6.00, bull $12.00, weighted ~$8.26 (+40%) — heavily bimodal, ~60% probability of roughly flat. Not a high-conviction setup; a small, tightly-stopped speculative starter at/below net cash is the maximum this merits. Opportunity Score 65/150.",
+      "tags": ["12-mo ~$8.26", "Asym 19:1*", "Starter $4.50–5.50", "No dated catalyst"]
+    },
+    {
+      "name": "George Soros",
+      "role": "Reflexivity & Disequilibrium Lens",
+      "verdict": "C — Neutral",
+      "at": "at ~$5.91",
+      "paragraph": "A textbook completed bust: after a single Phase 2a failure, a once high-flying NBD1 challenger has been repriced from narrative-dream (peak ~$55) to net-cash ($5.91 vs ~$5.93). The market prices the entire pipeline at zero — mildly mispriced down, but the edge at $5.91 is ~zero (E[R] ≈ −3%). Asymmetry flips favorable only below ~$4.50–5.00 (≥20% discount to net cash, E[R] ≈ +26%) or on a positive catalyst. Weighted IV ~$5.95. Do not short a net-cash stock at RSI-14 21.5 — the exhausted-loop squeeze risk is asymmetric against the short.",
+      "tags": ["Weighted ~$5.95", "E[R] ≈ −3%", "Buy ≤$4.50–5.00", "No short"]
+    },
+    {
+      "name": "Mark Minervini",
+      "role": "Standalone Trading View (reference only)",
+      "verdict": "F — Do not buy",
+      "at": "at ~$5.91",
+      "paragraph": "Under SEPA, SION fails every critical criterion: no earnings/revenue/acceleration, confirmed **Stage 4 downtrend** ~85% below the 50/100/200-day SMAs, broken base, no pivot, no institutional accumulation, negative catalyst. Oversold (RSI-14 21.5) argues against shorting, not for buying. Technical targets: bear $4.01 (52-wk low), base $5.50–6.50, bull $8–10 (relief rally). No valid low-risk entry today. Trading view only — not part of the fundamental consensus.",
+      "tags": ["Stage 4", "No base/pivot", "RSI-14 21.5", "Oversold ≠ buy"]
+    }
+  ],
+  "debate": {
+    "title": "The Debate: Agreement, Contention, Resolution",
+    "lead": "Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions. The central reconciliation: the workbook's $24.63 is SUCCESS-CONDITIONAL — the consensus probability-weighted value must be a TRUE expected value (~$7.0–7.4), not $24.63.",
+    "agreements_title": "Uncontested consensus core",
+    "agreements": [
+      "**Single-thesis, pre-revenue business.** Sionna's only path to value is the SION-451 NBD1-stabilizer franchise; the lead add-on program (SION-719) missed Phase 2a (p=0.7) on 8/10/26 and is not advancing as add-on to standard of care.",
+      "**The balance sheet is the anchor.** $268.3M cash + securities (6/30/26), no debt, net cash ~$5.93/share, book ~$5.88, runway into 2028 — the downside floor.",
+      "**The price trades AT net cash.** $5.91 vs ~$5.93; EV ≈ −$1M — the market prices the entire pipeline at ~$0.",
+      "**Vertex is a near-monopoly incumbent.** Trikafta is the standard of care for F508del (~90% of CF patients); the CF franchise is ~$10B+/yr (estimate); prior CF challengers have failed; the standalone SION-451 path must beat Trikafta head-to-head.",
+      "**No margin of safety at $5.91.** You pay full price for the only solid asset (cash) with a speculative, low-probability pipeline option thrown in free.",
+      "**No short.** At net cash, RSI-14 21.5, no debt, and no forced-selling overhang, the short asymmetry is poor; the bust is largely spent.",
+      "**One valuation-critical variable: the probability-weighted value of the SION-451 franchise vs the ~$5.93 net-cash floor** — P(success) × franchise value against the abandonment option.",
+      "**Buying requires either a deep discount to net cash or a positive, dated catalyst** (SION-451 Phase 2 plan, confounder rehabilitation, strategic transaction).",
+      "**The expected return at $5.91 does not compensate for the uncertainty.** True probability-weighted value ~$7.0–7.4 = only ~+19–26% for a binary, low-confidence asset.",
+      "**The $250M ATM and ~$42M/H1 burn are the per-share erosion risks.** The floor decays with burn and breaks with a sub-cash dilutive raise."
+    ],
+    "contentions_title": "Contested points — and how they were resolved",
+    "contentions": [
+      "**Reference price: net-cash floor vs fair value.** Value lenses (Buffett/Munger): $5.91 ≈ net cash is a FAIR price for cash plus a free option — not a bargain; the floor erodes with burn. Macro lenses (Druckenmiller/Soros): at cash the downside is floored and the option is free — the rare fully-washed-out moment. Damodaran: prices the pipeline at $0, harsh but rational. Cross-exam: Buffett to Soros — \"a floor that erodes with burn is not a floor (cash/share ~$5.5–5.7 by early 2028).\" **Named concession:** Soros/Druckenmiller concede their cells are 12–24-month price expectations, not intrinsic values. **Resolved:** consensus anchors on net cash (~$5.93) as both the floor and the reference; the stock is not overvalued but the price does not compensate for the binary risk — do not initiate at $5.91.",
+      "**Where does base-case intrinsic value sit?** Buffett/Munger/Soros base ≈ net cash ~$5.93 (modal); Damodaran workbook Base $15.73 is success-conditional (franchise value GIVEN commercialization); full EV ~$7.0–7.4. Munger to Damodaran: \"your $15.73 assumes the franchise exists — the same thesis just failed.\" **Named concession:** Damodaran concedes $15.73/$24.63 are franchise values, not stock values — the stock's value is $5.93 + 0.08 × $18.70 ≈ $7.4, less dilution. Buffett/Munger concede the option is not literally zero. **Resolved:** consensus base (modal) ≈ net cash ~$5.93; consensus true probability-weighted value ~$7.2 (range $7.0–7.4).",
+      "**How much credit for the right tail after the Phase 2a miss?** Soros/Druckenmiller: the option is free at cash (positive Phase 1 data, preferred combo, strategic-alternative path). Buffett/Munger: a lottery ticket priced at its cash — \"a free lottery ticket is still a lottery ticket with a 92% chance of burning your cash.\" Damodaran: ~8% P(success); the market's ~0% is harsh but rational — not a large error. **Named concessions:** Soros/Druckenmiller concede the option's probability is low (~8%) and the cash decays — edge only at a discount to cash or on a catalyst; Buffett/Munger concede the option is not zero but will not pay for it at cash. **Resolved:** the tail is real but low-probability; consensus credits it at ~$1.1–1.5/share (8% × franchise option), which is the entire gap between net cash (~$5.93) and the full EV (~$7.0–7.4); buy the tail only at ≤$4.50–5.50 or on a positive catalyst.",
+      "**What price compensates for the uncertainty?** Munger $3.50–4.00 (spec) / <$3.00 conviction; Damodaran ≤$4.50; Druckenmiller $4.50–5.50 (starter); Soros $4.50–5.00 (≥20% discount to net cash); Buffett none. Cross-exam: Buffett to Soros — \"still only a ~15–24% discount to a cash pile being consumed\"; Druckenmiller to value lenses — \"at $5.50 you can lose ~30% max and make +100–400% if anything works.\" **Named concessions:** Druckenmiller/Soros concede their zones are speculative/tactical, not value; Damodaran concedes he would pay more on positive patient data. **Resolved (unanimous):** composite ladder — starter $4.50–5.50, accumulate ≤$4.50, conviction <$3.50; do-not-initiate above ~$7.40 (full EV ~$7.0–7.4); $5.91 is hold/watch. Nobody initiates at $5.91.",
+      "**Management quality & capital allocation.** All: honest, prompt disclosure; capital-preservation instinct correct; but no commercial track record, single-thesis concentration, incentive-bias risk in the confounder narrative, and the $250M ATM overhang. Cross-exam: Soros — \"layoffs could gut NBD1 expertise\"; Munger — \"the confounder story is exactly what a company with a dead thesis would say.\" **Named concessions:** Soros concedes capital preservation is the correct abandonment-option response; Munger concedes disclosure has been candid; Druckenmiller concedes the ATM lets management survive without a distressed raise. **Resolved:** consensus management **5/10** — honest and disciplined post-failure, no evidence of value creation yet, docked for concentration and the dilution lever.",
+      "**Distressed opportunity or value trap?** Soros: completed bust, likely exhausted (no leverage, no forced selling, fragile bear belief). Munger: cash-burning zombie whose floor erodes (\"the protected downside is a slowly sinking floor\"). Damodaran: fairly-to-modestly-priced lottery ticket — too pessimistic in the tail, not wrong enough to overcome the risk. **Named concessions:** Munger concedes the bust is largely priced and there is no short; Soros concedes the edge at $5.91 is ~zero (E[R] ≈ −3%), positive only at ≤$4.50–5.00 or on a catalyst. **Resolved:** neither pure — a **cash-floored lottery ticket**: bust likely exhausted (no short), but the price does not yet pay you to buy it outright; wait/scale-in on dislocation or catalyst."
+    ]
+  },
+  "valuation": {
+    "title": "Consensus Valuation",
+    "lead": "Reconciled scenario matrix. The consensus probability column is a TRUE-probability distribution — it folds the ~92% probability that the franchise never commercializes into the Severe-bear row (per Damodaran's ~8% P(success) gate), so the probability-weighted value is a true expected value, NOT the success-conditional workbook value. The Damodaran column is the verified workbook (verbatim).",
+    "matrix": {
+      "columns": ["Scenario", "Consensus prob.", "Damodaran (workbook)", "Buffett", "Munger", "Druckenmiller†", "Soros†", "Consensus IV"],
+      "rows": [
+        { "cells": ["Severe bear / franchise never commercializes", "94.4%", "$5.56", "~$4.00", "$4.00", "$5.20 (−12%)†", "$4.00", "~$5.93 *"] },
+        { "cells": ["Bear / niche", "2.0%", "$8.05", "~$5.93", "$5.93", "$6.00 (+1.5%)†", "$5.50", "~$8.05"] },
+        { "cells": ["Base / modest franchise", "2.0%", "$15.73", "~$12.00", "$12.00", "$6.00–12.00†", "$10.00", "~$15.73"], "highlight": true },
+        { "cells": ["Bull / strong franchise", "0.96%", "$45.32", "~$12–15", "$12.00–22.50", "$12.00 (+103%)†", "$10.00", "~$45.32"] },
+        { "cells": ["Extreme bull / franchise leader", "0.64%", "$144.74", "~$15+", "$22.50", "$30.00 (+408%)†", "$16–18", "~$144.74"] }
+      ]
+    },
+    "footnote": "* Severe-bear Consensus IV ≈ net cash (~$5.93) — the present value of the abandonment option in the dominant failure state; the workbook's $5.56 is the success-conditional 'negligible niche' version of the same floor (Buffett/Munger's $4.00 reflect the burn-down path within the failure state). The Damodaran column is the verified workbook (SUCCESS-CONDITIONAL — the franchise value given it commercializes; weighted $24.63). † Druckenmiller/Soros cells are 12-month / 12–24-month PRICE EXPECTATIONS, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV. The consensus IV is a TRUE expected-value construct: ~94% of the probability mass sits at the net-cash floor, only ~0.6% reaches the $144.74 tail.",
+    "chart": {
+      "cols": [
+        { "scen": "Severe Bear", "val": "~$5.93", "prob": "94.4%", "height": 14, "fill": "fill-red" },
+        { "scen": "Bear", "val": "~$8.05", "prob": "2.0%", "height": 18, "fill": "fill-red" },
+        { "scen": "Base", "val": "~$15.73", "prob": "2.0%", "height": 30, "fill": "fill-amber" },
+        { "scen": "Bull", "val": "~$45.32", "prob": "0.96%", "height": 60, "fill": "fill-green" },
+        { "scen": "Extreme Bull", "val": "~$144.74", "prob": "0.64%", "height": 100, "fill": "fill-deep" }
+      ],
+      "axis_left": "$0",
+      "axis_mid": "Consensus intrinsic value per share (true probability weights)",
+      "axis_right": "~$144.74"
+    },
+    "weighted": {
+      "formula": "EV = 0.944×$5.93 + 0.020×$8.05 + 0.020×$15.73 + 0.0096×$45.32 + 0.0064×$144.74 = 5.60 + 0.16 + 0.31 + 0.44 + 0.93 ≈ $7.43 (pre-dilution) → ~$7.0–7.4 after the ~20–25% dilution haircut; central ~$7.2",
+      "text": "At $5.91 that is roughly **+19–26% expected upside** (central ~+22%) and **~2.5–3.3% 7-year annualized** — **an expected return that does not compensate for a binary, low-confidence asset.** Critically, this is a TRUE expected value, NOT the success-conditional $24.63: the workbook's probability-weighted value assumes the SION-451 franchise commercializes (~8% likely); gating it (0.92 × net cash + 0.08 × franchise option, less ~20–25% expected dilution) collapses the weighted value from $24.63 (upside +317%, 7-yr annualized +22.6%) to ~$7.0–7.4. The downside tail (severe bear / failure, ~94% of the probability mass) is ≈ net cash, not a −94% loss; the upside tail (extreme bull $144.74) is ~0.6% probable. Confidence: **Low** — P(success) 5–15% spans the whole value range. The reverse-DCF check (uncontested): $5.91 assumes **zero pipeline value / ~0% success probability** — harsh but rational given the data; the consensus assigns ~8% and credits the option at only ~$1.1–1.5/share."
+    }
+  },
+  "ladder": {
+    "title": "Consensus Price Ladder",
+    "lead": "Where the six frameworks meet — the composite accumulation plan. Do not initiate at ~$5.91; the do-not-initiate band is above ~$7.40 (above the consensus full EV ~$7.0–7.4).",
+    "rungs": [
+      { "price": "> $8.00", "width": 60, "fill": "fill-red", "action": "Reduce / avoid — above Munger's sell zone (>$8.00) and Soros's ($8.50–10); sell into any re-rating without fundamental progress", "color": "var(--red)" },
+      { "price": "$7.40–8.00", "width": 45, "fill": "fill-red", "action": "Do not initiate — above the consensus full EV (~$7.0–7.4); the hard do-not-initiate band; no new money", "color": "var(--red)" },
+      { "price": "$5.91–7.40", "width": 40, "fill": "fill-amber", "action": "Hold / watch — at/below full EV but at/above net cash; $5.91 sits here; no new money without a catalyst", "color": "#7a5a08" },
+      { "price": "$4.50–5.50", "width": 45, "fill": "fill-green", "action": "Speculative starter — below net cash (~$5.93); Druckenmiller's zone; Soros scale-in; the option is nearly free", "color": "var(--green)" },
+      { "price": "< $4.50", "width": 70, "fill": "fill-green", "action": "Speculative accumulate — deep discount to net cash (≥24%); Damodaran buy zone; Munger speculative zone", "color": "var(--green)" },
+      { "price": "< $3.50", "width": 100, "fill": "fill-deep", "action": "High-conviction speculative buy — Munger conviction zone (<$3.00); the deepest margin of safety", "color": "#0e4d31", "bold": true }
+    ]
+  },
+  "proscons": {
+    "title": "Pros & Cons — At ~$5.91",
+    "for": [
+      "Trades AT net cash — $5.91 vs ~$5.93/share net cash ($268.3M, no debt, runway into 2028): the downside is floored near the balance sheet, not at zero",
+      "Pipeline priced at $0 — EV ≈ −$1M; zero credit for SION-451 + SION-2222 (positive Phase 1 safety/PK data, preferred combo), the NBD1 platform/IP, or takeout optionality",
+      "Downside is largely spent — bust complete (−92% in a week; −85.6% YTD), RSI-14 21.5 deeply oversold; no debt, no leverage, no forced-selling overhang; a fragile bear belief ('pipeline = zero') one credible data point can break",
+      "Real (if low-probability) optionality — a credible SION-451 Phase 2 plan, a confounder read, or a strategic transaction at a premium to cash would each reprice the option from ~$0 to several dollars",
+      "Clean balance sheet — negligible liabilities (~$17.5M), ~$2.6M/qtr interest income; capital-preservation stance signals discipline",
+      "If the franchise works, the payoff is large — success-conditional values run $15.73 (base) to $144.74 (extreme bull) in a ~$10B+/yr CF market"
+    ],
+    "against": [
+      "Expected return does not compensate — true probability-weighted value ~$7.0–7.4 vs $5.91 = only ~+19–26% with ~2.5–3.3% 7-yr annualized for a binary, low-confidence asset",
+      "Modal outcome is flat-to-down — ~60–75% probability of stagnation near net cash or drift toward the wind-down floor (~$4.00–5.00) as cash burns",
+      "The pipeline is damaged — SION-719 Phase 2a miss (p=0.7) falsified the lead thesis; SION-451 must beat Trikafta head-to-head; the same CFHBE model that predicted the failure underpins SION-451",
+      "The cash floor erodes — ~$42M H1-26 burn; net cash/share declines every quarter; 'preserve capital' (layoffs) risks gutting the franchise",
+      "Dilution overhang — $250M ATM (~2× share count at ~$6), 7.34M underwater options ($20.06 strike), $79.7M unrecognized SBC",
+      "No margin of safety — you pay full price for the only solid asset (cash) with a low-probability option thrown in free",
+      "Incumbent moat — Vertex (~$10B+/yr CF franchise) just had its moat re-confirmed by Sionna's failure; prior CF challengers have failed; Vertex's next-gen keeps raising the bar",
+      "Stale/absent sell-side and litigation — $17.20 avg target is a pre-crash relic; Guggenheim downgraded to Neutral (8/11/26); multiple shareholder investigations"
+    ]
+  },
+  "triggers": {
+    "title": "What Changes the Rating",
+    "upgrade_title": "Upgrade C− → C/B when:",
+    "upgrade": [
+      "A credible SION-451 Phase 2 plan is announced (advancement decision, dose, design, timeline) — re-prices the option from ~$0 to positive (the single strongest signal)",
+      "Positive SION-451 patient efficacy data or a confounder analysis that rehabilitates the translational model — raises P(success) above ~10%",
+      "A strategic transaction at a premium to cash (partnering, out-licensing, takeout of $268M cash + IP) — compresses the cash discount",
+      "A margin of safety returns — price into the ≤$4.50 speculative accumulate zone, where the failure case is embedded and the option is nearly free",
+      "Capital preservation executed well (cost cuts without gutting the program) and the ATM stays unused — floor decay slows, dilution lever stays off"
+    ],
+    "downgrade_title": "Downgrade C− → D/E if:",
+    "downgrade": [
+      "SION-451 is shelved or fails in patients — franchise value ≈ 0; stock converges toward burn-down (~$4.00–5.00 over years); the mechanism's second strike",
+      "A dilutive $250M ATM raise at/below net cash used for general corporate purposes — per-share value destroyed and the floor broken",
+      "Layoffs so deep the franchise credibility is gutted, or the CFHBE model is formally discredited — the strategic-deal value collapses",
+      "Cash/share decays below ~$4 with no optionality / going-concern-style doubt — the abandonment floor itself breaks",
+      "The bust re-accelerates — a break of the $4.01 52-week low on accelerating burn, a distressed raise, or wind-down language"
+    ],
+    "dashboard_title": "Consensus monitoring dashboard",
+    "dashboard": [
+      { "metric": "SION-451 advancement decision & Phase 2 design", "why": "The binary hinge of the entire valuation", "helps": "Credible Phase 2 plan announced (H2-26–H1-27)" },
+      { "metric": "PreciSION confounder analysis / translational credibility", "why": "The fate of the CFHBE model underpinning SION-451", "helps": "Confounders rehabilitate the add-on thesis" },
+      { "metric": "Strategic transaction (partner / out-license / takeout)", "why": "The cash-discount compressor", "helps": "Premium to net cash; credible counterparty" },
+      { "metric": "Cash & burn trajectory", "why": "The floor itself (~$42M/H1 burn)", "helps": "Burn decelerates; no emergency financing" },
+      { "metric": "ATM / dilution", "why": "The per-share tax (~2× share count at ~$6)", "helps": "ATM stays unused; no sub-cash raise" },
+      { "metric": "SION-451 / pipeline newsflow", "why": "The option-value driver", "helps": "Positive patient efficacy data" },
+      { "metric": "Price vs $4.01 low / net cash", "why": "The floor's integrity", "helps": "Holds ≥ ~$4.50–5.00 (net cash minus burn)" }
+    ]
+  },
+  "technical": {
+    "title": "Technical Analysis",
+    "lead": "Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.",
+    "rows": [
+      { "metric": "Price vs 200-day SMA", "value": "$39.26", "delta": "−84.9% below" },
+      { "metric": "Price vs 100-day SMA", "value": "$39.42", "delta": "−85.0% below" },
+      { "metric": "Price vs 50-day SMA", "value": "$38.38", "delta": "−84.6% below" },
+      { "metric": "14-day RSI", "value": "21.5", "delta": "Deeply oversold (below 30)" },
+      { "metric": "14-week RSI", "value": "28.1", "delta": "Oversold" },
+      { "metric": "50-week RSI", "value": "42.0", "delta": "Weak" },
+      { "metric": "52-week high / low", "value": "$4.01 / $54.97", "delta": "−89% from high · +47% from low" }
+    ],
+    "note": "All seven indicators confirm a confirmed Stage 4 decline — ~85% below the 50/100/200-day SMAs, all RSIs weak-to-oversold, no base or pivot. RSI >70 overbought, <30 oversold; SMA deltas are the price's % deviation from each average. Values computed 2026-08-17 from the shared fact pack."
+  },
+  "conclusions": {
+    "title": "The Five Consensus Conclusions",
+    "items": [
+      "**The Business.** Sionna is a single-thesis, pre-revenue CF biotech whose only path to value is the SION-451 NBD1-stabilizer franchise — and whose lead NBD1 program (SION-719) just missed its Phase 2a endpoint (p=0.7) and was dropped as an add-on to standard of care. The entire equity is a net-cash-backed option on that franchise. The business quality is not in dispute; the probability of the franchise ever existing is.",
+      "**The Economics.** The sole determinant of long-term per-share value is the probability-weighted value of the SION-451 franchise versus the ~$5.93 net-cash floor — P(success) × franchise value against the abandonment option. If the franchise exists, it is high-margin, low-capital, and value-creating (terminal ROIC 25%+ vs a 14% WACC in a ~$10B+/yr market); if not, the cash burns down toward ~$4.00–5.00 over years. The per-share tax is dilution, not interest.",
+      "**The Market's Expectations.** $5.91 prices the pipeline at $0 (EV ≈ −$1M) — the market assigns ~0% probability of commercial success. That is harsh but rational given the data: a lead program just failed, SION-451 has no patient efficacy data, and the incumbent's moat was just re-confirmed. It is not a large error; the consensus assigns ~8% and credits the option at only ~$1.1–1.5/share.",
+      "**The Valuation.** Consensus base (modal) intrinsic value ~$5.93/share (net cash); consensus TRUE probability-weighted value ~$7.2 (range ~$7.0–7.4); bear ~$4.00–5.56; bull ~$45.32; extreme bull ~$144.74. Damodaran workbook (SUCCESS-CONDITIONAL): $5.56 / $8.05 / $15.73 / $45.32 / $144.74, weighted $24.63, upside +317%, 7-yr annualized +22.6% — only if SION-451 commercializes. Confidence: Low. Expected upside vs $5.91 ≈ +19–26%; 7-year annualized ~2.5–3.3%.",
+      "**The Investment Decision.** C− — Hold/Watch at ~$5.91; do not initiate. Do-not-initiate band above ~$7.40 (above the full EV); speculative starter $4.50–5.50, speculative accumulate ≤$4.50, high-conviction speculative <$3.50. Upgrades require proof — a credible SION-451 Phase 2 plan, positive patient data, a strategic transaction at a premium, or a genuine discount to cash. The clinical data and the balance-sheet trajectory, not the stock price, will deliver the verdict."
+    ]
+  },
+  "judgment": {
+    "title": "Final Consensus Judgment",
+    "paragraph": "At a price of **$5.91**, the market is paying book value for a cash pile — the entire clinical pipeline is priced at **zero** (EV ≈ −$1M). Six independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity-driven expectations, reflexivity, and (separately) trend/momentum — all refuse to buy at this price, all land on a **C− (Hold/Watch) at the unified margin** (with Buffett and Munger recording D — Avoid as quality/circle-of-competence verdicts and Minervini recording an F as a standalone trading view), and all place the valuation-critical variable on the same hinge: whether the SION-451 franchise's probability-weighted value exceeds the ~$5.93 net-cash floor — P(success) × franchise value against the abandonment option. We agree the balance sheet is safe (the downside is floored near-term), the pipeline is damaged (the add-on version of the same mechanism failed p=0.7), the option is real but low-probability (~8%), the cash floor erodes with burn, the $250M ATM is the dilution lever, Vertex's moat was just re-confirmed, and the expected return (~+19–26% on a true expected value of ~$7.0–7.4) does not compensate for a ~92%-likely failure. The most dangerous risks are a SION-451 shelving or failure (franchise value ≈ 0, burn-down toward ~$4–5), a sub-cash ATM raise, capital-preservation cuts that gut the program, cash/share decay below ~$4, and a break of the $4.01 floor. Therefore, at today's price the consensus is to **hold and watch**: do not initiate; take only a small speculative starter at **$4.50–5.50**, accumulate at **≤$4.50**, and buy with conviction only below **$3.50** — or on a credible SION-451 next step, a positive confounder read, or a strategic transaction — and let the clinical data and the balance-sheet trajectory, not the 92% decline, decide whether this net-cash-backed option becomes an investment."
+  },
+  "sources_note": "This report synthesizes six analyses — `buffet-analysis.md`, `munger-analysis.md`, `damodaran-analysis.md`, `druckenmiller-analysis.md`, `soros-analysis.md`, and `minervini-analysis.md` (dated August 17, 2026) — which themselves reference Sionna SEC filings (Q2 2026 10-Q filed 8/6/26; 8-K + EX-99.1 topline release 8/10/26), the Sionna Q2 2026 earnings release, Yahoo Finance SION/VRTX quotes, STAT News, Quartz, Insider Monkey, Simply Wall St, TipRanks, StockAnalysis, the shared fact pack, and Damodaran's NYU datasets, as of August 2026. Damodaran's scenario values are the verified `SION_Damodaran_Financial_Model.xlsx` workbook outputs (verifier: ALL_MATCH): Severe Bear **$5.56** / Bear **$8.05** / Base **$15.73** / Bull **$45.32** / Extreme Bull **$144.74**, probability-weighted (SUCCESS-CONDITIONAL) **$24.63**, upside **+317%**, 7-yr annualized **+22.6%** (WACC 14.0%, terminal growth 3.0%). The consensus probability-weighted value of **~$7.0–7.4/share** is a TRUE expected value (net cash + ~8% P(success) × franchise option, less expected dilution) — **not** the success-conditional $24.63. This document is an educational synthesis of estimates about estimates — it is **not investment advice**, and no valuation herein should be treated as a price prediction or a recommendation to trade. Sionna's outcome distribution is wide and binary; treat every number on this page as a hypothesis, not a fact.",
+  "figures": [
+    "C− — HOLD / WATCH", "$5.91", "~$5.93", "~$7.0–7.4", "~$7.2",
+    "$24.63", "$5.56", "$8.05", "$15.73", "$45.32", "$144.74",
+    "+317%", "+22.6%",
+    "$4.00", "$4.50–5.50", "$4.50", "$7.40–8.00", "$7.40", "5/10",
+    "$39.26", "$39.42", "$38.38", "21.5", "28.1", "42.0",
+    "$4.01 / $54.97",
+    "−84.9% below", "−85.0% below", "−84.6% below",
+    "−89% from high · +47% from low"
+  ]
+}

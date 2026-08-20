@@ -34,6 +34,7 @@ LENS_FILES = [
     "damodaran-analysis.md",
     "druckenmiller-analysis.md",
     "soros-analysis.md",
+    "minervini-analysis.md",
 ]
 SCEN_SHEETS = ["DCF-SevereBear", "DCF-Bear", "DCF-Base", "DCF-Bull",
                "DCF-ExtremeBull"]

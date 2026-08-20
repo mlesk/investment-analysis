@@ -1,0 +1,1202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike, Inc. — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">Synthesized Consensus · Five-Lens Deliberative Debate + Minervini Trading View</div>
+        <h1>Nike, Inc. — Consensus Investment Report</h1>
+        <div class="sub">A structured debate between five independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, and Soros reflexivity — plus a standalone Minervini trading view, reconciled into a single synthesized analysis and recommendation.</div>
+        <div class="meta-row">
+          <span class="chip">NYSE: NKE</span>
+          <span class="chip">Report date: 2026-08-17</span>
+          <span class="chip">Reference price: $39.09</span>
+          <span class="rating-badge"><span class="dot"></span> C — HOLD / WATCH</span>
+        </div>
+      </div>
+    </header>
+
+
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">Nike is a genuinely great consumer brand — simple, durable-category, fortress balance sheet, #1 global share — whose moat is eroding and whose earnings power has roughly halved, trading at a 12-year low just above its 52-week low. Five frameworks split 3–2: the fundamental-quality majority (Buffett, Munger, Soros) sees <b>no margin of safety</b> at <b>$39.09</b> (base ~$34–40); Damodaran (B+) sees a cyclical trough mispriced as terminal (base $53.33) and would buy on weakness; Druckenmiller (B–) sees a 12–18-month tactical trade, not an investment; Minervini's trading view is F — do not buy. The consensus is <b>C — HOLD / WATCH</b>, do not initiate at ≥$39, and the entire debate turns on one question: is the decline a cycle (recoverable) or structural (permanent)?</p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$40</div>
+            <div class="note">Buffett ~$34 / Munger $38 / Soros ~$40 fundamental cluster; Damodaran workbook base $53.33 (cycle-recovery value)</div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$46</div>
+            <div class="note">0.10×$24 + 0.20×$31 + 0.35×$40 + 0.25×$58 + 0.10×$85; Damodaran's own weighted $62.22</div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">~$24 – ~$85</div>
+            <div class="note">Consensus severe bear ~$24, bull ~$58, extreme tail ~$85; Damodaran's own $2.39–$162.58 is far wider</div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low/Med</div>
+            <div class="note">Cycle-vs-structural unresolved; China + margin recovery the swing; ~104% fwd dividend payout is the tripwire</div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$28–33 → &lt;$28</div>
+            <div class="note">Accumulate $28–33; high-conviction $23–28; exceptional &lt;$23 — do-not-initiate ≥$39</div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 20px">China + margins vs WACC</div>
+            <div class="note">Is the decline cyclical (margins normalize toward ~12% EBIT, China stabilizes) or structural (permanent share/margin loss)?</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">02</span>The Positions at the Table</h2>
+        <p class="lead">Each participant analyzed Nike independently. Their positions were then cross-examined in the debate. The Minervini lens is a standalone trading view and does not determine the consensus rating.</p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span><span class="small">at ~$39.09</span>
+              </div>
+              <p>Three-scenario 10%-hurdle DCF: bear ~$22, base ~$34, bull ~$47, weighted ~$33. At $39.09 the stock trades ~18% above my base value — <b>no margin of safety</b>. The brand, the fortress balance sheet, and the 24-year dividend record argue against avoid; the eroded moat and shrinking earnings power argue against buy. I become interested near <b>$23–28</b>; sell/reduce above ~$42.</p>
+              <div class="tags">
+                <span class="tag">Base ~$34</span><span class="tag">Weighted ~$33</span><span class="tag">Moat: Moderate-eroding</span><span class="tag">Interest $23–28</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — HOLD/WATCH</span><span class="small">at ~$39.09</span>
+              </div>
+              <p>Conservative DCF (10.5% discount, 2% terminal growth): bear $28, base $38, bull $48, weighted ~$37.20. The <b>−49% FCF collapse</b> is a red flag on earnings quality — only 61 cents of cash per $1 of reported profit. A fair business at a fair price is not a good investment; two of eight avoid-stupidity checks fail. Accumulate <b>$29–33</b>, conviction <b>&lt;$25</b>.</p>
+              <div class="tags">
+                <span class="tag">Base $38</span><span class="tag">Weighted ~$37.20</span><span class="tag">FCF −49% red flag</span><span class="tag">Accumulate $29–33</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B+ — Buy on weakness</span><span class="small">at ~$39.09</span>
+              </div>
+              <p>Verified workbook (8.1% WACC, 2.5% terminal growth, margins normalizing toward ~12%): Severe Bear $2.39 / Bear $15.28 / Base <b>$53.33</b> / Bull $95.99 / Extreme Bull $162.58, weighted <b>$62.22</b> — <b>+59.2% upside</b>, <b>+9.7% 5-year annualized</b>. The market has conflated near-term cyclical weakness (China, wholesale) with structural decline. Buy zone <b>$30–45</b>, conviction <b>&lt;$30</b>. Not a short.</p>
+              <div class="tags">
+                <span class="tag">Base $53.33*</span><span class="tag">Weighted $62.22*</span><span class="tag">Buy $30–45</span><span class="tag">Conviction &lt;$30</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro, Liquidity &amp; Expectations Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B– — tactical long</span><span class="small">at ~$39.09</span>
+              </div>
+              <p>This is a 12–18-month mean-reversion trade, not a long-term hold. 12–18-month price expectations (not IV): bear $32–35, base $48–52, bull $62–70, weighted ~$46–48 — roughly <b>+20% expected 12-month return</b> with ~2:1 asymmetry. The market prices zero recovery; a modest one re-rates the stock violently given empty positioning and falling short interest. Buy <b>$38–42</b> tactical; sell rallies <b>$48–50</b>.</p>
+              <div class="tags">
+                <span class="tag">12-mo $48–52</span><span class="tag">Asymmetry 2:1</span><span class="tag">Tactical $38–42</span><span class="tag">Sell $48–50</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity &amp; Disequilibrium Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Hold / wait for inflection</span><span class="small">at ~$39.09</span>
+              </div>
+              <p>Mid-reflexive-bust near capitulation: the market's 'terminal decline' perception is an over-extrapolation, but the negative loop is unconfirmed-broken (JPM's FY28 headwinds). Weighted IV ~$40; 12-month expected return ≈ <b>+1%</b> at $39 with ~1.1x asymmetry — not a buy, not a short. Buy on dislocation <b>$28–33</b> or a confirmed inflection; the ~104% dividend payout is the tripwire.</p>
+              <div class="tags">
+                <span class="tag">Base ~$40</span><span class="tag">Weighted ~$40</span><span class="tag">Buy $28–33</span><span class="tag">Sell $50–56</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Mark Minervini</div>
+              <div class="role">SEPA / Trading View — NOT part of consensus rating</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">F — Avoid</span><span class="small">at ~$39.09</span>
+              </div>
+              <p>Standalone trading view: <b>Stage 4</b> decline, <b>0/8</b> Trend Template, no pivot, severe RS laggard, no VCP — 'great company ≠ great trade.' Do not buy; watchlist only for a future Stage 1→2 base. Logical invalidation: a close below $38.86; first resistance $42.75 / $43.88 / $53.09; next earnings Sep 29, 2026 is a binary gap risk.</p>
+              <div class="tags">
+                <span class="tag">Stage 4</span><span class="tag">0/8 Trend Template</span><span class="tag">No pivot</span><span class="tag">Do not buy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">03</span>The Debate: Agreement, Contention, Resolution</h2>
+        <p class="lead">Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions — Damodaran concedes his B+ assumes the contested cycle view and accepts the ladder; Buffett concedes the brand and balance sheet argue against avoid; Munger concedes the bull case is real but refuses to pay for it; Druckenmiller concedes his B– is a trade with a defined exit; Soros concedes waiting is free; Minervini holds there is no technical entry today. Conclusion: a split 3–2 verdict resolved to C — HOLD/WATCH.</p>
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>This is a genuinely great consumer brand.</b> Simple, durable-category, asset-light; #1 global athletic share (~19%); premium pricing intact; 24-year dividend-growth record. The business quality is not in dispute.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The moat is real but eroding — Moderate, not Wide.</b> Brand + scale + sports-marketing network effects remain; but consumer switching costs are minimal, On/Hoka/Brooks (~17% combined) and China locals are taking share, and UBS secondary-market prices are falling.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The balance sheet is fortress-grade — no solvency or leverage reflexivity.</b> Net debt ≈ $2.0B (cash $9.0B vs debt $11.0B), interest coverage ~13–18×, Altman Z 4.31, current ratio 1.96. This caps the downside: no forced-selling loop.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Earnings quality has deteriorated and the FCF collapse is real.</b> FCF $1.89B (−49% YoY), FCF/NI ~61%, OCF/NI &lt;1, one-time $0.52/sh tariff benefit flattered Q4 EPS, $385M restructuring, SBC ~$715–800M/yr.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The dividend is the fragile floor and the tripwire.</b> 4.03% fwd yield, ~104% forward payout on falling EPS, buybacks paused ($146M FY26) — sustainable only if EPS stops falling.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>China is the swing variable.</b> Greater China −11% FY26 to $5.85B; share −590 bps since 2019 to 12.9%; segment profit contribution down from 25% to 12%. China stabilization is the hinge between the cycle and structural narratives.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Wholesale is recovering while Direct resets — a deliberate rebalancing, not pure demand destruction.</b> Wholesale +6% to $27.5B vs Direct −6% to $17.7B; the 'Win Now' store closures self-inflict near-term pain into FY28 (JPM).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Nobody buys with long-term conviction at $39.09; nobody shorts.</b> Buffett/Munger/Soros: no margin of safety. Damodaran: buy on weakness, conviction below $30. Druckenmiller: a tactical trade, not an investment. Minervini: F — do not buy. The stock is too cheap, too oversold, and too short-covering to short reflexively.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The one valuation-critical variable: China stabilization + margin recovery vs WACC.</b> Damodaran: 'if margins normalize toward 12% and China stabilizes, base is $53.33 — the market is pricing a structural bear.' Buffett/Munger/Soros: 'if the share loss is structural, base is $34–40 — the market is pricing fair value for a shrinking brand.'</div>
+          </div>
+        </div>
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Reference price: intrinsic value today vs 12-month price path.</b> All five anchor on $39.09, but Buffett/Munger/Damodaran/Soros frame their cells as intrinsic value today while Druckenmiller frames his ($32–35 / $48–52 / $62–70) as 12–18-month price expectations. Druckenmiller concedes his cells are price paths, not IV. <b>Resolved:</b> the IV models set the consensus IV; Druckenmiller informs the near-term ladder and triggers (his cells carry a † in the matrix).</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Where does base-case intrinsic value sit?</b> Buffett ~$34 (10% hurdle, partial structural share loss), Munger $38 (10.5% / 2%), Soros ~$40 (reflexive), Druckenmiller $48–52 (12-mo price path, not IV), Damodaran <b>$53.33</b> (verified workbook — assumes margin normalization and China stabilization). Munger challenges Damodaran: 'you are capitalizing the recovery'; Damodaran counters: 'normalizing a cyclical trough is not optimism.' <b>Resolved:</b> consensus base ≈ <b>~$40</b> — the top of the fundamental cluster, partially crediting Damodaran's cycle case; his $53.33 becomes the 'cycle-recovery' upgrade target.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>How much credit for the right tail?</b> Damodaran bull $95.99 / extreme $162.58 (25% / 10%) vs Buffett ~$47, Munger ~$48, Soros ~$50–56, Druckenmiller $62–70 (aggressive). Damodaran's bull requires China to re-accelerate at +5% CAGR and DTC at 35–40% of revenue — the majority regards that as low-probability for a brand whose share is falling. Damodaran concedes his distribution is right-skewed: 'the median sits well below the weighted value.' <b>Resolved:</b> consensus bull ≈ <b>~$58</b>, extreme ≈ <b>~$85</b>; his cells stand but are not fully credited.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>What price compensates for the uncertainty?</b> Buffett $23–28; Munger $29–33 (conviction &lt;$25); Damodaran $30–45 (conviction &lt;$30); Druckenmiller $38–42 (tactical only); Soros $28–33 (dislocation). Damodaran: 'at $30–45 the expected return finally compensates; demanding $25 implies you believe the bear case is the base case.' Munger: 'I refuse to pay for the option; the margin of safety is the whole point.' <b>Resolved (unanimous):</b> composite ladder — watch $33–39, accumulate $28–33, high-conviction $23–28, exceptional &lt;$23. The dispute is sizing and temperament; nobody buys with conviction at $39.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Management quality — Elliott Hill turnaround credibility.</b> Buffett 7/10 (integrity, candor, insider buys at $42–43, historically strong allocation now strained); Munger 6/10 (defensive capital allocation, missed demand signals, inventory defense); Damodaran 'credible — turnaround in progress'; Druckenmiller ~70% high-confidence; Soros 'insiders bought above today's price but austerity self-inflicts pain and the CFO was replaced.' <b>Resolved:</b> consensus <b>6/10</b> — credible, candid, insider-aligned, but entirely unproven; JPM's FY28-headwinds call is live; the Q1 FY27 print (Sep 29, 2026) is the first hard test.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Is the decline a cycle (recoverable) or structural (China/wholesale) — the single biggest disagreement.</b> Damodaran: cycle (China comps easing, margins normalize toward ~12% EBIT, DTC runway, World Cup); Druckenmiller: cycle-ish (China stabilizes by early 2027, trough FY27); Buffett/Munger/Soros: partly structural (China share −590 bps, ankle-biters at ~17%, moat moderate and eroding, FCF −49% as evidence demand is broken, not just timing). Damodaran concedes his case rests on the recovery showing up; Munger concedes wholesale +6% and the World Cup are real but refuses to pay for them; Soros concedes the market may be over-extrapolating, but the negative loop is unconfirmed-broken. <b>Resolved:</b> NOT cleanly resolved — the consensus prices ~40% of the cycle-recovery view into its base (~$40) and treats the question as the decisive, monitored uncertainty; the Q1 FY27 print (Sep 29, 2026) and China/margin data will adjudicate.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">Reconciled scenario matrix. The <b>Damodaran column is the verified workbook (ALL_MATCH) — authoritative, verbatim</b>. Druckenmiller/Soros columns are 12–18-month price expectations (†), not intrinsic value; they inform the near-term ladder and triggers, not the consensus IV. The consensus IV row is the majority reconciliation — closer to the fundamental lenses (Buffett/Munger/Soros) than to Damodaran, because the cycle-recovery assumptions his base requires are the contested core of the debate.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+<th class="">Scenario</th><th class="right">Prob.</th><th class="right">Damodaran (workbook)</th><th class="right">Buffett</th><th class="right">Munger</th><th class="right">Druckenmiller†</th><th class="right">Soros†</th><th class="right">Consensus IV</th>              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<td>Severe bear</td><td class="right">10%</td><td class="right">$2.39</td><td class="right">~$22</td><td class="right">$28</td><td class="right">~$22–28 (−43–28%)†</td><td class="right">~$25 (−36%)†</td><td class="right"><b>~$24</b></td>
+              </tr>
+              <tr>
+<td>Bear</td><td class="right">20%</td><td class="right">$15.28</td><td class="right">~$28 *</td><td class="right">~$32 **</td><td class="right">~$32–35 (−18–8%)†</td><td class="right">~$32 (−18%)†</td><td class="right"><b>~$31</b></td>
+              </tr>
+              <tr class="hl">
+<td>Base</td><td class="right">35%</td><td class="right">$53.33</td><td class="right">~$34 *</td><td class="right">$38</td><td class="right">~$48–52 (+23–33%)†</td><td class="right">~$40 (+2%)†</td><td class="right"><b>~$40</b></td>
+              </tr>
+              <tr>
+<td>Bull</td><td class="right">25%</td><td class="right">$95.99</td><td class="right">~$47 *</td><td class="right">~$48 **</td><td class="right">~$62–70 (+58–79%)†</td><td class="right">~$50 (+28%)†</td><td class="right"><b>~$58</b></td>
+              </tr>
+              <tr>
+<td>Extreme bull</td><td class="right">10%</td><td class="right">$162.58</td><td class="right">~$47 *</td><td class="right">~$48 **</td><td class="right">~$62–70 (+58–79%)†</td><td class="right">~$56 (+43%)†</td><td class="right"><b>~$85</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">* Buffett: base $34 is his 10%-hurdle DCF; his bull is $47 and he caps the extreme tail at his bull value. <b> Munger: base $38, bull $48; tail cells capped at his bull. † Druckenmiller/Soros cells are 12–18-month </b>price expectations**, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV. Damodaran column = verified <code>NKE_Damodaran_Financial_Model.xlsx</code> (ALL_MATCH): Severe Bear $2.39 / Bear $15.28 / Base $53.33 / Bull $95.99 / Extreme Bull $162.58, weighted $62.22.</p>
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 28px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">~$24</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 36px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">~$31</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 47px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">~$40</div>
+            <div class="prob">35%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 68px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">~$58</div>
+            <div class="prob">25%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 100px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">~$85</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus intrinsic value per share</span><span>~$85</span>
+        </div>
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>EV = 0.10×$24 + 0.20×$31 + 0.35×$40 + 0.25×$58 + 0.10×$85 = 2.4 + 6.2 + 14.0 + 14.5 + 8.5 ≈ $46/share</h3>
+          <p class="big">At $39.09 that is roughly <b>+17% expected upside</b> and <b>≈ +3% 5-year annualized</b> — positive but thin, with <b>no margin of safety</b> for a 10%+ return seeker. The consensus weighted value (~$46) sits between the fundamental lenses' weighted values (Buffett ~$33, Munger ~$37, Soros ~$40) and Damodaran's workbook weighted value ($62.22), because the majority only partially credits the cycle-recovery case his base requires. Confidence: <b>Low/Medium</b> — the cycle-vs-structural question is unresolved and the ~104% dividend payout is the tripwire. <b>Reverse-DCF check (uncontested):</b> the $39.09 price implies roughly a ~2.8% FCFF CAGR (vs Damodaran's ~4.5%), ~1.5% terminal growth (vs 2.5%), or a ~9.5% WACC (vs 8.1%) — the market prices a <b>no-recovery, structural-bear scenario</b>. It does not assume an impossible business; it prices one for zero success. Downside tail (severe bear) ≈ −38% from price; upside tail (extreme bull) ≈ +117%.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">Where the six views meet. <b>Do-not-initiate band: $39 and above</b> — the current price ($39.09) sits inside it. The fundamental majority (Buffett, Munger, Soros) refuses to buy above ~$33; Damodaran's buy-on-weakness zone ($30–45) and Druckenmiller's tactical trade ($38–42) are the only constructive voices near the price, and neither is a long-term-conviction buy here.</p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $75</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / avoid — exceeds every lens target except Damodaran's extreme bull tail</span>
+          </div>
+          <div class="rung">
+            <span class="price">$56–75</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 80%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / trim — only tail-value remains for any holder</span>
+          </div>
+          <div class="rung">
+            <span class="price">$45–56</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Hold existing, do not add — Soros sell/reduce ($50–56); Druckenmiller take-profits ($48–50); Damodaran upper hold ($45–58)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$39–45</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 48%"></div>
+            </div>
+            <span class="action" style="color: var(--amber)">Do-not-initiate / watch — $39.09 sits here; fundamental majority refuses; only Druckenmiller's tactical trade ($38–42)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$33–39</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 42%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Watch / small tactical starter — Damodaran buy-on-weakness upper zone ($30–45); Soros avoids without confirmation</span>
+          </div>
+          <div class="rung">
+            <span class="price">$28–33</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 55%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Begin accumulating (starter position) — Soros dislocation; Munger accumulate; Damodaran conviction &lt;$30</span>
+          </div>
+          <div class="rung">
+            <span class="price">$23–28</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Accumulate (attractive) — Buffett's buy zone</span>
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $23</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31"><b>High-conviction / exceptional — Munger conviction &lt;$25; Buffett compelling $20s; asymmetry clears ~2×</b></span>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">06</span>Pros &amp; Cons — At $39.09</h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>Genuinely great consumer brand — simple, durable-category, asset-light; #1 global athletic share (~19%); premium pricing intact; 24-yr dividend streak</li>
+              <li>Fortress balance sheet — net debt ≈ $2.0B (cash $9.0B vs debt $11.0B), interest coverage ~13–18×, Altman Z 4.31 — no solvency or leverage reflexivity; caps the downside</li>
+              <li>Wholesale recovering (+6% to $27.5B) as Direct resets (−6%) — a deliberate rebalancing, not pure demand destruction; World Cup 2026, NikeSkims, Jordan, innovation cycle</li>
+              <li>Insiders bought the dip — CEO Elliott Hill +$1.0M and Tim Cook +$1.06M at $42–43 (April 2026); short interest ~4.77% and falling (−20% MoM) — exhaustion, not accumulation of bearishness</li>
+              <li>Multiple already compressed — P/E 18.6 TTM vs ~28 5-yr average; EV/EBITDA 12.7 vs ~20; sell-side avg PT $50.66 with a Hold (not Sell) consensus</li>
+              <li>4.03% dividend + deeply oversold technicals (RSI 14d 35.68; −51.2% from the 52-wk high) — a downside cap and fuel for a violent snap-back on any inflection</li>
+              <li>The cycle case is real — China comps easing, margin normalization plausible, DTC runway; Damodaran: 'the market has conflated cyclical weakness with structural decline'</li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>No margin of safety for the fundamental majority — consensus base ~$40 and weighted ~$46 vs a $39.09 price; Buffett's base ~$34 means the price is ~18% above his intrinsic value</li>
+              <li>FCF collapse and deteriorating earnings quality — FCF −49% YoY, FCF/NI ~61%, OCF/NI &lt;1, one-time $0.52/sh tariff benefit flattered Q4 EPS, $385M restructuring</li>
+              <li>China structural decline — −11% FY26; share −590 bps since 2019 to 12.9%; segment profit 25%→12%; local brands (Anta, Li Ning) winning at home</li>
+              <li>Moat erosion — On/Hoka/Brooks at ~17% combined vs Nike ~19%; secondary-market prices −2.9% y/y (UBS); LeBron urging Nike 'back to its roots'; Munger: 2 of 8 avoid-stupidity checks fail</li>
+              <li>Dividend strain — ~104% forward payout, buybacks paused ($146M FY26); the 4% yield that supports the stock is the tripwire; a cut without a capital plan could crash it toward $25–28</li>
+              <li>Turnaround unproven — JPM Underweight (PT $40), Evercore 'no re-rating'; flat EPS guided for three quarters; CFO replaced; fwd P/E ~23.8 on falling EPS is not cheap; 18 of 20 recent EPS revisions down</li>
+              <li>Right tail heavily disputed — Damodaran's bull $95.99 / extreme $162.58 requires China re-acceleration and DTC at 35–40%, which the majority regards as low-probability</li>
+              <li>Minervini: no technical setup — Stage 4, 0/8 Trend Template, no pivot, severe RS laggard; a bottom-fisher's expected return from here is ≈ −3%</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Greater China revenue growth inflects positive for two consecutive quarters (from −11% toward flat/+) — the swing variable</li>
+              <li>EBIT margin recovery demonstrated toward 12%+ (gross margin back toward 45%) — the Damodaran-vs-Buffett hinge</li>
+              <li>FCF normalizes — FCF/NI back above ~80%, OCF/NI ≥1, working-capital drag clears</li>
+              <li>Hard turnaround evidence — revenue inflects on a real (non-tariff) basis; wholesale-led growth holds; a dividend reset or buyback clears the payout tripwire</li>
+              <li>Price into $28–33 with the monitoring hierarchy intact</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Greater China share loss accelerates below 12.9% and China margins below ~22% — structural confirmation</li>
+              <li>Dividend cut without an offsetting capital plan — income-bid exits → reflexive crash toward $25–28</li>
+              <li>Revenue still negative at the FQ4 FY27 print — JPM's FY28-headwinds timeline confirmed; dead-money value trap</li>
+              <li>FCF stays depressed — inventory/working-capital buildup persists → structural demand loss, not timing</li>
+              <li>Moat erosion accelerates — On/Hoka/Brooks keep taking share; secondary-market prices keep falling; the moat compresses below its ~200 bps advantage</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Greater China revenue growth</b></td>
+                <td>The swing variable (−11% FY26)</td>
+                <td class="right">Stabilize toward 0/+; positive two quarters</td>
+              </tr>
+              <tr>
+                <td><b>EBIT margin recovery</b></td>
+                <td>The Damodaran-vs-Buffett hinge (9.0% TTM)</td>
+                <td class="right">Toward 12%+ normalized; gross ~45%</td>
+              </tr>
+              <tr>
+                <td><b>FCF / diluted share</b></td>
+                <td>Working-capital normalization (FCF −49% YoY)</td>
+                <td class="right">FCF/NI &gt;80%; OCF/NI ≥1</td>
+              </tr>
+              <tr>
+                <td><b>DTC vs wholesale mix</b></td>
+                <td>Wholesale +6% recovery vs Direct −6%</td>
+                <td class="right">Wholesale-led growth holds; DTC margins stabilize</td>
+              </tr>
+              <tr>
+                <td><b>Dividend policy</b></td>
+                <td>4.03% yield, ~104% fwd payout — the tripwire</td>
+                <td class="right">Maintained, or reset with a buyback plan</td>
+              </tr>
+              <tr>
+                <td><b>Short interest &amp; insider flow</b></td>
+                <td>SI ~4.77% and falling; April insider buys</td>
+                <td class="right">SI keeps falling; insiders keep buying</td>
+              </tr>
+              <tr>
+                <td><b>Analyst revisions</b></td>
+                <td>18 down / 2 up</td>
+                <td class="right">Revisions flatten, then rise</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 50/100/200-day SMA</b></td>
+                <td>Below all MAs; RSI oversold</td>
+                <td class="right">Reclaim SMA50 $42.75, then SMA100 $43.88</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">08</span>Technical Analysis</h2>
+        <p class="lead">Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning from the shared fact pack (computed from daily market data, August 17, 2026), not a forecast.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th class="right">Value</th>
+                <th class="right">Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Price vs 200-day SMA</b></td>
+                <td class="right">$53.09</td>
+                <td class="right">−26.4% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 100-day SMA</b></td>
+                <td class="right">$43.88</td>
+                <td class="right">−10.9% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 50-day SMA</b></td>
+                <td class="right">$42.75</td>
+                <td class="right">−8.6% below</td>
+              </tr>
+              <tr>
+                <td><b>14-day RSI</b></td>
+                <td class="right">35.68</td>
+                <td class="right">Oversold (approaching 30)</td>
+              </tr>
+              <tr>
+                <td><b>14-week RSI</b></td>
+                <td class="right">33.23</td>
+                <td class="right">Weak / oversold zone</td>
+              </tr>
+              <tr>
+                <td><b>50-week RSI</b></td>
+                <td class="right">39.96</td>
+                <td class="right">Weak (below 40)</td>
+              </tr>
+              <tr>
+                <td><b>52-week high / low</b></td>
+                <td class="right">$80.17 / $38.86</td>
+                <td class="right">−51.2% from high · +0.6% from low</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">Beta 1.12; short interest ~4.77%. RSI &gt;70 overbought, &lt;30 oversold; SMA deltas are the price's % deviation from each average. The price sits below every moving average in a fully inverted/descending MA stack, RSI is oversold at every horizon, and the stock trades essentially at its 52-week low — the same numbers the Minervini lens reads as a 0/8 Trend Template.</p>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">09</span>The Five Consensus Conclusions</h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Business.</b> Nike is a genuinely great consumer brand — simple, durable-category, asset-light, #1 global athletic share (~19%), premium pricing intact — but with a moat that is <b>real and eroding</b> (Moderate, not Wide): China share −590 bps since 2019, ankle-biters (On/Hoka/Brooks) at ~17% combined, falling secondary-market prices. The business quality is not in dispute; the trajectory is.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Economics.</b> The sole determinant of per-share value is whether the decline is a <b>cycle</b> — China stabilizes and margins normalize toward ~45.5% gross / 12% EBIT, unlocking Damodaran's $53.33 base — or <b>structural</b> — permanent share and margin loss, capping value at the $34–40 fundamental cluster. China stabilization and margin recovery vs the ~8–9% cost of capital is the one valuation-critical variable.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Market's Expectations.</b> At $39.09 the market prices a <b>no-recovery structural bear</b>: ~2.8% FCFF CAGR, ~1.5% terminal growth, ~9.5% WACC — China lost, margins permanently compressed, no re-rating ever. That is not an impossible business; it is a business priced for zero success — which is exactly why Damodaran sees value (+59% to his base) and why the fundamental majority still sees no margin of safety (their base is $34–40).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Valuation.</b> Consensus base intrinsic value <b>~$40/share</b>; probability-weighted <b>~$46/share</b>; severe bear ~$24, bull ~$58, extreme tail ~$85. Damodaran's verified workbook: <b>$2.39 / $15.28 / $53.33 / $95.99 / $162.58</b>, weighted <b>$62.22</b>. Confidence: <b>Low/Medium</b>. At $39.09 expected upside ≈ <b>+17%</b> (5-yr annualized ≈ +3%) — positive but thin, and <b>no margin of safety</b> for a 10%+ return seeker.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Investment Decision.</b> <b>C — HOLD / WATCH at $39.09; do not initiate at ≥$39.</b> Accumulate $28–33, buy with conviction $23–28, exceptional &lt;$23 — provided the monitoring hierarchy (China &gt; margin &gt; FCF/share &gt; mix &gt; dividend) stays intact. <b>Not a short.</b> Upgrades require proof; the Q1 FY27 print (Sep 29, 2026), China comps, and margin trajectory deliver the verdict.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">10</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>At a price of <b>$39.09</b>, the market is pricing Nike as a structurally broken, no-growth brand — no China recovery, permanently compressed margins, no re-rating. The five frameworks split <b>3–2</b>, and the split is honest and worth respecting: the fundamental-quality majority (Buffett, Munger, Soros) sees a wonderful business at fair-to-slightly-rich value with <b>no margin of safety</b> (base ~$34–40); Damodaran sees a cyclical trough mispriced as terminal (base $53.33, weighted $62.22, +59% to base) and would buy on weakness, conviction below $30; Druckenmiller sees a 12–18-month mean-reversion trade (not a long-term investment); Minervini's trading lens flatly says avoid (Stage 4, 0/8 Trend Template). The consensus resolves to a <b>C — HOLD / WATCH</b>: do not initiate at $39.09; accumulate from <b>$28–33</b>, buy with conviction at <b>$23–28</b> and below. The disagreement is real and centers on <b>one question — cycle or structural?</b> — which the market, not the debate, will answer at the Q1 FY27 print on <b>September 29, 2026</b> and in the China and margin data. The 4% dividend is the fragile floor: a cut without a capital plan is the one event that could complete the crash to $25–28 (and create the real reversal entry); a guide-beat that snaps the oversold, short-covering market is the one that could re-rate the stock violently. We agree on the asset and disagree on the price path; the correct response is to wait, watch, and buy only the prices that compensate for the uncertainty.</p>
+        </div>
+      </section>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes six analyses — <code>buffet-analysis.md</code>, <code>munger-analysis.md</code>, <code>damodaran-analysis.md</code>, <code>druckenmiller-analysis.md</code>, <code>soros-analysis.md</code>, and <code>minervini-analysis.md</code> — and the shared <code>fact-pack.json</code> (dated August 17, 2026), which themselves reference Nike SEC filings (FY2026 10-K filed 2026-07-15), J.P. Morgan's downgrade (8/4/2026, Underweight, PT $40), Evercore's 'no re-rating' note, UBS Evidence Lab secondary-market data, Seeking Alpha, StockAnalysis, Yahoo Finance, TradingView, and MarketBeat, as of August 2026. Damodaran's scenario values are the verified <code>NKE_Damodaran_Financial_Model.xlsx</code> workbook outputs (verifier: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is <b>not investment advice</b>, and no valuation herein should be treated as a price prediction or a recommendation to trade. Nike's outcome distribution is wide and the cycle-vs-structural question is genuinely unresolved; treat every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

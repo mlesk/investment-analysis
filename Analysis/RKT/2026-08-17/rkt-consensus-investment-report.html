@@ -1,0 +1,1177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Companies, Inc. — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">Synthesized Consensus · Five-Lens Deliberative Debate</div>
+        <h1>Rocket Companies, Inc. — Consensus Investment Report</h1>
+        <div class="sub">A structured debate between five independent investment frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, and Soros reflexivity — reconciled into a single synthesized analysis and recommendation.</div>
+        <div class="meta-row">
+          <span class="chip">NYSE: RKT</span>
+          <span class="chip">Report date: 2026-08-17</span>
+          <span class="chip">Reference price: $14.50</span>
+          <span class="rating-badge"><span class="dot"></span> C — HOLD / WATCH</span>
+        </div>
+      </div>
+    </header>
+
+
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">Rocket Companies is the dominant US homeownership platform — simultaneously the largest mortgage <b>lender</b> and the largest <b>servicer</b>, with a $2T servicing book, 70% recurring or less rate-sensitive revenue, record share gains, and a fortress (0.9x net leverage, $11.2B liquidity, investment-grade) balance sheet. Five independent frameworks each refused to buy at <b>$14.50</b> and converged on <b>C — Hold/Watch</b> (Buffett, Munger, Damodaran unanimous C; Druckenmiller C+ Monitor; Soros B on an asymmetric reflexive-reversal trade). The business is not in dispute; the price, the per-share economics (stock-based compensation ≈ net income), the rate-cycle timing, and the founder-controlled governance are.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$8</div>
+            <div class="note">Midpoint of Buffett (~$9), Damodaran workbook ($8.24), and Munger ($5.50) — ~45% below price</div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$14.86</div>
+            <div class="note">≈ the $14.50 price (+2.5% upside); Damodaran workbook $15.07 — no margin of safety; upside entirely in the right tail</div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$2.04 – $73.62</div>
+            <div class="note">Damodaran workbook severe bear $2.04 to extreme bull $73.62; consensus core ~$3–18</div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low/Med</div>
+            <div class="note">Rate cycle, MSR marks, SBC/amortization and the net-debt convention are the swing variables</div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">$8–10 → &lt;$6</div>
+            <div class="note">Begin accumulating $8–10; build $6–8; high conviction &lt;$6; risk-tolerant starter $11.50–14.50</div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value">EBIT margin · ROIC</div>
+            <div class="note">Economic EBIT margin (17→20%) and incremental ROIC vs ~9% WACC</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">02</span>The Five Positions at the Table</h2>
+        <p class="lead">Each participant analyzed Rocket Companies independently. Their positions were then cross-examined in the debate.</p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span><span class="small">at $14.50</span>
+              </div>
+              <p>Through-cycle owner-earnings DCF on normalized earnings $1.1–2.4B (economic net debt ~$2.7B at 0.9x EBITDA): bear <b>$4.50</b>, base <b>$9.00</b>, bull <b>$17.00</b>, weighted <b>~$10.00</b>. "A genuine, well-run franchise — but at $14.50 the market is paying ~20x forward for a rate-cyclical financial with SBC ≈ net income and no margin of safety." Buyer in the <b>$6–10</b> zone.</p>
+              <div class="tags">
+                <span class="tag">Base ~$9</span><span class="tag">Weighted ~$10</span><span class="tag">Moat: Moderate</span><span class="tag">Buy zone $6–10</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Watch</span><span class="small">at $14.50</span>
+              </div>
+              <p>Conservative DCF (13.3% = WACC + 3%, 2% terminal growth, SBC-adjusted): bear <b>$2.00</b>, base <b>$5.50</b>, bull <b>$10.00</b> (extreme $12.50), weighted <b>~$5.70</b> — expected return ≈ <b>−60%</b>. "A fair-to-good company priced as if the bull case has already happened — the fair-company-at-a-wonderful-price trap." First interest <b>&lt;$8</b>, conviction <b>&lt;$4</b>.</p>
+              <div class="tags">
+                <span class="tag">Base $5.50</span><span class="tag">Weighted ~$5.70</span><span class="tag">E[R] ≈ −60%</span><span class="tag">First interest &lt;$8</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Hold / Wait</span><span class="small">at $14.50</span>
+              </div>
+              <p>SBC- and amortization-aware FCFF DCF (9% WACC, 3% terminal growth, economic margins 17→20%, ROIC 30→25%, net corporate debt ~$2.3B): verified workbook — severe bear <b>$2.04</b>, bear <b>$4.39</b>, base <b>$8.24</b>, bull <b>$19.46</b>, extreme bull <b>$73.62</b>, probability-weighted <b>$15.07</b> (+4%, ~+0.8% 5-yr annualized). "The market embeds ~$20B revenue at ~20% margins — a bet on the refi cycle plus sustained share gains." Buy <b>&lt;$10</b>, add <b>&lt;$8</b>, sell <b>&gt;$18</b>.</p>
+              <div class="tags">
+                <span class="tag">Base $8.24</span><span class="tag">Weighted $15.07</span><span class="tag">Buy zone &lt;$10</span><span class="tag">Confidence Low/Med</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro, Liquidity &amp; Expectations Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C+ — Monitor</span><span class="small">at $14.50 · 70/150</span>
+              </div>
+              <p>Macro-first: hawkish Fed hold (3.50–3.75%), 10Y ~4.72% and rising, 30-yr mortgage ~6.67% near a 1-yr high — the wrong tape for a mortgage-volume story. 12-month <b>price</b> (not IV): bear <b>$11.50–12.75</b>, base <b>$13.75–15.50</b>, bull <b>$17–19</b>, weighted <b>~$15–15.50</b> (E[R] ≈ +6%). "A cheap call on the 2027 refi wave, not a today-must-be-long setup." Starter ≤1–2% <b>&lt;$13.50</b>, stop <b>&lt;$11.50</b>.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$15–15.50</span><span class="tag">Asymmetry fair</span><span class="tag">Starter &lt;$13.50</span><span class="tag">Stop &lt;$11.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity &amp; Disequilibrium Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">B — Asymmetric (scale-in)</span><span class="small">at $14.50</span>
+              </div>
+              <p>A reflexive-reversal: record share/profit through the toughest housing market in years while the market still prices RKT as rate beta — ~70% recurring revenue, ~$1B/qtr servicing cash floor, $320B &gt;6% MSR refi option, record share, declining short interest. 12-month <b>price</b> (not IV): bear <b>$12.50</b>, base <b>$16.25</b>, bull <b>$19.50</b>, weighted <b>$16.73</b> (+15.3%), asymmetry ~4.4:1. Scale-in <b>&lt;$14.50</b>, washout $12.5–13, sell <b>&gt;$20</b>.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$16.73</span><span class="tag">Asymmetry 4.4:1</span><span class="tag">Scale-in &lt;$14.50</span><span class="tag">Sell &gt;$20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">03</span>The Debate: Agreement, Contention, Resolution</h2>
+        <p class="lead">Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions.</p>
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>This is a genuinely dominant franchise.</b> Largest US mortgage lender AND largest servicer ($2T UPB), ~70% recurring or less rate-sensitive revenue, Redfin search funnel (50M MAU, 47% attach), home equity, Rocket Loans/Money — a real moat (scale × servicing recapture × distribution × AI × IG balance sheet), moderate not wide.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The servicing cash floor is real.</b> ~$1B/quarter of steady servicing cash flow on a $2T book; 57% of refi closes come from existing serviced clients at near-zero acquisition cost.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The balance sheet is a fortress by industry standards.</b> 0.9x net corporate leverage, $11.2B liquidity (+$1.8B QoQ), the only IG-rated public US mortgage company — the GAAP −$29.7B 'net cash' is a matched-asset artifact.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>SBC is the per-share tax.</b> ~$430M TTM of stock-based compensation ≈ 91% of GAAP net income ($471M) — the single most consequential earnings-quality judgment; GAAP net margin 4.6% vs adjusted ~16% is the crux.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The refi option is real but dated.</b> $320B (&gt;6% note rate, 26% of owned MSR) + 14.3% refi share + $300B capacity = a fat, credible right tail — a 2021-like refi wave, likely an H1-2027 catalyst, priced at $0 today.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>No margin of safety at $14.50.</b> All five independently found the price at or above their base value (Buffett base $9, Damodaran $8.24, Munger $5.50; Druckenmiller/Soros base ~flat-to-positive only on the option).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>2.83B shares is the 2025 recap count, not dilution.</b> The four-class → two-class up-C collapse reflects full economic ownership; all five use 2.83B for per-share valuation.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>One valuation-critical variable.</b> Economic EBIT margin (17→20% after SBC + intangibles amortization) and incremental ROIC vs the ~9% WACC — if the GAAP/adjusted gap never closes, share gains destroy value.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Unanimous refusal to buy at $14.50.</b> Three C's, one C+ Monitor, one B (asymmetric, speculative, scale-in) — no profile buys at full size at $14.50; no short is recommended either.</div>
+          </div>
+        </div>
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Reference price and intrinsic value vs 12-month price.</b> Buffett/Munger/Damodaran frame scenario values as intrinsic value today; Druckenmiller/Soros frame theirs as 12–18-month price expectations (Druckenmiller weighted ~$15–15.50, Soros ~$16.73). <b>Cross-examination:</b> these are different objects — consensus base IV (~$8) sits far below the price while the 12-month price expectations cluster at/above $14.50; Druckenmiller and Soros both concede their cells are price paths, not claims about fundamental worth. <b>Named concession:</b> Druckenmiller concedes 'my base is a price forecast under a stationary macro, not an intrinsic value'; Soros concedes his 'B' is a reflexivity trade on expectations, not a value anchor. <b>Resolved:</b> the three IV models set the consensus IV; Druckenmiller/Soros inform the near-term ladder and triggers only.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Where does base-case intrinsic value actually sit?</b> Buffett ~$9 (normalized owner earnings $1.1–2.4B), Damodaran $8.24 (verified workbook: 17→20% economic EBIT margin, 9% WACC, 3% terminal growth, ~$2.3B net debt), Munger $5.50 (13.3% discount, 2% terminal growth, SBC-adjusted). <b>Cross-examination:</b> Munger challenges Buffett and Damodaran for capitalizing adjusted, pre-SBC earnings; Buffett concedes his ~$9 assumes demonstrated normalized owner earnings; Damodaran challenges Munger's WACC+3% as double-punishing risk. <b>Named concession:</b> Munger concedes 'at a normal 9–10% discount my base rises toward $6–8.50'; Damodaran concedes Munger's SBC point is already the hinge of his own margin. <b>Resolved:</b> consensus base ≈ <b>~$8/share</b> — the intersection of Buffett and Damodaran, with Munger as the conservative floor.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>How much credit for the right tail (the refi wave)?</b> Damodaran extreme bull $73.62 @ 10%; Munger extreme $12.50 @ 5% (refuses to pay for the option); Buffett bull $17, refuses to weight it; Druckenmiller extreme bull $21–24 (a 2027 call); Soros extreme bull $26 @ 8% (largest levered call on rate relief priced at $0). <b>Cross-examination:</b> all agree the tail is real ($320B &gt;6% MSR, 14.3% refi share, 57% recapture, $300B capacity) but fat and not likely — the probability-weighted consensus (~$14.86) is lifted entirely by the extreme tail (~$7.36 of $14.86). <b>Named concession:</b> Munger concedes 'this is the most credible optionality in the industry — I simply refuse to pay for it in advance.' <b>Resolved:</b> consensus bull ~$18, extreme bull ~$73.62 (adopted workbook tail as the option proxy), combined ~25% probability — the tail justifies watching closely, not paying for it.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>What price compensates for the uncertainty?</b> Buffett first interest ≤$10 / accumulate $6–9 / conviction &lt;$6; Munger starter &lt;$8 / accumulate $5–6 / conviction &lt;$4; Damodaran buy &lt;$10 / add &lt;$8 / sell &gt;$18; Druckenmiller starter $11.50–13.50 (≤1–2%, stop &lt;$11.50); Soros scale-in &lt;$14.50, washout $12.5–13, sell &gt;$20. <b>Cross-examination:</b> a dispute about sizing, temperament and horizon — nobody buys at $14.50 beyond a risk-tolerant starter. <b>Named concession:</b> Soros concedes 'my &lt;$14.50 scale-in is a trade on expectations and positioning, not a value argument.' <b>Resolved:</b> composite ladder — do-not-initiate ≥$14.50; risk-tolerant starter $11.50–14.50; begin accumulating $8–10; build $6–8; high conviction &lt;$6.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Management/governance quality.</b> Buffett 7.5/10 (integrity 8, allocation 6, ops 8); Munger 'execution good, incentives poor' (controller overhang, SBC-heavy comp); Damodaran 'Good — show me the returns' (stock-funded $14B+ M&amp;A, SBC, 62% controller); Druckenmiller 'alignment high'; Soros 'defense is offense'. <b>Cross-examination:</b> the 2025 recap gave the controller ~62% voting power via Class L while Class A got a $0.80 special dividend; $430M SBC ≈ 91% of net income; $10.6B goodwill + $20.9B intangibles (TBV −$8.0B); but execution is ahead of plan (record share/margin, $100M synergies realized, $11.2B liquidity). <b>Named concession:</b> Munger concedes execution is genuinely excellent; Damodaran concedes balance-sheet discipline and candor are real; Buffett concedes capital strength partially offsets the governance concentration. <b>Resolved:</b> consensus <b>6.5/10</b> — high-integrity, operationally excellent, disciplined balance sheet; docked for founder control (~62%), SBC ≈ net income, and an unproven M&amp;A thesis.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>The net-debt / GAAP convention judgment.</b> Damodaran uses ~$2.3B economic net corporate debt (0.9x EBITDA; excludes matched warehouse/MSR/Ginnie financing) — his 'single most important judgment', noting a pure-GAAP corporate view (~$7.5B) would cut value ~$1.8–2.0/share (~25%); Buffett ~$2.7B; Munger ~$2.3B; Druckenmiller/Soros cite 0.9x / $11.2B as the operating frame. <b>Cross-examination:</b> GAAP total debt $33.2B and 'net cash' −$29.7B are meaningless for a matched-balance-sheet mortgage platform; all five agree on the economic convention, but the exact number swings value ~25%. <b>Named concession:</b> Soros concedes the economic frame while flagging that a credit event could make the matched debt less matched. <b>Resolved:</b> consensus adopts the <b>economic net-debt convention (~$2.3B corporate net debt, 0.9x EBITDA), disclosed</b>; a pure-GAAP view would lower consensus base IV from ~$8 to ~$6–6.50 without changing the C rating.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">Reconciled scenario matrix. The Damodaran column is the verified workbook (verbatim, ALL_MATCH); Druckenmiller and Soros columns are 12-month PRICE expectations (†), not intrinsic value.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+<th class="">Scenario</th><th class="right">Prob.</th><th class="right">Damodaran (workbook)</th><th class="right">Buffett</th><th class="right">Munger</th><th class="right">Druckenmiller†</th><th class="right">Soros†</th><th class="right">Consensus IV</th>              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<td>Severe bear</td><td class="right">10%</td><td class="right">$2.04</td><td class="right">$4.50 *</td><td class="right">$2.00</td><td class="right">$8–9.50 (−45%)†</td><td class="right">$11.00 (−24%)†</td><td class="right"><b>~$3</b></td>
+              </tr>
+              <tr>
+<td>Bear</td><td class="right">20%</td><td class="right">$4.39</td><td class="right">$4.50 *</td><td class="right">$2.00</td><td class="right">$11.50–12.75 (−21%)†</td><td class="right">$12.50 (−14%)†</td><td class="right"><b>~$4.50</b></td>
+              </tr>
+              <tr class="hl">
+<td>Base</td><td class="right">45%</td><td class="right">$8.24</td><td class="right">$9.00</td><td class="right">$5.50</td><td class="right">$13.75–15.50 (−5–+7%)†</td><td class="right">$16.25 (+12%)†</td><td class="right"><b>~$8</b></td>
+              </tr>
+              <tr>
+<td>Bull</td><td class="right">15%</td><td class="right">$19.46</td><td class="right">$17.00</td><td class="right">$10.00</td><td class="right">$17–19 (+17–31%)†</td><td class="right">$19.50 (+34%)†</td><td class="right"><b>~$18</b></td>
+              </tr>
+              <tr>
+<td>Extreme bull</td><td class="right">10%</td><td class="right">$73.62</td><td class="right">$17.00 *</td><td class="right">$12.50</td><td class="right">$21–24 (+45–66%)†</td><td class="right">$26.00 (+79%)†</td><td class="right"><b>~$73.62</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">* Buffett publishes a three-scenario range (bear $4.50 / base $9.00 / bull $17.00); his tail cells reuse the nearest published value. † Druckenmiller/Soros cells are 12-month <b>price expectations</b>, not intrinsic values — they inform the near-term ladder and triggers, not the consensus IV. Consensus probabilities adopt Damodaran's five-scenario set (10/20/45/15/10).</p>
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 24px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">~$3</div>
+            <div class="prob">10%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 34px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">~$4.50</div>
+            <div class="prob">20%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 52px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">~$8</div>
+            <div class="prob">45%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 78px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">~$18</div>
+            <div class="prob">15%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 100px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">~$73.62</div>
+            <div class="prob">10%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus intrinsic value per share</span><span>~$73.62</span>
+        </div>
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>EV = 0.10×~$3 + 0.20×~$4.50 + 0.45×~$8 + 0.15×~$18 + 0.10×~$73.62 = 0.30 + 0.90 + 3.60 + 2.70 + 7.36 ≈ $14.86/share</h3>
+          <p class="big">At $14.50 that is roughly <b>+2.5% expected upside</b> (≈ +0.5% 5-year annualized) — essentially the current price, converging almost exactly on Damodaran's workbook value ($15.07). <b>There is no margin of safety:</b> the entire premium over the ~$8 base value comes from the fat right tail (the extreme-bull refi-wave cell alone contributes ~$7.36 of the $14.86). Downside tail (severe bear): −79% from $14.50; upside tail (extreme bull): +408%. Confidence: <b>Low/Medium</b>. The reverse-DCF check (Damodaran, uncontested): at $14.50 the market is implicitly assuming RKT roughly <b>doubles revenue to ~$20B at ~20% EBIT margins</b> — the Bull plus part of the Extreme-Bull scenario, i.e. a return of the refi cycle plus sustained share gains. <b>Aggressive but not impossible; and no bargain — the market is paying for the right tail.</b></p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">Where the five frameworks meet — the composite plan. Do not initiate at $14.50; the do-not-initiate band is $14.50 and above.</p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">Over $20</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / avoid — excessive success priced in; Soros's sell zone (&gt;$20)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$17.50–20</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 85%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Trim / hold existing — approaching consensus PT $17.70; Damodaran sell &gt;$18, Druckenmiller sell &gt;$17.50</span>
+          </div>
+          <div class="rung">
+            <span class="price">$14.50–17.50</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 60%"></div>
+            </div>
+            <span class="action" style="color: var(--gold)">Do-not-initiate band — no margin of safety; all five refuse ($14.50 sits here)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$11.50–14.50</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 45%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Watch — risk-tolerant starter only (Druckenmiller ≤1–2% &lt;$13.50, stop &lt;$11.50; Soros scale-in)</span>
+          </div>
+          <div class="rung">
+            <span class="price">$8–10</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 62%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Begin accumulating — Buffett first interest ≤$10; Damodaran buy zone &lt;$10; Munger 'interesting' ~$8</span>
+          </div>
+          <div class="rung">
+            <span class="price">$6–8</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 78%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31">Accumulate (attractive) — Buffett accumulate $6–9; Damodaran add &lt;$8</span>
+          </div>
+          <div class="rung">
+            <span class="price">Under $6</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31"><b>High-conviction buy zone — Munger accumulate $5–6, conviction &lt;$4; Buffett conviction &lt;$6 (thesis intact)</b></span>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">06</span>Pros &amp; Cons — At $14.50</h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>Dominant platform — largest US mortgage lender AND servicer ($2T UPB), ~70% recurring or less rate-sensitive revenue; real, widening moat (scale × servicing recapture × Redfin × AI × IG balance sheet)</li>
+              <li>Record share gains in a shrinking market — purchase 6.2%, refi 14.3%, D2C purchase volume +45% YoY; 28% adjusted-EBITDA margin, most profitable quarter in four years</li>
+              <li>Fortress balance sheet — 0.9x net corporate leverage, $11.2B liquidity, only IG-rated public US mortgage company; ~$1B/quarter steady servicing cash flow</li>
+              <li>Fat right tail — $320B (&gt;6% note rate) owned MSR, 57% recapture of serviced clients, $300B capacity: the largest levered call on a refi wave in the industry, priced at $0 (workbook extreme bull $73.62)</li>
+              <li>Integration ahead of plan — $100M Mr. Cooper synergies realized, $400M+ target plus ~$100M extra H1'27; Redfin attach 47% → 50% target, mortgage leads +2x YoY</li>
+              <li>Analyst consensus 'Buy' with PT $17.70 (+22%) — 17 analysts constructive; short interest declining; value funds accumulating</li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>No margin of safety — price ~81% above consensus base IV (~$8) and ≈ the probability-weighted value (~$14.86); the market already pays for a largely successful integration and a rate recovery</li>
+              <li>Earnings-quality chasm — SBC $430M TTM ≈ 91% of GAAP net income ($471M); GAAP net margin 4.6% vs adjusted ~16%; negative TTM FCF (−$772M); adjusted figures systematically flatter</li>
+              <li>Negative tangible book −$8.0B — $10.6B goodwill + $20.9B intangibles; an impairment to intangibles would hit book directly and is the bear's live weapon</li>
+              <li>Rate-cyclical core — 30-yr ~6.8% near a 1-yr high; Q3 market expected smaller than Q2 (first since 2022); the refi catalyst is dated (H1-2027), not imminent</li>
+              <li>Governance concentration — Dan Gilbert ~62% voting control via Class L; the 2025 recap centralised control; minority shareholders have no recourse</li>
+              <li>Rich multiple — ~20x forward on cyclical normalized earnings (vs PFSI ~8.8x, UWMC ~6.1x); 27.4x EV/EBITDA; beta 2.21 cuts both ways</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C → B/A when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>Economic EBIT margin demonstrates 17→20% while the GAAP/adjusted gap closes — GAAP net margin toward ~10%+ and SBC as % of net income falls far below 91%</li>
+              <li>Incremental ROIC on growth capital demonstrably exceeds the ~9% WACC — organic share-gain growth, not stock-funded M&amp;A</li>
+              <li>Normalized free cash flow turns sustainably positive — servicing cash (~$1B/qtr) converts into positive GAAP OCF/FCF over consecutive quarters</li>
+              <li>A refi-cycle inflection arrives — 30-yr mortgage sustains below ~6.25% (the $320B &gt;6% MSR pool starts converting; 14.3% refi share harvests it) with share gains holding</li>
+              <li>A margin of safety returns — price into the $8–10 zone and/or share count stabilises while per-share earnings grow</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>A sustained rate shock — 30-yr mortgage above ~7.4% for 4+ weeks, revenue keeps falling and share gains stall (Soros/Druckenmiller falsification)</li>
+              <li>A GAAP-quality reckoning — SBC permanently outruns net income (share count grows 4–5%/yr), GAAP margins stay ~5%, adjusted earnings never convert to cash</li>
+              <li>An impairment or MSR hedge loss — a charge against the $31.5B goodwill+intangibles (TBV −$8.0B) or a UWMC-style hedge blow-up breaks the earnings-power frame</li>
+              <li>Share-gain stall — purchase share flat-to-down for two quarters despite the Redfin funnel; GoS margins compress below ~300bps under pricing incentives</li>
+              <li>The net-debt convention proves optimistic — warehouse/MSR financing becomes less matched in a credit event, exposing the GAAP $33.2B</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Economic EBIT margin</b></td>
+                <td>The valuation-critical variable — GAAP (4.6%) vs adjusted (~16%) gap must close</td>
+                <td class="right">17% → 20%; GAAP net margin toward ~10%</td>
+              </tr>
+              <tr>
+                <td><b>Incremental ROIC vs WACC</b></td>
+                <td>Does growth create per-share value (economic ROIC ~30% vs ~9% WACC)</td>
+                <td class="right">&gt; ~9% WACC, sustained</td>
+              </tr>
+              <tr>
+                <td><b>SBC as % of net income</b></td>
+                <td>The per-share tax (~$430M TTM ≈ 91% of NI)</td>
+                <td class="right">Fall far below 90%</td>
+              </tr>
+              <tr>
+                <td><b>Purchase / refi share</b></td>
+                <td>The share-gain engine (6.2% / 14.3%)</td>
+                <td class="right">Hold or rise without pricing giveaways</td>
+              </tr>
+              <tr>
+                <td><b>Servicing cash flow</b></td>
+                <td>The valuation floor (~$1B/qtr)</td>
+                <td class="right">Stable-to-rising; GAAP OCF turns positive</td>
+              </tr>
+              <tr>
+                <td><b>30-yr mortgage rate</b></td>
+                <td>The refi-wave trigger ($320B &gt;6% MSR)</td>
+                <td class="right">Sustain &lt; ~6.25%</td>
+              </tr>
+              <tr>
+                <td><b>GoS margin ex-correspondent</b></td>
+                <td>The cost of buying share (311bps, down from 322)</td>
+                <td class="right">≥ ~300bps</td>
+              </tr>
+              <tr>
+                <td><b>Diluted share count</b></td>
+                <td>Per-share compounding (2.83B)</td>
+                <td class="right">Flat-to-down (buybacks ≥ SBC)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">08</span>Technical Analysis</h2>
+        <p class="lead">Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th class="right">Value</th>
+                <th class="right">Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Price vs 200-day SMA</b></td>
+                <td class="right">$16.35</td>
+                <td class="right">-11.3% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 100-day SMA</b></td>
+                <td class="right">$14.30</td>
+                <td class="right">+1.4% above</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 50-day SMA</b></td>
+                <td class="right">$14.03</td>
+                <td class="right">+3.4% above</td>
+              </tr>
+              <tr>
+                <td><b>14-day RSI</b></td>
+                <td class="right">53.96</td>
+                <td class="right">Neutral (mid-range)</td>
+              </tr>
+              <tr>
+                <td><b>14-week RSI</b></td>
+                <td class="right">48.18</td>
+                <td class="right">Neutral</td>
+              </tr>
+              <tr>
+                <td><b>50-week RSI</b></td>
+                <td class="right">46.50</td>
+                <td class="right">Neutral-weak</td>
+              </tr>
+              <tr>
+                <td><b>52-week high / low</b></td>
+                <td class="right">$24.36 / $12.17</td>
+                <td class="right">-40.5% from high · +19.1% from low</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">Computed 2026-08-17 from real daily OHLC (fact pack). Price $14.50 sits below the falling 200-day, above the 50/100-day, with neutral momentum — a basing, early-Stage-1 pattern. RSI &gt;70 overbought, &lt;30 oversold; SMA deltas are the price's % deviation from each average.</p>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">09</span>The Five Consensus Conclusions</h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Business.</b> Rocket Companies is the dominant US homeownership platform — the largest mortgage lender AND servicer ($2T UPB), with ~70% recurring or less rate-sensitive revenue, a Redfin search funnel, home equity, Rocket Loans and Rocket Money. The moat (scale × servicing recapture × distribution × AI × IG balance sheet) is real, widening and moderate — not wide. The business quality is not in dispute.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Economics.</b> The sole determinant of long-term per-share value is the <b>economic EBIT margin (17→20%) and incremental ROIC vs the ~9% cost of capital</b> — gated by ~$430M/yr of stock-based compensation (≈ 91% of net income) and the ~$440M/yr of acquired-intangible amortization treated as real costs. If the GAAP (4.6%) vs adjusted (~16%) gap never closes, record share gains destroy value.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Market's Expectations.</b> At $14.50 the market is implicitly assuming RKT roughly <b>doubles revenue to ~$20B at ~20% EBIT margins</b> — a return of the refinance cycle plus sustained share gains (the Bull plus part of the Extreme-Bull scenario). Aggressive but not impossible; the consensus 'Buy / $17.70' reflects it.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Valuation.</b> Consensus base intrinsic value ~$8/share; probability-weighted ~$14.86/share (≈ price, +2.5%); bear ~$2–4.50; bull ~$18 with an extreme tail $73.62. Damodaran workbook: $2.04 / $4.39 / $8.24 / $19.46 / $73.62, weighted $15.07. Confidence: Low/Medium. The base value is ~45% below the price; the weighted value barely clears it only because of the right tail.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Investment Decision.</b> <b>C — Hold/Watch</b> at $14.50; do not initiate. Begin accumulating at $8–10, build at $6–8, high conviction &lt;$6 — provided the monitoring hierarchy (economic EBIT margin / incremental ROIC &gt; SBC% &gt; share gains &gt; servicing cash flow &gt; 30-yr rate) stays intact. Upgrades require proof; the operating data and the rate cycle, not the stock price, will deliver the verdict.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">10</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>At a price of <b>$14.50</b>, the market is paying ~20x forward for a rate-cyclical financial whose normalized (SBC- and amortization-aware) earnings power supports a consensus base intrinsic value near <b>~$8</b> — roughly 45% below the price — and whose probability-weighted value (<b>~$14.86</b>) barely clears the price only because of the fat right tail: a 2021-like refi wave on a $2T servicing book, $320B of in-the-money MSRs, and 14.3% refi share. Five independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity-driven expectations, and reflexivity — converge on <b>C (Hold/Watch)</b>, refuse to buy at $14.50, and place the valuation hinge on one variable: whether economic EBIT margins and incremental returns on capital clear the ~9% cost of capital as share gains compound and the GAAP/adjusted earnings gap closes. We agree the franchise is genuinely dominant, the balance sheet is a fortress by industry standards, the servicing cash floor is real, the refi option is credible but dated (H1-2027), SBC is the per-share tax, the $31.5B goodwill+intangibles is an unproven bet, and governance is founder-controlled (Dan Gilbert ~62%). The biggest risks are a sustained high-rate tape (30-yr &gt;7.4%), an impairment against negative tangible book (−$8.0B), a GAAP/SBC reckoning, and a share-gain stall. Therefore, at today's price the consensus is to <b>hold and wait</b>: accumulate in stages at <b>$8–10</b>, build at <b>$6–8</b>, buy with conviction below <b>$6</b>, and let demonstrated economic returns on capital — not the refi narrative — decide whether this dominant franchise becomes a wonderful investment.</p>
+        </div>
+      </section>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes five analyses — <code>buffet-analysis.md</code>, <code>munger-analysis.md</code>, <code>damodaran-analysis.md</code>, <code>druckenmiller-analysis.md</code>, and <code>soros-analysis.md</code> (with a separate Minervini trading view in <code>minervini-analysis.md</code>), dated August 17, 2026 — which themselves reference Rocket Companies' FY2025 10-K, Q2 2026 10-Q, the Q2 2026 earnings-call transcript, the 2026 proxy, StockAnalysis, MarketBeat, CNBC, Redfin, Freddie Mac PMMS, SEC EDGAR, Macrotrends, and Yahoo Finance, as of August 2026. Damodaran's scenario values are the verified <code>RKT_Damodaran_Financial_Model.xlsx</code> workbook outputs (verifier: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is <b>not investment advice</b>, and no valuation herein should be treated as a price prediction or a recommendation to trade. Rocket's outcome distribution is wide and rate-dependent; treat every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

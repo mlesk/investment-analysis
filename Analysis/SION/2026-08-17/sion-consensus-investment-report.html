@@ -1,0 +1,1186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sionna Therapeutics, Inc. — Consensus Investment Report</title>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #122a4d;
+        --ink: #1a2332;
+        --muted: #5b6675;
+        --line: #e3e8ef;
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --gold: #c9971c;
+        --amber-bg: #fdf3dd;
+        --green: #1d7a4f;
+        --green-bg: #e8f4ee;
+        --red: #b3402f;
+        --red-bg: #fbeae7;
+        --blue: #2563ab;
+        --blue-bg: #eaf2fb;
+        --radius: 14px;
+        --shadow:
+          0 1px 2px rgba(11, 27, 51, 0.06), 0 6px 18px rgba(11, 27, 51, 0.07);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ===== Header ===== */
+      header.hero {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-2) 60%,
+          #1a3d6d 100%
+        );
+        color: #fff;
+        padding: 56px 0 44px;
+      }
+      .hero .kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #9fc0e8;
+        font-weight: 600;
+      }
+      .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 10px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .hero .sub {
+        font-size: 17px;
+        color: #c9d8ec;
+        max-width: 780px;
+        margin-top: 8px;
+      }
+      .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+        align-items: center;
+      }
+      .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #e6eef9;
+      }
+      .rating-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--amber-bg);
+        color: #7a5a08;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+      }
+      .rating-badge .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 4px rgba(201, 151, 28, 0.25);
+      }
+
+      /* ===== Sections ===== */
+      section {
+        padding: 48px 0 8px;
+      }
+      h2.sec {
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+        color: var(--navy);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--line);
+      }
+      h2.sec .num {
+        color: var(--gold);
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 19px;
+        margin: 26px 0 10px;
+        color: var(--navy-2);
+      }
+      p.lead {
+        color: var(--muted);
+        font-size: 16.5px;
+        margin-bottom: 20px;
+      }
+      .small {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Cards ===== */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        box-shadow: var(--shadow);
+      }
+      .card .label {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .card .value {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 4px 0 2px;
+        color: var(--navy);
+        letter-spacing: -0.02em;
+      }
+      .card .note {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+
+      /* ===== Profile cards ===== */
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .profile {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile .head {
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      .profile .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .profile .role {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 2px;
+      }
+      .profile .body {
+        padding: 16px 22px 20px;
+        flex: 1;
+      }
+      .profile .body p {
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .profile .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--blue-bg);
+        color: var(--blue);
+      }
+      .tag.amber {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .tag.green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .tag.red {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .verdict-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .verdict-row .v {
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== Tables ===== */
+      .table-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 640px;
+      }
+      th {
+        text-align: left;
+        background: #eef2f8;
+        color: var(--navy);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr.hl td {
+        background: #fffaf0;
+        font-weight: 700;
+      }
+      .right {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ===== Consensus box ===== */
+      .consensus-box {
+        background: linear-gradient(135deg, #fffdf5, #fdf6e3);
+        border: 1.5px solid var(--gold);
+        border-radius: var(--radius);
+        padding: 26px 28px;
+        box-shadow: var(--shadow);
+      }
+      .consensus-box h3 {
+        margin-top: 0;
+        color: #7a5a08;
+      }
+      .consensus-box .big {
+        font-size: 15.5px;
+      }
+
+      /* ===== Agreement / contention lists ===== */
+      .point-list {
+        counter-reset: pt;
+      }
+      .point {
+        display: flex;
+        gap: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow);
+      }
+      .point .n {
+        counter-increment: pt;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+      }
+      .point .n::before {
+        content: counter(pt);
+      }
+      .point.contention .n {
+        background: var(--amber-bg);
+        color: #7a5a08;
+      }
+      .point .txt {
+        font-size: 14.5px;
+      }
+      .point .txt b {
+        color: var(--navy);
+      }
+
+      /* ===== Price ladder ===== */
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+      }
+      .ladder .rung {
+        display: grid;
+        grid-template-columns: 130px 1fr 220px;
+        align-items: center;
+        gap: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--shadow);
+      }
+      .ladder .price {
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--navy);
+      }
+      .ladder .action {
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .bar-track {
+        height: 10px;
+        border-radius: 999px;
+        background: #eef1f6;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .fill-red {
+        background: linear-gradient(90deg, #d96c5b, var(--red));
+      }
+      .fill-amber {
+        background: linear-gradient(90deg, #e6c35c, var(--gold));
+      }
+      .fill-green {
+        background: linear-gradient(90deg, #4cae7f, var(--green));
+      }
+      .fill-deep {
+        background: linear-gradient(90deg, #1d7a4f, #0e4d31);
+      }
+      .fill-slate {
+        background: linear-gradient(90deg, #9fb0c4, #5b728c);
+      }
+
+      /* ===== Chart ===== */
+      .chart-row {
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .chart-col {
+        flex: 1 1 130px;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chart-col .vbar {
+        width: 100%;
+        max-width: 72px;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+      .chart-col .bar {
+        width: 100%;
+        border-radius: 8px 8px 4px 4px;
+        min-height: 6px;
+        position: relative;
+        transition: 0.25s;
+      }
+      .chart-col:hover .bar {
+        opacity: 0.85;
+      }
+      .chart-col .scen {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .chart-col .val {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        text-align: center;
+      }
+      .chart-col .prob {
+        font-size: 12.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .chart-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding-top: 6px;
+        margin-top: 4px;
+      }
+
+      /* ===== Pros / cons ===== */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .proscons {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pc {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .pc .head {
+        padding: 14px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .pc.for .head {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .pc.against .head {
+        background: var(--red-bg);
+        color: var(--red);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 12px 20px 18px;
+      }
+      .pc li {
+        padding: 7px 0 7px 26px;
+        position: relative;
+        font-size: 14.5px;
+        border-bottom: 1px dashed #edf1f6;
+      }
+      .pc li:last-child {
+        border-bottom: none;
+      }
+      .pc.for li::before {
+        content: "✓";
+        position: absolute;
+        left: 2px;
+        color: var(--green);
+        font-weight: 800;
+      }
+      .pc.against li::before {
+        content: "✕";
+        position: absolute;
+        left: 2px;
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ===== Judgment ===== */
+      .judgment {
+        background: var(--navy);
+        color: #eaf1fb;
+        border-radius: var(--radius);
+        padding: 34px 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+      .judgment .qmark {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--gold);
+        font-family: Georgia, serif;
+        margin-bottom: 6px;
+      }
+      .judgment p {
+        font-size: 17px;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .judgment p b {
+        color: #ffd97a;
+        font-style: normal;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      .note-box {
+        background: var(--blue-bg);
+        border-left: 4px solid var(--blue);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+      .warn-box {
+        background: var(--amber-bg);
+        border-left: 4px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 16px 20px;
+        font-size: 14.5px;
+      }
+
+      footer {
+        padding: 40px 0 60px;
+      }
+      footer .disc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+        font-size: 13px;
+        color: var(--muted);
+        box-shadow: var(--shadow);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header.hero {
+          padding: 30px 0;
+        }
+        .card,
+        .profile,
+        .pc,
+        table,
+        .point,
+        .ladder .rung {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">Synthesized Consensus · Six-Lens Deliberative Debate</div>
+        <h1>Sionna Therapeutics, Inc. — Consensus Investment Report</h1>
+        <div class="sub">A structured debate between six independent frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, Soros reflexivity, and Minervini trend/momentum (standalone trading view) — reconciled into a single synthesized analysis and recommendation.</div>
+        <div class="meta-row">
+          <span class="chip">Nasdaq: SION</span>
+          <span class="chip">Report date: 2026-08-17</span>
+          <span class="chip">Reference price: $5.91</span>
+          <span class="rating-badge"><span class="dot"></span> C− — HOLD / WATCH</span>
+        </div>
+      </div>
+    </header>
+
+
+      <section>
+        <h2 class="sec"><span class="num">01</span>Executive Summary</h2>
+        <p class="lead">Sionna is a single-thesis, pre-revenue CF biotech trading <b>at</b> its ~$5.93/share net cash (~$268.3M, no debt) after its lead NBD1-stabilizer program (SION-719) missed its Phase 2a endpoint (p=0.7) on Aug 10, 2026 and was dropped as an add-on to standard of care. The market now prices the entire remaining pipeline (SION-451 dual combo) at <b>$0</b>. Six independent analyses — using six different frameworks — converged on the same rating: <b>C− — Hold/Watch</b>. The balance sheet is not in dispute (net cash, no debt, runway into 2028); the pipeline's probability-weighted value — and whether the ~+19–26% expected upside on a true expected value of ~$7.0–7.4 compensates for the binary risk — is.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Consensus base value</div>
+            <div class="value">~$5.93</div>
+            <div class="note">Net cash — the modal outcome (pipeline credited at ~$0); Buffett/Munger/Soros base ≈ net cash</div>
+          </div>
+          <div class="card">
+            <div class="label">Probability-weighted value</div>
+            <div class="value">~$7.2</div>
+            <div class="note">TRUE expected value (range ~$7.0–7.4) — net cash + ~8% P(success) × franchise option, less dilution; NOT the success-conditional $24.63</div>
+          </div>
+          <div class="card">
+            <div class="label">Bear / Bull range</div>
+            <div class="value">$4.00 – $45.32</div>
+            <div class="note">Fundamental bear floor ~$4.00 (wind-down) to success-conditional bull $45.32; extreme bull $144.74</div>
+          </div>
+          <div class="card">
+            <div class="label">Confidence</div>
+            <div class="value">Low</div>
+            <div class="note">A single binary clinical outcome dominates; P(success) 5–15% spans the whole value range ($6.6–8.7)</div>
+          </div>
+          <div class="card">
+            <div class="label">Consensus entry plan</div>
+            <div class="value">≤$4.50</div>
+            <div class="note">Speculative starter $4.50–5.50; accumulate ≤$4.50 (≥24% discount to net cash); conviction &lt;$3.50; do-not-initiate above ~$7.40 (full EV)</div>
+          </div>
+          <div class="card">
+            <div class="label">Valuation-critical metric</div>
+            <div class="value" style="font-size: 22px">P(success) × franchise value</div>
+            <div class="note">Probability-weighted value of the SION-451 franchise vs the ~$5.93 net-cash floor — the abandonment option</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">02</span>The Six Positions at the Table</h2>
+        <p class="lead">Each participant analyzed Sionna independently. Their positions were then cross-examined in the debate. Minervini's trend/momentum view is included for completeness as a standalone trading view — it does not inform the fundamental consensus rating.</p>
+        <div class="profiles">
+          <div class="profile">
+            <div class="head">
+              <div class="name">Warren Buffett</div>
+              <div class="role">Owner-Earnings Value Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">D — Avoid</span><span class="small">at ~$5.91</span>
+              </div>
+              <p>Pre-revenue, clinical-stage biotech with no earnings, no product, no moat — only a $268.3M cash pile and a remaining SION-451 program whose probability of beating Vertex's Trikafta is speculative. Trades at ~$5.91, essentially its ~$5.93/share net cash: a double fail (outside the circle of competence, no margin of safety — paying full price for cash being consumed while hoping a lottery ticket pays out). Scenario values bear ~$4.00, base ~$5.93, bull ~$12–15, weighted ~$5.95. "This is an avoid, not a value investment — revisit only at a large discount to net cash and a credible SION-451 path."</p>
+              <div class="tags">
+                <span class="tag">Base ~$5.93*</span><span class="tag">No moat</span><span class="tag">Buy zone: none</span><span class="tag">Avoid</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Charlie Munger</div>
+              <div class="role">Multidisciplinary Quality Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">D — Avoid</span><span class="small">at ~$5.91</span>
+              </div>
+              <p>The central scientific thesis was falsified in its first patient test (SION-719, p=0.7). What remains trades at essentially its $5.93/share net cash holding one very-long-shot dual combo (SION-451 + SION-2222) that must beat the dominant incumbent. Conservative net-cash + rNPV value: bear $4.00, base $5.93, bull $12.00, weighted ~$6.28 (+6%) — nowhere near the 30–40% margin of safety this uncertainty demands. "I do not buy lottery tickets priced at their cash. Speculative only at $3.50–4.00; conviction below $3.00."</p>
+              <div class="tags">
+                <span class="tag">Base $5.93</span><span class="tag">Weighted ~$6.28</span><span class="tag">Spec zone $3.50–4.00</span><span class="tag">Conviction &lt;$3.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Aswath Damodaran</div>
+              <div class="role">Fundamental Valuation Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Hold / Watch</span><span class="small">at ~$5.91</span>
+              </div>
+              <p>At $5.91 the stock trades at (marginally below) its ~$5.93/share net cash — the market prices the pipeline at $0. Success-conditional workbook values: $5.56 / $8.05 / $15.73 / $45.32 / $144.74, weighted $24.63 (+317% upside, +22.6% 7-yr annualized — only if SION-451 commercializes). Gated by an ~8% probability of commercial success (range 5–15%) plus a dilution haircut, the stock's TRUE expected value is ~$7.0–7.4/share — only ~19–26% above price with an expected annualized return (~3%) below the risk-free rate. Buy only ≤ ~$4.50 or on positive SION-451 patient data.</p>
+              <div class="tags">
+                <span class="tag">Full EV ~$7.0–7.4</span><span class="tag">Workbook $24.63*</span><span class="tag">Buy ≤$4.50</span><span class="tag">P(success) ~8%</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Stanley Druckenmiller</div>
+              <div class="role">Macro, Liquidity &amp; Expectations Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C− — Monitor</span><span class="small">at ~$5.91 · 65/150</span>
+              </div>
+              <p>The rare 'expectations fully washed out' moment: the entire pipeline is priced at ~$0 on top of net cash (EV ≈ −$1M). Structurally attractive asymmetry (cash-floor downside, free call on SION-451 and any strategic transaction) but <b>no dated, high-probability catalyst, no price confirmation</b> (below all MAs, RSI-14d 21.5), and the translational thesis itself was damaged. 12-mo price paths: bear $5.20, base $6.00, bull $12.00, weighted ~$8.26 (+40%) — heavily bimodal, ~60% probability of roughly flat. Not a high-conviction setup; a small, tightly-stopped speculative starter at/below net cash is the maximum this merits. Opportunity Score 65/150.</p>
+              <div class="tags">
+                <span class="tag">12-mo ~$8.26</span><span class="tag">Asym 19:1*</span><span class="tag">Starter $4.50–5.50</span><span class="tag">No dated catalyst</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">George Soros</div>
+              <div class="role">Reflexivity &amp; Disequilibrium Lens</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">C — Neutral</span><span class="small">at ~$5.91</span>
+              </div>
+              <p>A textbook completed bust: after a single Phase 2a failure, a once high-flying NBD1 challenger has been repriced from narrative-dream (peak ~$55) to net-cash ($5.91 vs ~$5.93). The market prices the entire pipeline at zero — mildly mispriced down, but the edge at $5.91 is ~zero (E[R] ≈ −3%). Asymmetry flips favorable only below ~$4.50–5.00 (≥20% discount to net cash, E[R] ≈ +26%) or on a positive catalyst. Weighted IV ~$5.95. Do not short a net-cash stock at RSI-14 21.5 — the exhausted-loop squeeze risk is asymmetric against the short.</p>
+              <div class="tags">
+                <span class="tag">Weighted ~$5.95</span><span class="tag">E[R] ≈ −3%</span><span class="tag">Buy ≤$4.50–5.00</span><span class="tag">No short</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <div class="head">
+              <div class="name">Mark Minervini</div>
+              <div class="role">Standalone Trading View (reference only)</div>
+            </div>
+            <div class="body">
+              <div class="verdict-row">
+                <span class="v" style="color: var(--gold)">F — Do not buy</span><span class="small">at ~$5.91</span>
+              </div>
+              <p>Under SEPA, SION fails every critical criterion: no earnings/revenue/acceleration, confirmed <b>Stage 4 downtrend</b> ~85% below the 50/100/200-day SMAs, broken base, no pivot, no institutional accumulation, negative catalyst. Oversold (RSI-14 21.5) argues against shorting, not for buying. Technical targets: bear $4.01 (52-wk low), base $5.50–6.50, bull $8–10 (relief rally). No valid low-risk entry today. Trading view only — not part of the fundamental consensus.</p>
+              <div class="tags">
+                <span class="tag">Stage 4</span><span class="tag">No base/pivot</span><span class="tag">RSI-14 21.5</span><span class="tag">Oversold ≠ buy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">03</span>The Debate: Agreement, Contention, Resolution</h2>
+        <p class="lead">Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions. The central reconciliation: the workbook's $24.63 is SUCCESS-CONDITIONAL — the consensus probability-weighted value must be a TRUE expected value (~$7.0–7.4), not $24.63.</p>
+        <h3>Uncontested consensus core</h3>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Single-thesis, pre-revenue business.</b> Sionna's only path to value is the SION-451 NBD1-stabilizer franchise; the lead add-on program (SION-719) missed Phase 2a (p=0.7) on 8/10/26 and is not advancing as add-on to standard of care.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The balance sheet is the anchor.</b> $268.3M cash + securities (6/30/26), no debt, net cash ~$5.93/share, book ~$5.88, runway into 2028 — the downside floor.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The price trades AT net cash.</b> $5.91 vs ~$5.93; EV ≈ −$1M — the market prices the entire pipeline at ~$0.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Vertex is a near-monopoly incumbent.</b> Trikafta is the standard of care for F508del (~90% of CF patients); the CF franchise is ~$10B+/yr (estimate); prior CF challengers have failed; the standalone SION-451 path must beat Trikafta head-to-head.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>No margin of safety at $5.91.</b> You pay full price for the only solid asset (cash) with a speculative, low-probability pipeline option thrown in free.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>No short.</b> At net cash, RSI-14 21.5, no debt, and no forced-selling overhang, the short asymmetry is poor; the bust is largely spent.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>One valuation-critical variable: the probability-weighted value of the SION-451 franchise vs the ~$5.93 net-cash floor</b> — P(success) × franchise value against the abandonment option.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>Buying requires either a deep discount to net cash or a positive, dated catalyst</b> (SION-451 Phase 2 plan, confounder rehabilitation, strategic transaction).</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The expected return at $5.91 does not compensate for the uncertainty.</b> True probability-weighted value ~$7.0–7.4 = only ~+19–26% for a binary, low-confidence asset.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The $250M ATM and ~$42M/H1 burn are the per-share erosion risks.</b> The floor decays with burn and breaks with a sub-cash dilutive raise.</div>
+          </div>
+        </div>
+        <h3>Contested points — and how they were resolved</h3>
+        <div class="point-list">
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Reference price: net-cash floor vs fair value.</b> Value lenses (Buffett/Munger): $5.91 ≈ net cash is a FAIR price for cash plus a free option — not a bargain; the floor erodes with burn. Macro lenses (Druckenmiller/Soros): at cash the downside is floored and the option is free — the rare fully-washed-out moment. Damodaran: prices the pipeline at $0, harsh but rational. Cross-exam: Buffett to Soros — "a floor that erodes with burn is not a floor (cash/share ~$5.5–5.7 by early 2028)." <b>Named concession:</b> Soros/Druckenmiller concede their cells are 12–24-month price expectations, not intrinsic values. <b>Resolved:</b> consensus anchors on net cash (~$5.93) as both the floor and the reference; the stock is not overvalued but the price does not compensate for the binary risk — do not initiate at $5.91.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Where does base-case intrinsic value sit?</b> Buffett/Munger/Soros base ≈ net cash ~$5.93 (modal); Damodaran workbook Base $15.73 is success-conditional (franchise value GIVEN commercialization); full EV ~$7.0–7.4. Munger to Damodaran: "your $15.73 assumes the franchise exists — the same thesis just failed." <b>Named concession:</b> Damodaran concedes $15.73/$24.63 are franchise values, not stock values — the stock's value is $5.93 + 0.08 × $18.70 ≈ $7.4, less dilution. Buffett/Munger concede the option is not literally zero. <b>Resolved:</b> consensus base (modal) ≈ net cash ~$5.93; consensus true probability-weighted value ~$7.2 (range $7.0–7.4).</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>How much credit for the right tail after the Phase 2a miss?</b> Soros/Druckenmiller: the option is free at cash (positive Phase 1 data, preferred combo, strategic-alternative path). Buffett/Munger: a lottery ticket priced at its cash — "a free lottery ticket is still a lottery ticket with a 92% chance of burning your cash." Damodaran: ~8% P(success); the market's ~0% is harsh but rational — not a large error. <b>Named concessions:</b> Soros/Druckenmiller concede the option's probability is low (~8%) and the cash decays — edge only at a discount to cash or on a catalyst; Buffett/Munger concede the option is not zero but will not pay for it at cash. <b>Resolved:</b> the tail is real but low-probability; consensus credits it at ~$1.1–1.5/share (8% × franchise option), which is the entire gap between net cash (~$5.93) and the full EV (~$7.0–7.4); buy the tail only at ≤$4.50–5.50 or on a positive catalyst.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>What price compensates for the uncertainty?</b> Munger $3.50–4.00 (spec) / &lt;$3.00 conviction; Damodaran ≤$4.50; Druckenmiller $4.50–5.50 (starter); Soros $4.50–5.00 (≥20% discount to net cash); Buffett none. Cross-exam: Buffett to Soros — "still only a ~15–24% discount to a cash pile being consumed"; Druckenmiller to value lenses — "at $5.50 you can lose ~30% max and make +100–400% if anything works." <b>Named concessions:</b> Druckenmiller/Soros concede their zones are speculative/tactical, not value; Damodaran concedes he would pay more on positive patient data. <b>Resolved (unanimous):</b> composite ladder — starter $4.50–5.50, accumulate ≤$4.50, conviction &lt;$3.50; do-not-initiate above ~$7.40 (full EV ~$7.0–7.4); $5.91 is hold/watch. Nobody initiates at $5.91.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Management quality &amp; capital allocation.</b> All: honest, prompt disclosure; capital-preservation instinct correct; but no commercial track record, single-thesis concentration, incentive-bias risk in the confounder narrative, and the $250M ATM overhang. Cross-exam: Soros — "layoffs could gut NBD1 expertise"; Munger — "the confounder story is exactly what a company with a dead thesis would say." <b>Named concessions:</b> Soros concedes capital preservation is the correct abandonment-option response; Munger concedes disclosure has been candid; Druckenmiller concedes the ATM lets management survive without a distressed raise. <b>Resolved:</b> consensus management <b>5/10</b> — honest and disciplined post-failure, no evidence of value creation yet, docked for concentration and the dilution lever.</div>
+          </div>
+          <div class="point contention">
+            <div class="n"></div>
+            <div class="txt"><b>Distressed opportunity or value trap?</b> Soros: completed bust, likely exhausted (no leverage, no forced selling, fragile bear belief). Munger: cash-burning zombie whose floor erodes ("the protected downside is a slowly sinking floor"). Damodaran: fairly-to-modestly-priced lottery ticket — too pessimistic in the tail, not wrong enough to overcome the risk. <b>Named concessions:</b> Munger concedes the bust is largely priced and there is no short; Soros concedes the edge at $5.91 is ~zero (E[R] ≈ −3%), positive only at ≤$4.50–5.00 or on a catalyst. <b>Resolved:</b> neither pure — a <b>cash-floored lottery ticket</b>: bust likely exhausted (no short), but the price does not yet pay you to buy it outright; wait/scale-in on dislocation or catalyst.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">04</span>Consensus Valuation</h2>
+        <p class="lead">Reconciled scenario matrix. The consensus probability column is a TRUE-probability distribution — it folds the ~92% probability that the franchise never commercializes into the Severe-bear row (per Damodaran's ~8% P(success) gate), so the probability-weighted value is a true expected value, NOT the success-conditional workbook value. The Damodaran column is the verified workbook (verbatim).</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+<th class="">Scenario</th><th class="right">Consensus prob.</th><th class="right">Damodaran (workbook)</th><th class="right">Buffett</th><th class="right">Munger</th><th class="right">Druckenmiller†</th><th class="right">Soros†</th><th class="right">Consensus IV</th>              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<td>Severe bear / franchise never commercializes</td><td class="right">94.4%</td><td class="right">$5.56</td><td class="right">~$4.00</td><td class="right">$4.00</td><td class="right">$5.20 (−12%)†</td><td class="right">$4.00</td><td class="right"><b>~$5.93 *</b></td>
+              </tr>
+              <tr>
+<td>Bear / niche</td><td class="right">2.0%</td><td class="right">$8.05</td><td class="right">~$5.93</td><td class="right">$5.93</td><td class="right">$6.00 (+1.5%)†</td><td class="right">$5.50</td><td class="right"><b>~$8.05</b></td>
+              </tr>
+              <tr class="hl">
+<td>Base / modest franchise</td><td class="right">2.0%</td><td class="right">$15.73</td><td class="right">~$12.00</td><td class="right">$12.00</td><td class="right">$6.00–12.00†</td><td class="right">$10.00</td><td class="right"><b>~$15.73</b></td>
+              </tr>
+              <tr>
+<td>Bull / strong franchise</td><td class="right">0.96%</td><td class="right">$45.32</td><td class="right">~$12–15</td><td class="right">$12.00–22.50</td><td class="right">$12.00 (+103%)†</td><td class="right">$10.00</td><td class="right"><b>~$45.32</b></td>
+              </tr>
+              <tr>
+<td>Extreme bull / franchise leader</td><td class="right">0.64%</td><td class="right">$144.74</td><td class="right">~$15+</td><td class="right">$22.50</td><td class="right">$30.00 (+408%)†</td><td class="right">$16–18</td><td class="right"><b>~$144.74</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">* Severe-bear Consensus IV ≈ net cash (~$5.93) — the present value of the abandonment option in the dominant failure state; the workbook's $5.56 is the success-conditional 'negligible niche' version of the same floor (Buffett/Munger's $4.00 reflect the burn-down path within the failure state). The Damodaran column is the verified workbook (SUCCESS-CONDITIONAL — the franchise value given it commercializes; weighted $24.63). † Druckenmiller/Soros cells are 12-month / 12–24-month PRICE EXPECTATIONS, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV. The consensus IV is a TRUE expected-value construct: ~94% of the probability mass sits at the net-cash floor, only ~0.6% reaches the $144.74 tail.</p>
+        <h3>Scenario distribution</h3>
+        <div class="chart-row">
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 14px"></div>
+            </div>
+            <div class="scen">Severe Bear</div>
+            <div class="val">~$5.93</div>
+            <div class="prob">94.4%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-red" style="height: 18px"></div>
+            </div>
+            <div class="scen">Bear</div>
+            <div class="val">~$8.05</div>
+            <div class="prob">2.0%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-amber" style="height: 30px"></div>
+            </div>
+            <div class="scen">Base</div>
+            <div class="val">~$15.73</div>
+            <div class="prob">2.0%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-green" style="height: 60px"></div>
+            </div>
+            <div class="scen">Bull</div>
+            <div class="val">~$45.32</div>
+            <div class="prob">0.96%</div>
+          </div>
+          <div class="chart-col">
+            <div class="vbar">
+              <div class="bar fill-deep" style="height: 100px"></div>
+            </div>
+            <div class="scen">Extreme Bull</div>
+            <div class="val">~$144.74</div>
+            <div class="prob">0.64%</div>
+          </div>
+        </div>
+        <div class="chart-axis">
+          <span>$0</span><span>Consensus intrinsic value per share (true probability weights)</span><span>~$144.74</span>
+        </div>
+        <h3>Probability-weighted value</h3>
+        <div class="consensus-box">
+          <h3>EV = 0.944×$5.93 + 0.020×$8.05 + 0.020×$15.73 + 0.0096×$45.32 + 0.0064×$144.74 = 5.60 + 0.16 + 0.31 + 0.44 + 0.93 ≈ $7.43 (pre-dilution) → ~$7.0–7.4 after the ~20–25% dilution haircut; central ~$7.2</h3>
+          <p class="big">At $5.91 that is roughly <b>+19–26% expected upside</b> (central ~+22%) and <b>~2.5–3.3% 7-year annualized</b> — <b>an expected return that does not compensate for a binary, low-confidence asset.</b> Critically, this is a TRUE expected value, NOT the success-conditional $24.63: the workbook's probability-weighted value assumes the SION-451 franchise commercializes (~8% likely); gating it (0.92 × net cash + 0.08 × franchise option, less ~20–25% expected dilution) collapses the weighted value from $24.63 (upside +317%, 7-yr annualized +22.6%) to ~$7.0–7.4. The downside tail (severe bear / failure, ~94% of the probability mass) is ≈ net cash, not a −94% loss; the upside tail (extreme bull $144.74) is ~0.6% probable. Confidence: <b>Low</b> — P(success) 5–15% spans the whole value range. The reverse-DCF check (uncontested): $5.91 assumes <b>zero pipeline value / ~0% success probability</b> — harsh but rational given the data; the consensus assigns ~8% and credits the option at only ~$1.1–1.5/share.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">05</span>Consensus Price Ladder</h2>
+        <p class="lead">Where the six frameworks meet — the composite accumulation plan. Do not initiate at ~$5.91; the do-not-initiate band is above ~$7.40 (above the consensus full EV ~$7.0–7.4).</p>
+        <div class="ladder">
+          <div class="rung">
+            <span class="price">&gt; $8.00</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 60%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Reduce / avoid — above Munger's sell zone (&gt;$8.00) and Soros's ($8.50–10); sell into any re-rating without fundamental progress</span>
+          </div>
+          <div class="rung">
+            <span class="price">$7.40–8.00</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-red" style="width: 45%"></div>
+            </div>
+            <span class="action" style="color: var(--red)">Do not initiate — above the consensus full EV (~$7.0–7.4); the hard do-not-initiate band; no new money</span>
+          </div>
+          <div class="rung">
+            <span class="price">$5.91–7.40</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-amber" style="width: 40%"></div>
+            </div>
+            <span class="action" style="color: #7a5a08">Hold / watch — at/below full EV but at/above net cash; $5.91 sits here; no new money without a catalyst</span>
+          </div>
+          <div class="rung">
+            <span class="price">$4.50–5.50</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 45%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Speculative starter — below net cash (~$5.93); Druckenmiller's zone; Soros scale-in; the option is nearly free</span>
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $4.50</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-green" style="width: 70%"></div>
+            </div>
+            <span class="action" style="color: var(--green)">Speculative accumulate — deep discount to net cash (≥24%); Damodaran buy zone; Munger speculative zone</span>
+          </div>
+          <div class="rung">
+            <span class="price">&lt; $3.50</span>
+            <div class="bar-track">
+              <div class="bar-fill fill-deep" style="width: 100%"></div>
+            </div>
+            <span class="action" style="color: #0e4d31"><b>High-conviction speculative buy — Munger conviction zone (&lt;$3.00); the deepest margin of safety</b></span>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">06</span>Pros &amp; Cons — At ~$5.91</h2>
+        <div class="proscons">
+          <div class="pc for">
+            <div class="head">FOR the investment</div>
+            <ul>
+              <li>Trades AT net cash — $5.91 vs ~$5.93/share net cash ($268.3M, no debt, runway into 2028): the downside is floored near the balance sheet, not at zero</li>
+              <li>Pipeline priced at $0 — EV ≈ −$1M; zero credit for SION-451 + SION-2222 (positive Phase 1 safety/PK data, preferred combo), the NBD1 platform/IP, or takeout optionality</li>
+              <li>Downside is largely spent — bust complete (−92% in a week; −85.6% YTD), RSI-14 21.5 deeply oversold; no debt, no leverage, no forced-selling overhang; a fragile bear belief ('pipeline = zero') one credible data point can break</li>
+              <li>Real (if low-probability) optionality — a credible SION-451 Phase 2 plan, a confounder read, or a strategic transaction at a premium to cash would each reprice the option from ~$0 to several dollars</li>
+              <li>Clean balance sheet — negligible liabilities (~$17.5M), ~$2.6M/qtr interest income; capital-preservation stance signals discipline</li>
+              <li>If the franchise works, the payoff is large — success-conditional values run $15.73 (base) to $144.74 (extreme bull) in a ~$10B+/yr CF market</li>
+            </ul>
+          </div>
+          <div class="pc against">
+            <div class="head">AGAINST the investment</div>
+            <ul>
+              <li>Expected return does not compensate — true probability-weighted value ~$7.0–7.4 vs $5.91 = only ~+19–26% with ~2.5–3.3% 7-yr annualized for a binary, low-confidence asset</li>
+              <li>Modal outcome is flat-to-down — ~60–75% probability of stagnation near net cash or drift toward the wind-down floor (~$4.00–5.00) as cash burns</li>
+              <li>The pipeline is damaged — SION-719 Phase 2a miss (p=0.7) falsified the lead thesis; SION-451 must beat Trikafta head-to-head; the same CFHBE model that predicted the failure underpins SION-451</li>
+              <li>The cash floor erodes — ~$42M H1-26 burn; net cash/share declines every quarter; 'preserve capital' (layoffs) risks gutting the franchise</li>
+              <li>Dilution overhang — $250M ATM (~2× share count at ~$6), 7.34M underwater options ($20.06 strike), $79.7M unrecognized SBC</li>
+              <li>No margin of safety — you pay full price for the only solid asset (cash) with a low-probability option thrown in free</li>
+              <li>Incumbent moat — Vertex (~$10B+/yr CF franchise) just had its moat re-confirmed by Sionna's failure; prior CF challengers have failed; Vertex's next-gen keeps raising the bar</li>
+              <li>Stale/absent sell-side and litigation — $17.20 avg target is a pre-crash relic; Guggenheim downgraded to Neutral (8/11/26); multiple shareholder investigations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">07</span>What Changes the Rating</h2>
+        <div class="two-col">
+          <div class="note-box">
+            <b style="color: var(--green)">Upgrade C− → C/B when:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>A credible SION-451 Phase 2 plan is announced (advancement decision, dose, design, timeline) — re-prices the option from ~$0 to positive (the single strongest signal)</li>
+              <li>Positive SION-451 patient efficacy data or a confounder analysis that rehabilitates the translational model — raises P(success) above ~10%</li>
+              <li>A strategic transaction at a premium to cash (partnering, out-licensing, takeout of $268M cash + IP) — compresses the cash discount</li>
+              <li>A margin of safety returns — price into the ≤$4.50 speculative accumulate zone, where the failure case is embedded and the option is nearly free</li>
+              <li>Capital preservation executed well (cost cuts without gutting the program) and the ATM stays unused — floor decay slows, dilution lever stays off</li>
+            </ol>
+          </div>
+          <div class="warn-box">
+            <b style="color: #7a5a08">Downgrade C− → D/E if:</b>
+            <ol style="margin: 8px 0 0 20px; font-size: 14.5px">
+              <li>SION-451 is shelved or fails in patients — franchise value ≈ 0; stock converges toward burn-down (~$4.00–5.00 over years); the mechanism's second strike</li>
+              <li>A dilutive $250M ATM raise at/below net cash used for general corporate purposes — per-share value destroyed and the floor broken</li>
+              <li>Layoffs so deep the franchise credibility is gutted, or the CFHBE model is formally discredited — the strategic-deal value collapses</li>
+              <li>Cash/share decays below ~$4 with no optionality / going-concern-style doubt — the abandonment floor itself breaks</li>
+              <li>The bust re-accelerates — a break of the $4.01 52-week low on accelerating burn, a distressed raise, or wind-down language</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Consensus monitoring dashboard</h3>
+        <div class="table-scroll" style="margin-top: 14px">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th class="right">Direction that helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>SION-451 advancement decision &amp; Phase 2 design</b></td>
+                <td>The binary hinge of the entire valuation</td>
+                <td class="right">Credible Phase 2 plan announced (H2-26–H1-27)</td>
+              </tr>
+              <tr>
+                <td><b>PreciSION confounder analysis / translational credibility</b></td>
+                <td>The fate of the CFHBE model underpinning SION-451</td>
+                <td class="right">Confounders rehabilitate the add-on thesis</td>
+              </tr>
+              <tr>
+                <td><b>Strategic transaction (partner / out-license / takeout)</b></td>
+                <td>The cash-discount compressor</td>
+                <td class="right">Premium to net cash; credible counterparty</td>
+              </tr>
+              <tr>
+                <td><b>Cash &amp; burn trajectory</b></td>
+                <td>The floor itself (~$42M/H1 burn)</td>
+                <td class="right">Burn decelerates; no emergency financing</td>
+              </tr>
+              <tr>
+                <td><b>ATM / dilution</b></td>
+                <td>The per-share tax (~2× share count at ~$6)</td>
+                <td class="right">ATM stays unused; no sub-cash raise</td>
+              </tr>
+              <tr>
+                <td><b>SION-451 / pipeline newsflow</b></td>
+                <td>The option-value driver</td>
+                <td class="right">Positive patient efficacy data</td>
+              </tr>
+              <tr>
+                <td><b>Price vs $4.01 low / net cash</b></td>
+                <td>The floor's integrity</td>
+                <td class="right">Holds ≥ ~$4.50–5.00 (net cash minus burn)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">08</span>Technical Analysis</h2>
+        <p class="lead">Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th class="right">Value</th>
+                <th class="right">Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Price vs 200-day SMA</b></td>
+                <td class="right">$39.26</td>
+                <td class="right">−84.9% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 100-day SMA</b></td>
+                <td class="right">$39.42</td>
+                <td class="right">−85.0% below</td>
+              </tr>
+              <tr>
+                <td><b>Price vs 50-day SMA</b></td>
+                <td class="right">$38.38</td>
+                <td class="right">−84.6% below</td>
+              </tr>
+              <tr>
+                <td><b>14-day RSI</b></td>
+                <td class="right">21.5</td>
+                <td class="right">Deeply oversold (below 30)</td>
+              </tr>
+              <tr>
+                <td><b>14-week RSI</b></td>
+                <td class="right">28.1</td>
+                <td class="right">Oversold</td>
+              </tr>
+              <tr>
+                <td><b>50-week RSI</b></td>
+                <td class="right">42.0</td>
+                <td class="right">Weak</td>
+              </tr>
+              <tr>
+                <td><b>52-week high / low</b></td>
+                <td class="right">$4.01 / $54.97</td>
+                <td class="right">−89% from high · +47% from low</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top: 10px">All seven indicators confirm a confirmed Stage 4 decline — ~85% below the 50/100/200-day SMAs, all RSIs weak-to-oversold, no base or pivot. RSI &gt;70 overbought, &lt;30 oversold; SMA deltas are the price's % deviation from each average. Values computed 2026-08-17 from the shared fact pack.</p>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">09</span>The Five Consensus Conclusions</h2>
+        <div class="point-list">
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Business.</b> Sionna is a single-thesis, pre-revenue CF biotech whose only path to value is the SION-451 NBD1-stabilizer franchise — and whose lead NBD1 program (SION-719) just missed its Phase 2a endpoint (p=0.7) and was dropped as an add-on to standard of care. The entire equity is a net-cash-backed option on that franchise. The business quality is not in dispute; the probability of the franchise ever existing is.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Economics.</b> The sole determinant of long-term per-share value is the probability-weighted value of the SION-451 franchise versus the ~$5.93 net-cash floor — P(success) × franchise value against the abandonment option. If the franchise exists, it is high-margin, low-capital, and value-creating (terminal ROIC 25%+ vs a 14% WACC in a ~$10B+/yr market); if not, the cash burns down toward ~$4.00–5.00 over years. The per-share tax is dilution, not interest.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Market's Expectations.</b> $5.91 prices the pipeline at $0 (EV ≈ −$1M) — the market assigns ~0% probability of commercial success. That is harsh but rational given the data: a lead program just failed, SION-451 has no patient efficacy data, and the incumbent's moat was just re-confirmed. It is not a large error; the consensus assigns ~8% and credits the option at only ~$1.1–1.5/share.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Valuation.</b> Consensus base (modal) intrinsic value ~$5.93/share (net cash); consensus TRUE probability-weighted value ~$7.2 (range ~$7.0–7.4); bear ~$4.00–5.56; bull ~$45.32; extreme bull ~$144.74. Damodaran workbook (SUCCESS-CONDITIONAL): $5.56 / $8.05 / $15.73 / $45.32 / $144.74, weighted $24.63, upside +317%, 7-yr annualized +22.6% — only if SION-451 commercializes. Confidence: Low. Expected upside vs $5.91 ≈ +19–26%; 7-year annualized ~2.5–3.3%.</div>
+          </div>
+          <div class="point">
+            <div class="n"></div>
+            <div class="txt"><b>The Investment Decision.</b> C− — Hold/Watch at ~$5.91; do not initiate. Do-not-initiate band above ~$7.40 (above the full EV); speculative starter $4.50–5.50, speculative accumulate ≤$4.50, high-conviction speculative &lt;$3.50. Upgrades require proof — a credible SION-451 Phase 2 plan, positive patient data, a strategic transaction at a premium, or a genuine discount to cash. The clinical data and the balance-sheet trajectory, not the stock price, will deliver the verdict.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="sec"><span class="num">10</span>Final Consensus Judgment</h2>
+        <div class="judgment">
+          <div class="qmark">“</div>
+          <p>At a price of <b>$5.91</b>, the market is paying book value for a cash pile — the entire clinical pipeline is priced at <b>zero</b> (EV ≈ −$1M). Six independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity-driven expectations, reflexivity, and (separately) trend/momentum — all refuse to buy at this price, all land on a <b>C− (Hold/Watch) at the unified margin</b> (with Buffett and Munger recording D — Avoid as quality/circle-of-competence verdicts and Minervini recording an F as a standalone trading view), and all place the valuation-critical variable on the same hinge: whether the SION-451 franchise's probability-weighted value exceeds the ~$5.93 net-cash floor — P(success) × franchise value against the abandonment option. We agree the balance sheet is safe (the downside is floored near-term), the pipeline is damaged (the add-on version of the same mechanism failed p=0.7), the option is real but low-probability (~8%), the cash floor erodes with burn, the $250M ATM is the dilution lever, Vertex's moat was just re-confirmed, and the expected return (~+19–26% on a true expected value of ~$7.0–7.4) does not compensate for a ~92%-likely failure. The most dangerous risks are a SION-451 shelving or failure (franchise value ≈ 0, burn-down toward ~$4–5), a sub-cash ATM raise, capital-preservation cuts that gut the program, cash/share decay below ~$4, and a break of the $4.01 floor. Therefore, at today's price the consensus is to <b>hold and watch</b>: do not initiate; take only a small speculative starter at <b>$4.50–5.50</b>, accumulate at <b>≤$4.50</b>, and buy with conviction only below <b>$3.50</b> — or on a credible SION-451 next step, a positive confounder read, or a strategic transaction — and let the clinical data and the balance-sheet trajectory, not the 92% decline, decide whether this net-cash-backed option becomes an investment.</p>
+        </div>
+      </section>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="disc">
+          <b>Sources &amp; disclaimer.</b> This report synthesizes six analyses — <code>buffet-analysis.md</code>, <code>munger-analysis.md</code>, <code>damodaran-analysis.md</code>, <code>druckenmiller-analysis.md</code>, <code>soros-analysis.md</code>, and <code>minervini-analysis.md</code> (dated August 17, 2026) — which themselves reference Sionna SEC filings (Q2 2026 10-Q filed 8/6/26; 8-K + EX-99.1 topline release 8/10/26), the Sionna Q2 2026 earnings release, Yahoo Finance SION/VRTX quotes, STAT News, Quartz, Insider Monkey, Simply Wall St, TipRanks, StockAnalysis, the shared fact pack, and Damodaran's NYU datasets, as of August 2026. Damodaran's scenario values are the verified <code>SION_Damodaran_Financial_Model.xlsx</code> workbook outputs (verifier: ALL_MATCH): Severe Bear <b>$5.56</b> / Bear <b>$8.05</b> / Base <b>$15.73</b> / Bull <b>$45.32</b> / Extreme Bull <b>$144.74</b>, probability-weighted (SUCCESS-CONDITIONAL) <b>$24.63</b>, upside <b>+317%</b>, 7-yr annualized <b>+22.6%</b> (WACC 14.0%, terminal growth 3.0%). The consensus probability-weighted value of <b>~$7.0–7.4/share</b> is a TRUE expected value (net cash + ~8% P(success) × franchise option, less expected dilution) — <b>not</b> the success-conditional $24.63. This document is an educational synthesis of estimates about estimates — it is <b>not investment advice</b>, and no valuation herein should be treated as a price prediction or a recommendation to trade. Sionna's outcome distribution is wide and binary; treat every number on this page as a hypothesis, not a fact.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

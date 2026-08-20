@@ -1,0 +1,255 @@
+{
+  "company": "Lennar Corporation",
+  "ticker": "LEN",
+  "exchange": "NYSE",
+  "date": "2026-08-17",
+  "reference_price": "$86.54",
+  "kicker": "Synthesized Consensus · Six-Lens Deliberative Debate",
+  "title": "Lennar Corporation — Consensus Investment Report",
+  "subtitle": "A structured debate between six independent frameworks — Buffett owner-earnings value, Munger multidisciplinary quality, Damodaran fundamental valuation, Druckenmiller macro-first expectations, Soros reflexivity, and Minervini SEPA trend/momentum — reconciled into a single synthesized analysis and recommendation.",
+  "rating": "B- — HOLD / BUY ON WEAKNESS",
+  "exec_summary": {
+    "lead": "Lennar is the largest U.S. homebuilder and the industry's most asset-light balance sheet — a narrow-moat, best-in-class-managed cyclical whose earnings are depressed by ~700bps of incentives (12.9% vs 4–6% normal) rather than by franchise decay. Six independent frameworks converged on one operative verdict at **$86.54**: **B- — HOLD / BUY ON WEAKNESS** — no lens initiates at the spot price, none recommends a short, and four of six have explicit buy zones at or below ~$80–82. The dispute is not the business; it is the speed and durability of margin normalization, and the price that compensates for a binary rate path.",
+    "cards": [
+      {
+        "label": "Consensus base value",
+        "value": "~$95",
+        "note": "Damodaran workbook $94.95 (+10% vs price); Buffett's $115 is the proven-execution target, Munger's $63 the no-normalization floor"
+      },
+      {
+        "label": "Probability-weighted value",
+        "value": "~$102",
+        "note": "0.10×$45 + 0.20×$60 + 0.35×$95 + 0.25×$130 + 0.10×$195 ≈ $102 — below Damodaran's workbook $118.96, above the price"
+      },
+      {
+        "label": "Bear / Bull range",
+        "value": "$45 – $195",
+        "note": "Severe bear ~$45, bull ~$130, extreme tail ~$195 at 10% probability — spread driven by the normalization-vs-WACC judgment"
+      },
+      {
+        "label": "Confidence",
+        "value": "Medium",
+        "note": "Binary rate path (10Y 4.68%); the margin trajectory is the tell"
+      },
+      {
+        "label": "Consensus entry plan",
+        "value": "$78–82 → <$55",
+        "note": "Starter $78–82; accumulate $72–78; aggressive $64–72; Munger zone $55–63; conviction <$55"
+      },
+      {
+        "label": "Management quality",
+        "value": "8/10",
+        "note": "Integrity 9/10, allocation 7/10 — best-in-class comp structure; buyback-timing ding"
+      }
+    ]
+  },
+  "profiles_title": "The Six Positions at the Table",
+  "profiles_lead": "Five investment frameworks debated the stock directly; Minervini's SEPA trend system contributed a standalone trading view, kept outside the investment consensus.",
+  "profiles": [
+    {
+      "name": "Warren Buffett",
+      "role": "Owner-Earnings Value Lens",
+      "verdict": "B — Buy (price-contingent)",
+      "at": "at $86.54",
+      "paragraph": "Three-scenario owner-earnings DCF: bear **$78**, base **$115**, bull **$148** — weighted **~$116**. A wonderful-ish business at a fair-ish price: 0.96x book, ~6.2x mid-cycle earnings power, fortress balance sheet. Buy with both hands below **$80**; at $86.54, hold rather than chase; trim above $120.",
+      "tags": ["Bear $78 / Base $115", "Weighted ~$116", "Buy <$80", "Moat: Narrow"]
+    },
+    {
+      "name": "Charlie Munger",
+      "role": "Multidisciplinary Quality Lens",
+      "verdict": "C — Watch",
+      "at": "at $86.54",
+      "paragraph": "Conservative DCF (13.5% discount, terminal growth ≤2%): bear **$47**, base **$63**, bull **$81** — weighted **~$61**, about 30% below the quote. A good cyclical business at a price that already assumes the recovery arrives. Buy **$55–63**, conviction below **$50**, reduce at or above $90.",
+      "tags": ["Base $63", "Weighted ~$61", "Buy $55–63", "Conviction <$50"]
+    },
+    {
+      "name": "Aswath Damodaran",
+      "role": "Fundamental Valuation Lens",
+      "verdict": "B+ — Modestly undervalued",
+      "at": "at $86.54",
+      "paragraph": "FCFF DCF (9.0% WACC, 2.25% terminal growth, 25% tax): base **$94.95**; probability-weighted **$118.96** across five scenarios (+37%, ≈ +6.6%/yr). Reverse DCF: the market already prices full margin normalization — cheap, not stupid-cheap. Buy below ~$82; trim above ~$125.",
+      "tags": ["Base $94.95", "Weighted $118.96", "Buy <$82", "WACC 9.0%"]
+    },
+    {
+      "name": "Stanley Druckenmiller",
+      "role": "Macro, Liquidity & Expectations Lens",
+      "verdict": "C+ — Monitor",
+      "at": "at $86.54 · 78/150",
+      "paragraph": "No Druckenmiller-quality opportunity at spot: 12-month price paths $55/$66/$85/$110/$130 → weighted **~$84.5** (−2.4%), asymmetry ~1:1. The setup is conditional: buy **$72–78** (asymmetry ~3.5:1) or on a confirmed 10Y break below **4.3%**. Sell above $100 unless the 10Y cooperates.",
+      "tags": ["12-mo ~$84.5", "Buy $72–78", "10Y <4.3% gate", "Monitor"]
+    },
+    {
+      "name": "George Soros",
+      "role": "Reflexivity & Disequilibrium Lens",
+      "verdict": "B — Attractive reflexive setup",
+      "at": "at $86.54",
+      "paragraph": "A reflexive undershoot near a favorable inflection: below book, 7.73% float short, hike odds collapsed 82%→25%, incentives already falling. 12-month paths $72/$95/$125 → weighted **~$100** (+16% + 2.3% dividend), asymmetry ~3.8:1. Buy below **$82**; scale out above $120.",
+      "tags": ["12-mo ~$100", "Asymmetry 3.8:1", "Buy <$82", "Reflexive undershoot"]
+    },
+    {
+      "name": "Mark Minervini",
+      "role": "Trend & Momentum Trading Lens",
+      "verdict": "D — Avoid (trading view)",
+      "at": "at $86.54 · 47/100",
+      "paragraph": "SEPA verdict: late-Stage-4 with a nascent, unconfirmed Stage 1 base — **0/8 Trend Template**, below all major averages, severe relative-strength laggard. Watchlist only: conditional entry **$88.50–90.50** on a breakout above **$88.42** with volume ≥1.5× average; stop **$82.90**.",
+      "tags": ["0/8 Trend Template", "Pivot $88.42", "Stop $82.90", "Watchlist only"]
+    }
+  ],
+  "debate": {
+    "title": "The Debate: Agreement, Contention, Resolution",
+    "lead": "Round 1: opening statements. Round 2: uncontested common ground. Round 3: six disputed points, cross-examined to resolution. Round 4: final concessions and the composite verdict.",
+    "agreements_title": "Uncontested consensus core",
+    "agreements": [
+      "**Simple, permanent business** — largest U.S. homebuilder (82,583 FY25 deliveries, $34.2B revenue), unchanged in essence since 1954, with a mortgage arm capturing 83% of buyers.",
+      "**Narrow moat, not wide** — real cost/capital-velocity advantages (121-day cycle, $81/sq ft, 98% of lots optioned); zero pricing power; proof not yet in margins (4.9% net vs DHI 9.1%, PHM 11.6%, NVR 11.8%).",
+      "**Fortress balance sheet** — homebuilding debt/capital 15.8% (net 9.4%), $4.9B liquidity, 0.1 years owned land supply; the classic builder killer is gone.",
+      "**Best-in-class management** — salary frozen since 2003, 0.20% profit-share after a 7.3% capital charge, $139M TTM SBC, unusually candid guidance.",
+      "**Trough earnings are incentive math** — 12.9% incentives vs 4–6% normal, declining three quarters running; each point ≈ $300M pre-tax.",
+      "**The hidden costs are real** — ~$18.5B land-bank capital at ~11% cost; $7.06B capitalized option deposits; normalized margins land below the pre-2022 era unless rates fall.",
+      "**One macro gate** — the 10-year (4.68%) with the Fed on hold at 3.50–3.75%; beta 1.40 makes LEN a leveraged expression of the mortgage rate.",
+      "**Valuation is the binding constraint** — 13.45x trough EPS is the top of LEN's own five-year band on the bottom of its cycle; 15.34x forward prices continued declines.",
+      "**No short, no chase** — every lens refuses to initiate at $86.54 (even the B-ratings are price-contingent); none recommends a short.",
+      "**One valuation-critical variable: incentive/margin normalization (12.9% → 4–6%) driven by mortgage rates vs ~9% WACC** — every framework, in its own vocabulary, lands on the same hinge."
+    ],
+    "contentions_title": "Contested points — and how they were resolved",
+    "contentions": [
+      "**Reference price framing: intrinsic value vs 12-month price paths.** Buffett/Munger/Damodaran publish intrinsic values; Druckenmiller/Soros/Minervini publish 12-month price paths or targets. Under cross-examination Druckenmiller concedes his $85 base path is a market expectation, not a valuation; Soros concedes his ~$100 weighted path is what the mispricing should trade at, not what the business is worth; Minervini concedes his numbers are chart targets with no value opinion. **Resolved:** consensus IV is set by the three fundamental models; the price-path lenses (marked †) inform only the ladder, timing, and triggers.",
+      "**Where does base-case intrinsic value sit?** Buffett $115 (10% discount, mid-cycle ~$10.5/share owner earnings), Munger $63 (13.5% discount, normalization by 2029), Damodaran $94.95 (9.0% WACC, margins 6.5%→9.5% — workbook-verified). Buffett concedes $115 is proven-execution value, the reward not the entry; Munger concedes his 13.5% discount double-punishes trough earnings and $63 is a floor, not a central estimate. **Resolved:** consensus base ~$95 — the workbook anchor $94.95 with Soros's $95 corroborating; Buffett's $115 becomes the upgrade target, Munger's $63 the stress floor.",
+      "**How much credit for the right tail?** Damodaran's Extreme Bull is $307.69 at 10% — a land-light re-rating to compounder economics; Munger caps at $81, Druckenmiller at $130, Soros at $125, Buffett at $148. Damodaran concedes the $307.69 requires the market to re-rate a cyclical as a compounder — plausible, not base-rate; Munger concedes the option value exists but is not for sale at a discount. **Resolved:** consensus extreme bull ~$195 (the room's outer tails averaged) at 10%, explicitly low-confidence — the tail justifies watching, not paying.",
+      "**What price compensates for the uncertainty?** Buy zones span Munger $55–63, Druckenmiller $72–78, Buffett <$80, Damodaran <$82, Soros <$82. Druckenmiller concedes his zone is conditional on a 10Y <4.3% or a margin inflection, not a value floor; Munger concedes $55–63 is the price at which the base case finally pays him. **Resolved:** composite ladder — starter $78–82, accumulate $72–78, aggressive $64–72, Munger zone $55–63, conviction <$55. A dispute about temperament and horizon, not about the thesis.",
+      "**Management: 8/10 vs 8/10 vs Good — and the buyback-timing ding.** Buffett and Munger grade 8/10 and both concede the buyback record is marred by timing ($89–123 averages into falling margins; $700M of 5.20% notes issued with $1.8B cash on hand). Damodaran concedes buybacks below ~$95 are value-accretive against his $94.95 base. Soros adds the Berkshire cross-check: the most demanding long-horizon buyer is accumulating the sector. **Resolved:** consensus 8/10 — integrity 9/10, allocation 7/10; repurchase price discipline becomes monitoring metric #5.",
+      "**Minervini's D versus Soros's B on the same chart.** Minervini: 0/8 Trend Template, below all averages, Stage 4 into a nascent Stage 1 — buying because it looks cheap is the error his method exists to prevent. Soros: bearishness fully expressed (7.73% short, avg PT below spot, −40% from high) while incentives, backlog, and hike odds have turned. Minervini concedes the post-$79.83 contraction is constructive but too young and too far below the 200-day to trade; Soros concedes cheap can get cheaper and no trend entry exists. **Resolved:** both coexist — no trend entry, which is exactly why the fundamental lenses set the ladder below the market while the event path (Jackson Hole, FOMC, 2026-09-17) decides timing."
+    ]
+  },
+  "valuation": {
+    "title": "Consensus Valuation",
+    "lead": "Reconciled scenario matrix from the six lenses. The Damodaran column is the verified workbook (ALL_MATCH; WACC 9.0%, terminal growth 2.25%, tax 25%).",
+    "matrix": {
+      "columns": ["Scenario", "Prob.", "Damodaran (workbook)", "Buffett", "Munger", "Druckenmiller†", "Soros†", "Minervini†", "Consensus IV"],
+      "rows": [
+        { "cells": ["Severe bear", "10%", "$26.70", "~$65–75 *", "$40", "$55†", "—", "—", "~$45"] },
+        { "cells": ["Bear", "20%", "$52.86", "$78", "$47", "$66†", "$72†", "$72†", "~$60"] },
+        { "cells": ["Base", "35%", "$94.95", "$115", "$63", "$85†", "$95†", "$84†", "~$95"], "highlight": true },
+        { "cells": ["Bull", "25%", "$166.86", "$148", "$81", "$110†", "$125†", "$102†", "~$130"] },
+        { "cells": ["Extreme bull", "10%", "$307.69", "—", "—", "$130†", "—", "—", "~$195"] }
+      ]
+    },
+    "footnote": "* Buffett's severe-bear ~$65–75 is his multiple-compression scenario (0.70–0.85× book); his published three-scenario set is $78/$115/$148. † Druckenmiller/Soros/Minervini cells are 12-month price paths or targets, not intrinsic values; they inform the near-term ladder and triggers, not the consensus IV. Consensus values reconcile the three intrinsic-value models (Buffett, Munger, Damodaran), anchored on the workbook where the macro/trading paths corroborate.",
+    "chart": {
+      "cols": [
+        { "scen": "Severe Bear", "val": "~$45", "prob": "10%", "height": 24, "fill": "fill-red" },
+        { "scen": "Bear", "val": "~$60", "prob": "20%", "height": 34, "fill": "fill-red" },
+        { "scen": "Base", "val": "~$95", "prob": "35%", "height": 52, "fill": "fill-amber" },
+        { "scen": "Bull", "val": "~$130", "prob": "25%", "height": 78, "fill": "fill-green" },
+        { "scen": "Extreme Bull", "val": "~$195", "prob": "10%", "height": 100, "fill": "fill-deep" }
+      ],
+      "axis_left": "$0",
+      "axis_mid": "Consensus intrinsic value per share",
+      "axis_right": "~$195"
+    },
+    "weighted": {
+      "formula": "EV = 0.10×$45 + 0.20×$60 + 0.35×$95 + 0.25×$130 + 0.10×$195 = 4.5 + 12.0 + 33.25 + 32.5 + 19.5 ≈ $102/share",
+      "text": "At $86.54 that is roughly **+18% expected upside** and **≈ +3.3% 5-year annualized** — positive but modest, and deliberately below Damodaran's workbook value ($118.96) because Munger's conservatism and the macro lenses' muted 12-month paths pull the consensus down. The expected value is tail-driven (35% probability above the $94.95 base) and the median ≈ base ~$95 (+10%): a reason to **buy on weakness, not to chase**. Downside tail (severe bear): −48% from $86.54; upside tail (extreme bull): +125%. Confidence: **Medium**. Reverse-DCF check (uncontested, from Damodaran): the $86.54 price embeds ~2% perpetual growth, ~9.3–9.5% normalized operating margins, and a ~9.0–9.4% WACC — the market already assumes full margin normalization. The market is not assuming an impossible business; it is assuming a successful one, and charging full price for it."
+    }
+  },
+  "ladder": {
+    "title": "Consensus Price Ladder",
+    "lead": "Where the six frameworks meet — the composite accumulation plan. Do not initiate at or above ~$90; the current $86.54 sits in the hold/watch band.",
+    "rungs": [
+      { "price": "> $125", "width": 100, "fill": "fill-red", "action": "Reduce / avoid — Damodaran's trim (>$125), Soros's sell (>$120), Buffett's reduce (>$120)", "color": "var(--red)" },
+      { "price": "$100–125", "width": 70, "fill": "fill-red", "action": "Hold, do not add — Druckenmiller's reduce zone >$100 opens (unless 10Y <4.3%)", "color": "var(--red)" },
+      { "price": "$90–100", "width": 45, "fill": "fill-amber", "action": "Do not initiate — at or above consensus base ~$95; zero margin of safety" },
+      { "price": "$82–90", "width": 40, "fill": "fill-amber", "action": "Hold / watch — the current $86.54 sits here; wait for the zones below" },
+      { "price": "$78–82", "width": 55, "fill": "fill-green", "action": "Begin accumulating (starter) — Damodaran <$82, Soros <$82, Buffett <$80 all open here", "color": "var(--green)" },
+      { "price": "$72–78", "width": 62, "fill": "fill-green", "action": "Accumulate — Druckenmiller's tactical starter $72–78 (asymmetry ~3.5:1)", "color": "var(--green)" },
+      { "price": "$64–72", "width": 70, "fill": "fill-green", "action": "Aggressive accumulation — Druckenmiller $64–72; Buffett's conviction zone <$70 opens", "color": "var(--green)" },
+      { "price": "$55–63", "width": 82, "fill": "fill-deep", "action": "Munger's fundamental zone — starter at $63, accumulate at $55", "color": "#0e4d31" },
+      { "price": "< $55", "width": 100, "fill": "fill-deep", "action": "High-conviction buy zone — Munger's conviction <$50; exceptional risk/reward if the thesis stays intact", "color": "#0e4d31", "bold": true }
+    ]
+  },
+  "proscons": {
+    "title": "Pros & Cons — At $86.54",
+    "for": [
+      "Fortress balance sheet — 15.8% homebuilding debt/capital (net 9.4%), $4.9B liquidity, 0.1 years owned land supply",
+      "Land-light model — 98% of 495,466 homesites optioned; the classic builder killer (land-heavy downturn exposure) is structurally reduced",
+      "Best-in-class management — comp built for owners (profit-share after a 7.3% capital charge), candid guidance, $139M TTM SBC",
+      "Trough pricing on book — 13.45x trough EPS, 0.96x book, 2.31% dividend + ~6.3% buyback yield; ~$5B returned in 2.5 years",
+      "Normalization leverage — 12.9% incentives vs 4–6% normal; each point ≈ $300M pre-tax; Q3 gross margin guided up",
+      "Positioning tailwind — 7.73% of float short, avg PT $86.23 below spot, −40% from the high; hike odds collapsed 82%→25%; Berkshire accumulating builders",
+      "Reflexive support — buybacks below book and the Millrose land structure work harder as the stock de-rates"
+    ],
+    "against": [
+      "No margin of safety at spot — price ≈ consensus base ~$95 (+10% only); the reverse DCF shows normalization is already priced",
+      "Munger's math is decisively negative — weighted $61 (−29% expected); ROIC 6.2% vs his ~10.5% hurdle",
+      "The rate path is binary and hostile — 10Y 4.68%, Fed on hold; a September hike (25–30% odds) re-breaks the thesis",
+      "Hidden land-bank rent — ~$18.5B at ~11% cost, ~$270M/quarter of implied fees capitalized into ACOR; current margins are flattered",
+      "Earnings still falling — Q2 EPS $1.24 vs $1.81; FY26 deliveries cut to 82–83k; 15.34x forward on declining EPS",
+      "Allocation autopilot — buybacks at $89–123 into falling margins; $700M of 5.20% notes issued with $1.8B cash on hand",
+      "Broken trend — below all SMAs, 0/8 Trend Template, Stage 4 into a nascent Stage 1; severe RS laggard vs SPY/XHB",
+      "Governance / key-person — dual-class (Miller ~42% votes on ~8% economics); 68-year-old CEO; no named successor"
+    ]
+  },
+  "triggers": {
+    "title": "What Changes the Rating",
+    "upgrade_title": "Upgrade B- → B/A when:",
+    "upgrade": [
+      "Q3 FY2026 (2026-09-17) prints home gross margin ≥16% AND incentives down again (12.9% → below ~12%) — the margin trough is confirmed behind",
+      "The 10Y breaks and holds below ~4.3% (Druckenmiller's gate) or the 30-yr fixed falls below ~6% — normalization de-risked",
+      "Normalized ROIC clears ~9% WACC for two consecutive quarters (currently 6.2%) — the moat starts showing in returns",
+      "Incentives return to the ~6% band — ~$300M+/quarter of pre-tax proof; the base case rises toward Buffett's $115",
+      "Fed cuts resume / CPI below 3% with the energy shock faded — the binary macro gate opens"
+    ],
+    "downgrade_title": "Downgrade B- → C/D if:",
+    "downgrade": [
+      "Incentives re-accelerate above ~14% or home gross margin stalls ≤15% for two quarters — normalization proves a mirage (Munger's bear becomes base)",
+      "The 10Y exceeds 5% or the Fed actually hikes — Soros's falsifiable pillar breaks the wrong way",
+      "National home prices decline — the $7.06B option deposits and $10.9B owned inventory take marks",
+      "Buybacks continue above ~$95 with ROE still below 8%, or debt issuance grows — the allocation autopilot is confirmed",
+      "The stock breaks $79.83 (52-week low) — Stage 4 resumes with a ~$71–72 measured move"
+    ],
+    "dashboard_title": "Consensus monitoring dashboard",
+    "dashboard": [
+      { "metric": "Home GM + incentives", "why": "The entire thesis: 12.9% → 4–6% normal", "helps": "GM ≥16% in Q3; incentives down again" },
+      { "metric": "30-yr mortgage / 10Y", "why": "The macro gate for normalization", "helps": "10Y <4.3%; 30-yr <6%" },
+      { "metric": "Normalized ROIC vs WACC", "why": "Proof the moat earns (6.2% today vs ~9%)", "helps": "ROIC >9% for 2+ quarters" },
+      { "metric": "Orders & backlog", "why": "Demand through the rate storm", "helps": "Orders flat-to-up; backlog growing" },
+      { "metric": "Buyback price discipline", "why": "Allocation quality — buy below book only", "helps": "Repurchases at or below ~$90–95" },
+      { "metric": "Fed path / CPI", "why": "The binary macro variable", "helps": "Holds, not hikes; CPI <3%" }
+    ]
+  },
+  "technical": {
+    "title": "Technical Analysis",
+    "lead": "Where the current price sits against its moving averages, momentum (RSI), and the 52-week range — a snapshot of market positioning, not a forecast.",
+    "rows": [
+      { "metric": "Price vs 50-day SMA", "value": "$87.09", "delta": "-0.6% below" },
+      { "metric": "Price vs 100-day SMA", "value": "$88.02", "delta": "-1.7% below" },
+      { "metric": "Price vs 200-day SMA", "value": "$100.91", "delta": "-14.2% below" },
+      { "metric": "14-day RSI", "value": "51.0", "delta": "Neutral (mid-range)" },
+      { "metric": "14-week RSI", "value": "42.3", "delta": "Bearish" },
+      { "metric": "50-week RSI", "value": "44.3", "delta": "Bearish" },
+      { "metric": "52-week range", "value": "$79.83 - $144.24", "delta": "-40.0% from high, +8.4% from low" }
+    ],
+    "note": "Snapshot computed from Yahoo Finance daily/weekly OHLC as of the 2026-08-17 close; cross-checked against stockanalysis.com. RSI above 70 is overbought, below 30 oversold; SMA deltas are the price's percentage deviation from each average. Reading: price sits below all three major averages inside a post-July contraction — consistent with Minervini's nascent Stage 1 and Soros's reflexive-undershoot read of the same chart."
+  },
+  "conclusions": {
+    "title": "The Five Consensus Conclusions",
+    "items": [
+      "**The Business.** Lennar is the largest U.S. homebuilder with the leanest balance sheet in the industry — a narrow-moat, owner-managed cyclical whose 98%-optioned land model reduces structural risk but whose 4.9% net margin (worst of the big four) has not yet demonstrated the moat in returns.",
+      "**The Economics.** The sole valuation-critical variable is incentive/margin normalization (12.9% → 4–6%) driven by mortgage rates vs the ~9% WACC — each incentive point is ~$300M pre-tax, and normalized ROIC ≈ WACC, so the thesis is recovery, not compounding.",
+      "**The Market's Expectations.** At $86.54 the reverse DCF implies ~2% perpetual growth with ~9.3–9.5% normalized margins at a ~9.0% WACC — the market already assumes full margin normalization. The stock is cheap only relative to a faster recovery.",
+      "**The Valuation.** Consensus base intrinsic value ~$95/share (workbook anchor $94.95); probability-weighted ~$102/share (+18%, ≈ +3.3% annualized); bear ~$60, severe bear ~$45, bull ~$130, extreme tail ~$195 at low confidence. Damodaran workbook: $26.70 / $52.86 / $94.95 / $166.86 / $307.69, weighted $118.96. Confidence: Medium.",
+      "**The Investment Decision.** B- — HOLD / BUY ON WEAKNESS at $86.54; do not initiate ≥$90. Starter $78–82, accumulate $72–78, aggressive $64–72, Munger zone $55–63, conviction <$55; reduce >$125. The margin data (2026-09-17), the rate path (Jackson Hole, FOMC), and the 10-year — not the stock price — will deliver the verdict."
+    ]
+  },
+  "judgment": {
+    "title": "Final Consensus Judgment",
+    "paragraph": "At a price of **$86.54**, the market is effectively assuming that Lennar's margin normalization will arrive on schedule — the reverse DCF embeds ~9.3–9.5% normalized operating margins, ~2% growth, and a ~9% cost of capital, a successful outcome already charged at full price. Six independent frameworks — owner-earnings value, multidisciplinary quality, fundamental DCF, macro/liquidity expectations, reflexivity, and SEPA trend analysis — agree on the business (simple, permanent, best-in-class-managed), agree on the balance sheet (fortress), and agree on the hinge: incentive/margin normalization driven by the path of mortgage rates. They disagree only on the discount rate a cyclical at trough earnings deserves — and therefore on the price that compensates for a binary rate path: Munger waits at $55–63, Druckenmiller strikes at $72–78 on confirmation, and Buffett/Damodaran/Soros buy below ~$80–82, while Minervini declines to trade the chart at all. The consensus reconciles this into **B- — HOLD / BUY ON WEAKNESS**: hold at $86.54, initiate nothing above ~$90, begin at $78–82, build through $72–78 and $64–72, meet Munger at $55–63, and buy with conviction below $55 — provided the monitoring hierarchy (home gross margin and incentives, mortgage rates, normalized ROIC vs ~9% WACC, orders and backlog, buyback price discipline) stays intact. The most dangerous risks are a permanent margin reset if rates persist into 2027, a September hike that re-fuels the negative loop, the land banks' ~11% hidden rent, and an allocation machine that keeps buying its own stock too high. Therefore, at today's price the consensus is to **wait for weakness and let the incentive data — not the narrative — decide when the recovery is real.**"
+  },
+  "sources_note": "This report synthesizes six analyses — buffet-analysis.md, munger-analysis.md, damodaran-analysis.md, druckenmiller-analysis.md, soros-analysis.md, and minervini-analysis.md (dated August 17, 2026) — which themselves reference Lennar's SEC filings (Q2 FY2026 10-Q and 8-K, 2026 DEF 14A proxy), the Q2 FY2026 earnings-call transcript, StockAnalysis, MarketBeat, HousingWire, Reuters/WSJ/CNBC/Barron's coverage, Damodaran's NYU datasets, and Yahoo Finance OHLC technicals, as of August 2026. Damodaran's scenario values are the verified LEN_Damodaran_Financial_Model.xlsx workbook outputs (verifier: ALL_MATCH). This document is an educational synthesis of estimates about estimates — it is **not investment advice**, and no valuation herein should be treated as a price prediction or a recommendation to trade. Lennar's outcome distribution is wide; treat every number on this page as a hypothesis, not a fact.",
+  "figures": [
+    "$26.70", "$52.86", "$94.95", "$166.86", "$307.69", "$118.96",
+    "$86.54", "~$95", "~$102", "~$45", "~$60", "~$130", "~$195",
+    "+18%", "+3.3%", "B- — HOLD / BUY ON WEAKNESS", "$78–82", "$55–63",
+    "8/10", "$79.83 - $144.24"
+  ]
+}
